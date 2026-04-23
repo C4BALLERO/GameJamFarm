@@ -1,8 +1,13 @@
 using UnityEngine;
 
+/// <summary>
+/// Manages shop transactions for buying animals and tools.
+/// Handles resource trading between player and shop.
+/// </summary>
+[DisallowMultipleComponent]
 public sealed class ShopSystem : MonoBehaviour
 {
-    [Header("Refs")]
+    [Header("References")]
     [SerializeField] private InventorySystem inventory;
     [SerializeField] private Transform animalSpawnRoot;
 
@@ -11,51 +16,99 @@ public sealed class ShopSystem : MonoBehaviour
     [SerializeField] private GameObject chickenPrefab;
     [SerializeField] private GameObject pigPrefab;
 
-    [Header("Buy Prices (Essence)")]
-    [SerializeField] private int cowCost = 3;
-    [SerializeField] private int chickenCost = 2;
-    [SerializeField] private int pigCost = 4;
+    [Header("Buy Prices (Gold)")]
+    [SerializeField] private int cowCost = 50;
+    [SerializeField] private int chickenCost = 30;
+    [SerializeField] private int pigCost = 40;
 
-    [Header("Sell Rates")]
-    [SerializeField] private int meatToEssenceRate = 5;
-    [SerializeField] private int bloodToEssenceRate = 5;
+    [Header("Tool Prices (Gold)")]
+    [SerializeField] private int hoePrice = 100;
+    [SerializeField] private int axePrice = 75;
+    [SerializeField] private int pickaxePrice = 80;
+
+    private void OnValidate()
+    {
+        if (inventory == null)
+            inventory = GetComponent<InventorySystem>();
+    }
 
     public void Bind(InventorySystem inv) => inventory = inv;
 
-    public bool BuyCow() => BuyAnimal(cowPrefab, cowCost);
-    public bool BuyChicken() => BuyAnimal(chickenPrefab, chickenCost);
-    public bool BuyPig() => BuyAnimal(pigPrefab, pigCost);
+    #region Animal Purchasing
+    
+    /// <summary>
+    /// Buy a cow for the farm
+    /// </summary>
+    public bool BuyCow() => BuyAnimal(cowPrefab, cowCost, "Cow");
 
-    public bool SellMeatForEssence()
-    {
-        if (inventory == null) return false;
-        if (!inventory.Remove(ResourceType.Meat, meatToEssenceRate)) return false;
-        inventory.Add(ResourceType.Essence, 1);
-        return true;
-    }
+    /// <summary>
+    /// Buy a chicken for the farm
+    /// </summary>
+    public bool BuyChicken() => BuyAnimal(chickenPrefab, chickenCost, "Chicken");
 
-    public bool SellBloodForEssence()
-    {
-        if (inventory == null) return false;
-        if (!inventory.Remove(ResourceType.Blood, bloodToEssenceRate)) return false;
-        inventory.Add(ResourceType.Essence, 1);
-        return true;
-    }
+    /// <summary>
+    /// Buy a pig for the farm
+    /// </summary>
+    public bool BuyPig() => BuyAnimal(pigPrefab, pigCost, "Pig");
 
-    private bool BuyAnimal(GameObject prefab, int essenceCost)
+    #endregion
+
+    #region Tool Purchasing
+
+    /// <summary>
+    /// Buy a hoe for farming
+    /// </summary>
+    public bool BuyHoe() => BuyTool(hoePrice, "Hoe");
+
+    /// <summary>
+    /// Buy an axe for logging
+    /// </summary>
+    public bool BuyAxe() => BuyTool(axePrice, "Axe");
+
+    /// <summary>
+    /// Buy a pickaxe for mining
+    /// </summary>
+    public bool BuyPickaxe() => BuyTool(pickaxePrice, "Pickaxe");
+
+    #endregion
+
+    private bool BuyAnimal(GameObject prefab, int goldCost, string animalName)
     {
-        if (prefab == null || inventory == null) return false;
-        if (!inventory.Remove(ResourceType.Essence, essenceCost)) return false;
+        if (prefab == null || inventory == null) 
+            return false;
+
+        if (!inventory.CanAfford(ResourceType.Gold, goldCost))
+        {
+            Debug.LogWarning($"[Shop] Not enough gold to buy {animalName}. Need: {goldCost}, Have: {inventory.Get(ResourceType.Gold)}");
+            return false;
+        }
+
+        if (!inventory.Remove(ResourceType.Gold, goldCost))
+            return false;
 
         var root = animalSpawnRoot != null ? animalSpawnRoot : transform;
         var pos = root.position + (Vector3)Random.insideUnitCircle * 1.5f;
         var go = Instantiate(prefab, pos, Quaternion.identity, root);
 
         if (go.TryGetComponent<ResourceGenerator>(out var gen))
-        {
             gen.Init(inventory);
-        }
 
+        Debug.Log($"[Shop] Purchased {animalName} for {goldCost} gold");
+        return true;
+    }
+
+    private bool BuyTool(int goldCost, string toolName)
+    {
+        if (inventory == null)
+            return false;
+
+        if (!inventory.CanAfford(ResourceType.Gold, goldCost))
+            return false;
+
+        if (!inventory.Remove(ResourceType.Gold, goldCost))
+            return false;
+
+        Debug.Log($"[Shop] Purchased {toolName} for {goldCost} gold");
         return true;
     }
 }
