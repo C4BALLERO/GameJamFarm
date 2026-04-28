@@ -1,22 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-/// <summary>
-/// Wires shop / sell <see cref="Button"/> clicks to <see cref="UIManager"/> at runtime (build-friendly, no persistent UnityEvents required).
-/// </summary>
+/// <summary>Botones del panel Granero (escenas antiguas usan los mismos nombres de hijos).</summary>
 [DisallowMultipleComponent]
 public sealed class ShopPanelBinder : MonoBehaviour
 {
     [SerializeField] private UIManager ui;
-    [SerializeField] private Button buyCow;
-    [SerializeField] private Button buyChicken;
-    [SerializeField] private Button buyPig;
-    [SerializeField] private Button sellMilk;
-    [SerializeField] private Button sellEgg;
-    [SerializeField] private Button sellMeat;
-    [SerializeField] private Button sellCow;
-    [SerializeField] private Button sellChicken;
-    [SerializeField] private Button sellPig;
 
     private void Awake()
     {
@@ -25,20 +14,38 @@ public sealed class ShopPanelBinder : MonoBehaviour
 
         if (ui == null) return;
 
-        Wire(buyCow, () => ui.BuyCow());
-        Wire(buyChicken, () => ui.BuyChicken());
-        Wire(buyPig, () => ui.BuyPig());
-        Wire(sellMilk, () => ui.SellMilkBatch());
-        Wire(sellEgg, () => ui.SellEggBatch());
-        Wire(sellMeat, () => ui.SellMeatBatch());
-        Wire(sellCow, () => ui.SellCow());
-        Wire(sellChicken, () => ui.SellChicken());
-        Wire(sellPig, () => ui.SellPig());
+        WireNamed("BuyCow", () => ui.BuyCow());
+        WireNamed("BuyChicken", () => ui.BuyChicken());
+        WireNamed("BuyPig", () => ui.BuyPig());
+
+        WireNamed("SellCow", () => ui.BuyAttackUpgrade());
+        WireNamed("SellChicken", () => ui.BuySpeedUpgrade());
+        WireNamed("SellPig", () => ui.CloseShop());
+
+        HideNamed("SellMilk");
+        HideNamed("SellEgg");
+        HideNamed("SellMeat");
+    }
+
+    private void WireNamed(string childName, UnityEngine.Events.UnityAction action)
+    {
+        var child = transform.Find(childName);
+        if (child == null) return;
+        var btn = child.GetComponent<Button>();
+        Wire(btn, action);
+    }
+
+    private void HideNamed(string childName)
+    {
+        var child = transform.Find(childName);
+        if (child != null)
+            child.gameObject.SetActive(false);
     }
 
     private static void Wire(Button b, UnityEngine.Events.UnityAction action)
     {
         if (b == null || action == null) return;
+        b.onClick.RemoveAllListeners();
         b.onClick.AddListener(action);
     }
 }

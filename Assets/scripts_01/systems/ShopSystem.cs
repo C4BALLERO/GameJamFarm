@@ -1,43 +1,63 @@
+using System;
 using UnityEngine;
 
 /// <summary>
-/// Manages shop transactions for buying animals and tools.
-/// Handles resource trading between player and shop.
+/// Granero: compra animales y mejoras de ataque/velocidad solo con Leche, Huevos y Carne.
 /// </summary>
 [DisallowMultipleComponent]
 public sealed class ShopSystem : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private InventorySystem inventory;
-    [SerializeField] private Transform animalSpawnRoot;
+    [SerializeField] private AnimalSpawner animalSpawner;
 
     [Header("Animal Prefabs")]
     [SerializeField] private GameObject cowPrefab;
     [SerializeField] private GameObject chickenPrefab;
     [SerializeField] private GameObject pigPrefab;
 
-    [Header("Buy Prices (Gold)")]
-    [SerializeField] private int cowCost = 50;
-    [SerializeField] private int chickenCost = 30;
-    [SerializeField] private int pigCost = 40;
+    [Header("Costes animales (solo Leche / Huevos / Carne)")]
+    [SerializeField] private ResourceCost[] chickenPurchaseCosts =
+    {
+        new ResourceCost { type = ResourceType.Egg, amount = 6 },
+        new ResourceCost { type = ResourceType.Meat, amount = 8 },
+        new ResourceCost { type = ResourceType.Milk, amount = 3 }
+    };
 
-    [Header("Tool Prices (Gold)")]
-    [SerializeField] private int hoePrice = 100;
-    [SerializeField] private int axePrice = 75;
-    [SerializeField] private int pickaxePrice = 80;
+    [SerializeField] private ResourceCost[] pigPurchaseCosts =
+    {
+        new ResourceCost { type = ResourceType.Meat, amount = 10 },
+        new ResourceCost { type = ResourceType.Milk, amount = 8 },
+        new ResourceCost { type = ResourceType.Egg, amount = 5 }
+    };
 
-    [Header("Sell resources (batch sizes)")]
-    [SerializeField] private int milkSellBatch = 4;
-    [SerializeField] private int milkGoldPerBatch = 7;
-    [SerializeField] private int eggSellBatch = 6;
-    [SerializeField] private int eggGoldPerBatch = 6;
-    [SerializeField] private int meatSellBatch = 4;
-    [SerializeField] private int meatGoldPerBatch = 10;
-    [SerializeField] private int woodSellBatch = 10;
-    [SerializeField] private int woodGoldPerBatch = 2;
+    [SerializeField] private ResourceCost[] cowPurchaseCosts =
+    {
+        new ResourceCost { type = ResourceType.Milk, amount = 14 },
+        new ResourceCost { type = ResourceType.Egg, amount = 12 },
+        new ResourceCost { type = ResourceType.Meat, amount = 18 }
+    };
 
-    [Header("Sell animals")]
-    [SerializeField] private float animalSellSearchRadius = 40f;
+    [Header("Mejoras jugador")]
+    [SerializeField] private ResourceCost[] attackUpgradeCosts =
+    {
+        new ResourceCost { type = ResourceType.Milk, amount = 10 },
+        new ResourceCost { type = ResourceType.Egg, amount = 10 },
+        new ResourceCost { type = ResourceType.Meat, amount = 8 }
+    };
+
+    [SerializeField] private ResourceCost[] speedUpgradeCosts =
+    {
+        new ResourceCost { type = ResourceType.Egg, amount = 14 },
+        new ResourceCost { type = ResourceType.Milk, amount = 9 },
+        new ResourceCost { type = ResourceType.Meat, amount = 10 }
+    };
+
+    private void Awake()
+    {
+        if (animalSpawner == null)
+            animalSpawner = FindFirstObjectByType<AnimalSpawner>();
+    }
 
     private void OnValidate()
     {
@@ -47,141 +67,136 @@ public sealed class ShopSystem : MonoBehaviour
 
     public void Bind(InventorySystem inv) => inventory = inv;
 
-    #region Animal Purchasing
-    
-    /// <summary>
-    /// Buy a cow for the farm
-    /// </summary>
-    public bool BuyCow() => BuyAnimal(cowPrefab, cowCost, "Cow");
+    public void BindSpawner(AnimalSpawner spawner) => animalSpawner = spawner;
 
-    /// <summary>
-    /// Buy a chicken for the farm
-    /// </summary>
-    public bool BuyChicken() => BuyAnimal(chickenPrefab, chickenCost, "Chicken");
-
-    /// <summary>
-    /// Buy a pig for the farm
-    /// </summary>
-    public bool BuyPig() => BuyAnimal(pigPrefab, pigCost, "Pig");
-
-    #endregion
-
-    #region Tool Purchasing
-
-    /// <summary>
-    /// Buy a hoe for farming
-    /// </summary>
-    public bool BuyHoe() => BuyTool(hoePrice, "Hoe");
-
-    /// <summary>
-    /// Buy an axe for logging
-    /// </summary>
-    public bool BuyAxe() => BuyTool(axePrice, "Axe");
-
-    /// <summary>
-    /// Buy a pickaxe for mining
-    /// </summary>
-    public bool BuyPickaxe() => BuyTool(pickaxePrice, "Pickaxe");
-
-    #endregion
-
-    #region Sell resources
-
-    /// <summary>Sell a batch of milk for gold.</summary>
-    public bool SellMilkBatch() => SellResource(ResourceType.Milk, milkSellBatch, milkGoldPerBatch, "Milk");
-
-    /// <summary>Sell a batch of eggs for gold.</summary>
-    public bool SellEggBatch() => SellResource(ResourceType.Egg, eggSellBatch, eggGoldPerBatch, "Egg");
-
-    /// <summary>Sell a batch of meat for gold.</summary>
-    public bool SellMeatBatch() => SellResource(ResourceType.Meat, meatSellBatch, meatGoldPerBatch, "Meat");
-
-    /// <summary>Sell a batch of wood for gold.</summary>
-    public bool SellWoodBatch() => SellResource(ResourceType.Wood, woodSellBatch, woodGoldPerBatch, "Wood");
-
-    public bool SellCow() => SellAnimal(FarmAnimalKind.Cow, "Cow");
-    public bool SellChicken() => SellAnimal(FarmAnimalKind.Chicken, "Chicken");
-    public bool SellPig() => SellAnimal(FarmAnimalKind.Pig, "Pig");
-
-    private bool SellResource(ResourceType type, int batchSize, int goldEarned, string label)
+    public ResourceCost[] GetPurchaseCosts(FarmAnimalKind kind)
     {
-        if (inventory == null || batchSize <= 0 || goldEarned <= 0) return false;
-        if (!inventory.CanAfford(type, batchSize)) return false;
-        if (!inventory.Remove(type, batchSize)) return false;
+        return kind switch
+        {
+            FarmAnimalKind.Cow => cowPurchaseCosts,
+            FarmAnimalKind.Chicken => chickenPurchaseCosts,
+            FarmAnimalKind.Pig => pigPurchaseCosts,
+            _ => Array.Empty<ResourceCost>()
+        };
+    }
 
-        inventory.Add(ResourceType.Gold, goldEarned);
-        Debug.Log($"[Shop] Sold {batchSize} {label} for {goldEarned} gold");
+    public ResourceCost[] GetAttackUpgradeCosts() => attackUpgradeCosts;
+
+    public ResourceCost[] GetSpeedUpgradeCosts() => speedUpgradeCosts;
+
+    #region Animals
+
+    public bool BuyCow() => TryBuyAnimal(FarmAnimalKind.Cow, cowPrefab, cowPurchaseCosts, "Vaca");
+
+    public bool BuyChicken() => TryBuyAnimal(FarmAnimalKind.Chicken, chickenPrefab, chickenPurchaseCosts, "Gallina");
+
+    public bool BuyPig() => TryBuyAnimal(FarmAnimalKind.Pig, pigPrefab, pigPurchaseCosts, "Cerdo");
+
+    private bool TryBuyAnimal(FarmAnimalKind kind, GameObject prefab, ResourceCost[] costs, string label)
+    {
+        if (prefab == null || inventory == null) return false;
+
+        if (animalSpawner == null)
+            animalSpawner = FindFirstObjectByType<AnimalSpawner>();
+
+        if (animalSpawner == null)
+        {
+            Debug.LogError("[Shop] Falta AnimalSpawner en la escena.");
+            return false;
+        }
+
+        if (!TrySpendCosts(costs))
+        {
+            Debug.LogWarning($"[Shop] No alcanza para comprar {label}.");
+            return false;
+        }
+
+        if (animalSpawner.TrySpawnPurchasedAnimal(kind, prefab, inventory, out _))
+        {
+            Debug.Log($"[Shop] Compraste {label}.");
+            return true;
+        }
+
+        RefundCosts(costs);
+        Debug.LogWarning($"[Shop] No se pudo colocar {label} (corral lleno). Recursos devueltos.");
+        return false;
+    }
+
+    #endregion
+
+    #region Upgrades
+
+    public bool BuyAttackUpgrade()
+    {
+        var pc = FindFirstObjectByType<PlayerCombat>();
+        if (pc == null)
+        {
+            Debug.LogWarning("[Shop] No hay PlayerCombat.");
+            return false;
+        }
+
+        if (!TrySpendCosts(attackUpgradeCosts))
+        {
+            Debug.LogWarning("[Shop] No alcanza para mejorar ataque.");
+            return false;
+        }
+
+        pc.IncrementAttackTier();
+        Debug.Log("[Shop] Ataque mejorado.");
         return true;
     }
 
-    private bool SellAnimal(FarmAnimalKind kind, string label)
+    public bool BuySpeedUpgrade()
+    {
+        var pl = FindFirstObjectByType<PlayerController>();
+        if (pl == null)
+        {
+            Debug.LogWarning("[Shop] No hay PlayerController.");
+            return false;
+        }
+
+        if (!TrySpendCosts(speedUpgradeCosts))
+        {
+            Debug.LogWarning("[Shop] No alcanza para mejorar velocidad.");
+            return false;
+        }
+
+        pl.IncrementSpeedTier();
+        Debug.Log("[Shop] Velocidad mejorada.");
+        return true;
+    }
+
+    #endregion
+
+    private bool TrySpendCosts(ResourceCost[] costs)
     {
         if (inventory == null) return false;
+        if (costs == null || costs.Length == 0) return true;
 
-        var allAnimals = FindObjectsByType<FarmAnimal>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
-        FarmAnimal best = null;
-        var bestDist = float.MaxValue;
-        var origin = animalSpawnRoot != null ? animalSpawnRoot.position : Vector3.zero;
-
-        foreach (var a in allAnimals)
+        foreach (var c in costs)
         {
-            if (a == null || a.IsDead || a.Kind != kind) continue;
-            var d = Vector3.SqrMagnitude(a.transform.position - origin);
-            if (d < bestDist && d <= animalSellSearchRadius * animalSellSearchRadius)
-            {
-                best = a;
-                bestDist = d;
-            }
+            if (c.amount <= 0) continue;
+            if (!inventory.CanAfford(c.type, c.amount))
+                return false;
         }
 
-        if (best == null) return false;
-        var gold = best.SellGoldValue;
-        inventory.Add(ResourceType.Gold, gold);
-        Destroy(best.gameObject);
-        Debug.Log($"[Shop] Sold {label} for {gold} gold");
+        foreach (var c in costs)
+        {
+            if (c.amount <= 0) continue;
+            if (!inventory.Remove(c.type, c.amount))
+                return false;
+        }
+
         return true;
     }
 
-    #endregion
-
-    private bool BuyAnimal(GameObject prefab, int goldCost, string animalName)
+    private void RefundCosts(ResourceCost[] costs)
     {
-        if (prefab == null || inventory == null) 
-            return false;
-
-        if (!inventory.CanAfford(ResourceType.Gold, goldCost))
+        if (inventory == null || costs == null) return;
+        foreach (var c in costs)
         {
-            Debug.LogWarning($"[Shop] Not enough gold to buy {animalName}. Need: {goldCost}, Have: {inventory.Get(ResourceType.Gold)}");
-            return false;
+            if (c.amount > 0)
+                inventory.Add(c.type, c.amount);
         }
-
-        if (!inventory.Remove(ResourceType.Gold, goldCost))
-            return false;
-
-        var root = animalSpawnRoot != null ? animalSpawnRoot : transform;
-        var pos = root.position + (Vector3)Random.insideUnitCircle * 1.5f;
-        var go = Instantiate(prefab, pos, Quaternion.identity, root);
-
-        if (go.TryGetComponent<ResourceGenerator>(out var gen))
-            gen.Init(inventory);
-
-        Debug.Log($"[Shop] Purchased {animalName} for {goldCost} gold");
-        return true;
-    }
-
-    private bool BuyTool(int goldCost, string toolName)
-    {
-        if (inventory == null)
-            return false;
-
-        if (!inventory.CanAfford(ResourceType.Gold, goldCost))
-            return false;
-
-        if (!inventory.Remove(ResourceType.Gold, goldCost))
-            return false;
-
-        Debug.Log($"[Shop] Purchased {toolName} for {goldCost} gold");
-        return true;
     }
 }
-

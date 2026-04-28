@@ -1,21 +1,13 @@
 using UnityEngine;
 
-/// <summary>
-/// Enumeration of all resource types available in the game.
-/// </summary>
+/// <summary>Únicos recursos del juego: producción animal → moneda de la tienda (Granero).</summary>
 public enum ResourceType
 {
-    Wood = 0,
-    Stone = 1,
-    Milk = 2,
-    Gold = 3,
-    Egg = 4,
-    Meat = 5
+    Milk = 0,
+    Egg = 1,
+    Meat = 2
 }
 
-/// <summary>
-/// Data holder for resource information with configuration in scriptable objects.
-/// </summary>
 [System.Serializable]
 public class ResourceData
 {
@@ -24,4 +16,3 @@ public class ResourceData
     public string displayName;
     public Sprite icon;
 }
-

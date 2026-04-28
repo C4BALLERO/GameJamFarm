@@ -14,8 +14,15 @@ public sealed class PlayerCombat : MonoBehaviour
     [SerializeField] private Collider2D hitboxCollider;
     [SerializeField] private float hitboxDistance = 0.45f;
 
+    [Header("Mejoras (granero)")]
+    [SerializeField] private float cooldownReductionPerTier = 0.055f;
+    [SerializeField] private int damageBonusPerTier = 1;
+
     private float _nextAttackAt;
     private float _disableAt;
+    private int _attackTier;
+
+    public int AttackTier => _attackTier;
 
     private void Reset()
     {
@@ -36,10 +43,22 @@ public sealed class PlayerCombat : MonoBehaviour
         }
     }
 
+    /// <summary>Sube fuerza de ataque y velocidad de golpes (compra en tienda).</summary>
+    public void IncrementAttackTier()
+    {
+        _attackTier++;
+    }
+
+    private float EffectiveCooldown =>
+        Mathf.Max(0.08f, attackCooldown * (1f - cooldownReductionPerTier * Mathf.Min(_attackTier, 12)));
+
+    private int EffectiveDamage =>
+        Mathf.Max(1, damage + damageBonusPerTier * _attackTier);
+
     public bool TryAttack(Vector2 facing)
     {
         if (Time.time < _nextAttackAt) return false;
-        _nextAttackAt = Time.time + Mathf.Max(0.05f, attackCooldown);
+        _nextAttackAt = Time.time + EffectiveCooldown;
 
         if (hitboxCollider == null) return true;
 
@@ -61,7 +80,6 @@ public sealed class PlayerCombat : MonoBehaviour
         var dir = ((Vector2)dmg.Transform.position - (Vector2)transform.position);
         if (dir.sqrMagnitude < 0.0001f) dir = Vector2.up;
         dir.Normalize();
-        dmg.TakeDamage(damage, dir * knockbackForce);
+        dmg.TakeDamage(EffectiveDamage, dir * knockbackForce);
     }
 }
-

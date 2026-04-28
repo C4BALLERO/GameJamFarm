@@ -1,15 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-/// <summary>
-/// Displays key survival resources tracked by <see cref="InventorySystem"/> (food, gold, crops).
-/// </summary>
+/// <summary>Solo Leche, Huevos y Carne en pantalla.</summary>
 public sealed class ResourceUI : MonoBehaviour
 {
     [SerializeField] private Text milkText;
     [SerializeField] private Text eggText;
     [SerializeField] private Text meatText;
-    [SerializeField] private Text goldText;
 
     private InventorySystem _inventory;
 
@@ -36,27 +33,36 @@ public sealed class ResourceUI : MonoBehaviour
         switch (type)
         {
             case ResourceType.Milk:
-                if (milkText != null) milkText.text = amount.ToString();
+                SetMilk(amount);
                 break;
             case ResourceType.Egg:
-                if (eggText != null) eggText.text = amount.ToString();
+                SetEgg(amount);
                 break;
             case ResourceType.Meat:
-                if (meatText != null) meatText.text = amount.ToString();
-                break;
-            case ResourceType.Gold:
-                if (goldText != null) goldText.text = amount.ToString();
+                SetMeat(amount);
                 break;
         }
     }
 
+    private void SetMilk(int v)
+    {
+        if (milkText != null) milkText.text = $"Leche {v}";
+    }
+
+    private void SetEgg(int v)
+    {
+        if (eggText != null) eggText.text = $"Huevos {v}";
+    }
+
+    private void SetMeat(int v)
+    {
+        if (meatText != null) meatText.text = $"Carne {v}";
+    }
+
     private void Refresh(InventorySystem inventory)
     {
-        if (milkText != null) milkText.text = inventory.Get(ResourceType.Milk).ToString();
-        if (eggText != null) eggText.text = inventory.Get(ResourceType.Egg).ToString();
-        if (meatText != null) meatText.text = inventory.Get(ResourceType.Meat).ToString();
-        if (goldText != null) goldText.text = inventory.Get(ResourceType.Gold).ToString();
+        SetMilk(inventory.Get(ResourceType.Milk));
+        SetEgg(inventory.Get(ResourceType.Egg));
+        SetMeat(inventory.Get(ResourceType.Meat));
     }
 }
-
-

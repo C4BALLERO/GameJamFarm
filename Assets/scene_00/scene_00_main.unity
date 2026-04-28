@@ -1403,6 +1403,8 @@ GameObject:
   m_Component:
   - component: {fileID: 157796309}
   - component: {fileID: 157796308}
+  - component: {fileID: 157796310}
+  - component: {fileID: 157796311}
   m_Layer: 0
   m_Name: Granero
   m_TagString: Untagged
@@ -1485,6 +1487,66 @@ Transform:
   - {fileID: 1313744615}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &157796310
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157796307}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &157796311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157796307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42c8853cf392424996247047e765e94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BarnShopTrigger
+  shopUi: {fileID: 0}
+  clickArea: {fileID: 157796310}
 --- !u!1 &164561976
 GameObject:
   m_ObjectHideFlags: 0
@@ -2655,15 +2717,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopPanelBinder
   ui: {fileID: 384530614}
-  buyCow: {fileID: 1898562829}
-  buyChicken: {fileID: 168533401}
-  buyPig: {fileID: 1314890730}
-  sellMilk: {fileID: 853933774}
-  sellEgg: {fileID: 1379011275}
-  sellMeat: {fileID: 654263764}
-  sellCow: {fileID: 664524145}
-  sellChicken: {fileID: 1423448638}
-  sellPig: {fileID: 1622082946}
+  buyCow: {fileID: 0}
+  buyChicken: {fileID: 0}
+  buyPig: {fileID: 0}
+  buyAttackUpgrade: {fileID: 0}
+  buySpeedUpgrade: {fileID: 0}
+  closeShop: {fileID: 0}
 --- !u!114 &318344824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3191,6 +3250,7 @@ MonoBehaviour:
   resourceUI: {fileID: 384530615}
   shopPanelRoot: {fileID: 318344821}
   shopSystem: {fileID: 559021602}
+  shopUi: {fileID: 0}
 --- !u!114 &384530615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3206,7 +3266,6 @@ MonoBehaviour:
   milkText: {fileID: 841042892}
   eggText: {fileID: 874213199}
   meatText: {fileID: 1792003653}
-  goldText: {fileID: 1441880173}
 --- !u!4 &384530616
 Transform:
   m_ObjectHideFlags: 0
@@ -4932,25 +4991,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopSystem
   inventory: {fileID: 559021604}
-  animalSpawnRoot: {fileID: 1145593497}
+  animalSpawner: {fileID: 0}
   cowPrefab: {fileID: 2363478248200783261, guid: b6c4028ca308ca64c9a53206571f1258, type: 3}
   chickenPrefab: {fileID: 5371511399814094531, guid: 76bf7b6f63f91724d9c7935fd95444ea, type: 3}
   pigPrefab: {fileID: 1185626963888550624, guid: bdf584674b60f584880d14b45c283fbd, type: 3}
-  cowCost: 50
-  chickenCost: 30
-  pigCost: 40
-  hoePrice: 100
-  axePrice: 75
-  pickaxePrice: 80
-  milkSellBatch: 4
-  milkGoldPerBatch: 7
-  eggSellBatch: 6
-  eggGoldPerBatch: 6
-  meatSellBatch: 4
-  meatGoldPerBatch: 10
-  woodSellBatch: 10
-  woodGoldPerBatch: 2
-  animalSellSearchRadius: 40
+  chickenPurchaseCosts:
+  - type: 1
+    amount: 6
+  - type: 2
+    amount: 8
+  - type: 0
+    amount: 3
+  pigPurchaseCosts:
+  - type: 2
+    amount: 10
+  - type: 0
+    amount: 8
+  - type: 1
+    amount: 5
+  cowPurchaseCosts:
+  - type: 0
+    amount: 14
+  - type: 1
+    amount: 12
+  - type: 2
+    amount: 18
+  attackUpgradeCosts:
+  - type: 0
+    amount: 10
+  - type: 1
+    amount: 10
+  - type: 2
+    amount: 8
+  speedUpgradeCosts:
+  - type: 1
+    amount: 14
+  - type: 0
+    amount: 9
+  - type: 2
+    amount: 10
 --- !u!4 &559021603
 Transform:
   m_ObjectHideFlags: 0
@@ -4979,12 +5058,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5990b7b672440204e98a2f8b401935c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventorySystem
-  startingWood: 100
-  startingStone: 50
   startingMilk: 0
   startingEgg: 0
   startingMeat: 0
-  startingGold: 140
 --- !u!114 &559021605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5016,7 +5092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   timeManager: {fileID: 559021605}
   inventorySystem: {fileID: 559021604}
-  isPaused: 0
+  pausedFromEscape: 0
 --- !u!1 &569311743
 GameObject:
   m_ObjectHideFlags: 0
@@ -6094,7 +6170,7 @@ GameObject:
   - component: {fileID: 678962102}
   - component: {fileID: 678962101}
   m_Layer: 0
-  m_Name: Corral(1) (2)
+  m_Name: Corral_Cerdos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123591,6 +123667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpawnManager
   player: {fileID: 0}
   timeManager: {fileID: 559021605}
+  corralManager: {fileID: 0}
   center: {x: 0, y: 0}
   size: {x: 20, y: 20}
   spawnOnBordersOnly: 1
@@ -127891,7 +127968,7 @@ GameObject:
   - component: {fileID: 1230395261}
   - component: {fileID: 1230395260}
   m_Layer: 0
-  m_Name: Corral(1)
+  m_Name: Corral_Vacas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131882,7 +131959,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9.5
+  orthographic size: 13.5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -132015,7 +132092,7 @@ GameObject:
   - component: {fileID: 1586633534}
   - component: {fileID: 1586633533}
   m_Layer: 0
-  m_Name: Corral(1) (1)
+  m_Name: Corral_Pollos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

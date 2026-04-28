@@ -11,6 +11,7 @@ public sealed class SpawnManager : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform player;
     [SerializeField] private TimeManager timeManager;
+    [SerializeField] private CorralManager corralManager;
 
     [Header("Spawn Area")]
     [SerializeField] private Vector2 center = Vector2.zero;
@@ -23,12 +24,12 @@ public sealed class SpawnManager : MonoBehaviour
     [SerializeField] private EnemyBase[] enemyPrefabs;
 
     [Header("Limits")]
-    [SerializeField] private int maxAlive = 25;
+    [SerializeField] private int maxAlive = 14;
 
     [Header("Spawn Rate")]
-    [SerializeField] private float baseSpawnInterval = 2.0f;
-    [SerializeField] private float minSpawnInterval = 0.35f;
-    [SerializeField] private float intervalDecreasePerMinute = 0.25f;
+    [SerializeField] private float baseSpawnInterval = 5.5f;
+    [SerializeField] private float minSpawnInterval = 1.35f;
+    [SerializeField] private float intervalDecreasePerMinute = 0.06f;
 
     private float _nextSpawnAt;
     private int _alive;
@@ -41,6 +42,9 @@ public sealed class SpawnManager : MonoBehaviour
     /// <summary>Assign difficulty clock reference at runtime if not wired in the inspector.</summary>
     public void SetTimeManager(TimeManager tm) => timeManager = tm;
 
+    /// <summary>Optional: wire so border spawns skip corral colliders.</summary>
+    public void SetCorralManager(CorralManager cm) => corralManager = cm;
+
     private void Reset()
     {
         timeManager = FindFirstObjectByType<TimeManager>();
@@ -48,8 +52,10 @@ public sealed class SpawnManager : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.Instance != null && GameManager.Instance.IsPaused) return;
+        if (GameManager.Instance != null && GameManager.Instance.IsGameplayFrozen) return;
         if (player == null) return;
+        if (corralManager == null)
+            corralManager = CorralManager.Instance;
         if (enemyPrefabs == null || enemyPrefabs.Length == 0) return;
         if (_alive >= maxAlive) return;
         if (Time.time < _nextSpawnAt) return;
@@ -79,16 +85,15 @@ public sealed class SpawnManager : MonoBehaviour
             var pos = spawnOnBordersOnly
                 ? RandomPointOnRectBorder(center, size, borderInset)
                 : RandomPointInRect(center, size);
-            if (Vector2.Distance(pos, player.position) < minDistanceFromPlayer) 
+
+            if (corralManager != null && corralManager.IsPointInsideAnyCorral(pos))
+                continue;
+
+            if (Vector2.Distance(pos, player.position) < minDistanceFromPlayer)
                 continue;
 
             var prefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
             var enemy = Instantiate(prefab, pos, Quaternion.identity);
-
-            // Set AI target to player
-            var ai = enemy.GetComponent<EnemyAI>();
-            if (ai != null) 
-                ai.SetTarget(player);
 
             _alive++;
             enemy.Died += () => _alive = Mathf.Max(0, _alive - 1);

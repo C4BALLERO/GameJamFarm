@@ -7,9 +7,11 @@ using UnityEngine;
 public sealed class EnemySpriteAnimator : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite[] idleFrames;
     [SerializeField] private Sprite[] walkFrames;
     [SerializeField] private Sprite[] attackFrames;
     [SerializeField] private Sprite[] deathFrames;
+    [SerializeField] private float idleFps = 6f;
     [SerializeField] private float walkFps = 8f;
     [SerializeField] private float attackFps = 12f;
     [SerializeField] private float deathFps = 10f;
@@ -74,7 +76,10 @@ public sealed class EnemySpriteAnimator : MonoBehaviour
         switch (_state)
         {
             case State.Idle:
-                _frame = 0;
+                if (idleFrames != null && idleFrames.Length > 0)
+                    _frame = (_frame + 1) % idleFrames.Length;
+                else
+                    _frame = 0;
                 break;
             case State.Walk:
                 if (walkFrames != null && walkFrames.Length > 0)
@@ -101,6 +106,7 @@ public sealed class EnemySpriteAnimator : MonoBehaviour
     {
         return _state switch
         {
+            State.Idle => idleFps,
             State.Walk => walkFps,
             State.Attack => attackFps,
             State.Dead => deathFps,
@@ -114,6 +120,8 @@ public sealed class EnemySpriteAnimator : MonoBehaviour
         {
             State.Attack when attackFrames != null && attackFrames.Length > 0 => attackFrames,
             State.Dead when deathFrames != null && deathFrames.Length > 0 => deathFrames,
+            State.Idle when idleFrames != null && idleFrames.Length > 0 => idleFrames,
+            State.Idle => walkFrames,
             _ => walkFrames
         };
     }

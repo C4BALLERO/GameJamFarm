@@ -32,7 +32,7 @@ public sealed class ResourceGenerator : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.Instance != null && GameManager.Instance.IsPaused) return;
+        if (GameManager.Instance != null && GameManager.Instance.IsGameplayFrozen) return;
         if (animal != null && animal.IsDead) return;
         if (inventory == null) return;
         if (Time.time < _nextTickAt) return;

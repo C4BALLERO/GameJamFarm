@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Moves toward the nearest hostile target (player or farm animal). Animation mirrors RB velocity.
+/// </summary>
 [DisallowMultipleComponent]
 public sealed class EnemyAI : MonoBehaviour
 {
@@ -12,11 +15,13 @@ public sealed class EnemyAI : MonoBehaviour
 
     [Header("Refs")]
     [SerializeField] private EnemyBase enemy;
-    [SerializeField] private Transform target;
+    [SerializeField] private Rigidbody2D rb;
+
+    [Header("Targeting")]
+    [SerializeField] private float retargetInterval = 0.22f;
 
     [Header("Ranges")]
-    [SerializeField] private float aggroRange = 6f;
-    [SerializeField] private float attackRange = 1.1f;
+    [SerializeField] private float attackRange = 1.15f;
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 2.2f;
@@ -32,11 +37,13 @@ public sealed class EnemyAI : MonoBehaviour
     private Vector2 _facing = Vector2.down;
     private State _state;
 
-    public void SetTarget(Transform t) => target = t;
+    private Transform _cachedTarget;
+    private float _nextRetargetAt;
 
     private void Awake()
     {
         if (enemy == null) enemy = GetComponent<EnemyBase>();
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
         if (animator == null) animator = GetComponentInChildren<Animator>();
         if (spriteAnimator == null) spriteAnimator = GetComponent<EnemySpriteAnimator>();
     }
@@ -44,6 +51,7 @@ public sealed class EnemyAI : MonoBehaviour
     private void Reset()
     {
         enemy = GetComponent<EnemyBase>();
+        rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         spriteAnimator = GetComponent<EnemySpriteAnimator>();
     }
@@ -51,47 +59,90 @@ public sealed class EnemyAI : MonoBehaviour
     private void Update()
     {
         if (enemy == null || enemy.IsDead) return;
-        if (target == null) return;
 
-        var toTarget = (Vector2)target.position - (Vector2)transform.position;
-        var dist = toTarget.magnitude;
-
-        if (dist <= attackRange) _state = State.Attack;
-        else if (dist <= aggroRange) _state = State.Chase;
-        else _state = State.Idle;
-
-        if (dist > 0.001f) _facing = toTarget.normalized;
+        var moving = rb != null && rb.linearVelocity.sqrMagnitude > 0.08f;
 
         if (animator != null)
         {
             animator.SetFloat(moveX, _facing.x);
             animator.SetFloat(moveY, _facing.y);
-            animator.SetBool(isMoving, _state == State.Chase);
+            animator.SetBool(isMoving, moving);
         }
-        if (spriteAnimator != null)
-            spriteAnimator.SetMoveState(_facing, _state == State.Chase);
 
-        if (_state == State.Attack && enemy.CanAttackNow())
-        {
-            enemy.ConsumeAttackCooldown();
-            if (animator != null) animator.SetTrigger(triggerAttack);
-            if (spriteAnimator != null) spriteAnimator.TriggerAttack();
-            enemy.PerformAttack(target);
-        }
+        if (spriteAnimator != null)
+            spriteAnimator.SetMoveState(_facing, moving);
     }
 
     private void FixedUpdate()
     {
-        if (enemy == null || enemy.IsDead) return;
-        if (!TryGetComponent<Rigidbody2D>(out var rb)) return;
+        if (enemy == null || enemy.IsDead || rb == null)
+            return;
 
-        if (target == null || _state != State.Chase)
+        var target = ResolveNearestHostileTarget();
+        if (target == null)
         {
             rb.linearVelocity = Vector2.zero;
+            _state = State.Idle;
             return;
         }
 
-        rb.linearVelocity = _facing * moveSpeed;
+        var toTarget = (Vector2)target.position - rb.position;
+        var dist = toTarget.magnitude;
+
+        _state = dist <= attackRange ? State.Attack : State.Chase;
+
+        if (dist > 0.001f)
+            _facing = toTarget.normalized;
+
+        if (_state == State.Chase)
+            rb.linearVelocity = _facing * moveSpeed;
+        else
+            rb.linearVelocity = Vector2.zero;
+
+        if (_state == State.Attack && enemy.CanAttackNow())
+        {
+            enemy.ConsumeAttackCooldown();
+            if (animator != null)
+                animator.SetTrigger(triggerAttack);
+            if (spriteAnimator != null)
+                spriteAnimator.TriggerAttack();
+
+            enemy.PerformAttack(target);
+        }
+    }
+
+    private Transform ResolveNearestHostileTarget()
+    {
+        if (Time.time < _nextRetargetAt && _cachedTarget != null)
+            return _cachedTarget;
+
+        _nextRetargetAt = Time.time + Mathf.Max(0.05f, retargetInterval);
+
+        Transform best = null;
+        var bestSqr = float.MaxValue;
+        var origin = rb != null ? rb.position : (Vector2)transform.position;
+
+        var player = FindFirstObjectByType<PlayerController>();
+        if (player != null && player.TryGetComponent<PlayerHealth>(out var ph) && ph != null && !ph.IsDead)
+        {
+            var d = ((Vector2)player.transform.position - origin).sqrMagnitude;
+            best = player.transform;
+            bestSqr = d;
+        }
+
+        foreach (var fa in FindObjectsByType<FarmAnimal>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
+        {
+            if (fa == null || fa.IsDead) continue;
+
+            var d = ((Vector2)fa.transform.position - origin).sqrMagnitude;
+            if (d < bestSqr)
+            {
+                best = fa.transform;
+                bestSqr = d;
+            }
+        }
+
+        _cachedTarget = best;
+        return best;
     }
 }
-

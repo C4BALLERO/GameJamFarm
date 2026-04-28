@@ -17,6 +17,9 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
     [SerializeField] protected float knockbackForce = 2.5f;
     [SerializeField] protected float attackCooldown = 1.0f;
 
+    [Header("Cleanup")]
+    [SerializeField] protected float deathDestroyDelaySeconds = 1.05f;
+
     public event Action Died;
     public event Action Damaged;
 
@@ -69,10 +72,12 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
         if (CurrentHealth <= 0)
         {
             IsDead = true;
+            if (TryGetComponent<Animator>(out var anim))
+                anim.SetTrigger("Death");
             if (TryGetComponent<EnemySpriteAnimator>(out var visual))
                 visual.TriggerDeath();
             Died?.Invoke();
-            Destroy(gameObject, 0.15f);
+            Destroy(gameObject, Mathf.Max(0.15f, deathDestroyDelaySeconds));
         }
     }
 

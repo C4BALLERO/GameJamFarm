@@ -11,6 +11,9 @@ public sealed class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 4.5f;
     [SerializeField] private Rigidbody2D rb;
 
+    [Header("Mejoras (granero)")]
+    [SerializeField] private float speedBonusPerTier = 0.35f;
+
     [Header("Animation")]
     [SerializeField] private Animator animator;
     [SerializeField] private PlayerSpriteAnimator spriteAnimator;
@@ -27,6 +30,18 @@ public sealed class PlayerController : MonoBehaviour
 
     private Vector2 _input;
     private Vector2 _facing = Vector2.down;
+    private int _speedTier;
+
+    public int SpeedTier => _speedTier;
+
+    /// <summary>Mejora velocidad de movimiento (compra en tienda).</summary>
+    public void IncrementSpeedTier()
+    {
+        _speedTier++;
+    }
+
+    private float EffectiveMoveSpeed =>
+        moveSpeed + speedBonusPerTier * _speedTier;
 
     private void Reset()
     {
@@ -132,7 +147,8 @@ public sealed class PlayerController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             return;
         }
-        rb.linearVelocity = _input * moveSpeed;
+
+        rb.linearVelocity = _input * EffectiveMoveSpeed;
     }
 
     private void OnDamaged()
@@ -152,4 +168,3 @@ public sealed class PlayerController : MonoBehaviour
         if (spriteAnimator != null) spriteAnimator.TriggerRevive();
     }
 }
-

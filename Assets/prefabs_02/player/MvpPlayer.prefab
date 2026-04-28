@@ -182,7 +182,7 @@ Animator:
   m_GameObject: {fileID: 2560604806067496551}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adab012d6235b8447bf36ac785ca9dac, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -231,6 +231,8 @@ MonoBehaviour:
     m_Bits: 512
   hitboxCollider: {fileID: 6128651400204828296}
   hitboxDistance: 1.97125
+  cooldownReductionPerTier: 0.055
+  damageBonusPerTier: 1
 --- !u!114 &2539958182902832667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 4.5
   rb: {fileID: 4434454265473166353}
+  speedBonusPerTier: 0.35
   animator: {fileID: 4619650905645772531}
   spriteAnimator: {fileID: 0}
   moveX: MoveX
@@ -268,6 +271,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSpriteAnimator
   spriteRenderer: {fileID: 8831444471279118940}
+  idleFrames:
+  - {fileID: -7186340670780724982, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -7777951604221054686, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 501477941332913259, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -2780297971902097104, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -6094351711351512666, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 8763638346091384521, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -2725870010933365736, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 1096071654287825019, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -990719800791469985, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -5621105919694810853, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 8574655260897487014, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 2239343761072184094, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 7941236335331586602, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -6057117837619761347, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 4150243601195899419, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -4796680840731480581, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 8023278236576265495, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 6376842905787145861, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 4642265772415847599, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -6502019202979412294, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 7081767906094242412, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 7467689264440000042, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 7015426772732466896, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -9042748491719792847, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 3462374976500975947, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -966171243148934841, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 1536361759562693264, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 2101135195839975513, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 6845551507385637852, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -7630706871152343999, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -4040272387739258994, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 1466128446382420957, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 8590604932610299897, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 4887030953389923453, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: 6537134429018135553, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
+  - {fileID: -7533787317008319298, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
   walkFrames:
   - {fileID: -7186340670780724982, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
   - {fileID: -7777951604221054686, guid: 5a5eacde9bc920649ba55056125f9bf8, type: 3}
@@ -379,6 +419,7 @@ MonoBehaviour:
   - {fileID: -5167519596129074048, guid: 25550993b1b6d0a44b40471e8b0140e0, type: 3}
   - {fileID: -6166626273086270519, guid: 25550993b1b6d0a44b40471e8b0140e0, type: 3}
   - {fileID: 6160913916412143301, guid: 25550993b1b6d0a44b40471e8b0140e0, type: 3}
+  idleFps: 8
   walkFps: 10
   attackFps: 14
   deathFps: 12

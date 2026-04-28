@@ -4,10 +4,7 @@ using System;
 using UnityEngine.InputSystem;
 #endif
 
-/// <summary>
-/// Core game manager that handles game state, initialization, and global systems.
-/// Implements singleton pattern for easy access throughout the game.
-/// </summary>
+/// <summary>Gestiona pausa global (Escape) y pausa por tienda (Granero).</summary>
 [DisallowMultipleComponent]
 public sealed class GameManager : MonoBehaviour
 {
@@ -18,14 +15,19 @@ public sealed class GameManager : MonoBehaviour
     [SerializeField] private InventorySystem inventorySystem;
 
     [Header("Game State")]
-    [SerializeField] private bool isPaused = false;
-    
+    [SerializeField] private bool pausedFromEscape;
+
+    /// <summary>Pausa por panel de tienda abierto.</summary>
+    private bool _pausedFromShop;
+
     public static event Action OnGamePaused;
     public static event Action OnGameResumed;
 
-    /// <summary>Scene time / difficulty clock (not UnityEngine.Time).</summary>
     public TimeManager WorldTime => timeManager;
     public InventorySystem Inventory => inventorySystem;
+
+    /// <summary>Cuando hay pausa por Escape o tienda abierta.</summary>
+    public bool IsGameplayFrozen => pausedFromEscape || _pausedFromShop;
 
     private void Awake()
     {
@@ -37,7 +39,6 @@ public sealed class GameManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        Debug.Log("[GameManager] Initialized successfully");
     }
 
     private void Update()
@@ -47,16 +48,38 @@ public sealed class GameManager : MonoBehaviour
 
     private void HandlePauseInput()
     {
-        if (WasEscapePressed())
-        {
-            isPaused = !isPaused;
-            UnityEngine.Time.timeScale = isPaused ? 0f : 1f;
+        if (!WasEscapePressed())
+            return;
 
-            if (isPaused)
-                OnGamePaused?.Invoke();
-            else
-                OnGameResumed?.Invoke();
+        if (_pausedFromShop)
+        {
+            var shop = FindFirstObjectByType<ShopUI>();
+            shop?.Close();
+            return;
         }
+
+        pausedFromEscape = !pausedFromEscape;
+        SyncTimeScale();
+        if (pausedFromEscape)
+            OnGamePaused?.Invoke();
+        else
+            OnGameResumed?.Invoke();
+    }
+
+    /// <summary>Llamado desde <see cref="ShopUI"/> al abrir/cerrar el Granero.</summary>
+    public void SetShopPaused(bool paused)
+    {
+        _pausedFromShop = paused;
+        SyncTimeScale();
+        if (paused)
+            OnGamePaused?.Invoke();
+        else
+            OnGameResumed?.Invoke();
+    }
+
+    private void SyncTimeScale()
+    {
+        UnityEngine.Time.timeScale = IsGameplayFrozen ? 0f : 1f;
     }
 
     private static bool WasEscapePressed()
@@ -75,12 +98,12 @@ public sealed class GameManager : MonoBehaviour
         inventorySystem = GetComponent<InventorySystem>();
     }
 
-    public bool IsPaused => isPaused;
+    public bool IsPaused => pausedFromEscape;
 
     public void ResetGame()
     {
+        pausedFromEscape = false;
+        _pausedFromShop = false;
         UnityEngine.Time.timeScale = 1f;
-        Debug.Log("[GameManager] Game reset");
     }
 }
-

@@ -8,6 +8,7 @@ public abstract class AnimalBase : MonoBehaviour, IDamageable
     [SerializeField] protected int maxHealth = 6;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float knockbackStopSeconds = 0.08f;
+    [SerializeField] private float destroyDelaySecondsAfterDeath = 1.15f;
 
     public event Action Died;
 
@@ -58,7 +59,7 @@ public abstract class AnimalBase : MonoBehaviour, IDamageable
         {
             IsDead = true;
             Died?.Invoke();
-            Destroy(gameObject, 0.15f);
+            Destroy(gameObject, Mathf.Max(0.05f, destroyDelaySecondsAfterDeath));
         }
     }
 }

@@ -16,6 +16,10 @@ public static class DarkFarmMvpBuilder
     private const string PrefabRoot = "Assets/prefabs_02";
     private const string SceneDir = "Assets/scene_00";
 
+    private const string AnimCtrlPlayer = "Assets/animations_05/Player2D.controller";
+    private const string AnimCtrlFarmAnimal = "Assets/animations_05/FarmAnimal2D.controller";
+    private const string AnimCtrlEnemy = "Assets/animations_05/Enemy2D.controller";
+
     // Sprite sheets in Assets/animations_04 (first frame: {fileName}_0)
     private const string AnimPlayerWalk = "Assets/animations_04/player/granjeroCamina.png";
     private const string AnimPlayerAttack = "Assets/animations_04/player/granjeroAtaca.png";
@@ -28,12 +32,13 @@ public static class DarkFarmMvpBuilder
     private const string AnimEnemyAttackRanged = "Assets/animations_04/enemies/RosaAtaca.png";
     private const string AnimEnemyDeathMelee = "Assets/animations_04/enemies/MuerteMaiz.png";
     private const string AnimEnemyDeathRanged = "Assets/animations_04/enemies/MuerteRosa.png";
-    private const string AnimCowDeath = "Assets/animations_04/animals/CerdoMuere.png";
+    private const string AnimCowDeath = "Assets/animations_04/animals/VacaMuere.png";
     private const string AnimChickenDeath = "Assets/animations_04/animals/gallinaMuere.png";
     private const string AnimPigDeath = "Assets/animations_04/animals/CerdoMuere.png";
     private const string AnimProjectile = "Assets/animations_04/enemies/CalabazaCamina.png";
 
-    [MenuItem("Dark Farm/Build MVP Scenes & Prefabs", priority = 0)]
+    /// <summary>Regenera prefabs y assets. No modifica los .unity en scene_00 (no borra Tilemaps).</summary>
+    [MenuItem("Dark Farm/Build MVP Prefabs & Assets", priority = 0)]
     public static void BuildAll()
     {
         if (EditorApplication.isPlayingOrWillChangePlaymode)
@@ -42,6 +47,79 @@ public static class DarkFarmMvpBuilder
             return;
         }
 
+        BuildMvpPrefabsCore();
+
+        ApplyBuildSettings();
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        Debug.Log(
+            "[DarkFarmMvpBuilder] Prefabs y controladores listos. Las escenas en scene_00/ no se tocaron (mapa / tiles intactos). " +
+            "Para regenerar solo el layout procedural desde código, usa el menú destructivo.");
+    }
+
+    /// <summary>
+    /// Sobrescribe scene_00_main, scene_01_menu y scene_02_test con el generador procedural (borra Tilemaps y objetos hechos a mano en esas escenas).
+    /// </summary>
+    [MenuItem("Dark Farm/Reconstruir escenas procedurales (DESTRUYE mapa pintado)", priority = 50)]
+    public static void RebuildProceduralScenesDestructive()
+    {
+        if (EditorApplication.isPlayingOrWillChangePlaymode)
+        {
+            Debug.LogWarning("[DarkFarmMvpBuilder] Exit Play Mode before running this menu item.");
+            return;
+        }
+
+        if (!EditorUtility.DisplayDialog(
+                "Sobrescribir escenas",
+                "Se regenerarán desde código scene_00_main, scene_01_menu y scene_02_test. " +
+                "Se pierden Tilemaps, capas pintadas y cualquier objeto que no venga del script del builder.\n\n¿Continuar?",
+                "Sobrescribir",
+                "Cancelar"))
+            return;
+
+        var (sprGround, playerPath, plantPath, rangedPath, cowPath, chickenPath, pigPath) = BuildMvpPrefabsCore();
+
+        NewEmptyScene();
+        BuildMainScene(
+            sprGround,
+            playerPath,
+            plantPath,
+            rangedPath,
+            cowPath,
+            chickenPath,
+            pigPath);
+
+        EditorSceneManager.SaveScene(
+            EditorSceneManager.GetActiveScene(),
+            $"{SceneDir}/scene_00_main.unity");
+
+        NewEmptyScene();
+        BuildMenuScene();
+        EditorSceneManager.SaveScene(
+            EditorSceneManager.GetActiveScene(),
+            $"{SceneDir}/scene_01_menu.unity");
+
+        NewEmptyScene();
+        BuildTestScene(sprGround);
+        EditorSceneManager.SaveScene(
+            EditorSceneManager.GetActiveScene(),
+            $"{SceneDir}/scene_02_test.unity");
+
+        ApplyBuildSettings();
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        Debug.Log("[DarkFarmMvpBuilder] Escenas procedurales regeneradas (mapa anterior sobrescrito).");
+    }
+
+    private static (
+        Sprite sprGround,
+        string playerPath,
+        string plantPath,
+        string rangedPath,
+        string cowPath,
+        string chickenPath,
+        string pigPath) BuildMvpPrefabsCore()
+    {
         EnsureFolder(PrefabRoot + "/player");
         EnsureFolder(PrefabRoot + "/enemies");
         EnsureFolder(PrefabRoot + "/animals");
@@ -49,6 +127,8 @@ public static class DarkFarmMvpBuilder
         EnsureFolder(PrefabRoot + "/ui");
         EnsureFolder(SceneDir);
         EnsureFolder("Assets/sprites_03/tiles");
+        EnsureFolder("Assets/animations_05");
+        Animator2DControllersGenerator.GenerateAll();
 
         var sprPlayer = LoadSpriteZeroFrame(AnimPlayerWalk) ??
                         WriteSpritePng("Assets/sprites_03/player/_mvp_player.png", new Color32(220, 220, 235, 255));
@@ -102,36 +182,7 @@ public static class DarkFarmMvpBuilder
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
-        NewEmptyScene();
-        BuildMainScene(
-            sprGround,
-            playerPath,
-            plantPath,
-            rangedPath,
-            cowPath,
-            chickenPath,
-            pigPath);
-
-        EditorSceneManager.SaveScene(
-            EditorSceneManager.GetActiveScene(),
-            $"{SceneDir}/scene_00_main.unity");
-
-        NewEmptyScene();
-        BuildMenuScene();
-        EditorSceneManager.SaveScene(
-            EditorSceneManager.GetActiveScene(),
-            $"{SceneDir}/scene_01_menu.unity");
-
-        NewEmptyScene();
-        BuildTestScene(sprGround);
-        EditorSceneManager.SaveScene(
-            EditorSceneManager.GetActiveScene(),
-            $"{SceneDir}/scene_02_test.unity");
-
-        ApplyBuildSettings();
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh();
-        Debug.Log("[DarkFarmMvpBuilder] Done. Open scene_01_menu to play from the menu, or scene_00_main for direct playtest.");
+        return (sprGround, playerPath, plantPath, rangedPath, cowPath, chickenPath, pigPath);
     }
 
     /// <summary>Clears the default new scene so we start from an empty hierarchy (Unity 6000 has no NewSceneSetup.Empty).</summary>
@@ -268,6 +319,14 @@ public static class DarkFarmMvpBuilder
             for (var i = 0; i < walkFrames.Length; i++)
                 vs.FindProperty("walkFrames").GetArrayElementAtIndex(i).objectReferenceValue = walkFrames[i];
         }
+
+        vs.FindProperty("idleFrames").arraySize = walkFrames != null ? walkFrames.Length : 0;
+        if (walkFrames != null)
+        {
+            for (var i = 0; i < walkFrames.Length; i++)
+                vs.FindProperty("idleFrames").GetArrayElementAtIndex(i).objectReferenceValue = walkFrames[i];
+        }
+
         vs.FindProperty("attackFrames").arraySize = attackFrames != null ? attackFrames.Length : 0;
         if (attackFrames != null)
         {
@@ -281,6 +340,9 @@ public static class DarkFarmMvpBuilder
                 vs.FindProperty("deathFrames").GetArrayElementAtIndex(i).objectReferenceValue = deathFrames[i];
         }
         vs.ApplyModifiedPropertiesWithoutUndo();
+
+        AssignAnimatorController(root, AnimCtrlEnemy);
+
         PrefabUtility.SaveAsPrefabAsset(root, path);
         Object.DestroyImmediate(root);
     }
@@ -325,6 +387,14 @@ public static class DarkFarmMvpBuilder
             for (var i = 0; i < walkFrames.Length; i++)
                 vs.FindProperty("walkFrames").GetArrayElementAtIndex(i).objectReferenceValue = walkFrames[i];
         }
+
+        vs.FindProperty("idleFrames").arraySize = walkFrames != null ? walkFrames.Length : 0;
+        if (walkFrames != null)
+        {
+            for (var i = 0; i < walkFrames.Length; i++)
+                vs.FindProperty("idleFrames").GetArrayElementAtIndex(i).objectReferenceValue = walkFrames[i];
+        }
+
         vs.FindProperty("attackFrames").arraySize = attackFrames != null ? attackFrames.Length : 0;
         if (attackFrames != null)
         {
@@ -338,6 +408,9 @@ public static class DarkFarmMvpBuilder
                 vs.FindProperty("deathFrames").GetArrayElementAtIndex(i).objectReferenceValue = deathFrames[i];
         }
         vs.ApplyModifiedPropertiesWithoutUndo();
+
+        AssignAnimatorController(root, AnimCtrlEnemy);
+
         PrefabUtility.SaveAsPrefabAsset(root, path);
         Object.DestroyImmediate(root);
     }
@@ -384,6 +457,14 @@ public static class DarkFarmMvpBuilder
             for (var i = 0; i < walkFrames.Length; i++)
                 vaSo.FindProperty("walkFrames").GetArrayElementAtIndex(i).objectReferenceValue = walkFrames[i];
         }
+
+        vaSo.FindProperty("idleFrames").arraySize = walkFrames != null ? walkFrames.Length : 0;
+        if (walkFrames != null)
+        {
+            for (var i = 0; i < walkFrames.Length; i++)
+                vaSo.FindProperty("idleFrames").GetArrayElementAtIndex(i).objectReferenceValue = walkFrames[i];
+        }
+
         vaSo.FindProperty("attackFrames").arraySize = attackFrames != null ? attackFrames.Length : 0;
         if (attackFrames != null)
         {
@@ -397,6 +478,8 @@ public static class DarkFarmMvpBuilder
                 vaSo.FindProperty("deathFrames").GetArrayElementAtIndex(i).objectReferenceValue = deathFrames[i];
         }
         vaSo.ApplyModifiedPropertiesWithoutUndo();
+
+        AssignAnimatorController(root, AnimCtrlPlayer);
 
         PrefabUtility.SaveAsPrefabAsset(root, path);
         Object.DestroyImmediate(root);
@@ -448,10 +531,91 @@ public static class DarkFarmMvpBuilder
             for (var i = 0; i < chosenWalk.Length; i++)
                 vs.FindProperty("walkFrames").GetArrayElementAtIndex(i).objectReferenceValue = chosenWalk[i];
         }
+
+        vs.FindProperty("idleFrames").arraySize = chosenWalk != null ? chosenWalk.Length : 0;
+        if (chosenWalk != null)
+        {
+            for (var i = 0; i < chosenWalk.Length; i++)
+                vs.FindProperty("idleFrames").GetArrayElementAtIndex(i).objectReferenceValue = chosenWalk[i];
+        }
+
+        vs.FindProperty("deathFrames").arraySize = deathFrames != null ? deathFrames.Length : 0;
+        if (deathFrames != null)
+        {
+            for (var i = 0; i < deathFrames.Length; i++)
+                vs.FindProperty("deathFrames").GetArrayElementAtIndex(i).objectReferenceValue = deathFrames[i];
+        }
+
         vs.ApplyModifiedPropertiesWithoutUndo();
+
+        root.AddComponent<Animator>();
+        AssignAnimatorController(root, AnimCtrlFarmAnimal);
 
         PrefabUtility.SaveAsPrefabAsset(root, path);
         Object.DestroyImmediate(root);
+    }
+
+    private static void AssignAnimatorController(GameObject root, string controllerAssetPath)
+    {
+        var ctrl = AssetDatabase.LoadAssetAtPath<RuntimeAnimatorController>(controllerAssetPath);
+        if (ctrl == null)
+        {
+            Debug.LogWarning($"[DarkFarmMvpBuilder] Missing Animator controller at {controllerAssetPath}");
+            return;
+        }
+
+        var anim = root.GetComponent<Animator>();
+        if (anim == null)
+            anim = root.AddComponent<Animator>();
+        anim.runtimeAnimatorController = ctrl;
+    }
+
+    /// <summary>Scene objects matching documented setup: Collider2D bounds + CorralZone + spawn empties.</summary>
+    private static void CreateCorral(
+        string objectName,
+        FarmAnimalKind kind,
+        Vector3 worldCenter,
+        Vector2 colliderSize,
+        int maxAnimals)
+    {
+        var go = new GameObject(objectName);
+        go.transform.position = worldCenter;
+
+        var box = go.AddComponent<BoxCollider2D>();
+        box.size = colliderSize;
+        box.offset = Vector2.zero;
+
+        var zone = go.AddComponent<CorralZone>();
+        var zSo = new SerializedObject(zone);
+        zSo.FindProperty("allowedKind").intValue = (int)kind;
+        zSo.FindProperty("maxAnimals").intValue = maxAnimals;
+        zSo.FindProperty("area").objectReferenceValue = box;
+        zSo.ApplyModifiedPropertiesWithoutUndo();
+
+        var hx = colliderSize.x * 0.32f;
+        var hy = colliderSize.y * 0.32f;
+
+        var spA = new GameObject("SpawnPoint");
+        spA.transform.SetParent(go.transform, false);
+        spA.transform.localPosition = new Vector3(-hx, hy * 0.55f, 0f);
+
+        var spB = new GameObject("SpawnPoint (1)");
+        spB.transform.SetParent(go.transform, false);
+        spB.transform.localPosition = new Vector3(hx, -hy * 0.55f, 0f);
+    }
+
+    private static void CreateGranero(Vector3 position, ShopUI shopUiRef)
+    {
+        var barn = new GameObject("Granero");
+        barn.transform.position = position;
+
+        var box = barn.AddComponent<BoxCollider2D>();
+        box.size = new Vector2(3.4f, 2.6f);
+
+        var trig = barn.AddComponent<BarnShopTrigger>();
+        var tSo = new SerializedObject(trig);
+        tSo.FindProperty("shopUi").objectReferenceValue = shopUiRef;
+        tSo.ApplyModifiedPropertiesWithoutUndo();
     }
 
     private static void BuildMainScene(
@@ -502,13 +666,21 @@ public static class DarkFarmMvpBuilder
         systems.AddComponent<TimeManager>();
         systems.AddComponent<InventorySystem>();
         var shop = systems.AddComponent<ShopSystem>();
-        var animalRoot = new GameObject("AnimalSpawnRoot").transform;
-        animalRoot.SetParent(systems.transform, false);
-        animalRoot.localPosition = new Vector3(-5f, 2f, 0f);
+
+        var farmSystems = new GameObject("[Systems]");
+        var corralMgr = farmSystems.AddComponent<CorralManager>();
+        var animalSpawnerComp = farmSystems.AddComponent<AnimalSpawner>();
+        var aspFarmSo = new SerializedObject(animalSpawnerComp);
+        aspFarmSo.FindProperty("corralManager").objectReferenceValue = corralMgr;
+        aspFarmSo.ApplyModifiedPropertiesWithoutUndo();
+
+        CreateCorral("Corral_Vacas", FarmAnimalKind.Cow, new Vector3(-12f, 3f, 0f), new Vector2(6f, 5f), 8);
+        CreateCorral("Corral_Pollos", FarmAnimalKind.Chicken, new Vector3(-12f, -2.5f, 0f), new Vector2(6f, 5f), 10);
+        CreateCorral("Corral_Cerdos", FarmAnimalKind.Pig, new Vector3(-4f, 3f, 0f), new Vector2(6f, 5f), 8);
 
         var shopSo = new SerializedObject(shop);
         shopSo.FindProperty("inventory").objectReferenceValue = systems.GetComponent<InventorySystem>();
-        shopSo.FindProperty("animalSpawnRoot").objectReferenceValue = animalRoot;
+        shopSo.FindProperty("animalSpawner").objectReferenceValue = animalSpawnerComp;
         shopSo.FindProperty("cowPrefab").objectReferenceValue =
             AssetDatabase.LoadAssetAtPath<GameObject>(cowPrefabPath);
         shopSo.FindProperty("chickenPrefab").objectReferenceValue =
@@ -527,6 +699,7 @@ public static class DarkFarmMvpBuilder
         arr.GetArrayElementAtIndex(0).objectReferenceValue = plant;
         arr.GetArrayElementAtIndex(1).objectReferenceValue = ranged;
         spawnSo.FindProperty("timeManager").objectReferenceValue = systems.GetComponent<TimeManager>();
+        spawnSo.FindProperty("corralManager").objectReferenceValue = corralMgr;
         spawnSo.ApplyModifiedPropertiesWithoutUndo();
 
         var playerPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(playerPrefabPath);
@@ -543,10 +716,21 @@ public static class DarkFarmMvpBuilder
         var font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ??
                    Resources.GetBuiltinResource<Font>("Arial.ttf");
 
+        var hudBar = CreateUiObject("ResourceHudBar", canvasGo.transform);
+        var hudRt = hudBar.GetComponent<RectTransform>();
+        hudRt.anchorMin = new Vector2(0f, 0.88f);
+        hudRt.anchorMax = new Vector2(1f, 1f);
+        hudRt.offsetMin = hudRt.offsetMax = Vector2.zero;
+        hudBar.AddComponent<Image>().color = new Color(0.03f, 0.025f, 0.06f, 0.9f);
+
+        var milkT = CreateHudStatText("MilkHud", hudBar.transform, font, new Vector2(0.02f, 0f), new Vector2(0.33f, 1f), "Leche 0");
+        var eggT = CreateHudStatText("EggHud", hudBar.transform, font, new Vector2(0.345f, 0f), new Vector2(0.655f, 1f), "Huevos 0");
+        var meatT = CreateHudStatText("MeatHud", hudBar.transform, font, new Vector2(0.67f, 0f), new Vector2(0.98f, 1f), "Carne 0");
+
         var sliderGo = CreateUiObject("HealthSlider", canvasGo.transform);
         var rt = sliderGo.GetComponent<RectTransform>();
-        rt.anchorMin = new Vector2(0.02f, 0.92f);
-        rt.anchorMax = new Vector2(0.35f, 0.98f);
+        rt.anchorMin = new Vector2(0.02f, 0.775f);
+        rt.anchorMax = new Vector2(0.42f, 0.865f);
         rt.offsetMin = rt.offsetMax = Vector2.zero;
         var fillGo = CreateUiObject("Fill", sliderGo.transform);
         var fillRt = fillGo.GetComponent<RectTransform>();
@@ -561,11 +745,6 @@ public static class DarkFarmMvpBuilder
         slider.value = 10f;
         sliderGo.AddComponent<HealthBar>();
 
-        var milkT = CreateText("MilkText", canvasGo.transform, font, new Vector2(0.02f, 0.84f), new Vector2(0.16f, 0.9f));
-        var eggT = CreateText("EggText", canvasGo.transform, font, new Vector2(0.18f, 0.84f), new Vector2(0.32f, 0.9f));
-        var meatT = CreateText("MeatText", canvasGo.transform, font, new Vector2(0.34f, 0.84f), new Vector2(0.48f, 0.9f));
-        var goldT = CreateText("GoldText", canvasGo.transform, font, new Vector2(0.5f, 0.84f), new Vector2(0.64f, 0.9f));
-
         var uiRoot = new GameObject("UIManager");
         uiRoot.transform.SetParent(canvasGo.transform, false);
         var ui = uiRoot.AddComponent<UIManager>();
@@ -574,11 +753,16 @@ public static class DarkFarmMvpBuilder
         resSo.FindProperty("milkText").objectReferenceValue = milkT;
         resSo.FindProperty("eggText").objectReferenceValue = eggT;
         resSo.FindProperty("meatText").objectReferenceValue = meatT;
-        resSo.FindProperty("goldText").objectReferenceValue = goldT;
         resSo.ApplyModifiedPropertiesWithoutUndo();
 
+        var shopPivot = CreateUiObject("ShopUIPivot", canvasGo.transform);
+        var shopPivotRt = shopPivot.GetComponent<RectTransform>();
+        shopPivotRt.anchorMin = Vector2.zero;
+        shopPivotRt.anchorMax = Vector2.one;
+        shopPivotRt.offsetMin = shopPivotRt.offsetMax = Vector2.zero;
+
         var shopPanel = new GameObject("ShopPanel");
-        shopPanel.transform.SetParent(canvasGo.transform, false);
+        shopPanel.transform.SetParent(shopPivot.transform, false);
         var sprt = shopPanel.AddComponent<RectTransform>();
         sprt.anchorMin = new Vector2(0.55f, 0.15f);
         sprt.anchorMax = new Vector2(0.98f, 0.85f);
@@ -587,34 +771,58 @@ public static class DarkFarmMvpBuilder
         bg.color = new Color(0.08f, 0.07f, 0.12f, 0.92f);
         shopPanel.SetActive(false);
 
+        var shopUiComp = shopPivot.AddComponent<ShopUI>();
+
+        var cowCostTx = CreateText("CowCostText", shopPanel.transform, font, new Vector2(0.05f, 0.90f), new Vector2(0.95f, 0.98f));
+        cowCostTx.fontSize = 16;
+        cowCostTx.text = "Vaca:";
+        var chkCostTx = CreateText("ChickenCostText", shopPanel.transform, font, new Vector2(0.05f, 0.835f), new Vector2(0.95f, 0.885f));
+        chkCostTx.fontSize = 16;
+        chkCostTx.text = "Gallina:";
+        var pigCostTx = CreateText("PigCostText", shopPanel.transform, font, new Vector2(0.05f, 0.77f), new Vector2(0.95f, 0.82f));
+        pigCostTx.fontSize = 16;
+        pigCostTx.text = "Cerdo:";
+        var atkCostTx = CreateText("AttackCostText", shopPanel.transform, font, new Vector2(0.05f, 0.705f), new Vector2(0.95f, 0.755f));
+        atkCostTx.fontSize = 16;
+        atkCostTx.text = "Ataque:";
+        var spdCostTx = CreateText("SpeedCostText", shopPanel.transform, font, new Vector2(0.05f, 0.64f), new Vector2(0.95f, 0.69f));
+        spdCostTx.fontSize = 16;
+        spdCostTx.text = "Velocidad:";
+
+        var shopUiBindSo = new SerializedObject(shopUiComp);
+        shopUiBindSo.FindProperty("panelRoot").objectReferenceValue = shopPanel;
+        shopUiBindSo.FindProperty("shopSystem").objectReferenceValue = shop;
+        shopUiBindSo.FindProperty("inventory").objectReferenceValue = systems.GetComponent<InventorySystem>();
+        shopUiBindSo.FindProperty("cowCostText").objectReferenceValue = cowCostTx;
+        shopUiBindSo.FindProperty("chickenCostText").objectReferenceValue = chkCostTx;
+        shopUiBindSo.FindProperty("pigCostText").objectReferenceValue = pigCostTx;
+        shopUiBindSo.FindProperty("attackCostText").objectReferenceValue = atkCostTx;
+        shopUiBindSo.FindProperty("speedCostText").objectReferenceValue = spdCostTx;
+        shopUiBindSo.ApplyModifiedPropertiesWithoutUndo();
+
         var binder = shopPanel.AddComponent<ShopPanelBinder>();
-        var buyCow = CreateShopButton("BuyCow", shopPanel.transform, font, "Buy Cow", new Vector2(0.05f, 0.88f), new Vector2(0.95f, 0.96f));
-        var buyChk = CreateShopButton("BuyChicken", shopPanel.transform, font, "Buy Chicken", new Vector2(0.05f, 0.79f), new Vector2(0.95f, 0.87f));
-        var buyPig = CreateShopButton("BuyPig", shopPanel.transform, font, "Buy Pig", new Vector2(0.05f, 0.70f), new Vector2(0.95f, 0.78f));
-        var sellCow = CreateShopButton("SellCow", shopPanel.transform, font, "Sell Cow", new Vector2(0.05f, 0.60f), new Vector2(0.95f, 0.68f));
-        var sellChk = CreateShopButton("SellChicken", shopPanel.transform, font, "Sell Chicken", new Vector2(0.05f, 0.51f), new Vector2(0.95f, 0.59f));
-        var sellPig = CreateShopButton("SellPig", shopPanel.transform, font, "Sell Pig", new Vector2(0.05f, 0.42f), new Vector2(0.95f, 0.50f));
-        var sellMilk = CreateShopButton("SellMilk", shopPanel.transform, font, "Sell Milk Batch", new Vector2(0.05f, 0.31f), new Vector2(0.95f, 0.39f));
-        var sellEgg = CreateShopButton("SellEgg", shopPanel.transform, font, "Sell Egg Batch", new Vector2(0.05f, 0.22f), new Vector2(0.95f, 0.30f));
-        var sellMeat = CreateShopButton("SellMeat", shopPanel.transform, font, "Sell Meat Batch", new Vector2(0.05f, 0.13f), new Vector2(0.95f, 0.21f));
+        var buyCow = CreateShopButton("BuyCow", shopPanel.transform, font, "Comprar vaca", new Vector2(0.05f, 0.54f), new Vector2(0.95f, 0.615f));
+        var buyChk = CreateShopButton("BuyChicken", shopPanel.transform, font, "Comprar gallina", new Vector2(0.05f, 0.465f), new Vector2(0.95f, 0.535f));
+        var buyPig = CreateShopButton("BuyPig", shopPanel.transform, font, "Comprar cerdo", new Vector2(0.05f, 0.39f), new Vector2(0.95f, 0.455f));
+        var buyAtk = CreateShopButton("BuyAttackUpgrade", shopPanel.transform, font, "Mejorar ataque", new Vector2(0.05f, 0.315f), new Vector2(0.95f, 0.38f));
+        var buySpd = CreateShopButton("BuySpeedUpgrade", shopPanel.transform, font, "Mejorar velocidad", new Vector2(0.05f, 0.24f), new Vector2(0.95f, 0.305f));
+        var closeShop = CreateShopButton("CloseShop", shopPanel.transform, font, "Cerrar granero", new Vector2(0.05f, 0.04f), new Vector2(0.95f, 0.105f));
 
         var binderSo = new SerializedObject(binder);
         binderSo.FindProperty("ui").objectReferenceValue = ui;
         binderSo.FindProperty("buyCow").objectReferenceValue = buyCow;
         binderSo.FindProperty("buyChicken").objectReferenceValue = buyChk;
         binderSo.FindProperty("buyPig").objectReferenceValue = buyPig;
-        binderSo.FindProperty("sellCow").objectReferenceValue = sellCow;
-        binderSo.FindProperty("sellChicken").objectReferenceValue = sellChk;
-        binderSo.FindProperty("sellPig").objectReferenceValue = sellPig;
-        binderSo.FindProperty("sellMilk").objectReferenceValue = sellMilk;
-        binderSo.FindProperty("sellEgg").objectReferenceValue = sellEgg;
-        binderSo.FindProperty("sellMeat").objectReferenceValue = sellMeat;
+        binderSo.FindProperty("buyAttackUpgrade").objectReferenceValue = buyAtk;
+        binderSo.FindProperty("buySpeedUpgrade").objectReferenceValue = buySpd;
+        binderSo.FindProperty("closeShop").objectReferenceValue = closeShop;
         binderSo.ApplyModifiedPropertiesWithoutUndo();
 
         var uiSo = new SerializedObject(ui);
         uiSo.FindProperty("healthBar").objectReferenceValue = sliderGo.GetComponent<HealthBar>();
         uiSo.FindProperty("resourceUI").objectReferenceValue = res;
         uiSo.FindProperty("shopPanelRoot").objectReferenceValue = shopPanel;
+        uiSo.FindProperty("shopUi").objectReferenceValue = shopUiComp;
         uiSo.FindProperty("shopSystem").objectReferenceValue = shop;
         uiSo.ApplyModifiedPropertiesWithoutUndo();
 
@@ -628,12 +836,12 @@ public static class DarkFarmMvpBuilder
         gmSo.ApplyModifiedPropertiesWithoutUndo();
 
         var invSo = new SerializedObject(systems.GetComponent<InventorySystem>());
-        invSo.FindProperty("startingGold").intValue = 140;
+        invSo.FindProperty("startingMilk").intValue = 12;
+        invSo.FindProperty("startingEgg").intValue = 14;
+        invSo.FindProperty("startingMeat").intValue = 10;
         invSo.ApplyModifiedPropertiesWithoutUndo();
 
-        var cowInScene = (GameObject)PrefabUtility.InstantiatePrefab(
-            AssetDatabase.LoadAssetAtPath<GameObject>(cowPrefabPath));
-        cowInScene.transform.position = new Vector3(-4f, 1f, 0f);
+        CreateGranero(new Vector3(10f, 0f, 0f), shopUiComp);
     }
 
     private static GameObject CreateUiObject(string name, Transform parent)
@@ -641,6 +849,27 @@ public static class DarkFarmMvpBuilder
         var go = new GameObject(name, typeof(RectTransform));
         go.transform.SetParent(parent, false);
         return go;
+    }
+
+    private static Text CreateHudStatText(string name, Transform parent, Font font, Vector2 anchorMin, Vector2 anchorMax, string initialLine)
+    {
+        var go = CreateUiObject(name, parent);
+        var rt = go.GetComponent<RectTransform>();
+        rt.anchorMin = anchorMin;
+        rt.anchorMax = anchorMax;
+        rt.offsetMin = new Vector2(8f, 4f);
+        rt.offsetMax = new Vector2(-8f, -10f);
+        var t = go.AddComponent<Text>();
+        t.font = font;
+        t.fontSize = 22;
+        t.fontStyle = FontStyle.Bold;
+        t.color = new Color(1f, 0.96f, 0.88f);
+        t.text = initialLine;
+        t.alignment = TextAnchor.MiddleLeft;
+        var ol = go.AddComponent<Outline>();
+        ol.effectColor = new Color(0f, 0f, 0f, 0.88f);
+        ol.effectDistance = new Vector2(2f, -2f);
+        return t;
     }
 
     private static Text CreateText(string name, Transform parent, Font font, Vector2 anchorMin, Vector2 anchorMax)

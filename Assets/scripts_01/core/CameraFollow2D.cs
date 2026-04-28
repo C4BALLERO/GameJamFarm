@@ -10,7 +10,7 @@ public sealed class CameraFollow2D : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private Vector3 offset = new(0f, 0f, -10f);
     [SerializeField] private float followSmooth = 8f;
-    [SerializeField] private float orthographicSize = 8.5f;
+    [SerializeField] private float orthographicSize = 13.5f;
 
     private Camera _cam;
 

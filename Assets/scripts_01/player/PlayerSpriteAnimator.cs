@@ -1,15 +1,22 @@
 using UnityEngine;
 
 /// <summary>
-/// Frame-based sprite animator for the farmer (walk/attack/death) using sliced sprite sheets.
+/// Farmer sprite playback with Idle / Walk / Attack / Death — ties into sliced sheets (36 frames typical).
+/// Works standalone or alongside an <see cref="Animator"/> using matching float/bool/trigger names.
 /// </summary>
 [DisallowMultipleComponent]
 public sealed class PlayerSpriteAnimator : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
+
+    [Header("Frames (slice Multiple sprite grid e.g. 6×6)")]
+    [SerializeField] private Sprite[] idleFrames;
     [SerializeField] private Sprite[] walkFrames;
     [SerializeField] private Sprite[] attackFrames;
     [SerializeField] private Sprite[] deathFrames;
+
+    [Header("Timing")]
+    [SerializeField] private float idleFps = 8f;
     [SerializeField] private float walkFps = 10f;
     [SerializeField] private float attackFps = 14f;
     [SerializeField] private float deathFps = 12f;
@@ -37,6 +44,7 @@ public sealed class PlayerSpriteAnimator : MonoBehaviour
     {
         if (spriteRenderer == null)
             spriteRenderer = GetComponent<SpriteRenderer>();
+
         ApplyCurrentFrame();
     }
 
@@ -47,7 +55,6 @@ public sealed class PlayerSpriteAnimator : MonoBehaviour
             _lastFacing = facing.normalized;
 
         _state = moving ? AnimState.Walk : AnimState.Idle;
-        UpdateFacing();
     }
 
     public void TriggerAttack()
@@ -86,13 +93,19 @@ public sealed class PlayerSpriteAnimator : MonoBehaviour
         switch (_state)
         {
             case AnimState.Idle:
-                _frame = 0;
+                if (idleFrames != null && idleFrames.Length > 0)
+                    _frame = (_frame + 1) % idleFrames.Length;
+                else
+                    _frame = 0;
                 break;
+
             case AnimState.Walk:
-                _frame++;
                 if (walkFrames != null && walkFrames.Length > 0)
-                    _frame %= walkFrames.Length;
+                    _frame = (_frame + 1) % walkFrames.Length;
+                else
+                    _frame = 0;
                 break;
+
             case AnimState.Attack:
                 _frame++;
                 if (attackFrames == null || attackFrames.Length == 0)
@@ -106,6 +119,7 @@ public sealed class PlayerSpriteAnimator : MonoBehaviour
                     _frame = 0;
                 }
                 break;
+
             case AnimState.Dead:
                 if (deathFrames != null && deathFrames.Length > 0 && _frame < deathFrames.Length - 1)
                     _frame++;
@@ -122,6 +136,7 @@ public sealed class PlayerSpriteAnimator : MonoBehaviour
             AnimState.Walk => walkFps,
             AnimState.Attack => attackFps,
             AnimState.Dead => deathFps,
+            AnimState.Idle => idleFps,
             _ => walkFps
         };
     }
@@ -129,8 +144,10 @@ public sealed class PlayerSpriteAnimator : MonoBehaviour
     private void ApplyCurrentFrame()
     {
         if (spriteRenderer == null) return;
+
         var frames = GetStateFrames();
         if (frames == null || frames.Length == 0) return;
+
         var idx = Mathf.Clamp(_frame, 0, frames.Length - 1);
         spriteRenderer.sprite = frames[idx];
         UpdateFacing();
@@ -142,6 +159,9 @@ public sealed class PlayerSpriteAnimator : MonoBehaviour
         {
             AnimState.Attack when attackFrames != null && attackFrames.Length > 0 => attackFrames,
             AnimState.Dead when deathFrames != null && deathFrames.Length > 0 => deathFrames,
+            AnimState.Idle when idleFrames != null && idleFrames.Length > 0 => idleFrames,
+            AnimState.Walk when walkFrames != null && walkFrames.Length > 0 => walkFrames,
+            AnimState.Idle => walkFrames,
             _ => walkFrames
         };
     }

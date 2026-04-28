@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: dc0da5c7da5967b498be4901b6098468
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8692932835516816041
+    second: VacaMuere_0
+  - first:
+      213: -2256952776873805699
+    second: VacaMuere_1
+  - first:
+      213: 8529040996848838504
+    second: VacaMuere_2
+  - first:
+      213: 4795717005410838141
+    second: VacaMuere_3
+  - first:
+      213: -7688032126731954776
+    second: VacaMuere_4
+  - first:
+      213: -9182404965080070241
+    second: VacaMuere_5
+  - first:
+      213: 6031835951215096350
+    second: VacaMuere_6
+  - first:
+      213: 9056136840898520631
+    second: VacaMuere_7
+  - first:
+      213: -4065025820790740540
+    second: VacaMuere_8
+  - first:
+      213: 5496292259513394899
+    second: VacaMuere_9
+  - first:
+      213: -283063147000630684
+    second: VacaMuere_10
+  - first:
+      213: -2673638202372439416
+    second: VacaMuere_11
+  - first:
+      213: -7435273808357238419
+    second: VacaMuere_12
+  - first:
+      213: -7310464810915374556
+    second: VacaMuere_13
+  - first:
+      213: 4626224694844727022
+    second: VacaMuere_14
+  - first:
+      213: 4044909583557548584
+    second: VacaMuere_15
+  - first:
+      213: -2178032875034398534
+    second: VacaMuere_16
+  - first:
+      213: -1388978836211025138
+    second: VacaMuere_17
+  - first:
+      213: -6551767194289546174
+    second: VacaMuere_18
+  - first:
+      213: 485169078673044823
+    second: VacaMuere_19
+  - first:
+      213: -1233590127890422497
+    second: VacaMuere_20
+  - first:
+      213: 7507935161794499906
+    second: VacaMuere_21
+  - first:
+      213: -9199669003128169019
+    second: VacaMuere_22
+  - first:
+      213: -1464799264651741876
+    second: VacaMuere_23
+  - first:
+      213: -1510237953937750849
+    second: VacaMuere_24
+  - first:
+      213: -1360495031001806011
+    second: VacaMuere_25
+  - first:
+      213: -2121427235565563375
+    second: VacaMuere_26
+  - first:
+      213: 6374801233372442784
+    second: VacaMuere_27
+  - first:
+      213: -8805151927245482932
+    second: VacaMuere_28
+  - first:
+      213: -727211278041303429
+    second: VacaMuere_29
+  - first:
+      213: -8935546439534812793
+    second: VacaMuere_30
+  - first:
+      213: -3572251958798229821
+    second: VacaMuere_31
+  - first:
+      213: 4369999222224328883
+    second: VacaMuere_32
+  - first:
+      213: -7207901127622069168
+    second: VacaMuere_33
+  - first:
+      213: 5342104112299453498
+    second: VacaMuere_34
+  - first:
+      213: 2609861255111559929
+    second: VacaMuere_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VacaMuere_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2121
+        width: 468
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa1f455b5083a870800000000000000
+      internalID: 8692932835516816041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_1
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 2121
+        width: 468
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d78fa934861bda0e0800000000000000
+      internalID: -2256952776873805699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_2
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 2121
+        width: 468
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8672beb099d3d5670800000000000000
+      internalID: 8529040996848838504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_3
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 2121
+        width: 468
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7620d6253fcd8240800000000000000
+      internalID: 4795717005410838141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_4
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 2121
+        width: 468
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5d950838f9e4590800000000000000
+      internalID: -7688032126731954776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_5
+      rect:
+        serializedVersion: 2
+        x: 3517
+        y: 2121
+        width: 468
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f978e90b55b819080800000000000000
+      internalID: -9182404965080070241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_6
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1703
+        width: 470
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e123b9fe6d265b350800000000000000
+      internalID: 6031835951215096350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_7
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1703
+        width: 468
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736a51fa97cddad70800000000000000
+      internalID: 9056136840898520631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_8
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1703
+        width: 469
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c92afcad802697c0800000000000000
+      internalID: -4065025820790740540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_9
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1703
+        width: 492
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6660e70b0c64c40800000000000000
+      internalID: 5496292259513394899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_10
+      rect:
+        serializedVersion: 2
+        x: 2821
+        y: 1703
+        width: 511
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462f50a419b521cf0800000000000000
+      internalID: -283063147000630684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_11
+      rect:
+        serializedVersion: 2
+        x: 3491
+        y: 1702
+        width: 519
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8824da1783455ead0800000000000000
+      internalID: -2673638202372439416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_12
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1284
+        width: 517
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69d9157dd990d890800000000000000
+      internalID: -7435273808357238419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_13
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 1280
+        width: 511
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a556aacf20c8a90800000000000000
+      internalID: -7310464810915374556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_14
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 1280
+        width: 503
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee1c5369d6a33040800000000000000
+      internalID: 4626224694844727022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_15
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 1280
+        width: 513
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a558cd5d7622830800000000000000
+      internalID: 4044909583557548584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_16
+      rect:
+        serializedVersion: 2
+        x: 2783
+        y: 1280
+        width: 517
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0b37ec3a216c1e0800000000000000
+      internalID: -2178032875034398534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_17
+      rect:
+        serializedVersion: 2
+        x: 3435
+        y: 1269
+        width: 578
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0b3b1b8b1b59bce0800000000000000
+      internalID: -1388978836211025138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 838
+        width: 581
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c505513727315a0800000000000000
+      internalID: -6551767194289546174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_19
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 843
+        width: 592
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7557f4ed4baabb600800000000000000
+      internalID: 485169078673044823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_20
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 840
+        width: 601
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15a9a4805861eee0800000000000000
+      internalID: -1233590127890422497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_21
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 840
+        width: 605
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2451d6b304b813860800000000000000
+      internalID: 7507935161794499906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_22
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 839
+        width: 626
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd9f5998c5345080800000000000000
+      internalID: -9199669003128169019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_23
+      rect:
+        serializedVersion: 2
+        x: 3411
+        y: 839
+        width: 638
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45fd2364dcfbabe0800000000000000
+      internalID: -1464799264651741876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 421
+        width: 635
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb44a3d159e8a0be0800000000000000
+      internalID: -1510237953937750849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_25
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 421
+        width: 636
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b047e3afc8e1de0800000000000000
+      internalID: -1360495031001806011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_26
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 420
+        width: 637
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11296474b2d2f82e0800000000000000
+      internalID: -2121427235565563375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_27
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 420
+        width: 637
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0f2e452f7d77850800000000000000
+      internalID: 6374801233372442784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_28
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 420
+        width: 637
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c44df2f49f0ddc580800000000000000
+      internalID: -8805151927245482932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_29
+      rect:
+        serializedVersion: 2
+        x: 3411
+        y: 420
+        width: 637
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76b0bf023d68e5f0800000000000000
+      internalID: -727211278041303429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2
+        width: 637
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78165851bdf8ef380800000000000000
+      internalID: -8935546439534812793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_31
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 2
+        width: 637
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce53a325cfcc6ec0800000000000000
+      internalID: -3572251958798229821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_32
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 3
+        width: 637
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b81a6da32b55ac30800000000000000
+      internalID: 4369999222224328883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_33
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 2
+        width: 637
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054f2ff0d1468fb90800000000000000
+      internalID: -7207901127622069168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_34
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 2
+        width: 637
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c23cee267f22a40800000000000000
+      internalID: 5342104112299453498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaMuere_35
+      rect:
+        serializedVersion: 2
+        x: 3411
+        y: 1
+        width: 637
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9facaffdbf6183420800000000000000
+      internalID: 2609861255111559929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      VacaMuere_0: 8692932835516816041
+      VacaMuere_1: -2256952776873805699
+      VacaMuere_10: -283063147000630684
+      VacaMuere_11: -2673638202372439416
+      VacaMuere_12: -7435273808357238419
+      VacaMuere_13: -7310464810915374556
+      VacaMuere_14: 4626224694844727022
+      VacaMuere_15: 4044909583557548584
+      VacaMuere_16: -2178032875034398534
+      VacaMuere_17: -1388978836211025138
+      VacaMuere_18: -6551767194289546174
+      VacaMuere_19: 485169078673044823
+      VacaMuere_2: 8529040996848838504
+      VacaMuere_20: -1233590127890422497
+      VacaMuere_21: 7507935161794499906
+      VacaMuere_22: -9199669003128169019
+      VacaMuere_23: -1464799264651741876
+      VacaMuere_24: -1510237953937750849
+      VacaMuere_25: -1360495031001806011
+      VacaMuere_26: -2121427235565563375
+      VacaMuere_27: 6374801233372442784
+      VacaMuere_28: -8805151927245482932
+      VacaMuere_29: -727211278041303429
+      VacaMuere_3: 4795717005410838141
+      VacaMuere_30: -8935546439534812793
+      VacaMuere_31: -3572251958798229821
+      VacaMuere_32: 4369999222224328883
+      VacaMuere_33: -7207901127622069168
+      VacaMuere_34: 5342104112299453498
+      VacaMuere_35: 2609861255111559929
+      VacaMuere_4: -7688032126731954776
+      VacaMuere_5: -9182404965080070241
+      VacaMuere_6: 6031835951215096350
+      VacaMuere_7: 9056136840898520631
+      VacaMuere_8: -4065025820790740540
+      VacaMuere_9: 5496292259513394899
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
