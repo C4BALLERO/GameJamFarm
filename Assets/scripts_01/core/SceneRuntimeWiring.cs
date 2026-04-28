@@ -80,7 +80,8 @@ public static class FarmSceneGameplayBootstrap
         var shop = Object.FindFirstObjectByType<ShopSystem>();
         var inv = Object.FindFirstObjectByType<InventorySystem>();
 
-        var panelGo = GameObject.Find("ShopPanel");
+        // GameObject.Find no ve objetos desactivados; ShopPanel suele empezar oculto → había que buscar incluyendo inactivos.
+        var panelGo = FindSceneObjectByNameIncludingInactive("ShopPanel");
         ShopUI shopUi = null;
 
         if (panelGo != null && shop != null && inv != null)
@@ -91,7 +92,7 @@ public static class FarmSceneGameplayBootstrap
         }
         else
         {
-            shopUi = Object.FindFirstObjectByType<ShopUI>();
+            shopUi = FindFirstShopUiIncludingInactive();
         }
 
         var uiMgr = Object.FindFirstObjectByType<UIManager>();
@@ -100,6 +101,28 @@ public static class FarmSceneGameplayBootstrap
 
         EnsureGraneroClickArea(shopUi);
         EnsureShopLivestockSystems();
+    }
+
+    private static GameObject FindSceneObjectByNameIncludingInactive(string objectName)
+    {
+        var direct = GameObject.Find(objectName);
+        if (direct != null)
+            return direct;
+
+        foreach (var t in Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            if (!t.gameObject.scene.IsValid() || t.name != objectName)
+                continue;
+            return t.gameObject;
+        }
+
+        return null;
+    }
+
+    private static ShopUI FindFirstShopUiIncludingInactive()
+    {
+        var list = Object.FindObjectsByType<ShopUI>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        return list.Length > 0 ? list[0] : null;
     }
 
     private static void EnsureNamedCorralsHaveZones()
@@ -302,7 +325,7 @@ public static class FarmSceneGameplayBootstrap
 
     private static void EnsureGraneroClickArea(ShopUI shopUi)
     {
-        var barn = GameObject.Find("Granero");
+        var barn = FindSceneObjectByNameIncludingInactive("Granero");
         if (barn == null)
             return;
 
@@ -316,23 +339,78 @@ public static class FarmSceneGameplayBootstrap
             return;
 
         // Solo dimensionamos el BoxCollider cuando lo creamos nosotros; si lo pusiste a mano en la escena, no lo tocamos.
-        if (addedNewCollider && clickArea is BoxCollider2D box)
+        if (addedNewCollider && clickArea is BoxCollider2D boxNew)
         {
             clickArea.isTrigger = false;
             if (sr != null && sr.sprite != null)
             {
                 var b = sr.sprite.bounds;
-                box.offset = new Vector2(b.center.x, b.center.y);
-                box.size = new Vector2(Mathf.Abs(b.size.x), Mathf.Abs(b.size.y));
+                boxNew.offset = new Vector2(b.center.x, b.center.y);
+                boxNew.size = new Vector2(Mathf.Abs(b.size.x), Mathf.Abs(b.size.y));
             }
             else
             {
-                box.offset = Vector2.zero;
-                box.size = new Vector2(4f, 3f);
+                boxNew.offset = Vector2.zero;
+                boxNew.size = new Vector2(4f, 3f);
             }
+        }
+        else if (clickArea is BoxCollider2D boxScene && boxScene.size.x <= 1.05f && boxScene.size.y <= 1.05f)
+        {
+            // Caja por defecto 1×1 en la escena: alinear al sprite visible (suele estar en un hijo).
+            TryFitGraneroBoxToChildRenderers(barn, boxScene);
         }
 
         var trig = barn.GetComponent<BarnShopTrigger>() ?? barn.AddComponent<BarnShopTrigger>();
         trig.BindShopUiIfProvided(shopUi);
+    }
+
+    private static void TryFitGraneroBoxToChildRenderers(GameObject barn, BoxCollider2D box)
+    {
+        Bounds? merged = null;
+        foreach (var r in barn.GetComponentsInChildren<Renderer>(true))
+        {
+            if (!r.enabled)
+                continue;
+            if (merged == null)
+                merged = r.bounds;
+            else
+            {
+                var mb = merged.Value;
+                mb.Encapsulate(r.bounds);
+                merged = mb;
+            }
+        }
+
+        if (!merged.HasValue)
+            return;
+
+        var wb = merged.Value;
+        var z = barn.transform.position.z;
+        var corners = new[]
+        {
+            new Vector3(wb.min.x, wb.min.y, z),
+            new Vector3(wb.max.x, wb.min.y, z),
+            new Vector3(wb.min.x, wb.max.y, z),
+            new Vector3(wb.max.x, wb.max.y, z),
+        };
+
+        var lxMin = float.PositiveInfinity;
+        var lxMax = float.NegativeInfinity;
+        var lyMin = float.PositiveInfinity;
+        var lyMax = float.NegativeInfinity;
+        foreach (var c in corners)
+        {
+            var lp = barn.transform.InverseTransformPoint(c);
+            lxMin = Mathf.Min(lxMin, lp.x);
+            lxMax = Mathf.Max(lxMax, lp.x);
+            lyMin = Mathf.Min(lyMin, lp.y);
+            lyMax = Mathf.Max(lyMax, lp.y);
+        }
+
+        box.isTrigger = false;
+        box.offset = new Vector2((lxMin + lxMax) * 0.5f, (lyMin + lyMax) * 0.5f);
+        box.size = new Vector2(
+            Mathf.Max(0.25f, lxMax - lxMin),
+            Mathf.Max(0.25f, lyMax - lyMin));
     }
 }

@@ -17,7 +17,7 @@ public sealed class BarnShopTrigger : MonoBehaviour
     private void Awake()
     {
         if (shopUi == null)
-            shopUi = FindFirstObjectByType<ShopUI>();
+            shopUi = FindShopUiIncludingInactive();
 
         if (clickArea == null)
             clickArea = GetComponent<Collider2D>();
@@ -28,7 +28,7 @@ public sealed class BarnShopTrigger : MonoBehaviour
     private void Start()
     {
         if (shopUi == null)
-            shopUi = FindFirstObjectByType<ShopUI>();
+            shopUi = FindShopUiIncludingInactive();
 
         if (clickArea == null)
             clickArea = GetComponent<Collider2D>();
@@ -40,9 +40,15 @@ public sealed class BarnShopTrigger : MonoBehaviour
     /// <summary>Preferencia sobre Find cuando la escena ya tiene Granero.</summary>
     public void BindShopUiIfProvided(ShopUI ui)
     {
-        shopUi = ui ?? FindFirstObjectByType<ShopUI>();
+        shopUi = ui ?? FindShopUiIncludingInactive();
         if (clickArea == null)
             clickArea = GetComponent<Collider2D>();
+    }
+
+    private static ShopUI FindShopUiIncludingInactive()
+    {
+        var list = Object.FindObjectsByType<ShopUI>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        return list.Length > 0 ? list[0] : null;
     }
 
     private void Update()
@@ -51,7 +57,7 @@ public sealed class BarnShopTrigger : MonoBehaviour
             _cam = Camera.main;
 
         if (shopUi == null)
-            shopUi = FindFirstObjectByType<ShopUI>();
+            shopUi = FindShopUiIncludingInactive();
 
         if (shopUi == null || clickArea == null || _cam == null)
             return;

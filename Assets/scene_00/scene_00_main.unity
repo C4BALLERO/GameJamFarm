@@ -1480,8 +1480,8 @@ Transform:
   m_GameObject: {fileID: 157796307}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.77, y: -13.96, z: 0}
-  m_LocalScale: {x: 10.0236, y: 11.8365, z: 1}
+  m_LocalPosition: {x: -34.8931, y: -14.7721, z: 0}
+  m_LocalScale: {x: 10.270181, y: 10.212532, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1313744615}
@@ -2717,12 +2717,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopPanelBinder
   ui: {fileID: 384530614}
-  buyCow: {fileID: 0}
-  buyChicken: {fileID: 0}
-  buyPig: {fileID: 0}
-  buyAttackUpgrade: {fileID: 0}
-  buySpeedUpgrade: {fileID: 0}
-  closeShop: {fileID: 0}
 --- !u!114 &318344824
 MonoBehaviour:
   m_ObjectHideFlags: 0
