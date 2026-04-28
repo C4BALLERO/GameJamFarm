@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: c16c2de81e98c104a8c3c6cb777de8ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8480413233589768340
+    second: CalabazaCamina_0
+  - first:
+      213: 8673404969035679086
+    second: CalabazaCamina_1
+  - first:
+      213: -5806074446081341129
+    second: CalabazaCamina_2
+  - first:
+      213: -5239666094756437993
+    second: CalabazaCamina_3
+  - first:
+      213: -3410552547918814738
+    second: CalabazaCamina_4
+  - first:
+      213: 6114107404736067290
+    second: CalabazaCamina_5
+  - first:
+      213: -8412427739344133656
+    second: CalabazaCamina_6
+  - first:
+      213: -3861082246514193304
+    second: CalabazaCamina_7
+  - first:
+      213: -237194709185593100
+    second: CalabazaCamina_8
+  - first:
+      213: 4831583052838328492
+    second: CalabazaCamina_9
+  - first:
+      213: 5691270786567595067
+    second: CalabazaCamina_10
+  - first:
+      213: -1951569064354650398
+    second: CalabazaCamina_11
+  - first:
+      213: 5977974363799789629
+    second: CalabazaCamina_12
+  - first:
+      213: -1609224104370269106
+    second: CalabazaCamina_13
+  - first:
+      213: -621878264607091779
+    second: CalabazaCamina_14
+  - first:
+      213: -6686674184435909813
+    second: CalabazaCamina_15
+  - first:
+      213: -5035571487684264325
+    second: CalabazaCamina_16
+  - first:
+      213: 1117064692878181492
+    second: CalabazaCamina_17
+  - first:
+      213: 4931874508172239753
+    second: CalabazaCamina_18
+  - first:
+      213: 7157166586367456037
+    second: CalabazaCamina_19
+  - first:
+      213: 8172422967690612094
+    second: CalabazaCamina_20
+  - first:
+      213: 1555597720879130116
+    second: CalabazaCamina_21
+  - first:
+      213: 1757165936903762429
+    second: CalabazaCamina_22
+  - first:
+      213: 3130043977305845851
+    second: CalabazaCamina_23
+  - first:
+      213: 6016720165258729575
+    second: CalabazaCamina_24
+  - first:
+      213: 5669600182362164759
+    second: CalabazaCamina_25
+  - first:
+      213: -4092066644663983681
+    second: CalabazaCamina_26
+  - first:
+      213: 6444386953399991349
+    second: CalabazaCamina_27
+  - first:
+      213: 5319573924445181843
+    second: CalabazaCamina_28
+  - first:
+      213: -8612117721686291245
+    second: CalabazaCamina_29
+  - first:
+      213: 3629307174315044884
+    second: CalabazaCamina_30
+  - first:
+      213: 1477380617293750406
+    second: CalabazaCamina_31
+  - first:
+      213: -4355257700496471873
+    second: CalabazaCamina_32
+  - first:
+      213: 6342237699899759986
+    second: CalabazaCamina_33
+  - first:
+      213: -1538807250510439752
+    second: CalabazaCamina_34
+  - first:
+      213: -5180163070179057941
+    second: CalabazaCamina_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CalabazaCamina_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3369
+        width: 439
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490d3a0a7ea70b570800000000000000
+      internalID: 8480413233589768340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_1
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 3369
+        width: 442
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e65ca7c9ddf1e5870800000000000000
+      internalID: 8673404969035679086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_2
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 3369
+        width: 442
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73949dd9d0eac6fa0800000000000000
+      internalID: -5806074446081341129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_3
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 3369
+        width: 443
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7106260a277f847b0800000000000000
+      internalID: -5239666094756437993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_4
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 3369
+        width: 442
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee1ee7d07884ba0d0800000000000000
+      internalID: -3410552547918814738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_5
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 3369
+        width: 437
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6f0e96a4ca9d450800000000000000
+      internalID: 6114107404736067290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2703
+        width: 430
+        height: 619
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e120c1ca8d014b80800000000000000
+      internalID: -8412427739344133656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_7
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2703
+        width: 429
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c44f7572eaa6ac0800000000000000
+      internalID: -3861082246514193304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_8
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 2703
+        width: 430
+        height: 626
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f004603ba055bcf0800000000000000
+      internalID: -237194709185593100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_9
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 2703
+        width: 434
+        height: 621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8d93f003b3d0340800000000000000
+      internalID: 4831583052838328492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_10
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 2703
+        width: 433
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b346be170a47bfe40800000000000000
+      internalID: 5691270786567595067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_11
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 2703
+        width: 438
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6ef7c9642aae4e0800000000000000
+      internalID: -1951569064354650398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2037
+        width: 440
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30adaed20806f250800000000000000
+      internalID: 5977974363799789629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_13
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 2037
+        width: 442
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44930ff333eaa9e0800000000000000
+      internalID: -1609224104370269106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_14
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 2037
+        width: 444
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3de806305ae57f0800000000000000
+      internalID: -621878264607091779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_15
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 2037
+        width: 443
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b3cebb1492433a0800000000000000
+      internalID: -6686674184435909813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_16
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 2037
+        width: 442
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e7e7b596e0e1ab0800000000000000
+      internalID: -5035571487684264325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_17
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 2037
+        width: 441
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47482227b6c908f00800000000000000
+      internalID: 1117064692878181492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1371
+        width: 434
+        height: 615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98329682cb9817440800000000000000
+      internalID: 4931874508172239753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_19
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1371
+        width: 431
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5233aba071d535360800000000000000
+      internalID: 7157166586367456037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_20
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1371
+        width: 429
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d4177c3674a6170800000000000000
+      internalID: 8172422967690612094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_21
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 1371
+        width: 431
+        height: 621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406686e92e7969510800000000000000
+      internalID: 1555597720879130116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_22
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 1371
+        width: 435
+        height: 603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1b0981c15b26810800000000000000
+      internalID: 1757165936903762429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_23
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 1371
+        width: 440
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b507aa6e966207b20800000000000000
+      internalID: 3130043977305845851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 705
+        width: 441
+        height: 570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7681d23cc1faf7350800000000000000
+      internalID: 6016720165258729575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_25
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 705
+        width: 443
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ecf28b3577eae40800000000000000
+      internalID: 5669600182362164759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_26
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 705
+        width: 442
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1249f311f0637c0800000000000000
+      internalID: -4092066644663983681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_27
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 705
+        width: 440
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c71905acf0f6950800000000000000
+      internalID: 6444386953399991349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_28
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 705
+        width: 438
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3975cfacc4ce2d940800000000000000
+      internalID: 5319573924445181843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_29
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 705
+        width: 434
+        height: 615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dcca03af8c9b7880800000000000000
+      internalID: -8612117721686291245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_30
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 39
+        width: 432
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41033d965a3ed5230800000000000000
+      internalID: 3629307174315044884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_31
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 39
+        width: 431
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68067db08d5b08410800000000000000
+      internalID: 1477380617293750406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_32
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 39
+        width: 433
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb88f9052340f83c0800000000000000
+      internalID: -4355257700496471873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_33
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 39
+        width: 435
+        height: 621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d9d9fd597240850800000000000000
+      internalID: 6342237699899759986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_34
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 39
+        width: 435
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba978765fe05aae0800000000000000
+      internalID: -1538807250510439752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaCamina_35
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 39
+        width: 438
+        height: 597
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee5163222d5c18b0800000000000000
+      internalID: -5180163070179057941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CalabazaCamina_0: 8480413233589768340
+      CalabazaCamina_1: 8673404969035679086
+      CalabazaCamina_10: 5691270786567595067
+      CalabazaCamina_11: -1951569064354650398
+      CalabazaCamina_12: 5977974363799789629
+      CalabazaCamina_13: -1609224104370269106
+      CalabazaCamina_14: -621878264607091779
+      CalabazaCamina_15: -6686674184435909813
+      CalabazaCamina_16: -5035571487684264325
+      CalabazaCamina_17: 1117064692878181492
+      CalabazaCamina_18: 4931874508172239753
+      CalabazaCamina_19: 7157166586367456037
+      CalabazaCamina_2: -5806074446081341129
+      CalabazaCamina_20: 8172422967690612094
+      CalabazaCamina_21: 1555597720879130116
+      CalabazaCamina_22: 1757165936903762429
+      CalabazaCamina_23: 3130043977305845851
+      CalabazaCamina_24: 6016720165258729575
+      CalabazaCamina_25: 5669600182362164759
+      CalabazaCamina_26: -4092066644663983681
+      CalabazaCamina_27: 6444386953399991349
+      CalabazaCamina_28: 5319573924445181843
+      CalabazaCamina_29: -8612117721686291245
+      CalabazaCamina_3: -5239666094756437993
+      CalabazaCamina_30: 3629307174315044884
+      CalabazaCamina_31: 1477380617293750406
+      CalabazaCamina_32: -4355257700496471873
+      CalabazaCamina_33: 6342237699899759986
+      CalabazaCamina_34: -1538807250510439752
+      CalabazaCamina_35: -5180163070179057941
+      CalabazaCamina_4: -3410552547918814738
+      CalabazaCamina_5: 6114107404736067290
+      CalabazaCamina_6: -8412427739344133656
+      CalabazaCamina_7: -3861082246514193304
+      CalabazaCamina_8: -237194709185593100
+      CalabazaCamina_9: 4831583052838328492
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

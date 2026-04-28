@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 5a5eacde9bc920649ba55056125f9bf8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7186340670780724982
+    second: granjeroCamina_0
+  - first:
+      213: -7777951604221054686
+    second: granjeroCamina_1
+  - first:
+      213: 7941236335331586602
+    second: granjeroCamina_2
+  - first:
+      213: -9042748491719792847
+    second: granjeroCamina_3
+  - first:
+      213: -4040272387739258994
+    second: granjeroCamina_4
+  - first:
+      213: 1466128446382420957
+    second: granjeroCamina_5
+  - first:
+      213: 8590604932610299897
+    second: granjeroCamina_6
+  - first:
+      213: 4887030953389923453
+    second: granjeroCamina_7
+  - first:
+      213: 6537134429018135553
+    second: granjeroCamina_8
+  - first:
+      213: -7533787317008319298
+    second: granjeroCamina_9
+  - first:
+      213: 501477941332913259
+    second: granjeroCamina_10
+  - first:
+      213: -2780297971902097104
+    second: granjeroCamina_11
+  - first:
+      213: -6094351711351512666
+    second: granjeroCamina_12
+  - first:
+      213: 8763638346091384521
+    second: granjeroCamina_13
+  - first:
+      213: -2725870010933365736
+    second: granjeroCamina_14
+  - first:
+      213: 1096071654287825019
+    second: granjeroCamina_15
+  - first:
+      213: -990719800791469985
+    second: granjeroCamina_16
+  - first:
+      213: -5621105919694810853
+    second: granjeroCamina_17
+  - first:
+      213: 8574655260897487014
+    second: granjeroCamina_18
+  - first:
+      213: 2239343761072184094
+    second: granjeroCamina_19
+  - first:
+      213: -6057117837619761347
+    second: granjeroCamina_20
+  - first:
+      213: 4150243601195899419
+    second: granjeroCamina_21
+  - first:
+      213: -4796680840731480581
+    second: granjeroCamina_22
+  - first:
+      213: 8023278236576265495
+    second: granjeroCamina_23
+  - first:
+      213: 6376842905787145861
+    second: granjeroCamina_24
+  - first:
+      213: 4642265772415847599
+    second: granjeroCamina_25
+  - first:
+      213: -6502019202979412294
+    second: granjeroCamina_26
+  - first:
+      213: 7081767906094242412
+    second: granjeroCamina_27
+  - first:
+      213: 7467689264440000042
+    second: granjeroCamina_28
+  - first:
+      213: 7015426772732466896
+    second: granjeroCamina_29
+  - first:
+      213: 3462374976500975947
+    second: granjeroCamina_30
+  - first:
+      213: -966171243148934841
+    second: granjeroCamina_31
+  - first:
+      213: 1536361759562693264
+    second: granjeroCamina_32
+  - first:
+      213: 2101135195839975513
+    second: granjeroCamina_33
+  - first:
+      213: 6845551507385637852
+    second: granjeroCamina_34
+  - first:
+      213: -7630706871152343999
+    second: granjeroCamina_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: granjeroCamina_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 3020
+        width: 415
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a092c2b1c3df44c90800000000000000
+      internalID: -7186340670780724982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_1
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 3020
+        width: 424
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221793ea93a2f0490800000000000000
+      internalID: -7777951604221054686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_2
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 3020
+        width: 442
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a223ddc5f50f43e60800000000000000
+      internalID: 7941236335331586602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_3
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 3020
+        width: 455
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 137a7d54824b18280800000000000000
+      internalID: -9042748491719792847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_4
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 3020
+        width: 464
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8f6bfc6ba11ee7c0800000000000000
+      internalID: -4040272387739258994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_5
+      rect:
+        serializedVersion: 2
+        x: 2642
+        y: 3020
+        width: 470
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd338b9dd0cb85410800000000000000
+      internalID: 1466128446382420957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2417
+        width: 470
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f794f5dba5f73770800000000000000
+      internalID: 8590604932610299897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_7
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 2417
+        width: 466
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c152f62c832d340800000000000000
+      internalID: 4887030953389923453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_8
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 2417
+        width: 446
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c1a92c02198ba50800000000000000
+      internalID: 6537134429018135553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_9
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 2418
+        width: 417
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc3064d95c927790800000000000000
+      internalID: -7533787317008319298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_10
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 2418
+        width: 417
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ca7dbd78b95f600800000000000000
+      internalID: 501477941332913259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_11
+      rect:
+        serializedVersion: 2
+        x: 2697
+        y: 2418
+        width: 416
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0395907a9b56a69d0800000000000000
+      internalID: -2780297971902097104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_12
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1815
+        width: 415
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1699468638c6ba0800000000000000
+      internalID: -6094351711351512666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_13
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 1815
+        width: 417
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cec4ced4a2be9970800000000000000
+      internalID: 8763638346091384521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_14
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 1816
+        width: 438
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8143d66daa3cb2ad0800000000000000
+      internalID: -2725870010933365736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_15
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 1816
+        width: 446
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b785332cc57063f00800000000000000
+      internalID: 1096071654287825019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_16
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 1816
+        width: 457
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50f0e917914042f0800000000000000
+      internalID: -990719800791469985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_17
+      rect:
+        serializedVersion: 2
+        x: 2650
+        y: 1815
+        width: 463
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b11debba2f1ddf1b0800000000000000
+      internalID: -5621105919694810853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1213
+        width: 470
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8aa31878b4ff670800000000000000
+      internalID: 8574655260897487014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_19
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 1213
+        width: 463
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bd1b0494fb31f10800000000000000
+      internalID: 2239343761072184094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_20
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1213
+        width: 455
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fedfd2b6bc0fba0800000000000000
+      internalID: -6057117837619761347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_21
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 1213
+        width: 417
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a9e9cf090a89930800000000000000
+      internalID: 4150243601195899419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_22
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 1213
+        width: 416
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfd27437034ce6db0800000000000000
+      internalID: -4796680840731480581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_23
+      rect:
+        serializedVersion: 2
+        x: 2697
+        y: 1213
+        width: 415
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71530490c09685f60800000000000000
+      internalID: 8023278236576265495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_24
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 611
+        width: 416
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e99eb36d81f7850800000000000000
+      internalID: 6376842905787145861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_25
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 612
+        width: 427
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac0dcdcf14ac6040800000000000000
+      internalID: 4642265772415847599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_26
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 612
+        width: 445
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6c4abebff24c5a0800000000000000
+      internalID: -6502019202979412294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_27
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 611
+        width: 457
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a5288c36e774260800000000000000
+      internalID: 7081767906094242412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_28
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 611
+        width: 465
+        height: 586
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2eb1fb02df82a760800000000000000
+      internalID: 7467689264440000042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_29
+      rect:
+        serializedVersion: 2
+        x: 2644
+        y: 611
+        width: 467
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6db700b7dcb5160800000000000000
+      internalID: 7015426772732466896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 9
+        width: 461
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49ca8952b3dc0030800000000000000
+      internalID: 3462374976500975947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_31
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 9
+        width: 440
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74109e39f587792f0800000000000000
+      internalID: -966171243148934841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_32
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 9
+        width: 418
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a7a3d51e0425510800000000000000
+      internalID: 1536361759562693264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_33
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 9
+        width: 418
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950dc1d045bb82d10800000000000000
+      internalID: 2101135195839975513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_34
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 9
+        width: 417
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb5c51a3d8400f50800000000000000
+      internalID: 6845551507385637852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroCamina_35
+      rect:
+        serializedVersion: 2
+        x: 2697
+        y: 9
+        width: 415
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14405d7a7884a1690800000000000000
+      internalID: -7630706871152343999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      granjeroCamina_0: -7186340670780724982
+      granjeroCamina_1: -7777951604221054686
+      granjeroCamina_10: 501477941332913259
+      granjeroCamina_11: -2780297971902097104
+      granjeroCamina_12: -6094351711351512666
+      granjeroCamina_13: 8763638346091384521
+      granjeroCamina_14: -2725870010933365736
+      granjeroCamina_15: 1096071654287825019
+      granjeroCamina_16: -990719800791469985
+      granjeroCamina_17: -5621105919694810853
+      granjeroCamina_18: 8574655260897487014
+      granjeroCamina_19: 2239343761072184094
+      granjeroCamina_2: 7941236335331586602
+      granjeroCamina_20: -6057117837619761347
+      granjeroCamina_21: 4150243601195899419
+      granjeroCamina_22: -4796680840731480581
+      granjeroCamina_23: 8023278236576265495
+      granjeroCamina_24: 6376842905787145861
+      granjeroCamina_25: 4642265772415847599
+      granjeroCamina_26: -6502019202979412294
+      granjeroCamina_27: 7081767906094242412
+      granjeroCamina_28: 7467689264440000042
+      granjeroCamina_29: 7015426772732466896
+      granjeroCamina_3: -9042748491719792847
+      granjeroCamina_30: 3462374976500975947
+      granjeroCamina_31: -966171243148934841
+      granjeroCamina_32: 1536361759562693264
+      granjeroCamina_33: 2101135195839975513
+      granjeroCamina_34: 6845551507385637852
+      granjeroCamina_35: -7630706871152343999
+      granjeroCamina_4: -4040272387739258994
+      granjeroCamina_5: 1466128446382420957
+      granjeroCamina_6: 8590604932610299897
+      granjeroCamina_7: 4887030953389923453
+      granjeroCamina_8: 6537134429018135553
+      granjeroCamina_9: -7533787317008319298
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

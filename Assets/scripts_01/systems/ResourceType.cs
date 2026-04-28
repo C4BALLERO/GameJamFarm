@@ -7,9 +7,10 @@ public enum ResourceType
 {
     Wood = 0,
     Stone = 1,
-    Food = 2,
+    Milk = 2,
     Gold = 3,
-    Crops = 4
+    Egg = 4,
+    Meat = 5
 }
 
 /// <summary>

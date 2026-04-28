@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 2b51080243d2db4458c6ea15b7d334a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1494893205374536687
+    second: CaminaMaiz_0
+  - first:
+      213: -2592980392112749637
+    second: CaminaMaiz_1
+  - first:
+      213: 6928859139891483581
+    second: CaminaMaiz_2
+  - first:
+      213: -3654985803916947890
+    second: CaminaMaiz_3
+  - first:
+      213: 1981995495007264201
+    second: CaminaMaiz_4
+  - first:
+      213: 3460813342950620594
+    second: CaminaMaiz_5
+  - first:
+      213: 1150180294048205632
+    second: CaminaMaiz_6
+  - first:
+      213: -6216900246977784801
+    second: CaminaMaiz_7
+  - first:
+      213: 1959704151589353825
+    second: CaminaMaiz_8
+  - first:
+      213: 2981194429345916294
+    second: CaminaMaiz_9
+  - first:
+      213: -2712346338490718263
+    second: CaminaMaiz_10
+  - first:
+      213: 7255912732204463586
+    second: CaminaMaiz_11
+  - first:
+      213: 2896861309276856336
+    second: CaminaMaiz_12
+  - first:
+      213: -5239023336257696897
+    second: CaminaMaiz_13
+  - first:
+      213: -4582885524983796351
+    second: CaminaMaiz_14
+  - first:
+      213: -6837925491656376617
+    second: CaminaMaiz_15
+  - first:
+      213: 5266981285296203246
+    second: CaminaMaiz_16
+  - first:
+      213: 236344880466284254
+    second: CaminaMaiz_17
+  - first:
+      213: 8047786098453529718
+    second: CaminaMaiz_18
+  - first:
+      213: -6157739287480923772
+    second: CaminaMaiz_19
+  - first:
+      213: -9184368123975722903
+    second: CaminaMaiz_20
+  - first:
+      213: 8506872114963964353
+    second: CaminaMaiz_21
+  - first:
+      213: 8183464173747696545
+    second: CaminaMaiz_22
+  - first:
+      213: 4652033671236124689
+    second: CaminaMaiz_23
+  - first:
+      213: -1695051035465102084
+    second: CaminaMaiz_24
+  - first:
+      213: -7685654411005748049
+    second: CaminaMaiz_25
+  - first:
+      213: -1278731701483402439
+    second: CaminaMaiz_26
+  - first:
+      213: -475585341953294682
+    second: CaminaMaiz_27
+  - first:
+      213: -8000296245581829594
+    second: CaminaMaiz_28
+  - first:
+      213: 181925974941826020
+    second: CaminaMaiz_29
+  - first:
+      213: -4145291459999787426
+    second: CaminaMaiz_30
+  - first:
+      213: -4149577402977358246
+    second: CaminaMaiz_31
+  - first:
+      213: -131496420455652859
+    second: CaminaMaiz_32
+  - first:
+      213: -8386120410776202666
+    second: CaminaMaiz_33
+  - first:
+      213: -975202460860705441
+    second: CaminaMaiz_34
+  - first:
+      213: 2989401289268073208
+    second: CaminaMaiz_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CaminaMaiz_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3233
+        width: 465
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb8e73337deeb410800000000000000
+      internalID: 1494893205374536687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_1
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 3233
+        width: 465
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb301925212e30cd0800000000000000
+      internalID: -2592980392112749637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_2
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 3233
+        width: 471
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db353f35da0482060800000000000000
+      internalID: 6928859139891483581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_3
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 3233
+        width: 479
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e4f6ab6c1e64dc0800000000000000
+      internalID: -3654985803916947890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_4
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 3233
+        width: 491
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd1552d666718b10800000000000000
+      internalID: 1981995495007264201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_5
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 3233
+        width: 483
+        height: 607
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bdf0843667470030800000000000000
+      internalID: 3460813342950620594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2593
+        width: 469
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04bc56e22e246ff00800000000000000
+      internalID: 1150180294048205632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_7
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 2592
+        width: 464
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14d9d6f92229b9a0800000000000000
+      internalID: -6216900246977784801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_8
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 2592
+        width: 459
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169775cfa84423b10800000000000000
+      internalID: 1959704151589353825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_9
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2593
+        width: 463
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6856987d9845f5920800000000000000
+      internalID: 2981194429345916294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_10
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 2592
+        width: 468
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7ed62306fcb5ad0800000000000000
+      internalID: -2712346338490718263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_11
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 2593
+        width: 473
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5f74cbf2e22b460800000000000000
+      internalID: 7255912732204463586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_12
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1953
+        width: 474
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01025073308b33820800000000000000
+      internalID: 2896861309276856336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_13
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1953
+        width: 469
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7bc06088004b47b0800000000000000
+      internalID: -5239023336257696897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_14
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 1953
+        width: 466
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18daf0d65e15660c0800000000000000
+      internalID: -4582885524983796351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_15
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 1952
+        width: 465
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7debb358efeca11a0800000000000000
+      internalID: -6837925491656376617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_16
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 1952
+        width: 465
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5e5b4c293181940800000000000000
+      internalID: 5266981285296203246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_17
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 1954
+        width: 466
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edecca4aa6aa74300800000000000000
+      internalID: 236344880466284254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_18
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1314
+        width: 467
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67446aa41da7faf60800000000000000
+      internalID: 8047786098453529718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_19
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1313
+        width: 472
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4898b3e3eb05b8aa0800000000000000
+      internalID: -6157739287480923772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_20
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1313
+        width: 474
+        height: 599
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96891042ad19a8080800000000000000
+      internalID: -9184368123975722903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_21
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1313
+        width: 479
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c16a120e1b7e0670800000000000000
+      internalID: 8506872114963964353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_22
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1313
+        width: 473
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3fd54ee41819170800000000000000
+      internalID: 8183464173747696545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_23
+      rect:
+        serializedVersion: 2
+        x: 2722
+        y: 1312
+        width: 468
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1108f29f9f75f8040800000000000000
+      internalID: 4652033671236124689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_24
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 673
+        width: 466
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcc1f26018f978e0800000000000000
+      internalID: -1695051035465102084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_25
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 673
+        width: 466
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac96959802175590800000000000000
+      internalID: -7685654411005748049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_26
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 673
+        width: 464
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b0d02ea48014ee0800000000000000
+      internalID: -1278731701483402439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_27
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 673
+        width: 468
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aebd78b6a16669f0800000000000000
+      internalID: -475585341953294682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_28
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 673
+        width: 463
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a2438b3fc39f090800000000000000
+      internalID: -8000296245581829594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_29
+      rect:
+        serializedVersion: 2
+        x: 2725
+        y: 673
+        width: 471
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ebf2d7d5b4568200800000000000000
+      internalID: 181925974941826020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_30
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 33
+        width: 484
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e56904c3167f876c0800000000000000
+      internalID: -4145291459999787426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_31
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 33
+        width: 470
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5eeb8f565db966c0800000000000000
+      internalID: -4149577402977358246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_32
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 33
+        width: 472
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5026189c3b4dc2ef0800000000000000
+      internalID: -131496420455652859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_33
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 33
+        width: 472
+        height: 594
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65218000be38e9b80800000000000000
+      internalID: -8386120410776202666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_34
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 33
+        width: 471
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f559f4857826772f0800000000000000
+      internalID: -975202460860705441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaMaiz_35
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 33
+        width: 466
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f21be152ac7c7920800000000000000
+      internalID: 2989401289268073208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CaminaMaiz_0: 1494893205374536687
+      CaminaMaiz_1: -2592980392112749637
+      CaminaMaiz_10: -2712346338490718263
+      CaminaMaiz_11: 7255912732204463586
+      CaminaMaiz_12: 2896861309276856336
+      CaminaMaiz_13: -5239023336257696897
+      CaminaMaiz_14: -4582885524983796351
+      CaminaMaiz_15: -6837925491656376617
+      CaminaMaiz_16: 5266981285296203246
+      CaminaMaiz_17: 236344880466284254
+      CaminaMaiz_18: 8047786098453529718
+      CaminaMaiz_19: -6157739287480923772
+      CaminaMaiz_2: 6928859139891483581
+      CaminaMaiz_20: -9184368123975722903
+      CaminaMaiz_21: 8506872114963964353
+      CaminaMaiz_22: 8183464173747696545
+      CaminaMaiz_23: 4652033671236124689
+      CaminaMaiz_24: -1695051035465102084
+      CaminaMaiz_25: -7685654411005748049
+      CaminaMaiz_26: -1278731701483402439
+      CaminaMaiz_27: -475585341953294682
+      CaminaMaiz_28: -8000296245581829594
+      CaminaMaiz_29: 181925974941826020
+      CaminaMaiz_3: -3654985803916947890
+      CaminaMaiz_30: -4145291459999787426
+      CaminaMaiz_31: -4149577402977358246
+      CaminaMaiz_32: -131496420455652859
+      CaminaMaiz_33: -8386120410776202666
+      CaminaMaiz_34: -975202460860705441
+      CaminaMaiz_35: 2989401289268073208
+      CaminaMaiz_4: 1981995495007264201
+      CaminaMaiz_5: 3460813342950620594
+      CaminaMaiz_6: 1150180294048205632
+      CaminaMaiz_7: -6216900246977784801
+      CaminaMaiz_8: 1959704151589353825
+      CaminaMaiz_9: 2981194429345916294
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

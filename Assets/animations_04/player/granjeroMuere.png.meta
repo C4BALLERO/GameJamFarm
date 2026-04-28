@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 25550993b1b6d0a44b40471e8b0140e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8627464724611626352
+    second: granjeroMuere_0
+  - first:
+      213: 7217202042806989090
+    second: granjeroMuere_1
+  - first:
+      213: -2712966463136705005
+    second: granjeroMuere_2
+  - first:
+      213: -199219864281975583
+    second: granjeroMuere_3
+  - first:
+      213: -6976993429960866897
+    second: granjeroMuere_4
+  - first:
+      213: -9085016047645747153
+    second: granjeroMuere_5
+  - first:
+      213: -147872656451102633
+    second: granjeroMuere_6
+  - first:
+      213: -5167519596129074048
+    second: granjeroMuere_7
+  - first:
+      213: -6166626273086270519
+    second: granjeroMuere_8
+  - first:
+      213: 6160913916412143301
+    second: granjeroMuere_9
+  - first:
+      213: 8862575976636165738
+    second: granjeroMuere_10
+  - first:
+      213: 656655450313206811
+    second: granjeroMuere_11
+  - first:
+      213: -1086105281908602557
+    second: granjeroMuere_12
+  - first:
+      213: -7270755348147440152
+    second: granjeroMuere_13
+  - first:
+      213: -185166935643942644
+    second: granjeroMuere_14
+  - first:
+      213: -5631940478702641950
+    second: granjeroMuere_15
+  - first:
+      213: 7866785103288815558
+    second: granjeroMuere_16
+  - first:
+      213: 6129663513000378319
+    second: granjeroMuere_17
+  - first:
+      213: -5118044654347812468
+    second: granjeroMuere_18
+  - first:
+      213: -339978311037257072
+    second: granjeroMuere_19
+  - first:
+      213: 8727363745698414767
+    second: granjeroMuere_20
+  - first:
+      213: 885121872608449926
+    second: granjeroMuere_21
+  - first:
+      213: 2610173336907017588
+    second: granjeroMuere_22
+  - first:
+      213: 9194982371419919921
+    second: granjeroMuere_23
+  - first:
+      213: -1658273886681980000
+    second: granjeroMuere_24
+  - first:
+      213: 8904872889315529866
+    second: granjeroMuere_25
+  - first:
+      213: 4261811929891798781
+    second: granjeroMuere_26
+  - first:
+      213: 5471750389589632718
+    second: granjeroMuere_27
+  - first:
+      213: 2489095980743668951
+    second: granjeroMuere_28
+  - first:
+      213: 5645820245714714914
+    second: granjeroMuere_29
+  - first:
+      213: -4743614532229167534
+    second: granjeroMuere_30
+  - first:
+      213: 3678428068876128647
+    second: granjeroMuere_31
+  - first:
+      213: 4702232177033279674
+    second: granjeroMuere_32
+  - first:
+      213: 3257694606492637910
+    second: granjeroMuere_33
+  - first:
+      213: -8344697849403216838
+    second: granjeroMuere_34
+  - first:
+      213: 2675279650824744725
+    second: granjeroMuere_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: granjeroMuere_0
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 2919
+        width: 339
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a8f411b86154880800000000000000
+      internalID: -8627464724611626352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_1
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 2919
+        width: 340
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221fbb10507a82460800000000000000
+      internalID: 7217202042806989090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_2
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 2919
+        width: 364
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316503d206b995ad0800000000000000
+      internalID: -2712966463136705005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_3
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 2919
+        width: 397
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e47545c69a3c3df0800000000000000
+      internalID: -199219864281975583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_4
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 2919
+        width: 397
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3c2fee07dbc2f90800000000000000
+      internalID: -6976993429960866897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_5
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 2919
+        width: 375
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f281a550a0a8be180800000000000000
+      internalID: -9085016047645747153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_6
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 2345
+        width: 368
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7581d383a96a2fdf0800000000000000
+      internalID: -147872656451102633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_7
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 2345
+        width: 368
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0844bd65e484948b0800000000000000
+      internalID: -5167519596129074048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_8
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 2345
+        width: 361
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c31a1aa31ebb6aa0800000000000000
+      internalID: -6166626273086270519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_9
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 2345
+        width: 362
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6a187a096ff7550800000000000000
+      internalID: 6160913916412143301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_10
+      rect:
+        serializedVersion: 2
+        x: 2537
+        y: 2345
+        width: 362
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e2f4215e13efa70800000000000000
+      internalID: 8862575976636165738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_11
+      rect:
+        serializedVersion: 2
+        x: 3155
+        y: 2345
+        width: 361
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c2eb727a8ec1900800000000000000
+      internalID: 656655450313206811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_12
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1771
+        width: 372
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349892320016de0f0800000000000000
+      internalID: -1086105281908602557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_13
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 1771
+        width: 373
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e576e07886191b90800000000000000
+      internalID: -7270755348147440152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_14
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 1771
+        width: 394
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c019bc037a72e6df0800000000000000
+      internalID: -185166935643942644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_15
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1771
+        width: 423
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec19c259f357d1b0800000000000000
+      internalID: -5631940478702641950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_16
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1771
+        width: 420
+        height: 469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf4dd51f5f6c2d60800000000000000
+      internalID: 7866785103288815558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_17
+      rect:
+        serializedVersion: 2
+        x: 3191
+        y: 1771
+        width: 434
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf7f0d1d70f01550800000000000000
+      internalID: 6129663513000378319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_18
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1197
+        width: 474
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c810301e08d09f8b0800000000000000
+      internalID: -5118044654347812468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_19
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1197
+        width: 481
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a79430787284bf0800000000000000
+      internalID: -339978311037257072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_20
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 1197
+        width: 538
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa00aff4613dd1970800000000000000
+      internalID: 8727363745698414767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_21
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1180
+        width: 539
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68551cf47a5984c00800000000000000
+      internalID: 885121872608449926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_22
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 1156
+        width: 539
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47de98412d2393420800000000000000
+      internalID: 2610173336907017588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_23
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 1149
+        width: 539
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136967cefb32b9f70800000000000000
+      internalID: 9194982371419919921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_24
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 575
+        width: 540
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3a30c9fa0acf8e0800000000000000
+      internalID: -1658273886681980000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_25
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 575
+        width: 540
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8498a976b6749b70800000000000000
+      internalID: 8904872889315529866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_26
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 575
+        width: 540
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfef8b4ce5ff42b30800000000000000
+      internalID: 4261811929891798781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_27
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 575
+        width: 540
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6681f1dff8feb40800000000000000
+      internalID: 5471750389589632718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_28
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 575
+        width: 540
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d434105b9b0b8220800000000000000
+      internalID: 2489095980743668951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_29
+      rect:
+        serializedVersion: 2
+        x: 3166
+        y: 575
+        width: 541
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221c883c99bf95e40800000000000000
+      internalID: 5645820245714714914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_30
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1
+        width: 541
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256891737bb4b2eb0800000000000000
+      internalID: -4743614532229167534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_31
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1
+        width: 541
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7811039e6d66c0330800000000000000
+      internalID: 3678428068876128647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_32
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1
+        width: 541
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8fa73604fa14140800000000000000
+      internalID: 4702232177033279674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_33
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1
+        width: 541
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da13be0cf7a53d20800000000000000
+      internalID: 3257694606492637910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_34
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 1
+        width: 541
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3cea50a48da13c80800000000000000
+      internalID: -8344697849403216838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroMuere_35
+      rect:
+        serializedVersion: 2
+        x: 3166
+        y: 1
+        width: 541
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f6d3e0ba0802520800000000000000
+      internalID: 2675279650824744725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      granjeroMuere_0: -8627464724611626352
+      granjeroMuere_1: 7217202042806989090
+      granjeroMuere_10: 8862575976636165738
+      granjeroMuere_11: 656655450313206811
+      granjeroMuere_12: -1086105281908602557
+      granjeroMuere_13: -7270755348147440152
+      granjeroMuere_14: -185166935643942644
+      granjeroMuere_15: -5631940478702641950
+      granjeroMuere_16: 7866785103288815558
+      granjeroMuere_17: 6129663513000378319
+      granjeroMuere_18: -5118044654347812468
+      granjeroMuere_19: -339978311037257072
+      granjeroMuere_2: -2712966463136705005
+      granjeroMuere_20: 8727363745698414767
+      granjeroMuere_21: 885121872608449926
+      granjeroMuere_22: 2610173336907017588
+      granjeroMuere_23: 9194982371419919921
+      granjeroMuere_24: -1658273886681980000
+      granjeroMuere_25: 8904872889315529866
+      granjeroMuere_26: 4261811929891798781
+      granjeroMuere_27: 5471750389589632718
+      granjeroMuere_28: 2489095980743668951
+      granjeroMuere_29: 5645820245714714914
+      granjeroMuere_3: -199219864281975583
+      granjeroMuere_30: -4743614532229167534
+      granjeroMuere_31: 3678428068876128647
+      granjeroMuere_32: 4702232177033279674
+      granjeroMuere_33: 3257694606492637910
+      granjeroMuere_34: -8344697849403216838
+      granjeroMuere_35: 2675279650824744725
+      granjeroMuere_4: -6976993429960866897
+      granjeroMuere_5: -9085016047645747153
+      granjeroMuere_6: -147872656451102633
+      granjeroMuere_7: -5167519596129074048
+      granjeroMuere_8: -6166626273086270519
+      granjeroMuere_9: 6160913916412143301
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

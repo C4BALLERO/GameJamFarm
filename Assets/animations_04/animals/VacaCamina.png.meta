@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: f50a56841e8beab499ddaf288c0b15ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -207427099777891318
+    second: VacaCamina_0
+  - first:
+      213: 7785241911770696417
+    second: VacaCamina_1
+  - first:
+      213: 1806552237075422269
+    second: VacaCamina_2
+  - first:
+      213: 8205740186411686938
+    second: VacaCamina_3
+  - first:
+      213: -4063528486551005936
+    second: VacaCamina_4
+  - first:
+      213: -4158864159458683887
+    second: VacaCamina_5
+  - first:
+      213: -4186139951756828099
+    second: VacaCamina_6
+  - first:
+      213: -6402606933079374848
+    second: VacaCamina_7
+  - first:
+      213: -1971273055646654412
+    second: VacaCamina_8
+  - first:
+      213: -7951106085731970207
+    second: VacaCamina_9
+  - first:
+      213: -1293493228424893081
+    second: VacaCamina_10
+  - first:
+      213: -140457489496602605
+    second: VacaCamina_11
+  - first:
+      213: 5725757927174542486
+    second: VacaCamina_12
+  - first:
+      213: -6276402393301395379
+    second: VacaCamina_13
+  - first:
+      213: 1266441290870000744
+    second: VacaCamina_14
+  - first:
+      213: 4955352618589796078
+    second: VacaCamina_15
+  - first:
+      213: -5074009198351713562
+    second: VacaCamina_16
+  - first:
+      213: -6386300032611342529
+    second: VacaCamina_17
+  - first:
+      213: 7815297303183382654
+    second: VacaCamina_18
+  - first:
+      213: 3120715036398890662
+    second: VacaCamina_19
+  - first:
+      213: 1735598743567477738
+    second: VacaCamina_20
+  - first:
+      213: -5807006739552643779
+    second: VacaCamina_21
+  - first:
+      213: 6422445580934552899
+    second: VacaCamina_22
+  - first:
+      213: 4539374330259311523
+    second: VacaCamina_23
+  - first:
+      213: -7713867559407120190
+    second: VacaCamina_24
+  - first:
+      213: 7775446734955084637
+    second: VacaCamina_25
+  - first:
+      213: -5379343773256001059
+    second: VacaCamina_26
+  - first:
+      213: -8859024092514843979
+    second: VacaCamina_27
+  - first:
+      213: -852381771568123154
+    second: VacaCamina_28
+  - first:
+      213: 2787841169186892929
+    second: VacaCamina_29
+  - first:
+      213: 3136727869681222193
+    second: VacaCamina_30
+  - first:
+      213: -5322413722557950749
+    second: VacaCamina_31
+  - first:
+      213: -5591676466181216503
+    second: VacaCamina_32
+  - first:
+      213: -1822012757680880954
+    second: VacaCamina_33
+  - first:
+      213: 4971734436201514166
+    second: VacaCamina_34
+  - first:
+      213: -8678985264905505786
+    second: VacaCamina_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VacaCamina_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2219
+        width: 556
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0403f8d6221f1df0800000000000000
+      internalID: -207427099777891318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_1
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 2222
+        width: 554
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea4391554cba0c60800000000000000
+      internalID: 7785241911770696417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_2
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 2226
+        width: 552
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c511720b9221910800000000000000
+      internalID: 1806552237075422269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_3
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 2230
+        width: 550
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c57324935a0e170800000000000000
+      internalID: 8205740186411686938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_4
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 2232
+        width: 549
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0155278fe527b97c0800000000000000
+      internalID: -4063528486551005936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_5
+      rect:
+        serializedVersion: 2
+        x: 2942
+        y: 2236
+        width: 549
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1149c52e41fb846c0800000000000000
+      internalID: -4158864159458683887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_6
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 1794
+        width: 549
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32a67b94e7d7e5c0800000000000000
+      internalID: -4186139951756828099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_7
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1796
+        width: 554
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004c955baee5527a0800000000000000
+      internalID: -6402606933079374848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_8
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 1796
+        width: 553
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 430e1e2a991a4a4e0800000000000000
+      internalID: -1971273055646654412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_9
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1795
+        width: 542
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163df7c442ff7a190800000000000000
+      internalID: -7951106085731970207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_10
+      rect:
+        serializedVersion: 2
+        x: 2358
+        y: 1792
+        width: 540
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d6c5013c69c0ee0800000000000000
+      internalID: -1293493228424893081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_11
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 1784
+        width: 538
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318038058aefc0ef0800000000000000
+      internalID: -140457489496602605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1340
+        width: 540
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6949d179f7af57f40800000000000000
+      internalID: 5725757927174542486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_13
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1333
+        width: 548
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48dbdfe64db5e8a0800000000000000
+      internalID: -6276402393301395379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_14
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1330
+        width: 551
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c8137e4ad439110800000000000000
+      internalID: 1266441290870000744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_15
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1327
+        width: 560
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6b8d7b3f2f4c440800000000000000
+      internalID: 4955352618589796078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_16
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 1327
+        width: 564
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea7e21748f7599b0800000000000000
+      internalID: -5074009198351713562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_17
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 1330
+        width: 571
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37a227d4fd4f57a0800000000000000
+      internalID: -6386300032611342529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_18
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 890
+        width: 572
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7850527d73857c60800000000000000
+      internalID: 7815297303183382654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_19
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 891
+        width: 569
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aea6c59ac10f4b20800000000000000
+      internalID: 3120715036398890662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_20
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 894
+        width: 563
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb24f69cd5161810800000000000000
+      internalID: 1735598743567477738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_21
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 895
+        width: 560
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d355aa0232e596fa0800000000000000
+      internalID: -5807006739552643779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_22
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 902
+        width: 553
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d91e07a3c112950800000000000000
+      internalID: 6422445580934552899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_23
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 904
+        width: 552
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab02a917e81ffe30800000000000000
+      internalID: 4539374330259311523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_24
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 466
+        width: 548
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c011251356d2f490800000000000000
+      internalID: -7713867559407120190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 467
+        width: 547
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5bf7fefb9fe7eb60800000000000000
+      internalID: 7775446734955084637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_26
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 464
+        width: 541
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9dd56d65bb855b0800000000000000
+      internalID: -5379343773256001059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_27
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 463
+        width: 542
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b28605668c6e0580800000000000000
+      internalID: -8859024092514843979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_28
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 457
+        width: 543
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2f9ac7b4bbb24f0800000000000000
+      internalID: -852381771568123154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_29
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 454
+        width: 546
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c2893d5c660b620800000000000000
+      internalID: 2787841169186892929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_30
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 6
+        width: 554
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132ca6dd065e78b20800000000000000
+      internalID: 3136727869681222193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_31
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 3
+        width: 558
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4d44f2becf226b0800000000000000
+      internalID: -5322413722557950749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_32
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 2
+        width: 567
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9076b5641ef5662b0800000000000000
+      internalID: -5591676466181216503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_33
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 2
+        width: 571
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c28332ec09e6b6e0800000000000000
+      internalID: -1822012757680880954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_34
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 4
+        width: 569
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b44e5bd0262ff440800000000000000
+      internalID: 4971734436201514166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VacaCamina_35
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 6
+        width: 562
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604357282ec0e8780800000000000000
+      internalID: -8678985264905505786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      VacaCamina_0: -207427099777891318
+      VacaCamina_1: 7785241911770696417
+      VacaCamina_10: -1293493228424893081
+      VacaCamina_11: -140457489496602605
+      VacaCamina_12: 5725757927174542486
+      VacaCamina_13: -6276402393301395379
+      VacaCamina_14: 1266441290870000744
+      VacaCamina_15: 4955352618589796078
+      VacaCamina_16: -5074009198351713562
+      VacaCamina_17: -6386300032611342529
+      VacaCamina_18: 7815297303183382654
+      VacaCamina_19: 3120715036398890662
+      VacaCamina_2: 1806552237075422269
+      VacaCamina_20: 1735598743567477738
+      VacaCamina_21: -5807006739552643779
+      VacaCamina_22: 6422445580934552899
+      VacaCamina_23: 4539374330259311523
+      VacaCamina_24: -7713867559407120190
+      VacaCamina_25: 7775446734955084637
+      VacaCamina_26: -5379343773256001059
+      VacaCamina_27: -8859024092514843979
+      VacaCamina_28: -852381771568123154
+      VacaCamina_29: 2787841169186892929
+      VacaCamina_3: 8205740186411686938
+      VacaCamina_30: 3136727869681222193
+      VacaCamina_31: -5322413722557950749
+      VacaCamina_32: -5591676466181216503
+      VacaCamina_33: -1822012757680880954
+      VacaCamina_34: 4971734436201514166
+      VacaCamina_35: -8678985264905505786
+      VacaCamina_4: -4063528486551005936
+      VacaCamina_5: -4158864159458683887
+      VacaCamina_6: -4186139951756828099
+      VacaCamina_7: -6402606933079374848
+      VacaCamina_8: -1971273055646654412
+      VacaCamina_9: -7951106085731970207
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

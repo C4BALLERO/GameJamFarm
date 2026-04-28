@@ -10,14 +10,10 @@ public interface IDamageable
     /// </summary>
     void TakeDamage(int amount, Vector2 knockback);
 
-    /// <summary>
-    /// Get current health
-    /// </summary>
+    /// <summary>Current hit points.</summary>
     int GetHealth();
 
-    /// <summary>
-    /// Get maximum health
-    /// </summary>
+    /// <summary>Maximum hit points.</summary>
     int GetMaxHealth();
 
     /// <summary>

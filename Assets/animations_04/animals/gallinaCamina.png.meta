@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 0eeff197d5f49514a832023f65b0a865
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8249489923991047996
+    second: gallinaCamina_0
+  - first:
+      213: 3988706858306370489
+    second: gallinaCamina_1
+  - first:
+      213: -1783894449304588907
+    second: gallinaCamina_2
+  - first:
+      213: -5141201857080650830
+    second: gallinaCamina_3
+  - first:
+      213: 6514373328206362923
+    second: gallinaCamina_4
+  - first:
+      213: -4068415820248870629
+    second: gallinaCamina_5
+  - first:
+      213: 5695341102984767138
+    second: gallinaCamina_6
+  - first:
+      213: 3184330336214119748
+    second: gallinaCamina_7
+  - first:
+      213: 1365022422411315372
+    second: gallinaCamina_8
+  - first:
+      213: 4308161768106579051
+    second: gallinaCamina_9
+  - first:
+      213: -3173932293436347337
+    second: gallinaCamina_10
+  - first:
+      213: 2288784418742547539
+    second: gallinaCamina_11
+  - first:
+      213: 6569080287514781322
+    second: gallinaCamina_12
+  - first:
+      213: -2464085550906119498
+    second: gallinaCamina_13
+  - first:
+      213: -4583486746428128359
+    second: gallinaCamina_14
+  - first:
+      213: 559352769214236050
+    second: gallinaCamina_15
+  - first:
+      213: 9154780091619618328
+    second: gallinaCamina_16
+  - first:
+      213: 3899975020843534339
+    second: gallinaCamina_17
+  - first:
+      213: 5151004745037067654
+    second: gallinaCamina_18
+  - first:
+      213: 4858967716165578141
+    second: gallinaCamina_19
+  - first:
+      213: 3749946940671860410
+    second: gallinaCamina_20
+  - first:
+      213: -5503430914564495802
+    second: gallinaCamina_21
+  - first:
+      213: 4161982535343378716
+    second: gallinaCamina_22
+  - first:
+      213: -528761937321650145
+    second: gallinaCamina_23
+  - first:
+      213: -4531052373489785305
+    second: gallinaCamina_24
+  - first:
+      213: -4300552408210950279
+    second: gallinaCamina_25
+  - first:
+      213: -7840534052985283367
+    second: gallinaCamina_26
+  - first:
+      213: 4096859086018989097
+    second: gallinaCamina_27
+  - first:
+      213: 7961369900602348156
+    second: gallinaCamina_28
+  - first:
+      213: -519405162034414752
+    second: gallinaCamina_29
+  - first:
+      213: -3535423621776532465
+    second: gallinaCamina_30
+  - first:
+      213: -7194142386381780138
+    second: gallinaCamina_31
+  - first:
+      213: -945293505957852896
+    second: gallinaCamina_32
+  - first:
+      213: 2259917901004685150
+    second: gallinaCamina_33
+  - first:
+      213: 6535649415989549525
+    second: gallinaCamina_34
+  - first:
+      213: 5731645580741579194
+    second: gallinaCamina_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gallinaCamina_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2080
+        width: 398
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f86a1d0631c7270800000000000000
+      internalID: 8249489923991047996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_1
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2081
+        width: 399
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bbf38a21cbba5730800000000000000
+      internalID: 3988706858306370489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_2
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 2083
+        width: 400
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59da86823755e37e0800000000000000
+      internalID: -1783894449304588907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_3
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 2087
+        width: 403
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b311267628c6a8b0800000000000000
+      internalID: -5141201857080650830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_4
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 2092
+        width: 405
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29f4020704b76a50800000000000000
+      internalID: 6514373328206362923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_5
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 2091
+        width: 404
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b119c7bed551a87c0800000000000000
+      internalID: -4068415820248870629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1676
+        width: 405
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6a616de8ae90f40800000000000000
+      internalID: 5695341102984767138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_7
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1675
+        width: 403
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445fa89c193013c20800000000000000
+      internalID: 3184330336214119748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_8
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1674
+        width: 403
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8054639a881f210800000000000000
+      internalID: 1365022422411315372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_9
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 1673
+        width: 402
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6459ee6d4aa9cb30800000000000000
+      internalID: 4308161768106579051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_10
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 1670
+        width: 402
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ce594356de3f3d0800000000000000
+      internalID: -3173932293436347337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_11
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1664
+        width: 402
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35439966d4563cf10800000000000000
+      internalID: 2288784418742547539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1249
+        width: 403
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86e65e87bf0a2b50800000000000000
+      internalID: 6569080287514781322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_13
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1249
+        width: 405
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba611a2f3fcdcdd0800000000000000
+      internalID: -2464085550906119498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_14
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1248
+        width: 406
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993c076a61f2460c0800000000000000
+      internalID: -4583486746428128359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_15
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 1248
+        width: 406
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2954529416833c700800000000000000
+      internalID: 559352769214236050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_16
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 1249
+        width: 402
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e2ecd3dff4c0f70800000000000000
+      internalID: 9154780091619618328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_17
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 1250
+        width: 401
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30886465e9e7f1630800000000000000
+      internalID: 3899975020843534339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_18
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 837
+        width: 399
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6853940468b0c7740800000000000000
+      internalID: 5151004745037067654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_19
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 839
+        width: 399
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9de329d4658e6340800000000000000
+      internalID: 4858967716165578141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_20
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 841
+        width: 400
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe1f4ddfdc7a0430800000000000000
+      internalID: 3749946940671860410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_21
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 846
+        width: 403
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646ea7bddb2ef93b0800000000000000
+      internalID: -5503430914564495802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_22
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 850
+        width: 405
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c119584901552c930800000000000000
+      internalID: 4161982535343378716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_23
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 849
+        width: 404
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18123bc1d579a8f0800000000000000
+      internalID: -528761937321650145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 434
+        width: 403
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72663737fd77e11c0800000000000000
+      internalID: -4531052373489785305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_25
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 433
+        width: 403
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977b2aabe5e5154c0800000000000000
+      internalID: -4300552408210950279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_26
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 431
+        width: 402
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc557ad1d3d03390800000000000000
+      internalID: -7840534052985283367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_27
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 429
+        width: 401
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c4ef4f1a7fad830800000000000000
+      internalID: 4096859086018989097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_28
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 424
+        width: 401
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72d3e25eb77c7e60800000000000000
+      internalID: 7961369900602348156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_29
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 422
+        width: 401
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b3f6ec1c3bac8f0800000000000000
+      internalID: -519405162034414752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_30
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 7
+        width: 403
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c1c7d82f6afeec0800000000000000
+      internalID: -3535423621776532465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_31
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 6
+        width: 406
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b0224ad95492c90800000000000000
+      internalID: -7194142386381780138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_32
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 6
+        width: 408
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02906e09094a1e2f0800000000000000
+      internalID: -945293505957852896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_33
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 6
+        width: 406
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f3eee7b57dc5f10800000000000000
+      internalID: 2259917901004685150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_34
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 8
+        width: 402
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9db88348a43ba50800000000000000
+      internalID: 6535649415989549525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaCamina_35
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 10
+        width: 399
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab11a82c945ea8f40800000000000000
+      internalID: 5731645580741579194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gallinaCamina_0: 8249489923991047996
+      gallinaCamina_1: 3988706858306370489
+      gallinaCamina_10: -3173932293436347337
+      gallinaCamina_11: 2288784418742547539
+      gallinaCamina_12: 6569080287514781322
+      gallinaCamina_13: -2464085550906119498
+      gallinaCamina_14: -4583486746428128359
+      gallinaCamina_15: 559352769214236050
+      gallinaCamina_16: 9154780091619618328
+      gallinaCamina_17: 3899975020843534339
+      gallinaCamina_18: 5151004745037067654
+      gallinaCamina_19: 4858967716165578141
+      gallinaCamina_2: -1783894449304588907
+      gallinaCamina_20: 3749946940671860410
+      gallinaCamina_21: -5503430914564495802
+      gallinaCamina_22: 4161982535343378716
+      gallinaCamina_23: -528761937321650145
+      gallinaCamina_24: -4531052373489785305
+      gallinaCamina_25: -4300552408210950279
+      gallinaCamina_26: -7840534052985283367
+      gallinaCamina_27: 4096859086018989097
+      gallinaCamina_28: 7961369900602348156
+      gallinaCamina_29: -519405162034414752
+      gallinaCamina_3: -5141201857080650830
+      gallinaCamina_30: -3535423621776532465
+      gallinaCamina_31: -7194142386381780138
+      gallinaCamina_32: -945293505957852896
+      gallinaCamina_33: 2259917901004685150
+      gallinaCamina_34: 6535649415989549525
+      gallinaCamina_35: 5731645580741579194
+      gallinaCamina_4: 6514373328206362923
+      gallinaCamina_5: -4068415820248870629
+      gallinaCamina_6: 5695341102984767138
+      gallinaCamina_7: 3184330336214119748
+      gallinaCamina_8: 1365022422411315372
+      gallinaCamina_9: 4308161768106579051
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

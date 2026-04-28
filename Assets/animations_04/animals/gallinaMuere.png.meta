@@ -1,0 +1,1157 @@
+fileFormatVersion: 2
+guid: 048f27475340c754c8ef01163b9df6c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5123314098119884930
+    second: gallinaMuere_0
+  - first:
+      213: -2216803377483135706
+    second: gallinaMuere_1
+  - first:
+      213: 8414103220529929720
+    second: gallinaMuere_2
+  - first:
+      213: -2446315868146097082
+    second: gallinaMuere_3
+  - first:
+      213: 5185377935526958478
+    second: gallinaMuere_4
+  - first:
+      213: 2885388027208399896
+    second: gallinaMuere_5
+  - first:
+      213: -8610951693546041757
+    second: gallinaMuere_6
+  - first:
+      213: -8174187680007939071
+    second: gallinaMuere_7
+  - first:
+      213: -7000417017379034629
+    second: gallinaMuere_8
+  - first:
+      213: 8287227647284338262
+    second: gallinaMuere_9
+  - first:
+      213: -6091286657486718083
+    second: gallinaMuere_10
+  - first:
+      213: 4696069566075617433
+    second: gallinaMuere_11
+  - first:
+      213: 3231994067619634597
+    second: gallinaMuere_12
+  - first:
+      213: -1821834294682517623
+    second: gallinaMuere_13
+  - first:
+      213: 2426886987800589392
+    second: gallinaMuere_14
+  - first:
+      213: 5284765103087581009
+    second: gallinaMuere_15
+  - first:
+      213: 94947739893219388
+    second: gallinaMuere_16
+  - first:
+      213: -56333803934919581
+    second: gallinaMuere_17
+  - first:
+      213: -2351090872887626766
+    second: gallinaMuere_18
+  - first:
+      213: 5663939753059945190
+    second: gallinaMuere_19
+  - first:
+      213: 7591879239483827389
+    second: gallinaMuere_20
+  - first:
+      213: -8845525775246153731
+    second: gallinaMuere_21
+  - first:
+      213: 2385566955158093266
+    second: gallinaMuere_22
+  - first:
+      213: 2317999665374061993
+    second: gallinaMuere_23
+  - first:
+      213: -8382242227266641327
+    second: gallinaMuere_24
+  - first:
+      213: -8621566188704046759
+    second: gallinaMuere_25
+  - first:
+      213: -364458411559368753
+    second: gallinaMuere_26
+  - first:
+      213: 9145900882201709979
+    second: gallinaMuere_27
+  - first:
+      213: 7705113875199201370
+    second: gallinaMuere_28
+  - first:
+      213: -5211695586657989337
+    second: gallinaMuere_29
+  - first:
+      213: -7446048894924526716
+    second: gallinaMuere_30
+  - first:
+      213: -6617895671945834445
+    second: gallinaMuere_31
+  - first:
+      213: 4507540419710916873
+    second: gallinaMuere_32
+  - first:
+      213: -7920174856384451837
+    second: gallinaMuere_33
+  - first:
+      213: -7589528812056896217
+    second: gallinaMuere_34
+  - first:
+      213: 2819772028704998645
+    second: gallinaMuere_35
+  - first:
+      213: -5114464348516282274
+    second: gallinaMuere_36
+  - first:
+      213: 102761293059181325
+    second: gallinaMuere_37
+  - first:
+      213: 2204966248889289953
+    second: gallinaMuere_38
+  - first:
+      213: -503880264132126817
+    second: gallinaMuere_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gallinaMuere_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 2009
+        width: 341
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280cf2b170ba91740800000000000000
+      internalID: 5123314098119884930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_1
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 2013
+        width: 342
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6254b34c2155c31e0800000000000000
+      internalID: -2216803377483135706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_2
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 2018
+        width: 342
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd182b9c46e4c470800000000000000
+      internalID: 8414103220529929720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_3
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 2023
+        width: 340
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64420c6dda0fc0ed0800000000000000
+      internalID: -2446315868146097082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_4
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 2013
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e859b3152c926f740800000000000000
+      internalID: 5185377935526958478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_5
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 2027
+        width: 336
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81cfbe09f15fa0820800000000000000
+      internalID: 2885388027208399896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_6
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 2013
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ec328be01cf7880800000000000000
+      internalID: -8610951693546041757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_7
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 2029
+        width: 333
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c90cd1d937f8e80800000000000000
+      internalID: -8174187680007939071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_8
+      rect:
+        serializedVersion: 2
+        x: 2604
+        y: 2013
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9e58fffc589de90800000000000000
+      internalID: -7000417017379034629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_9
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1635
+        width: 331
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65edd2933a5220370800000000000000
+      internalID: 8287227647284338262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_10
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1617
+        width: 60
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b7d6bde07677ba0800000000000000
+      internalID: -6091286657486718083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_11
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1635
+        width: 332
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990c576b36acb2140800000000000000
+      internalID: 4696069566075617433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_12
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 1612
+        width: 336
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad53ac0b795adc20800000000000000
+      internalID: 3231994067619634597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_13
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1610
+        width: 348
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ff2d98c5b87b6e0800000000000000
+      internalID: -1821834294682517623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_14
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1610
+        width: 349
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0543fd17bd80ea120800000000000000
+      internalID: 2426886987800589392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_15
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 1610
+        width: 345
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1577ae28cd1475940800000000000000
+      internalID: 5284765103087581009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_16
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1215
+        width: 343
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c30cf846772515100800000000000000
+      internalID: 94947739893219388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_17
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1216
+        width: 340
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364dc9b24bcd73ff0800000000000000
+      internalID: -56333803934919581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_18
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 1217
+        width: 338
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3bed6ce4f3f5fd0800000000000000
+      internalID: -2351090872887626766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_19
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 1218
+        width: 337
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea0a52523b5a9e40800000000000000
+      internalID: 5663939753059945190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_20
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 1218
+        width: 336
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4a81fd1f5cb5960800000000000000
+      internalID: 7591879239483827389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_21
+      rect:
+        serializedVersion: 2
+        x: 2346
+        y: 1218
+        width: 335
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df724ea4c216e3580800000000000000
+      internalID: -8845525775246153731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 825
+        width: 337
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ddbb16a18c3b1120800000000000000
+      internalID: 2385566955158093266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_23
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 824
+        width: 348
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a568141a603b2020800000000000000
+      internalID: 2317999665374061993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_24
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 821
+        width: 382
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1522e76fa1b4cab80800000000000000
+      internalID: -8382242227266641327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_25
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 819
+        width: 443
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951e6cafa3b0a5880800000000000000
+      internalID: -8621566188704046759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_26
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 819
+        width: 452
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7c993710f21faf0800000000000000
+      internalID: -364458411559368753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_27
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 819
+        width: 454
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d80923564ccee70800000000000000
+      internalID: 9145900882201709979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_28
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 423
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a509e2dfe301eea60800000000000000
+      internalID: 7705113875199201370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_29
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 423
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d87c70a765ca7b0800000000000000
+      internalID: -5211695586657989337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_30
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 423
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b65dd1bf15aa890800000000000000
+      internalID: -7446048894924526716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_31
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 423
+        width: 453
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 330d21113f28824a0800000000000000
+      internalID: -6617895671945834445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_32
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 423
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909959731200e8e30800000000000000
+      internalID: 4507540419710916873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_33
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 423
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b69365ee2e51290800000000000000
+      internalID: -7920174856384451837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_34
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 27
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d91c8a1c39ca690800000000000000
+      internalID: -7589528812056896217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_35
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 27
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f44b8668b7d12720800000000000000
+      internalID: 2819772028704998645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_36
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 27
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50994ac5c5c509b0800000000000000
+      internalID: -5114464348516282274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_37
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 27
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0bc3710ad41d6100800000000000000
+      internalID: 102761293059181325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_38
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 27
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec85c6fe1d999e10800000000000000
+      internalID: 2204966248889289953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallinaMuere_39
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 27
+        width: 454
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f971317c19bd109f0800000000000000
+      internalID: -503880264132126817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gallinaMuere_0: 5123314098119884930
+      gallinaMuere_1: -2216803377483135706
+      gallinaMuere_10: -6091286657486718083
+      gallinaMuere_11: 4696069566075617433
+      gallinaMuere_12: 3231994067619634597
+      gallinaMuere_13: -1821834294682517623
+      gallinaMuere_14: 2426886987800589392
+      gallinaMuere_15: 5284765103087581009
+      gallinaMuere_16: 94947739893219388
+      gallinaMuere_17: -56333803934919581
+      gallinaMuere_18: -2351090872887626766
+      gallinaMuere_19: 5663939753059945190
+      gallinaMuere_2: 8414103220529929720
+      gallinaMuere_20: 7591879239483827389
+      gallinaMuere_21: -8845525775246153731
+      gallinaMuere_22: 2385566955158093266
+      gallinaMuere_23: 2317999665374061993
+      gallinaMuere_24: -8382242227266641327
+      gallinaMuere_25: -8621566188704046759
+      gallinaMuere_26: -364458411559368753
+      gallinaMuere_27: 9145900882201709979
+      gallinaMuere_28: 7705113875199201370
+      gallinaMuere_29: -5211695586657989337
+      gallinaMuere_3: -2446315868146097082
+      gallinaMuere_30: -7446048894924526716
+      gallinaMuere_31: -6617895671945834445
+      gallinaMuere_32: 4507540419710916873
+      gallinaMuere_33: -7920174856384451837
+      gallinaMuere_34: -7589528812056896217
+      gallinaMuere_35: 2819772028704998645
+      gallinaMuere_36: -5114464348516282274
+      gallinaMuere_37: 102761293059181325
+      gallinaMuere_38: 2204966248889289953
+      gallinaMuere_39: -503880264132126817
+      gallinaMuere_4: 5185377935526958478
+      gallinaMuere_5: 2885388027208399896
+      gallinaMuere_6: -8610951693546041757
+      gallinaMuere_7: -8174187680007939071
+      gallinaMuere_8: -7000417017379034629
+      gallinaMuere_9: 8287227647284338262
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 77b6e44364bcaa6429d31750bc6fc90c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2765958908020499347
+    second: CalabazaMuere_0
+  - first:
+      213: 2282753258486920228
+    second: CalabazaMuere_1
+  - first:
+      213: 8450877949610609211
+    second: CalabazaMuere_2
+  - first:
+      213: 6992704013741596714
+    second: CalabazaMuere_3
+  - first:
+      213: 8551728005125948212
+    second: CalabazaMuere_4
+  - first:
+      213: -861884564814385317
+    second: CalabazaMuere_5
+  - first:
+      213: -3827294824831329274
+    second: CalabazaMuere_6
+  - first:
+      213: 538036637619256648
+    second: CalabazaMuere_7
+  - first:
+      213: -2436625308494274124
+    second: CalabazaMuere_8
+  - first:
+      213: -4334414358210616514
+    second: CalabazaMuere_9
+  - first:
+      213: -1721300154281549857
+    second: CalabazaMuere_10
+  - first:
+      213: 899201845601724796
+    second: CalabazaMuere_11
+  - first:
+      213: -7087683567232730266
+    second: CalabazaMuere_12
+  - first:
+      213: -4470031558267206269
+    second: CalabazaMuere_13
+  - first:
+      213: 5768438803270421374
+    second: CalabazaMuere_14
+  - first:
+      213: 4322331397399112841
+    second: CalabazaMuere_15
+  - first:
+      213: -1950282645408099177
+    second: CalabazaMuere_16
+  - first:
+      213: 4287083414930885277
+    second: CalabazaMuere_17
+  - first:
+      213: 5969355259852685555
+    second: CalabazaMuere_18
+  - first:
+      213: 835981897139810161
+    second: CalabazaMuere_19
+  - first:
+      213: -6830941802896530051
+    second: CalabazaMuere_20
+  - first:
+      213: -7726020318647401861
+    second: CalabazaMuere_21
+  - first:
+      213: -3550088630495381726
+    second: CalabazaMuere_22
+  - first:
+      213: -6748749105820886176
+    second: CalabazaMuere_23
+  - first:
+      213: -3284047640608449400
+    second: CalabazaMuere_24
+  - first:
+      213: -4304793144908228725
+    second: CalabazaMuere_25
+  - first:
+      213: -8319285848481273172
+    second: CalabazaMuere_26
+  - first:
+      213: 3446317622489312633
+    second: CalabazaMuere_27
+  - first:
+      213: 7167353411316421
+    second: CalabazaMuere_28
+  - first:
+      213: 3549980552867643557
+    second: CalabazaMuere_29
+  - first:
+      213: -6772712220259103161
+    second: CalabazaMuere_30
+  - first:
+      213: -9060954255179905034
+    second: CalabazaMuere_31
+  - first:
+      213: -3919390378714607770
+    second: CalabazaMuere_32
+  - first:
+      213: -6566052655947714494
+    second: CalabazaMuere_33
+  - first:
+      213: 1526208142939337325
+    second: CalabazaMuere_34
+  - first:
+      213: -2317547471182810652
+    second: CalabazaMuere_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CalabazaMuere_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2321
+        width: 344
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c5c1027075d99d0800000000000000
+      internalID: -2765958908020499347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_1
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 2321
+        width: 344
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4247af97ef7fdaf10800000000000000
+      internalID: 2282753258486920228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_2
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 2321
+        width: 348
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ac8b278bc874570800000000000000
+      internalID: 8450877949610609211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_3
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 2321
+        width: 355
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20248660431b0160800000000000000
+      internalID: 6992704013741596714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_4
+      rect:
+        serializedVersion: 2
+        x: 2244
+        y: 2321
+        width: 362
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433ca49cf47dda670800000000000000
+      internalID: 8551728005125948212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_5
+      rect:
+        serializedVersion: 2
+        x: 2781
+        y: 2321
+        width: 366
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5fa8d40e88f904f0800000000000000
+      internalID: -861884564814385317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_6
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1857
+        width: 379
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cdc3b72a7b2eac0800000000000000
+      internalID: -3827294824831329274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_7
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1857
+        width: 386
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84df075a87d777700800000000000000
+      internalID: 538036637619256648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_8
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1857
+        width: 391
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1e874113e5f2ed0800000000000000
+      internalID: -2436625308494274124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_9
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 1857
+        width: 395
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33e08d1b1119d3c0800000000000000
+      internalID: -4334414358210616514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_10
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 1857
+        width: 415
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf193821a6bc18e0800000000000000
+      internalID: -1721300154281549857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_11
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 1857
+        width: 423
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79677c705b9a7c00800000000000000
+      internalID: 899201845601724796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_12
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1393
+        width: 438
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b38b6095d73ad90800000000000000
+      internalID: -7087683567232730266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_13
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1393
+        width: 446
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38582b22bf147f1c0800000000000000
+      internalID: -4470031558267206269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_14
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1393
+        width: 457
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b4381778c9d0050800000000000000
+      internalID: 5768438803270421374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_15
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1393
+        width: 467
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ced7751810cfb30800000000000000
+      internalID: 4322331397399112841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_16
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 1393
+        width: 473
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79457dc54443fe4e0800000000000000
+      internalID: -1950282645408099177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_17
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 1393
+        width: 481
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a8c65e6a7ce7b30800000000000000
+      internalID: 4287083414930885277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_18
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 929
+        width: 486
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f001a95bf867d250800000000000000
+      internalID: 5969355259852685555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_19
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 929
+        width: 488
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17feca13b110a9b00800000000000000
+      internalID: 835981897139810161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_20
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 929
+        width: 496
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d756cf44f9e9331a0800000000000000
+      internalID: -6830941802896530051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_21
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 929
+        width: 497
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7242935479a7c490800000000000000
+      internalID: -7726020318647401861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_22
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 929
+        width: 500
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2277b22233d8bbec0800000000000000
+      internalID: -3550088630495381726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_23
+      rect:
+        serializedVersion: 2
+        x: 2691
+        y: 929
+        width: 503
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b9f45d170a752a0800000000000000
+      internalID: -6748749105820886176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 465
+        width: 506
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88cd21c0218bc62d0800000000000000
+      internalID: -3284047640608449400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_25
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 465
+        width: 508
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b875536417d4244c0800000000000000
+      internalID: -4304793144908228725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_26
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 465
+        width: 509
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caae6582995fb8c80800000000000000
+      internalID: -8319285848481273172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_27
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 465
+        width: 509
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97de4a74e97c3df20800000000000000
+      internalID: 3446317622489312633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_28
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 465
+        width: 508
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5caaf028ba6791000800000000000000
+      internalID: 7167353411316421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_29
+      rect:
+        serializedVersion: 2
+        x: 2691
+        y: 465
+        width: 507
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a088351180144130800000000000000
+      internalID: 3549980552867643557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 506
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e42897e1e7202a0800000000000000
+      internalID: -6772712220259103161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_31
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1
+        width: 507
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f700f5ac16014280800000000000000
+      internalID: -9060954255179905034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_32
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 1
+        width: 507
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66fc1a467378b99c0800000000000000
+      internalID: -3919390378714607770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_33
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 1
+        width: 507
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240f9b9d5e1b0e4a0800000000000000
+      internalID: -6566052655947714494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_34
+      rect:
+        serializedVersion: 2
+        x: 2153
+        y: 1
+        width: 507
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d623535483e2e2510800000000000000
+      internalID: 1526208142939337325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CalabazaMuere_35
+      rect:
+        serializedVersion: 2
+        x: 2691
+        y: 1
+        width: 507
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e13b069ada66dfd0800000000000000
+      internalID: -2317547471182810652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CalabazaMuere_0: -2765958908020499347
+      CalabazaMuere_1: 2282753258486920228
+      CalabazaMuere_10: -1721300154281549857
+      CalabazaMuere_11: 899201845601724796
+      CalabazaMuere_12: -7087683567232730266
+      CalabazaMuere_13: -4470031558267206269
+      CalabazaMuere_14: 5768438803270421374
+      CalabazaMuere_15: 4322331397399112841
+      CalabazaMuere_16: -1950282645408099177
+      CalabazaMuere_17: 4287083414930885277
+      CalabazaMuere_18: 5969355259852685555
+      CalabazaMuere_19: 835981897139810161
+      CalabazaMuere_2: 8450877949610609211
+      CalabazaMuere_20: -6830941802896530051
+      CalabazaMuere_21: -7726020318647401861
+      CalabazaMuere_22: -3550088630495381726
+      CalabazaMuere_23: -6748749105820886176
+      CalabazaMuere_24: -3284047640608449400
+      CalabazaMuere_25: -4304793144908228725
+      CalabazaMuere_26: -8319285848481273172
+      CalabazaMuere_27: 3446317622489312633
+      CalabazaMuere_28: 7167353411316421
+      CalabazaMuere_29: 3549980552867643557
+      CalabazaMuere_3: 6992704013741596714
+      CalabazaMuere_30: -6772712220259103161
+      CalabazaMuere_31: -9060954255179905034
+      CalabazaMuere_32: -3919390378714607770
+      CalabazaMuere_33: -6566052655947714494
+      CalabazaMuere_34: 1526208142939337325
+      CalabazaMuere_35: -2317547471182810652
+      CalabazaMuere_4: 8551728005125948212
+      CalabazaMuere_5: -861884564814385317
+      CalabazaMuere_6: -3827294824831329274
+      CalabazaMuere_7: 538036637619256648
+      CalabazaMuere_8: -2436625308494274124
+      CalabazaMuere_9: -4334414358210616514
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,4 +1,7 @@
 using UnityEngine;
+#if ENABLE_INPUT_SYSTEM
+using UnityEngine.InputSystem;
+#endif
 
 /// <summary>
 /// Main UI manager that coordinates all UI elements and handles UI interactions.
@@ -28,11 +31,21 @@ public sealed class UIManager : MonoBehaviour
     private void Update()
     {
         // Toggle shop panel with Tab key
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (WasTabPressed())
         {
             if (shopPanelRoot != null)
                 shopPanelRoot.SetActive(!shopPanelRoot.activeSelf);
         }
+    }
+
+    private static bool WasTabPressed()
+    {
+#if ENABLE_INPUT_SYSTEM
+        var k = Keyboard.current;
+        return k != null && k.tabKey.wasPressedThisFrame;
+#else
+        return Input.GetKeyDown(KeyCode.Tab);
+#endif
     }
 
     #region Shop Actions
@@ -44,6 +57,14 @@ public sealed class UIManager : MonoBehaviour
     public void BuyHoe() => shopSystem?.BuyHoe();
     public void BuyAxe() => shopSystem?.BuyAxe();
     public void BuyPickaxe() => shopSystem?.BuyPickaxe();
+
+    public void SellMilkBatch() => shopSystem?.SellMilkBatch();
+    public void SellEggBatch() => shopSystem?.SellEggBatch();
+    public void SellMeatBatch() => shopSystem?.SellMeatBatch();
+
+    public void SellCow() => shopSystem?.SellCow();
+    public void SellChicken() => shopSystem?.SellChicken();
+    public void SellPig() => shopSystem?.SellPig();
 
     #endregion
 }

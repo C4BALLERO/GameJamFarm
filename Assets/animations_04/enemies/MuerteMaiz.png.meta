@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 9518601a2d17c8c439b5359720a2d499
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2099714725019528550
+    second: MuerteMaiz_0
+  - first:
+      213: 3970555242820299243
+    second: MuerteMaiz_1
+  - first:
+      213: -1709840069918629108
+    second: MuerteMaiz_2
+  - first:
+      213: -1717022059851977323
+    second: MuerteMaiz_3
+  - first:
+      213: -337465485601283851
+    second: MuerteMaiz_4
+  - first:
+      213: -9209369675988113858
+    second: MuerteMaiz_5
+  - first:
+      213: -8299583478773524914
+    second: MuerteMaiz_6
+  - first:
+      213: 8345613564664004963
+    second: MuerteMaiz_7
+  - first:
+      213: 263693416085790871
+    second: MuerteMaiz_8
+  - first:
+      213: -2914782070586415554
+    second: MuerteMaiz_9
+  - first:
+      213: 9201908455876101927
+    second: MuerteMaiz_10
+  - first:
+      213: -451806579198141061
+    second: MuerteMaiz_11
+  - first:
+      213: 213581299630280556
+    second: MuerteMaiz_12
+  - first:
+      213: -2524235930604466699
+    second: MuerteMaiz_13
+  - first:
+      213: -3674621195732602550
+    second: MuerteMaiz_14
+  - first:
+      213: -5608968178683866530
+    second: MuerteMaiz_15
+  - first:
+      213: 8728679138935981938
+    second: MuerteMaiz_16
+  - first:
+      213: -5098758109381848318
+    second: MuerteMaiz_17
+  - first:
+      213: -6744523681763132281
+    second: MuerteMaiz_18
+  - first:
+      213: 7119450220260213191
+    second: MuerteMaiz_19
+  - first:
+      213: 3604565294072930601
+    second: MuerteMaiz_20
+  - first:
+      213: -8548742917721804387
+    second: MuerteMaiz_21
+  - first:
+      213: 8348748194422652203
+    second: MuerteMaiz_22
+  - first:
+      213: 3326061416933707644
+    second: MuerteMaiz_23
+  - first:
+      213: 8011614685494225379
+    second: MuerteMaiz_24
+  - first:
+      213: 6547893408173505682
+    second: MuerteMaiz_25
+  - first:
+      213: 4615080701074582858
+    second: MuerteMaiz_26
+  - first:
+      213: 3381120515889622332
+    second: MuerteMaiz_27
+  - first:
+      213: 5598221789742254878
+    second: MuerteMaiz_28
+  - first:
+      213: 7737405729989781128
+    second: MuerteMaiz_29
+  - first:
+      213: 4767463706591026621
+    second: MuerteMaiz_30
+  - first:
+      213: -8339813891665894078
+    second: MuerteMaiz_31
+  - first:
+      213: -4813642678820317581
+    second: MuerteMaiz_32
+  - first:
+      213: 6617253189473926587
+    second: MuerteMaiz_33
+  - first:
+      213: 5982313170943502606
+    second: MuerteMaiz_34
+  - first:
+      213: -3050378280139949698
+    second: MuerteMaiz_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MuerteMaiz_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2564
+        width: 405
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92dd8515905cd2e0800000000000000
+      internalID: -2099714725019528550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_1
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 2564
+        width: 405
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be96e59d4fe3a1730800000000000000
+      internalID: 3970555242820299243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_2
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 2564
+        width: 405
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0365c9f38d6548e0800000000000000
+      internalID: -1709840069918629108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_3
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 2564
+        width: 406
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59d6303a889eb28e0800000000000000
+      internalID: -1717022059851977323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_4
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 2563
+        width: 418
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0e7c6cde4115bf0800000000000000
+      internalID: -337465485601283851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_5
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 2563
+        width: 427
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e366971b21fb13080800000000000000
+      internalID: -9209369675988113858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_6
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2050
+        width: 431
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46d0049cc4f1dc80800000000000000
+      internalID: -8299583478773524914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_7
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 2050
+        width: 442
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 361ca72f15391d370800000000000000
+      internalID: 8345613564664004963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_8
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 2050
+        width: 450
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790276bc3c3d8a300800000000000000
+      internalID: 263693416085790871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_9
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 2050
+        width: 454
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36e405662d9c87d0800000000000000
+      internalID: -2914782070586415554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_10
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 2051
+        width: 465
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7278820acfeb3bf70800000000000000
+      internalID: 9201908455876101927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_11
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 2051
+        width: 475
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7dd5bb5f4cdab9f0800000000000000
+      internalID: -451806579198141061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_12
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1539
+        width: 482
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f01277f0bc6f200800000000000000
+      internalID: 213581299630280556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_13
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 1540
+        width: 487
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd0b0b8bcc18fcd0800000000000000
+      internalID: -2524235930604466699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_14
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 1540
+        width: 491
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41bc30dd7f110dc0800000000000000
+      internalID: -3674621195732602550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_15
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 1540
+        width: 489
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e521419b821f822b0800000000000000
+      internalID: -5608968178683866530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_16
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 1540
+        width: 499
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27744aa2e6f722970800000000000000
+      internalID: 8728679138935981938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_17
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1540
+        width: 500
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20317ae83829d39b0800000000000000
+      internalID: -5098758109381848318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1026
+        width: 517
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c7c490273a662a0800000000000000
+      internalID: -6744523681763132281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_19
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1026
+        width: 518
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1cfae314e5dc260800000000000000
+      internalID: 7119450220260213191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_20
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1026
+        width: 518
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9212be2890df50230800000000000000
+      internalID: 3604565294072930601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_21
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 1025
+        width: 516
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d913e090c93cc5980800000000000000
+      internalID: -8548742917721804387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_22
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 1025
+        width: 516
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2dfebfcf36bcd370800000000000000
+      internalID: 8348748194422652203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_23
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 1025
+        width: 515
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f47798c3b882e20800000000000000
+      internalID: 3326061416933707644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_24
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 513
+        width: 515
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9af2eeb19fe2f60800000000000000
+      internalID: 8011614685494225379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_25
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 513
+        width: 516
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29cbd4dcc5aceda50800000000000000
+      internalID: 6547893408173505682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_26
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 513
+        width: 516
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4daf45227f0c0040800000000000000
+      internalID: 4615080701074582858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_27
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 513
+        width: 516
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3de26cf1372cee20800000000000000
+      internalID: 3381120515889622332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_28
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 513
+        width: 518
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b407f9e01e0bd40800000000000000
+      internalID: 5598221789742254878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_29
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 513
+        width: 518
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 886ec135489c06b60800000000000000
+      internalID: 7737405729989781128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_30
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1
+        width: 518
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbddce66bfe692240800000000000000
+      internalID: 4767463706591026621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_31
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1
+        width: 518
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245e266a377034c80800000000000000
+      internalID: -8339813891665894078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_32
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1
+        width: 518
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3765145cc71823db0800000000000000
+      internalID: -4813642678820317581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_33
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 1
+        width: 518
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbdf96357b435db50800000000000000
+      internalID: 6617253189473926587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_34
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 1
+        width: 518
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e096a312222750350800000000000000
+      internalID: 5982313170943502606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteMaiz_35
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 1
+        width: 518
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79f0b5ad11eaa5d0800000000000000
+      internalID: -3050378280139949698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MuerteMaiz_0: -2099714725019528550
+      MuerteMaiz_1: 3970555242820299243
+      MuerteMaiz_10: 9201908455876101927
+      MuerteMaiz_11: -451806579198141061
+      MuerteMaiz_12: 213581299630280556
+      MuerteMaiz_13: -2524235930604466699
+      MuerteMaiz_14: -3674621195732602550
+      MuerteMaiz_15: -5608968178683866530
+      MuerteMaiz_16: 8728679138935981938
+      MuerteMaiz_17: -5098758109381848318
+      MuerteMaiz_18: -6744523681763132281
+      MuerteMaiz_19: 7119450220260213191
+      MuerteMaiz_2: -1709840069918629108
+      MuerteMaiz_20: 3604565294072930601
+      MuerteMaiz_21: -8548742917721804387
+      MuerteMaiz_22: 8348748194422652203
+      MuerteMaiz_23: 3326061416933707644
+      MuerteMaiz_24: 8011614685494225379
+      MuerteMaiz_25: 6547893408173505682
+      MuerteMaiz_26: 4615080701074582858
+      MuerteMaiz_27: 3381120515889622332
+      MuerteMaiz_28: 5598221789742254878
+      MuerteMaiz_29: 7737405729989781128
+      MuerteMaiz_3: -1717022059851977323
+      MuerteMaiz_30: 4767463706591026621
+      MuerteMaiz_31: -8339813891665894078
+      MuerteMaiz_32: -4813642678820317581
+      MuerteMaiz_33: 6617253189473926587
+      MuerteMaiz_34: 5982313170943502606
+      MuerteMaiz_35: -3050378280139949698
+      MuerteMaiz_4: -337465485601283851
+      MuerteMaiz_5: -9209369675988113858
+      MuerteMaiz_6: -8299583478773524914
+      MuerteMaiz_7: 8345613564664004963
+      MuerteMaiz_8: 263693416085790871
+      MuerteMaiz_9: -2914782070586415554
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: ee6e44f19db17df449ee727900100489
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -226756612230708903
+    second: CerdoMuere_0
+  - first:
+      213: 5524332680046204864
+    second: CerdoMuere_1
+  - first:
+      213: 7945157117803957577
+    second: CerdoMuere_2
+  - first:
+      213: 6746035675016150762
+    second: CerdoMuere_3
+  - first:
+      213: 5696007595186427693
+    second: CerdoMuere_4
+  - first:
+      213: 4757127215472911386
+    second: CerdoMuere_5
+  - first:
+      213: 7062455117877291860
+    second: CerdoMuere_6
+  - first:
+      213: 340066203531265993
+    second: CerdoMuere_7
+  - first:
+      213: -7245487993106135626
+    second: CerdoMuere_8
+  - first:
+      213: -513716218902310052
+    second: CerdoMuere_9
+  - first:
+      213: 7243816159205787064
+    second: CerdoMuere_10
+  - first:
+      213: -1600664580789874608
+    second: CerdoMuere_11
+  - first:
+      213: 6987179955226942337
+    second: CerdoMuere_12
+  - first:
+      213: 393097024277332047
+    second: CerdoMuere_13
+  - first:
+      213: -4531556761056686338
+    second: CerdoMuere_14
+  - first:
+      213: 3066180659338163862
+    second: CerdoMuere_15
+  - first:
+      213: -3733506377530063829
+    second: CerdoMuere_16
+  - first:
+      213: -4049236925556945834
+    second: CerdoMuere_17
+  - first:
+      213: -4909490815398332839
+    second: CerdoMuere_18
+  - first:
+      213: -8231002313245791137
+    second: CerdoMuere_19
+  - first:
+      213: 3970424463056356326
+    second: CerdoMuere_20
+  - first:
+      213: 5087533451600418119
+    second: CerdoMuere_21
+  - first:
+      213: -6535017717277900770
+    second: CerdoMuere_22
+  - first:
+      213: -8326478732380573509
+    second: CerdoMuere_23
+  - first:
+      213: 1582936993329660970
+    second: CerdoMuere_24
+  - first:
+      213: -8446904941591171907
+    second: CerdoMuere_25
+  - first:
+      213: 4474212988901338402
+    second: CerdoMuere_26
+  - first:
+      213: -8333260886253079609
+    second: CerdoMuere_27
+  - first:
+      213: 7092151146170718024
+    second: CerdoMuere_28
+  - first:
+      213: 5184827454395906561
+    second: CerdoMuere_29
+  - first:
+      213: 1486108384510997996
+    second: CerdoMuere_30
+  - first:
+      213: -2743031748381856670
+    second: CerdoMuere_31
+  - first:
+      213: 8863131155228545402
+    second: CerdoMuere_32
+  - first:
+      213: 3655898027167068095
+    second: CerdoMuere_33
+  - first:
+      213: -711167860480492969
+    second: CerdoMuere_34
+  - first:
+      213: 1899558114188030755
+    second: CerdoMuere_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CerdoMuere_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1826
+        width: 457
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951848500166adcf0800000000000000
+      internalID: -226756612230708903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_1
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1826
+        width: 457
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c75c37ad4f5aac40800000000000000
+      internalID: 5524332680046204864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_2
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 1826
+        width: 453
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d0f5bad4ed24e60800000000000000
+      internalID: 7945157117803957577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_3
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 1826
+        width: 448
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee337354bbbe9d50800000000000000
+      internalID: 6746035675016150762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_4
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1826
+        width: 447
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d279305aab84c0f40800000000000000
+      internalID: 5696007595186427693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_5
+      rect:
+        serializedVersion: 2
+        x: 3109
+        y: 1826
+        width: 447
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a142b958ff5b40240800000000000000
+      internalID: 4757127215472911386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_6
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1468
+        width: 444
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b273fd281e20260800000000000000
+      internalID: 7062455117877291860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_7
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1468
+        width: 443
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7c89d096828b400800000000000000
+      internalID: 340066203531265993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_8
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 1468
+        width: 449
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b50d8afe0bd27b90800000000000000
+      internalID: -7245487993106135626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_9
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 1468
+        width: 450
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5398f812d9eed8f0800000000000000
+      internalID: -513716218902310052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_10
+      rect:
+        serializedVersion: 2
+        x: 2491
+        y: 1468
+        width: 451
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b502bbda64378460800000000000000
+      internalID: 7243816159205787064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_11
+      rect:
+        serializedVersion: 2
+        x: 3098
+        y: 1467
+        width: 451
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05058716b0c49c9e0800000000000000
+      internalID: -1600664580789874608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_12
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1113
+        width: 453
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b180d462377f060800000000000000
+      internalID: 6987179955226942337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_13
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 1119
+        width: 453
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40405e29af847500800000000000000
+      internalID: 393097024277332047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_14
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 1120
+        width: 455
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe42b1922dac11c0800000000000000
+      internalID: -4531556761056686338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_15
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 1114
+        width: 456
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 696360970134d8a20800000000000000
+      internalID: 3066180659338163862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_16
+      rect:
+        serializedVersion: 2
+        x: 2494
+        y: 1115
+        width: 459
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b244aa80bbbef2cc0800000000000000
+      internalID: -3733506377530063829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_17
+      rect:
+        serializedVersion: 2
+        x: 3091
+        y: 1115
+        width: 467
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c88c058783ec7c0800000000000000
+      internalID: -4049236925556945834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_18
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 753
+        width: 473
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956b3207d1cfddbb0800000000000000
+      internalID: -4909490815398332839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_19
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 740
+        width: 529
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ce09d710b95cd80800000000000000
+      internalID: -8231002313245791137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_20
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 735
+        width: 574
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3ceff4308c91730800000000000000
+      internalID: 3970424463056356326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_21
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 729
+        width: 577
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7455f8528bc8a9640800000000000000
+      internalID: 5087533451600418119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_22
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 718
+        width: 564
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1044c89204fe45a0800000000000000
+      internalID: -6535017717277900770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_23
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 717
+        width: 564
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb07c9e55b7627c80800000000000000
+      internalID: -8326478732380573509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 360
+        width: 562
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a244d350fc8b7f510800000000000000
+      internalID: 1582936993329660970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_25
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 360
+        width: 564
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc67f095b096ca80800000000000000
+      internalID: -8446904941591171907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_26
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 360
+        width: 565
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d27ec0209971e30800000000000000
+      internalID: 4474212988901338402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_27
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 360
+        width: 567
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c37a3e106f4a5c80800000000000000
+      internalID: -8333260886253079609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_28
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 360
+        width: 568
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84792e044e16c6260800000000000000
+      internalID: 7092151146170718024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_29
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 360
+        width: 567
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10af5f0791534f740800000000000000
+      internalID: 5184827454395906561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_30
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 2
+        width: 566
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5f184b3b7bf9410800000000000000
+      internalID: 1486108384510997996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_31
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 2
+        width: 566
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ca416782bcee9d0800000000000000
+      internalID: -2743031748381856670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_32
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 2
+        width: 566
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a715819a3da200b70800000000000000
+      internalID: 8863131155228545402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_33
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 2
+        width: 566
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf285cc2eb5cb230800000000000000
+      internalID: 3655898027167068095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_34
+      rect:
+        serializedVersion: 2
+        x: 2451
+        y: 2
+        width: 566
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ab26c499c6126f0800000000000000
+      internalID: -711167860480492969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CerdoMuere_35
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 2
+        width: 566
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32373626a069c5a10800000000000000
+      internalID: 1899558114188030755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CerdoMuere_0: -226756612230708903
+      CerdoMuere_1: 5524332680046204864
+      CerdoMuere_10: 7243816159205787064
+      CerdoMuere_11: -1600664580789874608
+      CerdoMuere_12: 6987179955226942337
+      CerdoMuere_13: 393097024277332047
+      CerdoMuere_14: -4531556761056686338
+      CerdoMuere_15: 3066180659338163862
+      CerdoMuere_16: -3733506377530063829
+      CerdoMuere_17: -4049236925556945834
+      CerdoMuere_18: -4909490815398332839
+      CerdoMuere_19: -8231002313245791137
+      CerdoMuere_2: 7945157117803957577
+      CerdoMuere_20: 3970424463056356326
+      CerdoMuere_21: 5087533451600418119
+      CerdoMuere_22: -6535017717277900770
+      CerdoMuere_23: -8326478732380573509
+      CerdoMuere_24: 1582936993329660970
+      CerdoMuere_25: -8446904941591171907
+      CerdoMuere_26: 4474212988901338402
+      CerdoMuere_27: -8333260886253079609
+      CerdoMuere_28: 7092151146170718024
+      CerdoMuere_29: 5184827454395906561
+      CerdoMuere_3: 6746035675016150762
+      CerdoMuere_30: 1486108384510997996
+      CerdoMuere_31: -2743031748381856670
+      CerdoMuere_32: 8863131155228545402
+      CerdoMuere_33: 3655898027167068095
+      CerdoMuere_34: -711167860480492969
+      CerdoMuere_35: 1899558114188030755
+      CerdoMuere_4: 5696007595186427693
+      CerdoMuere_5: 4757127215472911386
+      CerdoMuere_6: 7062455117877291860
+      CerdoMuere_7: 340066203531265993
+      CerdoMuere_8: -7245487993106135626
+      CerdoMuere_9: -513716218902310052
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

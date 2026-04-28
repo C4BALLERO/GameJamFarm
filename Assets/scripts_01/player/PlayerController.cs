@@ -1,4 +1,7 @@
 using UnityEngine;
+#if ENABLE_INPUT_SYSTEM
+using UnityEngine.InputSystem;
+#endif
 
 [RequireComponent(typeof(Rigidbody2D))]
 [DisallowMultipleComponent]
@@ -10,6 +13,7 @@ public sealed class PlayerController : MonoBehaviour
 
     [Header("Animation")]
     [SerializeField] private Animator animator;
+    [SerializeField] private PlayerSpriteAnimator spriteAnimator;
     [SerializeField] private string moveX = "MoveX";
     [SerializeField] private string moveY = "MoveY";
     [SerializeField] private string isMoving = "IsMoving";
@@ -30,6 +34,7 @@ public sealed class PlayerController : MonoBehaviour
         combat = GetComponent<PlayerCombat>();
         health = GetComponent<PlayerHealth>();
         animator = GetComponentInChildren<Animator>();
+        spriteAnimator = GetComponent<PlayerSpriteAnimator>();
     }
 
     private void Awake()
@@ -37,11 +42,13 @@ public sealed class PlayerController : MonoBehaviour
         if (rb == null) rb = GetComponent<Rigidbody2D>();
         if (combat == null) combat = GetComponent<PlayerCombat>();
         if (health == null) health = GetComponent<PlayerHealth>();
+        if (spriteAnimator == null) spriteAnimator = GetComponent<PlayerSpriteAnimator>();
 
         if (health != null)
         {
             health.Damaged += OnDamaged;
             health.Died += OnDied;
+            health.Revived += OnRevived;
         }
     }
 
@@ -51,6 +58,7 @@ public sealed class PlayerController : MonoBehaviour
         {
             health.Damaged -= OnDamaged;
             health.Died -= OnDied;
+            health.Revived -= OnRevived;
         }
     }
 
@@ -63,7 +71,7 @@ public sealed class PlayerController : MonoBehaviour
             return;
         }
 
-        _input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        _input = ReadMoveInput();
         _input = Vector2.ClampMagnitude(_input, 1f);
 
         if (_input.sqrMagnitude > 0.001f) _facing = _input;
@@ -75,11 +83,45 @@ public sealed class PlayerController : MonoBehaviour
             animator.SetBool(isMoving, _input.sqrMagnitude > 0.001f);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (spriteAnimator != null)
+            spriteAnimator.SetMovement(_facing, _input.sqrMagnitude > 0.001f);
+
+        if (WasAttackPressed())
         {
             if (combat != null && combat.TryAttack(_facing))
+            {
                 if (animator != null) animator.SetTrigger(triggerAttack);
+                if (spriteAnimator != null) spriteAnimator.TriggerAttack();
+            }
         }
+    }
+
+    private static Vector2 ReadMoveInput()
+    {
+#if ENABLE_INPUT_SYSTEM
+        var k = Keyboard.current;
+        if (k == null) return Vector2.zero;
+        var v = Vector2.zero;
+        if (k.aKey.isPressed || k.leftArrowKey.isPressed) v.x -= 1f;
+        if (k.dKey.isPressed || k.rightArrowKey.isPressed) v.x += 1f;
+        if (k.sKey.isPressed || k.downArrowKey.isPressed) v.y -= 1f;
+        if (k.wKey.isPressed || k.upArrowKey.isPressed) v.y += 1f;
+        return v;
+#else
+        return new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+#endif
+    }
+
+    private static bool WasAttackPressed()
+    {
+#if ENABLE_INPUT_SYSTEM
+        var k = Keyboard.current;
+        var m = Mouse.current;
+        return (k != null && k.spaceKey.wasPressedThisFrame) ||
+               (m != null && m.leftButton.wasPressedThisFrame);
+#else
+        return Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0);
+#endif
     }
 
     private void FixedUpdate()
@@ -101,7 +143,13 @@ public sealed class PlayerController : MonoBehaviour
     private void OnDied()
     {
         if (animator != null) animator.SetTrigger(triggerDeath);
+        if (spriteAnimator != null) spriteAnimator.TriggerDeath();
         if (rb != null) rb.linearVelocity = Vector2.zero;
+    }
+
+    private void OnRevived()
+    {
+        if (spriteAnimator != null) spriteAnimator.TriggerRevive();
     }
 }
 

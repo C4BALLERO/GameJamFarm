@@ -15,6 +15,8 @@ public sealed class SpawnManager : MonoBehaviour
     [Header("Spawn Area")]
     [SerializeField] private Vector2 center = Vector2.zero;
     [SerializeField] private Vector2 size = new(20f, 20f);
+    [SerializeField] private bool spawnOnBordersOnly = true;
+    [SerializeField] private float borderInset = 0.15f;
     [SerializeField] private float minDistanceFromPlayer = 4f;
 
     [Header("Prefabs")]
@@ -36,6 +38,9 @@ public sealed class SpawnManager : MonoBehaviour
     /// </summary>
     public void SetPlayer(Transform t) => player = t;
 
+    /// <summary>Assign difficulty clock reference at runtime if not wired in the inspector.</summary>
+    public void SetTimeManager(TimeManager tm) => timeManager = tm;
+
     private void Reset()
     {
         timeManager = FindFirstObjectByType<TimeManager>();
@@ -43,6 +48,7 @@ public sealed class SpawnManager : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsPaused) return;
         if (player == null) return;
         if (enemyPrefabs == null || enemyPrefabs.Length == 0) return;
         if (_alive >= maxAlive) return;
@@ -70,7 +76,9 @@ public sealed class SpawnManager : MonoBehaviour
         const int maxAttempts = 20;
         for (var i = 0; i < maxAttempts; i++)
         {
-            var pos = RandomPointInRect(center, size);
+            var pos = spawnOnBordersOnly
+                ? RandomPointOnRectBorder(center, size, borderInset)
+                : RandomPointInRect(center, size);
             if (Vector2.Distance(pos, player.position) < minDistanceFromPlayer) 
                 continue;
 
@@ -100,8 +108,22 @@ public sealed class SpawnManager : MonoBehaviour
             Random.Range(rectCenter.y - half.y, rectCenter.y + half.y)
         );
     }
-}
-        );
+
+    private static Vector2 RandomPointOnRectBorder(Vector2 rectCenter, Vector2 rectSize, float inset)
+    {
+        var half = rectSize * 0.5f;
+        var minX = rectCenter.x - half.x + inset;
+        var maxX = rectCenter.x + half.x - inset;
+        var minY = rectCenter.y - half.y + inset;
+        var maxY = rectCenter.y + half.y - inset;
+
+        var side = Random.Range(0, 4);
+        return side switch
+        {
+            0 => new Vector2(Random.Range(minX, maxX), maxY), // top
+            1 => new Vector2(Random.Range(minX, maxX), minY), // bottom
+            2 => new Vector2(minX, Random.Range(minY, maxY)), // left
+            _ => new Vector2(maxX, Random.Range(minY, maxY))  // right
+        };
     }
 }
-

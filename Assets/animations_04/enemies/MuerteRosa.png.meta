@@ -1,0 +1,3107 @@
+fileFormatVersion: 2
+guid: d25a0890ceef3254ba230492fb605e19
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -94299117490869360
+    second: MuerteRosa_0
+  - first:
+      213: 1934927414153968033
+    second: MuerteRosa_1
+  - first:
+      213: 3664961876878178954
+    second: MuerteRosa_2
+  - first:
+      213: 8345710789326755665
+    second: MuerteRosa_3
+  - first:
+      213: -7873786146324227781
+    second: MuerteRosa_4
+  - first:
+      213: 7583154191614358052
+    second: MuerteRosa_5
+  - first:
+      213: -1938274232205463082
+    second: MuerteRosa_6
+  - first:
+      213: 7936434051377670194
+    second: MuerteRosa_7
+  - first:
+      213: -8518831478842433785
+    second: MuerteRosa_8
+  - first:
+      213: 9140047315722278978
+    second: MuerteRosa_9
+  - first:
+      213: 1682657234272959915
+    second: MuerteRosa_10
+  - first:
+      213: 3694918784521385964
+    second: MuerteRosa_11
+  - first:
+      213: -555439463305226128
+    second: MuerteRosa_12
+  - first:
+      213: 4932181417560092487
+    second: MuerteRosa_13
+  - first:
+      213: 5714846056891812185
+    second: MuerteRosa_14
+  - first:
+      213: -6765932704266742673
+    second: MuerteRosa_15
+  - first:
+      213: -3692147398945571899
+    second: MuerteRosa_16
+  - first:
+      213: -1045134465761829955
+    second: MuerteRosa_17
+  - first:
+      213: 4423524425353400120
+    second: MuerteRosa_18
+  - first:
+      213: -4589892690936130712
+    second: MuerteRosa_19
+  - first:
+      213: -4342259699507971668
+    second: MuerteRosa_20
+  - first:
+      213: -2802539789969144762
+    second: MuerteRosa_21
+  - first:
+      213: -4867169623398208655
+    second: MuerteRosa_22
+  - first:
+      213: -8857248957242973194
+    second: MuerteRosa_23
+  - first:
+      213: 8943095721332089018
+    second: MuerteRosa_24
+  - first:
+      213: -8311705252785427477
+    second: MuerteRosa_25
+  - first:
+      213: 1754379934904305664
+    second: MuerteRosa_26
+  - first:
+      213: 7323131696970402985
+    second: MuerteRosa_27
+  - first:
+      213: -1336931715699735382
+    second: MuerteRosa_28
+  - first:
+      213: 6719310755852450391
+    second: MuerteRosa_29
+  - first:
+      213: 3356196634274194293
+    second: MuerteRosa_30
+  - first:
+      213: 7603801858247810238
+    second: MuerteRosa_31
+  - first:
+      213: -2093728059180901619
+    second: MuerteRosa_32
+  - first:
+      213: 5833114600513385530
+    second: MuerteRosa_33
+  - first:
+      213: 7347329635877753930
+    second: MuerteRosa_34
+  - first:
+      213: -1083100790266604098
+    second: MuerteRosa_35
+  - first:
+      213: 2430567936522339797
+    second: MuerteRosa_36
+  - first:
+      213: -4234683595288230163
+    second: MuerteRosa_37
+  - first:
+      213: -7704779535290688710
+    second: MuerteRosa_38
+  - first:
+      213: 2958289334956113735
+    second: MuerteRosa_39
+  - first:
+      213: -1083859926634665767
+    second: MuerteRosa_40
+  - first:
+      213: 6413303143939723589
+    second: MuerteRosa_41
+  - first:
+      213: 1213327234508878358
+    second: MuerteRosa_42
+  - first:
+      213: 4706962605395803462
+    second: MuerteRosa_43
+  - first:
+      213: 3248613022519690224
+    second: MuerteRosa_44
+  - first:
+      213: 8491033615274731516
+    second: MuerteRosa_45
+  - first:
+      213: -9044269075836926040
+    second: MuerteRosa_46
+  - first:
+      213: -3299992334239308379
+    second: MuerteRosa_47
+  - first:
+      213: 7945611360407223166
+    second: MuerteRosa_48
+  - first:
+      213: 7364438746789107376
+    second: MuerteRosa_49
+  - first:
+      213: 1211787880143736650
+    second: MuerteRosa_50
+  - first:
+      213: 2370231107785655342
+    second: MuerteRosa_51
+  - first:
+      213: 9108842231003134016
+    second: MuerteRosa_52
+  - first:
+      213: -6720492174939263265
+    second: MuerteRosa_53
+  - first:
+      213: -6496271149204716215
+    second: MuerteRosa_54
+  - first:
+      213: 461751078356045837
+    second: MuerteRosa_55
+  - first:
+      213: -8953344303676487810
+    second: MuerteRosa_56
+  - first:
+      213: -8848063144720774355
+    second: MuerteRosa_57
+  - first:
+      213: -2228725123277102417
+    second: MuerteRosa_58
+  - first:
+      213: 2917933581547424121
+    second: MuerteRosa_59
+  - first:
+      213: 5470389847940956133
+    second: MuerteRosa_60
+  - first:
+      213: -5227326624988137734
+    second: MuerteRosa_61
+  - first:
+      213: -4328775795700492028
+    second: MuerteRosa_62
+  - first:
+      213: -2730634859115791399
+    second: MuerteRosa_63
+  - first:
+      213: -3706906835740733866
+    second: MuerteRosa_64
+  - first:
+      213: -7066632358083721744
+    second: MuerteRosa_65
+  - first:
+      213: -4348253895999826361
+    second: MuerteRosa_66
+  - first:
+      213: 517283960093083935
+    second: MuerteRosa_67
+  - first:
+      213: 8673596856555101455
+    second: MuerteRosa_68
+  - first:
+      213: -8336030097905029307
+    second: MuerteRosa_69
+  - first:
+      213: 6482517140252114831
+    second: MuerteRosa_70
+  - first:
+      213: 8272965125456397397
+    second: MuerteRosa_71
+  - first:
+      213: 5925555406795231833
+    second: MuerteRosa_72
+  - first:
+      213: -44503260587725151
+    second: MuerteRosa_73
+  - first:
+      213: -8450586734216695008
+    second: MuerteRosa_74
+  - first:
+      213: -4167660247484643825
+    second: MuerteRosa_75
+  - first:
+      213: -2284246711182585797
+    second: MuerteRosa_76
+  - first:
+      213: -4945411521551598894
+    second: MuerteRosa_77
+  - first:
+      213: -719200159671830261
+    second: MuerteRosa_78
+  - first:
+      213: -8339281476146596102
+    second: MuerteRosa_79
+  - first:
+      213: -1875069763509116368
+    second: MuerteRosa_80
+  - first:
+      213: 5754261384148669113
+    second: MuerteRosa_81
+  - first:
+      213: 2125158672336591862
+    second: MuerteRosa_82
+  - first:
+      213: -762285935865804911
+    second: MuerteRosa_83
+  - first:
+      213: -3510395925699141132
+    second: MuerteRosa_84
+  - first:
+      213: -6797299430692836976
+    second: MuerteRosa_85
+  - first:
+      213: -7027480251219248504
+    second: MuerteRosa_86
+  - first:
+      213: -5889863423873171126
+    second: MuerteRosa_87
+  - first:
+      213: -4634637205401069341
+    second: MuerteRosa_88
+  - first:
+      213: 4420111307628876468
+    second: MuerteRosa_89
+  - first:
+      213: -5977716381346937294
+    second: MuerteRosa_90
+  - first:
+      213: 4444135930132504510
+    second: MuerteRosa_91
+  - first:
+      213: 3329021277400512738
+    second: MuerteRosa_92
+  - first:
+      213: -3650708782331720101
+    second: MuerteRosa_93
+  - first:
+      213: 5205557064791565558
+    second: MuerteRosa_94
+  - first:
+      213: -4555069947867374805
+    second: MuerteRosa_95
+  - first:
+      213: 7345518138563488545
+    second: MuerteRosa_96
+  - first:
+      213: -280626453407735690
+    second: MuerteRosa_97
+  - first:
+      213: 5191014397781683280
+    second: MuerteRosa_98
+  - first:
+      213: 6296249434146143108
+    second: MuerteRosa_99
+  - first:
+      213: -8537150714890225399
+    second: MuerteRosa_100
+  - first:
+      213: 7440874850023022563
+    second: MuerteRosa_101
+  - first:
+      213: 686868554947683699
+    second: MuerteRosa_102
+  - first:
+      213: -2335572909505120784
+    second: MuerteRosa_103
+  - first:
+      213: -8138565372330306935
+    second: MuerteRosa_104
+  - first:
+      213: 2585884822373738003
+    second: MuerteRosa_105
+  - first:
+      213: -5274036337804939825
+    second: MuerteRosa_106
+  - first:
+      213: 2282294000227949348
+    second: MuerteRosa_107
+  - first:
+      213: 4609073083760591401
+    second: MuerteRosa_108
+  - first:
+      213: -2296690048212338023
+    second: MuerteRosa_109
+  - first:
+      213: 6346126109248308348
+    second: MuerteRosa_110
+  - first:
+      213: -2747074674812027796
+    second: MuerteRosa_111
+  - first:
+      213: 2229016537660979705
+    second: MuerteRosa_112
+  - first:
+      213: -8828931592257701463
+    second: MuerteRosa_113
+  - first:
+      213: -6262447741675587892
+    second: MuerteRosa_114
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MuerteRosa_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 2220
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09be257c37bf0bef0800000000000000
+      internalID: -94299117490869360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 2189
+        width: 339
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9ffc24b3e3ada10800000000000000
+      internalID: 1934927414153968033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_2
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 2217
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a3ca2c86f8cd230800000000000000
+      internalID: 3664961876878178954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_3
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 2189
+        width: 339
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15757f3debbe1d370800000000000000
+      internalID: 8345710789326755665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_4
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 2217
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39d3fe8731bab290800000000000000
+      internalID: -7873786146324227781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_5
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 2190
+        width: 339
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 422303c5f86cc3960800000000000000
+      internalID: 7583154191614358052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_6
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 2226
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1b910faddd915e0800000000000000
+      internalID: -1938274232205463082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_7
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 2217
+        width: 57
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2382eaf78b0e32e60800000000000000
+      internalID: 7936434051377670194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_8
+      rect:
+        serializedVersion: 2
+        x: 2003
+        y: 2190
+        width: 340
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f5e2a97e707c980800000000000000
+      internalID: -8518831478842433785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_9
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 2226
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24893eb8b98f7de70800000000000000
+      internalID: 9140047315722278978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_10
+      rect:
+        serializedVersion: 2
+        x: 2507
+        y: 2217
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: badb497e6dff95710800000000000000
+      internalID: 1682657234272959915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_11
+      rect:
+        serializedVersion: 2
+        x: 2553
+        y: 2222
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7b059de0df64330800000000000000
+      internalID: 3694918784521385964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_12
+      rect:
+        serializedVersion: 2
+        x: 2611
+        y: 2189
+        width: 340
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078557f30ceaa48f0800000000000000
+      internalID: -555439463305226128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_13
+      rect:
+        serializedVersion: 2
+        x: 3098
+        y: 2225
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fa3711ed0a27440800000000000000
+      internalID: 4932181417560092487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_14
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 2217
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959041fc5363f4f40800000000000000
+      internalID: 5714846056891812185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_15
+      rect:
+        serializedVersion: 2
+        x: 3164
+        y: 2222
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f649bfb8d049a12a0800000000000000
+      internalID: -6765932704266742673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_16
+      rect:
+        serializedVersion: 2
+        x: 3219
+        y: 2189
+        width: 345
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb7773a08bd2ccc0800000000000000
+      internalID: -3692147398945571899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_17
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1792
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb9fb1adbfee71f0800000000000000
+      internalID: -1045134465761829955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_18
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1808
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f047c2704836d30800000000000000
+      internalID: 4423524425353400120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_19
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1781
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86317977aec6d40c0800000000000000
+      internalID: -4589892690936130712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_20
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1786
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca935504fc13db3c0800000000000000
+      internalID: -4342259699507971668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_21
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1753
+        width: 352
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644cdf5d8e06b19d0800000000000000
+      internalID: -2802539789969144762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_22
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1793
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b27cfc307547cb0800000000000000
+      internalID: -4867169623398208655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_23
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1781
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f36558400bb41580800000000000000
+      internalID: -8857248957242973194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_24
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1787
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0a05e0d224c1c70800000000000000
+      internalID: 8943095721332089018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_25
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1753
+        width: 356
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebe9f12c14e6ac80800000000000000
+      internalID: -8311705252785427477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_26
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 1788
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0084b05714fc85810800000000000000
+      internalID: 1754379934904305664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_27
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 1781
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ac03519a7df0a560800000000000000
+      internalID: 7323131696970402985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_28
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 1787
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa483cc10b3427de0800000000000000
+      internalID: -1336931715699735382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_29
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 1753
+        width: 358
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75afb023889cf3d50800000000000000
+      internalID: 6719310755852450391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_30
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 1799
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57366469e0b939e20800000000000000
+      internalID: 3356196634274194293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_31
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 1781
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcd05fd081268960800000000000000
+      internalID: 7603801858247810238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_32
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 1787
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b11485c6591f2e0800000000000000
+      internalID: -2093728059180901619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_33
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1753
+        width: 362
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34beb1f2d263f050800000000000000
+      internalID: 5833114600513385530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_34
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 1783
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4491324065f6f560800000000000000
+      internalID: 7347329635877753930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_35
+      rect:
+        serializedVersion: 2
+        x: 2507
+        y: 1781
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5d63cd19d08f0f0800000000000000
+      internalID: -1083100790266604098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_36
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 1787
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d54eda19ac1bb120800000000000000
+      internalID: 2430567936522339797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_37
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 1753
+        width: 368
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de6cba6d4b16b35c0800000000000000
+      internalID: -4234683595288230163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_38
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 1782
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b9c4695df131590800000000000000
+      internalID: -7704779535290688710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_39
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 1781
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fb2e8f974fd0920800000000000000
+      internalID: 2958289334956113735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_40
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 1787
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8e8a6a32b55f0f0800000000000000
+      internalID: -1083859926634665767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_41
+      rect:
+        serializedVersion: 2
+        x: 3209
+        y: 1753
+        width: 372
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5415c63fa31a00950800000000000000
+      internalID: 6413303143939723589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_42
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 1787
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6127539f0ba96d010800000000000000
+      internalID: 1213327234508878358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_43
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1343
+        width: 92
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64df9a11d8d725140800000000000000
+      internalID: 4706962605395803462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_44
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1351
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f38ef30554651d20800000000000000
+      internalID: 3248613022519690224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_45
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1317
+        width: 379
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7e95ee51636d570800000000000000
+      internalID: 8491033615274731516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_46
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1343
+        width: 94
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a780b1b13d4c7280800000000000000
+      internalID: -9044269075836926040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_47
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 1351
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a56724c4721432d0800000000000000
+      internalID: -3299992334239308379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_48
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1317
+        width: 381
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b71644f6b744e60800000000000000
+      internalID: 7945611360407223166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_49
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1344
+        width: 97
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b6dc70950eb33660800000000000000
+      internalID: 7364438746789107376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_50
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 1351
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f471b18a221d010800000000000000
+      internalID: 1211787880143736650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_51
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 1317
+        width: 389
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24052f62a0c4e020800000000000000
+      internalID: 2370231107785655342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_52
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 1344
+        width: 98
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048b4069fbb196e70800000000000000
+      internalID: 9108842231003134016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_53
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 1351
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdee3fc39f30cb2a0800000000000000
+      internalID: -6720492174939263265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_54
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 1317
+        width: 396
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945c80bfecb98d5a0800000000000000
+      internalID: -6496271149204716215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_55
+      rect:
+        serializedVersion: 2
+        x: 2454
+        y: 1344
+        width: 99
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00d018c828786600800000000000000
+      internalID: 461751078356045837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_56
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 1351
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77889beac45fb380800000000000000
+      internalID: -8953344303676487810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_57
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 1317
+        width: 406
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b41bce27d553580800000000000000
+      internalID: -8848063144720774355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_58
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 1344
+        width: 99
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa264150f4af111e0800000000000000
+      internalID: -2228725123277102417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_59
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 1351
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979415ee1259e7820800000000000000
+      internalID: 2917933581547424121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_60
+      rect:
+        serializedVersion: 2
+        x: 3187
+        y: 1317
+        width: 422
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef7c65559abaeb40800000000000000
+      internalID: 5470389847940956133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_61
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 908
+        width: 100
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6f3a0512ec477b0800000000000000
+      internalID: -5227326624988137734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_62
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 915
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40996f049591de3c0800000000000000
+      internalID: -4328775795700492028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_63
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 881
+        width: 423
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dbba1b2016da1ad0800000000000000
+      internalID: -2730634859115791399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_64
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 908
+        width: 100
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ec4387fdb6e8cc0800000000000000
+      internalID: -3706906835740733866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_65
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 915
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5832a9f474eed90800000000000000
+      internalID: -7066632358083721744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_66
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 881
+        width: 436
+        height: 376
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 746d8bf9e16e7a3c0800000000000000
+      internalID: -4348253895999826361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_67
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 908
+        width: 100
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f190b516503cd2700800000000000000
+      internalID: 517283960093083935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_68
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 915
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d59e7e26ece5870800000000000000
+      internalID: 8673596856555101455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_69
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 881
+        width: 437
+        height: 373
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54fe769cac8705c80800000000000000
+      internalID: -8336030097905029307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_70
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 908
+        width: 100
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fbb134ef686f950800000000000000
+      internalID: 6482517140252114831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_71
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 915
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554060613f97fc270800000000000000
+      internalID: 8272965125456397397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_72
+      rect:
+        serializedVersion: 2
+        x: 1966
+        y: 881
+        width: 440
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952dcee5f3dcb3250800000000000000
+      internalID: 5925555406795231833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_73
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 908
+        width: 100
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ae62513584e16ff0800000000000000
+      internalID: -44503260587725151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_74
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 915
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 023b26b632c79ba80800000000000000
+      internalID: -8450586734216695008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_75
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 881
+        width: 440
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06492c061f7926c0800000000000000
+      internalID: -4167660247484643825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_76
+      rect:
+        serializedVersion: 2
+        x: 3061
+        y: 908
+        width: 100
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b309b98f7b9bc40e0800000000000000
+      internalID: -2284246711182585797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_77
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 915
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dafacd4c6e5e5bb0800000000000000
+      internalID: -4945411521551598894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_78
+      rect:
+        serializedVersion: 2
+        x: 3182
+        y: 881
+        width: 446
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b093b58e343e406f0800000000000000
+      internalID: -719200159671830261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_79
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 472
+        width: 100
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af6794c4eabe44c80800000000000000
+      internalID: -8339281476146596102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_80
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 479
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 032a6f01cf96af5e0800000000000000
+      internalID: -1875069763509116368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_81
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 445
+        width: 447
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2dde2dd3e3bdf40800000000000000
+      internalID: 5754261384148669113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_82
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 473
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb96fb8d841e7d10800000000000000
+      internalID: 2125158672336591862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_83
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 479
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1974177eaf0db65f0800000000000000
+      internalID: -762285935865804911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_84
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 446
+        width: 449
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f169b32181984fc0800000000000000
+      internalID: -3510395925699141132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_85
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 473
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099a6917e242ba1a0800000000000000
+      internalID: -6797299430692836976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_86
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 479
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88af008d1ff597e90800000000000000
+      internalID: -7027480251219248504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_87
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 445
+        width: 451
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41497cfb60034ea0800000000000000
+      internalID: -5889863423873171126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_88
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 473
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8924d54067eafb0800000000000000
+      internalID: -4634637205401069341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_89
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 479
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b218e6c0d3675d30800000000000000
+      internalID: 4420111307628876468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_90
+      rect:
+        serializedVersion: 2
+        x: 1972
+        y: 445
+        width: 452
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23648c95f92ea0da0800000000000000
+      internalID: -5977716381346937294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_91
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 473
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf1919151ebcad30800000000000000
+      internalID: 4444135930132504510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_92
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 479
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8bc21c63f033e20800000000000000
+      internalID: 3329021277400512738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_93
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 441
+        width: 452
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e08ba64b3165dc0800000000000000
+      internalID: -3650708782331720101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_94
+      rect:
+        serializedVersion: 2
+        x: 3061
+        y: 473
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f42de8f19add3840800000000000000
+      internalID: 5205557064791565558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_95
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 479
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2bde46240429c0c0800000000000000
+      internalID: -4555069947867374805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_96
+      rect:
+        serializedVersion: 2
+        x: 3196
+        y: 438
+        width: 450
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12be34c24d580f560800000000000000
+      internalID: 7345518138563488545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_97
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 37
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670ed0a3ab30b1cf0800000000000000
+      internalID: -280626453407735690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_98
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 43
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c27b377103a0840800000000000000
+      internalID: 5191014397781683280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_99
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 2
+        width: 451
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48bf88b5085c06750800000000000000
+      internalID: 6296249434146143108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_100
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 37
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909fef418a2f58980800000000000000
+      internalID: -8537150714890225399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_101
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 43
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef92cda04c434760800000000000000
+      internalID: 7440874850023022563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_102
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1
+        width: 450
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375ea01cf4f388900800000000000000
+      internalID: 686868554947683699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_103
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 37
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5fbed20d0669fd0800000000000000
+      internalID: -2335572909505120784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_104
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 43
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98215f0f9e10e0f80800000000000000
+      internalID: -8138565372330306935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_105
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 1
+        width: 452
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31629ab9b88e2e320800000000000000
+      internalID: 2585884822373738003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_106
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 37
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd62a0d4ebdec6b0800000000000000
+      internalID: -5274036337804939825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_107
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 43
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b97941d465caf10800000000000000
+      internalID: 2282294000227949348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_108
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 1
+        width: 455
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9224d5dbc87b6ff30800000000000000
+      internalID: 4609073083760591401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_109
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 37
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99af02dc1948020e0800000000000000
+      internalID: -2296690048212338023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_110
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 43
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74c399b218f11850800000000000000
+      internalID: 6346126109248308348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_111
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 1
+        width: 454
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c7b5c432e60e9d0800000000000000
+      internalID: -2747074674812027796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_112
+      rect:
+        serializedVersion: 2
+        x: 3061
+        y: 37
+        width: 100
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9f0cd2bbe0fee10800000000000000
+      internalID: 2229016537660979705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_113
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 43
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a971499e75597580800000000000000
+      internalID: -8828931592257701463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MuerteRosa_114
+      rect:
+        serializedVersion: 2
+        x: 3191
+        y: 1
+        width: 452
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc6baf475f05719a0800000000000000
+      internalID: -6262447741675587892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MuerteRosa_0: -94299117490869360
+      MuerteRosa_1: 1934927414153968033
+      MuerteRosa_10: 1682657234272959915
+      MuerteRosa_100: -8537150714890225399
+      MuerteRosa_101: 7440874850023022563
+      MuerteRosa_102: 686868554947683699
+      MuerteRosa_103: -2335572909505120784
+      MuerteRosa_104: -8138565372330306935
+      MuerteRosa_105: 2585884822373738003
+      MuerteRosa_106: -5274036337804939825
+      MuerteRosa_107: 2282294000227949348
+      MuerteRosa_108: 4609073083760591401
+      MuerteRosa_109: -2296690048212338023
+      MuerteRosa_11: 3694918784521385964
+      MuerteRosa_110: 6346126109248308348
+      MuerteRosa_111: -2747074674812027796
+      MuerteRosa_112: 2229016537660979705
+      MuerteRosa_113: -8828931592257701463
+      MuerteRosa_114: -6262447741675587892
+      MuerteRosa_12: -555439463305226128
+      MuerteRosa_13: 4932181417560092487
+      MuerteRosa_14: 5714846056891812185
+      MuerteRosa_15: -6765932704266742673
+      MuerteRosa_16: -3692147398945571899
+      MuerteRosa_17: -1045134465761829955
+      MuerteRosa_18: 4423524425353400120
+      MuerteRosa_19: -4589892690936130712
+      MuerteRosa_2: 3664961876878178954
+      MuerteRosa_20: -4342259699507971668
+      MuerteRosa_21: -2802539789969144762
+      MuerteRosa_22: -4867169623398208655
+      MuerteRosa_23: -8857248957242973194
+      MuerteRosa_24: 8943095721332089018
+      MuerteRosa_25: -8311705252785427477
+      MuerteRosa_26: 1754379934904305664
+      MuerteRosa_27: 7323131696970402985
+      MuerteRosa_28: -1336931715699735382
+      MuerteRosa_29: 6719310755852450391
+      MuerteRosa_3: 8345710789326755665
+      MuerteRosa_30: 3356196634274194293
+      MuerteRosa_31: 7603801858247810238
+      MuerteRosa_32: -2093728059180901619
+      MuerteRosa_33: 5833114600513385530
+      MuerteRosa_34: 7347329635877753930
+      MuerteRosa_35: -1083100790266604098
+      MuerteRosa_36: 2430567936522339797
+      MuerteRosa_37: -4234683595288230163
+      MuerteRosa_38: -7704779535290688710
+      MuerteRosa_39: 2958289334956113735
+      MuerteRosa_4: -7873786146324227781
+      MuerteRosa_40: -1083859926634665767
+      MuerteRosa_41: 6413303143939723589
+      MuerteRosa_42: 1213327234508878358
+      MuerteRosa_43: 4706962605395803462
+      MuerteRosa_44: 3248613022519690224
+      MuerteRosa_45: 8491033615274731516
+      MuerteRosa_46: -9044269075836926040
+      MuerteRosa_47: -3299992334239308379
+      MuerteRosa_48: 7945611360407223166
+      MuerteRosa_49: 7364438746789107376
+      MuerteRosa_5: 7583154191614358052
+      MuerteRosa_50: 1211787880143736650
+      MuerteRosa_51: 2370231107785655342
+      MuerteRosa_52: 9108842231003134016
+      MuerteRosa_53: -6720492174939263265
+      MuerteRosa_54: -6496271149204716215
+      MuerteRosa_55: 461751078356045837
+      MuerteRosa_56: -8953344303676487810
+      MuerteRosa_57: -8848063144720774355
+      MuerteRosa_58: -2228725123277102417
+      MuerteRosa_59: 2917933581547424121
+      MuerteRosa_6: -1938274232205463082
+      MuerteRosa_60: 5470389847940956133
+      MuerteRosa_61: -5227326624988137734
+      MuerteRosa_62: -4328775795700492028
+      MuerteRosa_63: -2730634859115791399
+      MuerteRosa_64: -3706906835740733866
+      MuerteRosa_65: -7066632358083721744
+      MuerteRosa_66: -4348253895999826361
+      MuerteRosa_67: 517283960093083935
+      MuerteRosa_68: 8673596856555101455
+      MuerteRosa_69: -8336030097905029307
+      MuerteRosa_7: 7936434051377670194
+      MuerteRosa_70: 6482517140252114831
+      MuerteRosa_71: 8272965125456397397
+      MuerteRosa_72: 5925555406795231833
+      MuerteRosa_73: -44503260587725151
+      MuerteRosa_74: -8450586734216695008
+      MuerteRosa_75: -4167660247484643825
+      MuerteRosa_76: -2284246711182585797
+      MuerteRosa_77: -4945411521551598894
+      MuerteRosa_78: -719200159671830261
+      MuerteRosa_79: -8339281476146596102
+      MuerteRosa_8: -8518831478842433785
+      MuerteRosa_80: -1875069763509116368
+      MuerteRosa_81: 5754261384148669113
+      MuerteRosa_82: 2125158672336591862
+      MuerteRosa_83: -762285935865804911
+      MuerteRosa_84: -3510395925699141132
+      MuerteRosa_85: -6797299430692836976
+      MuerteRosa_86: -7027480251219248504
+      MuerteRosa_87: -5889863423873171126
+      MuerteRosa_88: -4634637205401069341
+      MuerteRosa_89: 4420111307628876468
+      MuerteRosa_9: 9140047315722278978
+      MuerteRosa_90: -5977716381346937294
+      MuerteRosa_91: 4444135930132504510
+      MuerteRosa_92: 3329021277400512738
+      MuerteRosa_93: -3650708782331720101
+      MuerteRosa_94: 5205557064791565558
+      MuerteRosa_95: -4555069947867374805
+      MuerteRosa_96: 7345518138563488545
+      MuerteRosa_97: -280626453407735690
+      MuerteRosa_98: 5191014397781683280
+      MuerteRosa_99: 6296249434146143108
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

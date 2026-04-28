@@ -24,6 +24,9 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
     public Transform Transform => transform;
     public int CurrentHealth { get; private set; }
 
+    public int GetHealth() => CurrentHealth;
+    public int GetMaxHealth() => maxHealth;
+
     private float _stopAt;
     protected float nextAttackAt;
 
@@ -66,6 +69,8 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
         if (CurrentHealth <= 0)
         {
             IsDead = true;
+            if (TryGetComponent<EnemySpriteAnimator>(out var visual))
+                visual.TriggerDeath();
             Died?.Invoke();
             Destroy(gameObject, 0.15f);
         }

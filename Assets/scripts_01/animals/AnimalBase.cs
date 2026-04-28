@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class AnimalBase : MonoBehaviour, IDamageable
 {
     [Header("Health")]
-    [SerializeField] private int maxHealth = 6;
+    [SerializeField] protected int maxHealth = 6;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float knockbackStopSeconds = 0.08f;
 
@@ -14,6 +14,9 @@ public abstract class AnimalBase : MonoBehaviour, IDamageable
     public bool IsDead { get; private set; }
     public Transform Transform => transform;
     public int CurrentHealth { get; private set; }
+
+    public int GetHealth() => CurrentHealth;
+    public int GetMaxHealth() => maxHealth;
 
     private float _stopAt;
 

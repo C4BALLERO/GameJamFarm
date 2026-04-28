@@ -11,6 +11,14 @@ public sealed class ResourceGenerator : MonoBehaviour
 
     private float _nextTickAt;
 
+    public void Configure(ResourceType type, int amount, float seconds)
+    {
+        resourceType = type;
+        amountPerTick = Mathf.Max(1, amount);
+        secondsPerTick = Mathf.Max(0.25f, seconds);
+        _nextTickAt = Time.time + secondsPerTick;
+    }
+
     public void Init(InventorySystem inv)
     {
         inventory = inv;
@@ -24,6 +32,7 @@ public sealed class ResourceGenerator : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsPaused) return;
         if (animal != null && animal.IsDead) return;
         if (inventory == null) return;
         if (Time.time < _nextTickAt) return;

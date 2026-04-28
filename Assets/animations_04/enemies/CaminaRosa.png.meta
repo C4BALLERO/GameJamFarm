@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: c9979e1b479e6c549ab3d652420c44fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2702286108185331849
+    second: CaminaRosa_0
+  - first:
+      213: 4787034649975637375
+    second: CaminaRosa_1
+  - first:
+      213: 9137558842149560288
+    second: CaminaRosa_2
+  - first:
+      213: -2453196319194619732
+    second: CaminaRosa_3
+  - first:
+      213: -2018249551150032190
+    second: CaminaRosa_4
+  - first:
+      213: 1315878093557189091
+    second: CaminaRosa_5
+  - first:
+      213: -5211502122570720955
+    second: CaminaRosa_6
+  - first:
+      213: -7816128267018314002
+    second: CaminaRosa_7
+  - first:
+      213: 335463026266569954
+    second: CaminaRosa_8
+  - first:
+      213: 6320921971040884313
+    second: CaminaRosa_9
+  - first:
+      213: 875661242713592278
+    second: CaminaRosa_10
+  - first:
+      213: 725989222572520024
+    second: CaminaRosa_11
+  - first:
+      213: 2001552098180535774
+    second: CaminaRosa_12
+  - first:
+      213: -179586267532319411
+    second: CaminaRosa_13
+  - first:
+      213: -6834286681567136709
+    second: CaminaRosa_14
+  - first:
+      213: -8111824678079468684
+    second: CaminaRosa_15
+  - first:
+      213: 4786432689882100989
+    second: CaminaRosa_16
+  - first:
+      213: 5302961937039644242
+    second: CaminaRosa_17
+  - first:
+      213: 2766323486269314769
+    second: CaminaRosa_18
+  - first:
+      213: 1131307860250533681
+    second: CaminaRosa_19
+  - first:
+      213: -3935897651140714670
+    second: CaminaRosa_20
+  - first:
+      213: 3193134564596189363
+    second: CaminaRosa_21
+  - first:
+      213: 1349652860690215249
+    second: CaminaRosa_22
+  - first:
+      213: 8340484770676059304
+    second: CaminaRosa_23
+  - first:
+      213: 8098708910076129663
+    second: CaminaRosa_24
+  - first:
+      213: -3834271586518373919
+    second: CaminaRosa_25
+  - first:
+      213: -2924041485776055116
+    second: CaminaRosa_26
+  - first:
+      213: 5707824841210544930
+    second: CaminaRosa_27
+  - first:
+      213: -7300439484430837370
+    second: CaminaRosa_28
+  - first:
+      213: -897391424735826763
+    second: CaminaRosa_29
+  - first:
+      213: -3344533442664096812
+    second: CaminaRosa_30
+  - first:
+      213: 6101252920130692606
+    second: CaminaRosa_31
+  - first:
+      213: 2365623369058762183
+    second: CaminaRosa_32
+  - first:
+      213: 8001404298983739599
+    second: CaminaRosa_33
+  - first:
+      213: -964777060970856553
+    second: CaminaRosa_34
+  - first:
+      213: -6085971204919400546
+    second: CaminaRosa_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CaminaRosa_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3230
+        width: 434
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9880cd7e5e2708520800000000000000
+      internalID: 2702286108185331849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_1
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 3230
+        width: 433
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75c84fb6a6fe6240800000000000000
+      internalID: 4787034649975637375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_2
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 3230
+        width: 433
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efdd84aa512fce70800000000000000
+      internalID: 9137558842149560288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_3
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 3231
+        width: 433
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0eb1ef1fe74fdd0800000000000000
+      internalID: -2453196319194619732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_4
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 3231
+        width: 433
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca5c93f9bcbdf3e0800000000000000
+      internalID: -2018249551150032190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_5
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 3230
+        width: 432
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9c13e7720f24210800000000000000
+      internalID: 1315878093557189091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2595
+        width: 430
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5495af56e660da7b0800000000000000
+      internalID: -5211502122570720955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_7
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 2594
+        width: 428
+        height: 548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeedb75b0c8878390800000000000000
+      internalID: -7816128267018314002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_8
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 2595
+        width: 426
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec75e358ddc7a400800000000000000
+      internalID: 335463026266569954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_9
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 2595
+        width: 420
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9569ad00b0d68b750800000000000000
+      internalID: 6320921971040884313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_10
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 2594
+        width: 419
+        height: 566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d15583c249f62c00800000000000000
+      internalID: 875661242713592278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_11
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 2594
+        width: 411
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852723af95b331a00800000000000000
+      internalID: 725989222572520024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1958
+        width: 409
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed51d735701f6cb10800000000000000
+      internalID: 2001552098180535774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_13
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1958
+        width: 410
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45a23dbd3bf18df0800000000000000
+      internalID: -179586267532319411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_14
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1958
+        width: 410
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34f104097cb721a0800000000000000
+      internalID: -6834286681567136709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_15
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1958
+        width: 410
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b63defe620d6f80800000000000000
+      internalID: -8111824678079468684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_16
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 1958
+        width: 410
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df47dbdfb23dc6240800000000000000
+      internalID: 4786432689882100989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_17
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 1958
+        width: 411
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2565aa219c7e79940800000000000000
+      internalID: 5302961937039644242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1322
+        width: 411
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d617ecdd84f36620800000000000000
+      internalID: 2766323486269314769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_19
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1322
+        width: 411
+        height: 585
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f17d5418633bf00800000000000000
+      internalID: 1131307860250533681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_20
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1322
+        width: 410
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f967780f1e069c0800000000000000
+      internalID: -3935897651140714670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_21
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1322
+        width: 410
+        height: 584
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b807c2f7fa405c20800000000000000
+      internalID: 3193134564596189363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_22
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 1322
+        width: 410
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151b783402eeab210800000000000000
+      internalID: 1349652860690215249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_23
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 1323
+        width: 411
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aca3ba85ba5fb370800000000000000
+      internalID: 8340484770676059304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 686
+        width: 421
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71f06c48d4646070800000000000000
+      internalID: 8098708910076129663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 686
+        width: 425
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9e2319e4ee9cac0800000000000000
+      internalID: -3834271586518373919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_26
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 687
+        width: 425
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b410dbc2c7bb67d0800000000000000
+      internalID: -2924041485776055116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_27
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 687
+        width: 431
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2234184a374463f40800000000000000
+      internalID: 5707824841210544930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_28
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 686
+        width: 433
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6899342e7f0afaa90800000000000000
+      internalID: -7300439484430837370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_29
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 687
+        width: 433
+        height: 538
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bca328f043db83f0800000000000000
+      internalID: -897391424735826763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 50
+        width: 433
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db9792dd84d591d0800000000000000
+      internalID: -3344533442664096812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_31
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 50
+        width: 433
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5643d74310ca450800000000000000
+      internalID: 6101252920130692606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_32
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 50
+        width: 434
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd3c19abe164d020800000000000000
+      internalID: 2365623369058762183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_33
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 50
+        width: 434
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0953111d2ba0f60800000000000000
+      internalID: 8001404298983739599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_34
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 50
+        width: 434
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ff269ef5c6c92f0800000000000000
+      internalID: -964777060970856553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CaminaRosa_35
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 50
+        width: 434
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97e5891f694a8ba0800000000000000
+      internalID: -6085971204919400546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CaminaRosa_0: 2702286108185331849
+      CaminaRosa_1: 4787034649975637375
+      CaminaRosa_10: 875661242713592278
+      CaminaRosa_11: 725989222572520024
+      CaminaRosa_12: 2001552098180535774
+      CaminaRosa_13: -179586267532319411
+      CaminaRosa_14: -6834286681567136709
+      CaminaRosa_15: -8111824678079468684
+      CaminaRosa_16: 4786432689882100989
+      CaminaRosa_17: 5302961937039644242
+      CaminaRosa_18: 2766323486269314769
+      CaminaRosa_19: 1131307860250533681
+      CaminaRosa_2: 9137558842149560288
+      CaminaRosa_20: -3935897651140714670
+      CaminaRosa_21: 3193134564596189363
+      CaminaRosa_22: 1349652860690215249
+      CaminaRosa_23: 8340484770676059304
+      CaminaRosa_24: 8098708910076129663
+      CaminaRosa_25: -3834271586518373919
+      CaminaRosa_26: -2924041485776055116
+      CaminaRosa_27: 5707824841210544930
+      CaminaRosa_28: -7300439484430837370
+      CaminaRosa_29: -897391424735826763
+      CaminaRosa_3: -2453196319194619732
+      CaminaRosa_30: -3344533442664096812
+      CaminaRosa_31: 6101252920130692606
+      CaminaRosa_32: 2365623369058762183
+      CaminaRosa_33: 8001404298983739599
+      CaminaRosa_34: -964777060970856553
+      CaminaRosa_35: -6085971204919400546
+      CaminaRosa_4: -2018249551150032190
+      CaminaRosa_5: 1315878093557189091
+      CaminaRosa_6: -5211502122570720955
+      CaminaRosa_7: -7816128267018314002
+      CaminaRosa_8: 335463026266569954
+      CaminaRosa_9: 6320921971040884313
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

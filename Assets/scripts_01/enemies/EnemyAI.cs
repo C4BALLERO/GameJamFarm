@@ -23,6 +23,7 @@ public sealed class EnemyAI : MonoBehaviour
 
     [Header("Animation")]
     [SerializeField] private Animator animator;
+    [SerializeField] private EnemySpriteAnimator spriteAnimator;
     [SerializeField] private string moveX = "MoveX";
     [SerializeField] private string moveY = "MoveY";
     [SerializeField] private string isMoving = "IsMoving";
@@ -33,10 +34,18 @@ public sealed class EnemyAI : MonoBehaviour
 
     public void SetTarget(Transform t) => target = t;
 
+    private void Awake()
+    {
+        if (enemy == null) enemy = GetComponent<EnemyBase>();
+        if (animator == null) animator = GetComponentInChildren<Animator>();
+        if (spriteAnimator == null) spriteAnimator = GetComponent<EnemySpriteAnimator>();
+    }
+
     private void Reset()
     {
         enemy = GetComponent<EnemyBase>();
         animator = GetComponentInChildren<Animator>();
+        spriteAnimator = GetComponent<EnemySpriteAnimator>();
     }
 
     private void Update()
@@ -59,11 +68,14 @@ public sealed class EnemyAI : MonoBehaviour
             animator.SetFloat(moveY, _facing.y);
             animator.SetBool(isMoving, _state == State.Chase);
         }
+        if (spriteAnimator != null)
+            spriteAnimator.SetMoveState(_facing, _state == State.Chase);
 
         if (_state == State.Attack && enemy.CanAttackNow())
         {
             enemy.ConsumeAttackCooldown();
             if (animator != null) animator.SetTrigger(triggerAttack);
+            if (spriteAnimator != null) spriteAnimator.TriggerAttack();
             enemy.PerformAttack(target);
         }
     }

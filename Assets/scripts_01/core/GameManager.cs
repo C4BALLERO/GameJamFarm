@@ -1,5 +1,8 @@
 using UnityEngine;
 using System;
+#if ENABLE_INPUT_SYSTEM
+using UnityEngine.InputSystem;
+#endif
 
 /// <summary>
 /// Core game manager that handles game state, initialization, and global systems.
@@ -20,7 +23,8 @@ public sealed class GameManager : MonoBehaviour
     public static event Action OnGamePaused;
     public static event Action OnGameResumed;
 
-    public TimeManager Time => timeManager;
+    /// <summary>Scene time / difficulty clock (not UnityEngine.Time).</summary>
+    public TimeManager WorldTime => timeManager;
     public InventorySystem Inventory => inventorySystem;
 
     private void Awake()
@@ -43,16 +47,26 @@ public sealed class GameManager : MonoBehaviour
 
     private void HandlePauseInput()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (WasEscapePressed())
         {
             isPaused = !isPaused;
-            Time.timeScale = isPaused ? 0f : 1f;
+            UnityEngine.Time.timeScale = isPaused ? 0f : 1f;
 
             if (isPaused)
                 OnGamePaused?.Invoke();
             else
                 OnGameResumed?.Invoke();
         }
+    }
+
+    private static bool WasEscapePressed()
+    {
+#if ENABLE_INPUT_SYSTEM
+        var k = Keyboard.current;
+        return k != null && k.escapeKey.wasPressedThisFrame;
+#else
+        return Input.GetKeyDown(KeyCode.Escape);
+#endif
     }
 
     private void Reset()
@@ -65,7 +79,7 @@ public sealed class GameManager : MonoBehaviour
 
     public void ResetGame()
     {
-        Time.timeScale = 1f;
+        UnityEngine.Time.timeScale = 1f;
         Debug.Log("[GameManager] Game reset");
     }
 }

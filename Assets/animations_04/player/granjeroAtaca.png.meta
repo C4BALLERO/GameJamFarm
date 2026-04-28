@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 2548ac69180680046a9d44a07120d2d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8855435866004723526
+    second: granjeroAtaca_0
+  - first:
+      213: 7805065459356335179
+    second: granjeroAtaca_1
+  - first:
+      213: -6285200592671681036
+    second: granjeroAtaca_2
+  - first:
+      213: 7788411271112789217
+    second: granjeroAtaca_3
+  - first:
+      213: 546414762634246937
+    second: granjeroAtaca_4
+  - first:
+      213: -5362091662310471809
+    second: granjeroAtaca_5
+  - first:
+      213: 8991609006837356064
+    second: granjeroAtaca_6
+  - first:
+      213: 5240133290973891490
+    second: granjeroAtaca_7
+  - first:
+      213: 2230329250379127901
+    second: granjeroAtaca_8
+  - first:
+      213: -1574166136797896638
+    second: granjeroAtaca_9
+  - first:
+      213: 6046127513074876575
+    second: granjeroAtaca_10
+  - first:
+      213: -6582430167428363939
+    second: granjeroAtaca_11
+  - first:
+      213: -8288817493316598387
+    second: granjeroAtaca_12
+  - first:
+      213: -8385709496939386607
+    second: granjeroAtaca_13
+  - first:
+      213: -8282506992756010542
+    second: granjeroAtaca_14
+  - first:
+      213: 5408499978789653033
+    second: granjeroAtaca_15
+  - first:
+      213: -7060071866600829410
+    second: granjeroAtaca_16
+  - first:
+      213: 8603296706644994003
+    second: granjeroAtaca_17
+  - first:
+      213: -863181098968530008
+    second: granjeroAtaca_18
+  - first:
+      213: -3973059082064096864
+    second: granjeroAtaca_19
+  - first:
+      213: -8342831343422316987
+    second: granjeroAtaca_20
+  - first:
+      213: 1867351587630794523
+    second: granjeroAtaca_21
+  - first:
+      213: 1241218555540428242
+    second: granjeroAtaca_22
+  - first:
+      213: 8196556498994287704
+    second: granjeroAtaca_23
+  - first:
+      213: -3919725608537274033
+    second: granjeroAtaca_24
+  - first:
+      213: 3975589836618460958
+    second: granjeroAtaca_25
+  - first:
+      213: -742668810673882106
+    second: granjeroAtaca_26
+  - first:
+      213: -8899034262734662160
+    second: granjeroAtaca_27
+  - first:
+      213: -4274315205747474948
+    second: granjeroAtaca_28
+  - first:
+      213: -8328357649187052382
+    second: granjeroAtaca_29
+  - first:
+      213: -8727866929344623677
+    second: granjeroAtaca_30
+  - first:
+      213: -989045294407934239
+    second: granjeroAtaca_31
+  - first:
+      213: 7496898299701545902
+    second: granjeroAtaca_32
+  - first:
+      213: 3104249574654169938
+    second: granjeroAtaca_33
+  - first:
+      213: 5521028198213427682
+    second: granjeroAtaca_34
+  - first:
+      213: 6880841741569691674
+    second: granjeroAtaca_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: granjeroAtaca_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2722
+        width: 383
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64717748004d4ea70800000000000000
+      internalID: 8855435866004723526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_1
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2722
+        width: 383
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4cfa99aea9215c60800000000000000
+      internalID: 7805065459356335179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2722
+        width: 383
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5dab38c5b76c8a0800000000000000
+      internalID: -6285200592671681036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_3
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2722
+        width: 383
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec835b49cef51c60800000000000000
+      internalID: 7788411271112789217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_4
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 2722
+        width: 384
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bf7d2e451459700800000000000000
+      internalID: 546414762634246937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_5
+      rect:
+        serializedVersion: 2
+        x: 3334
+        y: 2722
+        width: 453
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7786eeea060695b0800000000000000
+      internalID: -5362091662310471809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 2178
+        width: 490
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0265ebb80cc98cc70800000000000000
+      internalID: 8991609006837356064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_7
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 2178
+        width: 491
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab8238f671b8b840800000000000000
+      internalID: 5240133290973891490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_8
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 2178
+        width: 492
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cd20de2a8b3fe10800000000000000
+      internalID: 2230329250379127901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_9
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 2178
+        width: 492
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24066b62d30772ae0800000000000000
+      internalID: -1574166136797896638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_10
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 2178
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f904b8b70f828e350800000000000000
+      internalID: 6046127513074876575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_11
+      rect:
+        serializedVersion: 2
+        x: 3307
+        y: 2178
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d590e9f43a286a4a0800000000000000
+      internalID: -6582430167428363939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_12
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1634
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8502d6e76438fc80800000000000000
+      internalID: -8288817493316598387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_13
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 1634
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119ee4554a9ff9b80800000000000000
+      internalID: -8385709496939386607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_14
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1634
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1d61fc5cf9e0d80800000000000000
+      internalID: -8282506992756010542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_15
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 1634
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a0773431ade0b40800000000000000
+      internalID: 5408499978789653033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_16
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 1634
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e478e0b06950e90800000000000000
+      internalID: -7060071866600829410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_17
+      rect:
+        serializedVersion: 2
+        x: 3307
+        y: 1634
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7ecd0c5cc056770800000000000000
+      internalID: 8603296706644994003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_18
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1090
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a346232d5d5504f0800000000000000
+      internalID: -863181098968530008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_19
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 1090
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a11ee5a0dbdcd8c0800000000000000
+      internalID: -3973059082064096864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_20
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 1090
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e515a681f483c80800000000000000
+      internalID: -8342831343422316987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_21
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 1090
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b17ce73106a2ae910800000000000000
+      internalID: 1867351587630794523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_22
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 1090
+        width: 492
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d55c9333b1b93110800000000000000
+      internalID: 1241218555540428242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_23
+      rect:
+        serializedVersion: 2
+        x: 3309
+        y: 1090
+        width: 493
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85459f765b400c170800000000000000
+      internalID: 8196556498994287704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_24
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 546
+        width: 493
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49422e93565a99c0800000000000000
+      internalID: -3919725608537274033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_25
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 546
+        width: 486
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1feb4094e12c2730800000000000000
+      internalID: 3975589836618460958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_26
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 546
+        width: 493
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c750ac6a281b5f0800000000000000
+      internalID: -742668810673882106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_27
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 546
+        width: 479
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f59ba5bc77408480800000000000000
+      internalID: -8899034262734662160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_28
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 546
+        width: 384
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfdfe5777f49ea4c0800000000000000
+      internalID: -4274315205747474948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_29
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 546
+        width: 384
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a46cc5f7dabb6c80800000000000000
+      internalID: -8328357649187052382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_30
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2
+        width: 384
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbc88d154360e680800000000000000
+      internalID: -8727866929344623677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_31
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2
+        width: 384
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee1b008b843642f0800000000000000
+      internalID: -989045294407934239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_32
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2
+        width: 384
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eabc0f688455a0860800000000000000
+      internalID: 7496898299701545902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_33
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2
+        width: 384
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2535b678a82841b20800000000000000
+      internalID: 3104249574654169938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_34
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 2
+        width: 384
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e12d6505e1ae9c40800000000000000
+      internalID: 5521028198213427682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: granjeroAtaca_35
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 2
+        width: 384
+        height: 541
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1011f19b19ad7f50800000000000000
+      internalID: 6880841741569691674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      granjeroAtaca_0: 8855435866004723526
+      granjeroAtaca_1: 7805065459356335179
+      granjeroAtaca_10: 6046127513074876575
+      granjeroAtaca_11: -6582430167428363939
+      granjeroAtaca_12: -8288817493316598387
+      granjeroAtaca_13: -8385709496939386607
+      granjeroAtaca_14: -8282506992756010542
+      granjeroAtaca_15: 5408499978789653033
+      granjeroAtaca_16: -7060071866600829410
+      granjeroAtaca_17: 8603296706644994003
+      granjeroAtaca_18: -863181098968530008
+      granjeroAtaca_19: -3973059082064096864
+      granjeroAtaca_2: -6285200592671681036
+      granjeroAtaca_20: -8342831343422316987
+      granjeroAtaca_21: 1867351587630794523
+      granjeroAtaca_22: 1241218555540428242
+      granjeroAtaca_23: 8196556498994287704
+      granjeroAtaca_24: -3919725608537274033
+      granjeroAtaca_25: 3975589836618460958
+      granjeroAtaca_26: -742668810673882106
+      granjeroAtaca_27: -8899034262734662160
+      granjeroAtaca_28: -4274315205747474948
+      granjeroAtaca_29: -8328357649187052382
+      granjeroAtaca_3: 7788411271112789217
+      granjeroAtaca_30: -8727866929344623677
+      granjeroAtaca_31: -989045294407934239
+      granjeroAtaca_32: 7496898299701545902
+      granjeroAtaca_33: 3104249574654169938
+      granjeroAtaca_34: 5521028198213427682
+      granjeroAtaca_35: 6880841741569691674
+      granjeroAtaca_4: 546414762634246937
+      granjeroAtaca_5: -5362091662310471809
+      granjeroAtaca_6: 8991609006837356064
+      granjeroAtaca_7: 5240133290973891490
+      granjeroAtaca_8: 2230329250379127901
+      granjeroAtaca_9: -1574166136797896638
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
