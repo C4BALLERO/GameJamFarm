@@ -63,6 +63,16 @@ public sealed class UIManager : MonoBehaviour
 
     public void BuySpeedUpgrade() => shopSystem?.BuySpeedUpgrade();
 
+    public void BuyFasterGenerationPowerUp() => shopSystem?.BuyFasterGenerationPowerUp();
+
+    public void BuyAnimalHealthPowerUp() => shopSystem?.BuyAnimalHealthPowerUp();
+
+    public void BuyPlayerDamagePowerUp() => shopSystem?.BuyPlayerDamagePowerUp();
+
+    public void BuyPlayerMovePowerUp() => shopSystem?.BuyPlayerMovePowerUp();
+
+    public void BuyReducedSpawnDelayPowerUp() => shopSystem?.BuyReducedSpawnDelayPowerUp();
+
     public void CloseShop() => shopUi?.Close();
 
     #endregion

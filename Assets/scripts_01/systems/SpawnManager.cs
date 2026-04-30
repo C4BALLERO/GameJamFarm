@@ -11,6 +11,7 @@ public sealed class SpawnManager : MonoBehaviour
     [Header("References")]
     [SerializeField] private Transform player;
     [SerializeField] private TimeManager timeManager;
+    [SerializeField] private DayNightManager dayNightManager;
     [SerializeField] private CorralManager corralManager;
 
     [Header("Spawn Area")]
@@ -42,18 +43,24 @@ public sealed class SpawnManager : MonoBehaviour
     /// <summary>Assign difficulty clock reference at runtime if not wired in the inspector.</summary>
     public void SetTimeManager(TimeManager tm) => timeManager = tm;
 
+    public void SetDayNightManager(DayNightManager manager) => dayNightManager = manager;
+
     /// <summary>Optional: wire so border spawns skip corral colliders.</summary>
     public void SetCorralManager(CorralManager cm) => corralManager = cm;
 
     private void Reset()
     {
         timeManager = FindFirstObjectByType<TimeManager>();
+        dayNightManager = FindFirstObjectByType<DayNightManager>();
     }
 
     private void Update()
     {
         if (GameManager.Instance != null && GameManager.Instance.IsGameplayFrozen) return;
         if (player == null) return;
+        if (dayNightManager == null)
+            dayNightManager = DayNightManager.Instance ?? FindFirstObjectByType<DayNightManager>();
+        if (dayNightManager != null && dayNightManager.IsDay) return; // Day rule: no enemy spawning.
         if (corralManager == null)
             corralManager = CorralManager.Instance;
         if (enemyPrefabs == null || enemyPrefabs.Length == 0) return;
@@ -71,6 +78,10 @@ public sealed class SpawnManager : MonoBehaviour
     {
         var minutes = (timeManager != null) ? timeManager.ElapsedSeconds / 60f : 0f;
         var interval = baseSpawnInterval - minutes * Mathf.Max(0f, intervalDecreasePerMinute);
+        if (dayNightManager != null)
+            interval /= Mathf.Max(1f, dayNightManager.GetNightDifficultyMultiplier());
+        if (PowerUpSystem.Instance != null)
+            interval *= Mathf.Max(0.02f, PowerUpSystem.Instance.EnemySpawnIntervalMultiplier);
         return Mathf.Clamp(interval, minSpawnInterval, 999f);
     }
 

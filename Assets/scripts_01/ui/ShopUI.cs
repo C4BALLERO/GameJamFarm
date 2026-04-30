@@ -19,6 +19,12 @@ public sealed class ShopUI : MonoBehaviour
     [SerializeField] private Text pigCostText;
     [SerializeField] private Text attackCostText;
     [SerializeField] private Text speedCostText;
+    [SerializeField] private Text fasterGenerationCostText;
+    [SerializeField] private Text animalHealthCostText;
+    [SerializeField] private Text playerDamagePowerCostText;
+    [SerializeField] private Text playerMovePowerCostText;
+    [SerializeField] private Text reducedSpawnDelayCostText;
+    [SerializeField] private Text currentResourcesText;
 
     private readonly StringBuilder _sb = new();
 
@@ -109,6 +115,12 @@ public sealed class ShopUI : MonoBehaviour
         FormatLine(pigCostText, shopSystem.GetPurchaseCosts(FarmAnimalKind.Pig));
         FormatLine(attackCostText, shopSystem.GetAttackUpgradeCosts());
         FormatLine(speedCostText, shopSystem.GetSpeedUpgradeCosts());
+        FormatLine(fasterGenerationCostText, shopSystem.GetFasterGenerationCosts());
+        FormatLine(animalHealthCostText, shopSystem.GetAnimalHealthCosts());
+        FormatLine(playerDamagePowerCostText, shopSystem.GetPlayerDamageBoostCosts());
+        FormatLine(playerMovePowerCostText, shopSystem.GetPlayerMoveBoostCosts());
+        FormatLine(reducedSpawnDelayCostText, shopSystem.GetReducedSpawnDelayCosts());
+        RefreshCurrentResources();
     }
 
     private void FormatLine(Text label, ResourceCost[] costs)
@@ -133,6 +145,17 @@ public sealed class ShopUI : MonoBehaviour
         }
 
         label.text = _sb.Length > 0 ? _sb.ToString() : "—";
+    }
+
+    private void RefreshCurrentResources()
+    {
+        if (currentResourcesText == null || inventory == null)
+            return;
+
+        var milk = inventory.Get(ResourceType.Milk);
+        var egg = inventory.Get(ResourceType.Egg);
+        var meat = inventory.Get(ResourceType.Meat);
+        currentResourcesText.text = $"Leche: {milk}   Huevos: {egg}   Carne: {meat}";
     }
 
     private static string ResourceLabel(ResourceType t)

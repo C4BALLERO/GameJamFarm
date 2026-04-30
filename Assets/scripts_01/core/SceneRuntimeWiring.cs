@@ -24,8 +24,11 @@ public sealed class SceneRuntimeWiring : MonoBehaviour
         }
 
         var shop = FindFirstObjectByType<ShopSystem>();
+        var powerUps = FindFirstObjectByType<PowerUpSystem>();
         if (shop != null && inv != null)
             shop.Bind(inv);
+        if (shop != null && powerUps != null)
+            shop.BindPowerUps(powerUps);
 
         var animalSpawner = FindFirstObjectByType<AnimalSpawner>();
         if (shop != null && animalSpawner != null)
@@ -50,8 +53,11 @@ public sealed class SceneRuntimeWiring : MonoBehaviour
         }
 
         var tm = FindFirstObjectByType<TimeManager>();
+        var dayNight = FindFirstObjectByType<DayNightManager>();
         if (spawner != null && tm != null)
             spawner.SetTimeManager(tm);
+        if (spawner != null && dayNight != null)
+            spawner.SetDayNightManager(dayNight);
 
         var ui = FindFirstObjectByType<UIManager>();
         if (ui != null && inv != null && player != null && player.TryGetComponent<PlayerHealth>(out var ph))
@@ -291,6 +297,12 @@ public static class FarmSceneGameplayBootstrap
 
         if (gs.GetComponent<CorralManager>() == null)
             gs.AddComponent<CorralManager>();
+
+        if (gs.GetComponent<PowerUpSystem>() == null)
+            gs.AddComponent<PowerUpSystem>();
+
+        if (gs.GetComponent<DayNightManager>() == null)
+            gs.AddComponent<DayNightManager>();
     }
 
     private static void HideObsoleteHudNodes()

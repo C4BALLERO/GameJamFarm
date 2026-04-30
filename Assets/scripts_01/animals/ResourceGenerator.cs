@@ -37,7 +37,10 @@ public sealed class ResourceGenerator : MonoBehaviour
         if (inventory == null) return;
         if (Time.time < _nextTickAt) return;
 
-        _nextTickAt = Time.time + Mathf.Max(0.25f, secondsPerTick);
+        var multiplier = PowerUpSystem.Instance != null
+            ? PowerUpSystem.Instance.ResourceIntervalMultiplier
+            : 1f;
+        _nextTickAt = Time.time + Mathf.Max(0.2f, secondsPerTick * Mathf.Max(0.02f, multiplier));
         inventory.Add(resourceType, Mathf.Max(1, amountPerTick));
     }
 }

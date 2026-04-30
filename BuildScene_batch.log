@@ -1,21 +1,20 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.8f1 (1c7db571dde0) revision 1867189'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-CABALLERO" at "2026-04-30T14:32:00.5588204Z"
 OS: 'Windows 11  (10.0.26200) Core' Language: 'es' Physical Memory: 16087 MB
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-CABALLERO" at "2026-04-28T04:28:19.5059634Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 System  architecture: x64
 Process architecture: x64
-Date: 2026-04-28T04:28:19Z
+Date: 2026-04-30T14:32:00Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.8f1\Editor\Unity.exe
 -batchmode
 -quit
--nographics
 -projectPath
 C:\Game\My project
 -executeMethod
-DarkFarmMvpBuilder.BuildAll
+Scene00MainSetupTool.ApplyScene00Setup
 -logFile
 C:\Game\My project\BuildScene_batch.log
 Successfully changed project path to: C:\Game\My project
@@ -55,25 +54,25 @@ C:/Game/My project
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [16972]  Target information:
+Player connection [19296]  Target information:
 
-Player connection [16972]  * "[IP] 192.168.1.2 [Port] 55504 [Flags] 2 [Guid] 1136014233 [EditorId] 1136014233 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [19296]  * "[IP] 10.254.15.81 [Port] 55504 [Flags] 2 [Guid] 3421419556 [EditorId] 3421419556 [Version] 1048832 [Id] WindowsEditor(7,MSI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [16972] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [16972] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19296] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19296] Host joined alternative multi-casting on [225.0.0.222:34997]...
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
-[Package Manager] Connected to IPC stream "Upm-14732" after 0.3 seconds.
+[Package Manager] Connected to IPC stream "Upm-21416" after 0.7 seconds.
 [Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              f10c786a14f94bf1940f16e81210f318
-  Correlation Id:          76b7661a1c2dcd220f17715e10e7bed0
-  External correlation Id: 5855105327426445220
+  Session Id:              7d336a9fb92e47e399699af7f3cca23e
+  Correlation Id:          523892c30462271be24f64e70ea15211
+  External correlation Id: 1712354826539224409
   Machine Id:              k7rMBMuL0SAjLZkLQw+XJyYnu1s=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-CABALLERO" (connect: 0.00s, validation: 0.00s, handshake: 1.94s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-CABALLERO-notifications" at "2026-04-28T04:28:21.4468755Z"
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-CABALLERO" (connect: 0.00s, validation: 0.00s, handshake: 1.88s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-CABALLERO-notifications" at "2026-04-30T14:32:02.4428054Z"
 [Licensing::Module] Error: Access token is unavailable; failed to update
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
@@ -83,8 +82,8 @@ Input System module state changed to: Initialized.
   Expiration: Unlimited
 [Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
 [Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] Licensing Background thread has ended after 1.95s
-[Licensing::Module] Licensing is initialized (took 1.43s).
+[Licensing::Module] Licensing Background thread has ended after 1.89s
+[Licensing::Module] Licensing is initialized (took 0.70s).
 [Licensing::Client] Successfully resolved entitlement details
 Library Redirect Path: Library/
 Default GameObject Tag: Player already registered
@@ -94,23 +93,24 @@ Default GameObject Tag: Player already registered
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Artifact Garbage Collection - Removed 12 unused hashed content files
-Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Artifact Garbage Collection - Removed 1 unused hashed content files
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.8f1 (1c7db571dde0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Game/My project/Assets
-Forcing GfxDevice: Null
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
-NullGfxDevice:
-    Version:  NULL 1.0 [1.0]
-    Renderer: Null Device
-    Vendor:   Unity Technologies
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4050 Laptop GPU (ID=0x28a1)
+    Vendor:   NVIDIA
+    VRAM:     5920 MB
+    Driver:   32.0.15.9621
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
 ImportWorker Server TCP listen port: 0
@@ -118,40 +118,40 @@ AcceleratorClientConnectionCallback - disconnected - :0
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001080 seconds.
-- Loaded All Assemblies, in  0.350 seconds
+Registered in 0.002101 seconds.
+- Loaded All Assemblies, in  0.603 seconds
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.368 seconds
-Domain Reload Profiling: 717ms
-	BeginReloadAssembly (127ms)
+- Finished resetting the current domain, in  0.755 seconds
+Domain Reload Profiling: 1354ms
+	BeginReloadAssembly (176ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (146ms)
-		LoadAssemblies (93ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (283ms)
+		LoadAssemblies (169ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (143ms)
-			TypeCache.Refresh (141ms)
-				TypeCache.ScanAssembly (128ms)
+		AnalyzeDomain (279ms)
+			TypeCache.Refresh (275ms)
+				TypeCache.ScanAssembly (254ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (368ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (755ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (331ms)
+		SetupLoadedEditorAssemblies (688ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (43ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (149ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
+			InitializePlatformSupportModulesInManaged (85ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (212ms)
+			ProcessInitializeOnLoadAttributes (256ms)
+			ProcessInitializeOnLoadMethodAttributes (129ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -231,277 +231,269 @@ Package Manager log level set to [2]
     com.unity.render-pipelines.universal-config@17.0.3 (location: C:\Game\My project\Library\PackageCache\com.unity.render-pipelines.universal-config@8dc1aab4af1d)
 [Subsystems] No new subsystems found in resolved package list.
 [Package Manager] Done registering packages in 0.03 seconds
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
 Starting: C:\Program Files\Unity\Hub\Editor\6000.3.8f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
 WorkingDir: C:/Game/My project
 DisplayProgressbar: Compiling Scripts
 Starting: C:\Program Files\Unity\Hub\Editor\6000.3.8f1\Editor\Data\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.3.8f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aE.dag.json" "Library/Bee/1900b0aE-inputdata.json" "Library\Bee\buildprogram0.traceevents"
 WorkingDir: C:/Game/My project
-ExitCode: 4 Duration: 0s275ms
+ExitCode: 4 Duration: 3s509ms
 Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aE-inputdata.json
-[ 819/1054  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
-*** Tundra requires additional run (0.23 seconds), 1 items updated, 818 evaluated
-ExitCode: 0 Duration: 0s709ms
+[ 817/1054  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[ 818/1054  3s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+*** Tundra requires additional run (3.45 seconds), 2 items updated, 816 evaluated
+ExitCode: 0 Duration: 1s163ms
 Starting: C:\Program Files\Unity\Hub\Editor\6000.3.8f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aE.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
 WorkingDir: C:/Game/My project
-ExitCode: 0 Duration: 0s422ms
+ExitCode: 0 Duration: 4s529ms
 Finished compiling graph: 1057 nodes, 20356 flattened edges (16682 ToBuild, 168 ToUse), maximum node priority 1199
-[ 819/1054  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
-*** Tundra build success (0.40 seconds), 1 items updated, 1054 evaluated
-AssetDatabase: script compilation time: 1.843345s
+[ 569/1054  0s] WriteText Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.rsp
+[ 817/1054  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1046/1054  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[1047/1054  0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[1048/1054  1s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 137 defines and 331 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1049/1054  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 135 defines and 350 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1050/1054  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[1051/1054  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[1052/1054  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+[1053/1054  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (4.48 seconds), 10 items updated, 1054 evaluated
+AssetDatabase: script compilation time: 10.080172s
 Begin MonoManager ReloadAssembly
-Total cache size 36208672
-Total cache size after purge 36208672, took 00:00:00.0335660
-- Loaded All Assemblies, in  0.654 seconds
-Refreshing native plugins compatible for Editor in 1.28 ms, found 4 plugins.
+Total cache size 55377064
+Total cache size after purge 55377064, took 00:00:00.1649974
+- Loaded All Assemblies, in  3.491 seconds
+Refreshing native plugins compatible for Editor in 3.79 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.780 seconds
-Domain Reload Profiling: 3432ms
-	BeginReloadAssembly (150ms)
+- Finished resetting the current domain, in  7.043 seconds
+Domain Reload Profiling: 10524ms
+	BeginReloadAssembly (497ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
+		DisableScriptedObjects (46ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (436ms)
-		LoadAssemblies (286ms)
+		CreateAndSetChildDomain (89ms)
+	RebuildCommonClasses (103ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (2771ms)
+		LoadAssemblies (2371ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (224ms)
-			TypeCache.Refresh (155ms)
-				TypeCache.ScanAssembly (144ms)
-			BuildScriptInfoCaches (56ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (2781ms)
+		AnalyzeDomain (653ms)
+			TypeCache.Refresh (433ms)
+				TypeCache.ScanAssembly (410ms)
+			BuildScriptInfoCaches (179ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (7045ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2550ms)
+		SetupLoadedEditorAssemblies (6523ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (150ms)
-			ProcessInitializeOnLoadAttributes (2127ms)
-			ProcessInitializeOnLoadMethodAttributes (248ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
+			InitializePlatformSupportModulesInManaged (51ms)
+			SetLoadedEditorAssemblies (16ms)
+			BeforeProcessingInitializeOnLoad (500ms)
+			ProcessInitializeOnLoadAttributes (4998ms)
+			ProcessInitializeOnLoadMethodAttributes (945ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Start importing Packages/com.unity.render-pipelines.core/Tests/Editor/UnifiedRayTracing/TraceRays.urtshader using Guid(1142bbad8b9e8c44c83a9775ff120d37) (ScriptedImporter)Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+		AwakeInstancesAfterBackupRestoration (35ms)
+Start importing Packages/com.unity.render-pipelines.core/Tests/Editor/UnifiedRayTracing/TraceRays.urtshader using Guid(1142bbad8b9e8c44c83a9775ff120d37) (ScriptedImporter)Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 
 Compiling Ray Tracing Shader "TraceRays.urtshader", keywords = <no keywords>
     finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
- -> (artifact id: 'a8ea6742f6b880d9739bf23df9eb18bb') in 0.1692078 seconds
+ -> (artifact id: '711be5bd2aec212bc7f52fe41408d171') in 0.1394753 seconds
 Start importing Packages/com.unity.render-pipelines.universal/Runtime/RendererFeatures/SurfaceCacheGI/SurfaceCacheCore/RisEstimation.urtshader using Guid(713f6141bd66a134383b787f2eaa7c11) (ScriptedImporter)
 Compiling Ray Tracing Shader "RisEstimation.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
- -> (artifact id: '85483653542df2a9584e21311af209c0') in 0.2300865 seconds
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: '138b6ddd809598ee99efeedbba515d5d') in 0.028997 seconds
 Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/RenderingLayerMask/TraceRenderingLayerMask.urtshader using Guid(94a070d33e408384bafc1dea4a565df9) (ScriptedImporter)
 Compiling Ray Tracing Shader "TraceRenderingLayerMask.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
- -> (artifact id: 'f6bb3bec601b57d177013f54cb992ef1') in 0.1185987 seconds
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: 'ae9ed0d17c428fa5d475a19beb4b638b') in 0.0307365 seconds
 Start importing Packages/com.unity.render-pipelines.universal/Runtime/RendererFeatures/SurfaceCacheGI/SurfaceCacheCore/UniformEstimation.urtshader using Guid(94a39d12848d8d64ca962a72b74e7c50) (ScriptedImporter)
 Compiling Ray Tracing Shader "UniformEstimation.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
- -> (artifact id: '1f0c4babd42b95190a91ecdc2fab132e') in 0.0450521 seconds
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: 'd3dc4aa72a88bdf174f365f7399c830a') in 0.0222674 seconds
 Start importing Packages/com.unity.render-pipelines.core/Tests/Editor/UnifiedRayTracing/TraceTransparentRays.urtshader using Guid(6513c3b892e933c4f8d00c19d5c47532) (ScriptedImporter)
 Compiling Ray Tracing Shader "TraceTransparentRays.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
- -> (artifact id: 'd432cdd77f7a99d2ab5546ea5c7fd3a4') in 0.025307 seconds
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: '134aed3489688c5d7443737a8b82ef4a') in 0.010592 seconds
 Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/DynamicGI/DynamicGISkyOcclusion.urtshader using Guid(5a2a534753fbdb44e96c3c78b5a6999d) (ScriptedImporter)
 Compiling Ray Tracing Shader "DynamicGISkyOcclusion.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
- -> (artifact id: 'fb586125401295b3b365bc0e7e9a3f46') in 0.0305124 seconds
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: '461705bc7692729cfd2d2238848b6419') in 0.0164918 seconds
 Start importing Packages/com.unity.render-pipelines.core/Tests/Editor/UnifiedRayTracing/TraceRaysAndFetchAttributes.urtshader using Guid(fbc59f55df2416344b008dc23753cae2) (ScriptedImporter)
 Compiling Ray Tracing Shader "TraceRaysAndFetchAttributes.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
- -> (artifact id: '5e518210d64afcf414624668b000722c') in 0.0320365 seconds
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: '67e914a91375aed09bcd09d6732c8b3c') in 0.0145597 seconds
 Start importing Packages/com.unity.render-pipelines.universal/Runtime/RendererFeatures/SurfaceCacheGI/SurfaceCacheCore/RestirCandidateTemporal.urtshader using Guid(ad3a9f9982f8c4f4a839a78955e78458) (ScriptedImporter)
 Compiling Ray Tracing Shader "RestirCandidateTemporal.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
- -> (artifact id: 'bb4b7d12fb6ed0039744ade1ce8b423b') in 0.0503218 seconds
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: '9c5f82b1bec7d1e113aa7d907a3587c5') in 0.024419 seconds
 Start importing Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/VirtualOffset/TraceVirtualOffset.urtshader using Guid(ff2cbab5da58bf04d82c5f34037ed123) (ScriptedImporter)
 Compiling Ray Tracing Shader "TraceVirtualOffset.urtshader", keywords = <no keywords>
-    finished in 0.01 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
- -> (artifact id: '6c6b9fa987ce9ca680d4a29ff6a084fa') in 0.058514 seconds
-Refreshing native plugins compatible for Editor in 2.07 ms, found 4 plugins.
+    finished in 0.00 seconds. Local cache hits 1, remote cache hits 0, compiled 0 platform variants
+ -> (artifact id: '6a26cbc95662ba5a0a572b51348960cd') in 0.0252228 seconds
+Start importing Assets/prefabs_02/enemies/MvpRangedPlant.prefab using Guid(3f3a3ae87ba427e46be3641c4c41eac9) (PrefabImporter) -> (artifact id: 'cc85a19d1c4cf582eb6b86a7d8da2718') in 0.072115 seconds
+Refreshing native plugins compatible for Editor in 5.53 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=fe12a4e42ccd49c4f8a08fdc7d3e2529): Total: 7.026 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+Asset Pipeline Refresh (id=d67a52cef32dabb48b03369e595479bd): Total: 23.738 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
 	Summary:
-		Imports: total=0 (actual=0, local cache=0, cache server=0)
-		Asset DB Process Time: managed=5 ms, native=3996 ms
-		Asset DB Callback time: managed=341 ms, native=137 ms
-		Scripting: domain reloads=1, domain reload time=655 ms, compile time=1845 ms, other=44 ms
-		Project Asset Count: scripts=1509, non-scripts=3198
-		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=19 ms, native=8771 ms
+		Asset DB Callback time: managed=1044 ms, native=210 ms
+		Scripting: domain reloads=1, domain reload time=3492 ms, compile time=10085 ms, other=114 ms
+		Project Asset Count: scripts=1510, non-scripts=3202
+		Asset File Changes: new=1, changed=4, moved=0, deleted=0
 		Scan Filter Count: 0
-	InvokeCustomDependenciesCallbacks: 0.002ms
-	InvokePackagesCallback: 38.447ms
-	ApplyChangesToAssetFolders: 0.672ms
-	Scan: 118.647ms
-	OnSourceAssetsModified: 0.004ms
-	CategorizeAssetsWithTransientArtifact: 43.118ms
-	ProcessAssetsWithTransientArtifactChanges: 74.773ms
-	CategorizeAssets: 58.592ms
-	ImportOutOfDateAssets: 3585.004ms (923.169ms without children)
-		ImportManagerImport: 793.412ms (22.150ms without children)
-			ImportInProcess: 771.263ms
-		CompileScripts: 1845.470ms
-		ReloadNativeAssets: 0.054ms
-		UnloadImportedAssets: 1.012ms
-		ReloadImportedAssets: 20.239ms
-		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.135ms
-		InitializingProgressBar: 0.007ms
-		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
-		OnDemandSchedulerStart: 0.505ms
-	PostProcessAllAssets: 437.759ms
-	Hotreload: 4.363ms
-	GatherAllCurrentPrimaryArtifactRevisions: 0.002ms
-	UnloadStreamsBegin: 2.675ms
-	PersistCurrentRevisions: 0.322ms
-	UnloadStreamsEnd: 0.002ms
-	GenerateScriptTypeHashes: 3.362ms
-	Untracked: 2661.777ms
+	InvokeCustomDependenciesCallbacks: 0.003ms
+	InvokePackagesCallback: 42.131ms
+	ApplyChangesToAssetFolders: 1.685ms
+	Scan: 427.897ms
+	OnSourceAssetsModified: 2.325ms
+	CategorizeAssetsWithTransientArtifact: 158.840ms
+	ProcessAssetsWithTransientArtifactChanges: 196.033ms
+	CategorizeAssets: 197.608ms
+	ImportOutOfDateAssets: 7481.096ms (-3017.786ms without children)
+		ImportManagerImport: 405.164ms (13.701ms without children)
+			ImportInProcess: 391.380ms
+			UpdateCategorizedAssets: 0.083ms
+		CompileScripts: 10084.962ms
+		ReloadNativeAssets: 0.109ms
+		UnloadImportedAssets: 2.400ms
+		ReloadImportedAssets: 2.181ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 2.902ms
+		InitializingProgressBar: 0.034ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.002ms
+		OnDemandSchedulerStart: 1.127ms
+	PostProcessAllAssets: 1201.802ms
+	Hotreload: 12.037ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.003ms
+	UnloadStreamsBegin: 4.313ms
+	PersistCurrentRevisions: 0.579ms
+	UnloadStreamsEnd: 0.003ms
+	GenerateScriptTypeHashes: 10.107ms
+	Untracked: 14011.227ms
 
 Application.AssetDatabase Initial Refresh End
-Scanning for USB devices : 0.845ms
+Scanning for USB devices : 2.965ms
 Initializing Unity extensions:
 [MODES] ModeService[none].Initialize
 [MODES] ModeService[none].LoadModes
 [MODES] Loading mode Default (0) for mode-current-id-My project
 Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6972 unused Assets / (1.7 MB). Loaded Objects now: 7794.
-Memory consumption went from 209.0 MB to 207.3 MB.
-Total: 10.912800 ms (FindLiveObjects: 0.484500 ms CreateObjectMapping: 0.793600 ms MarkObjects: 7.206000 ms  DeleteObjects: 2.427100 ms)
+Unloading 6977 unused Assets / (5.7 MB). Loaded Objects now: 7799.
+Memory consumption went from 218.7 MB to 213.0 MB.
+Total: 25.403400 ms (FindLiveObjects: 0.927700 ms CreateObjectMapping: 1.275300 ms MarkObjects: 17.102100 ms  DeleteObjects: 6.094300 ms)
 
-Start importing Assets/animations_05 using Guid(7330a0491ac044d4c9fa90626a0216c4) (DefaultImporter) -> (artifact id: 'bf307a7e682e51e6b3094594a0eba733') in 0.0117457 seconds
-Refreshing native plugins compatible for Editor in 1.25 ms, found 4 plugins.
+Opening scene 'Assets/scene_00/scene_00_main.unity'
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/scene_00/scene_00_main.unity'
+	Deserialize:            298.450 ms
+	Integration:            931.293 ms
+	Integration of assets:  136.648 ms
+	Thread Wait Time:       0.246 ms
+	Total Operation Time:   1366.637 ms
+Unloading 2 unused Assets / (Unknown). Loaded Objects now: 9264.
+Memory consumption went from 276.2 MB to 278.1 MB.
+Total: 15.954300 ms (FindLiveObjects: 0.817200 ms CreateObjectMapping: 0.706200 ms MarkObjects: 14.366400 ms  DeleteObjects: 0.062000 ms)
+
+Start importing Assets/prefabs_02/enemies/MvpPumpkinEnemy.prefab using Guid(29db3247556232a448115b531e898b71) (PrefabImporter) -> (artifact id: 'e5a394d7cc55b88cda25fa88446f1d85') in 0.0477924 seconds
+Refreshing native plugins compatible for Editor in 6.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=7fa16c104bb9ef440a29a3822b13bb81): Total: 0.151 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/animations_05/Player2D.controller using Guid(adab012d6235b8447bf36ac785ca9dac) (NativeFormatImporter) -> (artifact id: '14c7cb3f734cf29bfa68067c112963a0') in 0.0025477 seconds
-Refreshing native plugins compatible for Editor in 1.43 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=dfd0fc6e8120a324d80de6dfc9eee923): Total: 0.052 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/animations_05/FarmAnimal2D.controller using Guid(9cbac6208e469ea45a924c550b912b42) (NativeFormatImporter) -> (artifact id: '8a44f6d18ad28f779f05b143c6a90df2') in 0.0021084 seconds
-Refreshing native plugins compatible for Editor in 1.15 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=875b319205306e147b1e4dd935312553): Total: 0.039 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/animations_05/Enemy2D.controller using Guid(c24a3d57876122b4db1a9a04e87b4581) (NativeFormatImporter) -> (artifact id: '40d488ac296d1fb042a294ba2343b577') in 0.0022517 seconds
-Refreshing native plugins compatible for Editor in 1.40 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=b004f79c9b2d85944a6b64faad342bb5): Total: 0.073 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/animations_05/Enemy2D.controller using Guid(c24a3d57876122b4db1a9a04e87b4581) (NativeFormatImporter) -> (artifact id: '3323b9daa9d5e7d37b599716ff8296ef') in 0.0022185 seconds
-Start importing Assets/animations_05/FarmAnimal2D.controller using Guid(9cbac6208e469ea45a924c550b912b42) (NativeFormatImporter) -> (artifact id: '2fd98afa1ba4bd21223a79f9a5385991') in 0.0015715 seconds
-Start importing Assets/animations_05/Player2D.controller using Guid(adab012d6235b8447bf36ac785ca9dac) (NativeFormatImporter) -> (artifact id: '9138d0bea087bb6dc40ac1aa69f9e407') in 0.0014833 seconds
-Refreshing native plugins compatible for Editor in 1.09 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=ebfacf12468122e49987b6cb712c2cd7): Total: 0.038 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=87e0dce274cc02c448c758e0d00227a2): Total: 0.010 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-[Animator2DControllersGenerator] Done. Assign controllers under Assets/animations_05 to Animator components.
+Asset Pipeline Refresh (id=12cb4dcf4d7c8a3419a84e47cd5c1045): Total: 0.432 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=2 ms, native=379 ms
+		Asset DB Callback time: managed=27 ms, native=22 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=1510, non-scripts=3203
+		Asset File Changes: new=1, changed=1, moved=0, deleted=0
+		Scan Filter Count: 4
+	InvokeCustomDependenciesCallbacks: 0.002ms
+	InvokePackagesCallback: 0.003ms
+	ApplyChangesToAssetFolders: 0.648ms
+	Scan: 113.208ms
+	OnSourceAssetsModified: 2.625ms
+	CategorizeAssetsWithTransientArtifact: 0.038ms
+	ProcessAssetsWithTransientArtifactChanges: 0.367ms
+	CategorizeAssets: 158.001ms
+	ImportOutOfDateAssets: 59.166ms (1.544ms without children)
+		ImportManagerImport: 52.780ms (2.252ms without children)
+			ImportInProcess: 50.432ms
+			UpdateCategorizedAssets: 0.096ms
+		ReloadNativeAssets: 0.126ms
+		UnloadImportedAssets: 0.632ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 2.080ms
+		InitializingProgressBar: 0.024ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.003ms
+		OnDemandSchedulerStart: 1.977ms
+	PostProcessAllAssets: 31.741ms
+	Hotreload: 15.405ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.849ms
+	UnloadStreamsBegin: 0.857ms
+	PersistCurrentRevisions: 0.756ms
+	UnloadStreamsEnd: 0.004ms
+	GenerateScriptTypeHashes: 0.041ms
+	Untracked: 47.964ms
+
+Asset Pipeline Refresh (id=897b77437417b7e40af61941aa04e827): Total: 0.045 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[Scene00Setup] Created MvpPumpkinEnemy prefab.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
-Animator2DControllersGenerator:GenerateAll () (at Assets/Editor/Animator2DControllersGenerator.cs:26)
-DarkFarmMvpBuilder:BuildAll () (at Assets/Editor/DarkFarmMvpBuilder.cs:57)
+Scene00MainSetupTool:EnsurePumpkinEnemyPrefab () (at Assets/Editor/Scene00MainSetupTool.cs:375)
+Scene00MainSetupTool:ApplyScene00Setup () (at Assets/Editor/Scene00MainSetupTool.cs:54)
 
-(Filename: Assets/Editor/Animator2DControllersGenerator.cs Line: 26)
+(Filename: Assets/Editor/Scene00MainSetupTool.cs Line: 375)
 
-Start importing Assets/sprites_03/tiles/_mvp_ground.png using Guid(12f27063e623b0b42b95f39fbc6240b2) (TextureImporter) -> (artifact id: '09f31c2dfb9648b0dd128f43f540108e') in 0.0529601 seconds
-Refreshing native plugins compatible for Editor in 2.17 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=b68851d596547424693399c22fbf61a6): Total: 0.095 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/sprites_03/tiles/_mvp_ground.png using Guid(12f27063e623b0b42b95f39fbc6240b2) (TextureImporter) -> (artifact id: '09f31c2dfb9648b0dd128f43f540108e') in 0.0033142 seconds
-Refreshing native plugins compatible for Editor in 1.26 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=084731f31205f29439427550e56f555b): Total: 0.020 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=4b49a885b07394747b6a08244323f443): Total: 0.009 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=479d354b9eefb524b99aec6e2c5f99a7): Total: 0.012 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/prefabs_02/enemies/MvpPlantEnemy.prefab using Guid(8aa437c02c4526f4ca7b1373b18ea295) (PrefabImporter) -> (artifact id: 'b7836fefe072586c61b1b137acad9bd3') in 0.0035423 seconds
-Refreshing native plugins compatible for Editor in 0.98 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=a6db43a381c0f6d45971dbb598abe0c0): Total: 0.042 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/prefabs_02/enemies/MvpRangedPlant.prefab using Guid(3f3a3ae87ba427e46be3641c4c41eac9) (PrefabImporter) -> (artifact id: 'e293ec40b6b0cc2465c732b3d0d6a3b6') in 0.0039568 seconds
-Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=affa44e64ef2e6940b2e1c49e3d55163): Total: 0.052 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/prefabs_02/player/MvpPlayer.prefab using Guid(4612dabf73f35974d8239bd152a2825a) (PrefabImporter) -> (artifact id: 'e1457d997a440a25d10fdc2ea40d34ff') in 0.0034912 seconds
-Refreshing native plugins compatible for Editor in 1.03 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=82a38300b3e7c744fa027291b956389c): Total: 0.051 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/prefabs_02/animals/MvpFarmAnimal_Cow.prefab using Guid(b6c4028ca308ca64c9a53206571f1258) (PrefabImporter) -> (artifact id: 'feb9ab1bbb8e681782118512ad6695c9') in 0.0030037 seconds
-Refreshing native plugins compatible for Editor in 1.07 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=496d4983605515947a71cea02c229e99): Total: 0.048 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/prefabs_02/animals/MvpFarmAnimal_Chicken.prefab using Guid(76bf7b6f63f91724d9c7935fd95444ea) (PrefabImporter) -> (artifact id: '4d7a724e84b6a33ce135a474849f2b2c') in 0.0029549 seconds
-Refreshing native plugins compatible for Editor in 1.05 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=edd437be31a5b544a8a34ece256ccdd6): Total: 0.046 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Start importing Assets/prefabs_02/animals/MvpFarmAnimal_Pig.prefab using Guid(bdf584674b60f584880d14b45c283fbd) (PrefabImporter) -> (artifact id: 'c1aa1cbbed53662e07326ea10b4accf4') in 0.0036363 seconds
-Refreshing native plugins compatible for Editor in 1.17 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=b2dc935da0bbba34aa0268f9843b0098): Total: 0.051 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=47305a58e4de4bd47882b07b0f7a1042): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 741 unused Assets / (78.1 MB). Loaded Objects now: 7801.
-Memory consumption went from 338.6 MB to 260.5 MB.
-Total: 12.804700 ms (FindLiveObjects: 0.385800 ms CreateObjectMapping: 0.246000 ms MarkObjects: 6.695100 ms  DeleteObjects: 5.476300 ms)
-
-Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
-DarkFarmMvpBuilder:BuildMainScene (UnityEngine.Sprite,string,string,string,string,string,string) (at Assets/Editor/DarkFarmMvpBuilder.cs:588)
-DarkFarmMvpBuilder:BuildAll () (at Assets/Editor/DarkFarmMvpBuilder.cs:112)
-
-[Assets/Editor/DarkFarmMvpBuilder.cs line 112]
-
-Start importing Assets/scene_00/scene_00_main.unity using Guid(8052fe1d3fcd0c9408d3d3bd7a863fb5) (DefaultImporter) -> (artifact id: 'a8aa2cbb31ebf3fd025972fa8e21cefc') in 0.0009266 seconds
-Refreshing native plugins compatible for Editor in 1.17 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=111f51b79ccf4aa4bacd9c7a6a90f339): Total: 0.043 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 833 unused Assets / (61.1 MB). Loaded Objects now: 7821.
-Memory consumption went from 290.2 MB to 229.1 MB.
-Total: 10.787700 ms (FindLiveObjects: 0.387400 ms CreateObjectMapping: 0.233800 ms MarkObjects: 6.534300 ms  DeleteObjects: 3.630600 ms)
-
-Start importing Assets/scene_00/scene_01_menu.unity using Guid(b55798cc12df634439470d8abf458483) (DefaultImporter) -> (artifact id: '85a1a6113badd0ac66731186ffcd5c64') in 0.0009064 seconds
-Refreshing native plugins compatible for Editor in 0.98 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=7bafb80433a949b4faba57f1069e5b10): Total: 0.046 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 386 unused Assets / (0.9 MB). Loaded Objects now: 7821.
-Memory consumption went from 249.0 MB to 248.2 MB.
-Total: 8.053900 ms (FindLiveObjects: 0.255200 ms CreateObjectMapping: 0.185500 ms MarkObjects: 7.093900 ms  DeleteObjects: 0.518200 ms)
-
-Sprite Tiling might not appear correctly because the Sprite used is not generated with Full Rect. To fix this, change the Mesh Type in the Sprite's import setting to Full Rect
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.SpriteRenderer:set_drawMode (UnityEngine.SpriteDrawMode)
-DarkFarmMvpBuilder:BuildTestScene (UnityEngine.Sprite) (at Assets/Editor/DarkFarmMvpBuilder.cs:939)
-DarkFarmMvpBuilder:BuildAll () (at Assets/Editor/DarkFarmMvpBuilder.cs:132)
-
-[Assets/Editor/DarkFarmMvpBuilder.cs line 132]
-
-Start importing Assets/scene_00/scene_02_test.unity using Guid(446c8c6468161664c8a054374235d87b) (DefaultImporter) -> (artifact id: '0b5f3e2ba69ec21c674b49408efa9e0c') in 0.0011473 seconds
-Refreshing native plugins compatible for Editor in 1.06 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Asset Pipeline Refresh (id=f7e67ce305f7ee049940c205db442e94): Total: 0.038 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
-Asset Pipeline Refresh (id=aedca84dce1e46146ababb94c46ac22f): Total: 0.007 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
-[DarkFarmMvpBuilder] Done. Open scene_01_menu to play from the menu, or scene_00_main for direct playtest.
+[Scene00Setup] Added pumpkin enemy prefab to SpawnManager list.
 UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:Log (object)
-DarkFarmMvpBuilder:BuildAll () (at Assets/Editor/DarkFarmMvpBuilder.cs:140)
+Scene00MainSetupTool:AddEnemyPrefabToSpawnList (SpawnManager,EnemyBase) (at Assets/Editor/Scene00MainSetupTool.cs:152)
+Scene00MainSetupTool:ApplyScene00Setup () (at Assets/Editor/Scene00MainSetupTool.cs:67)
 
-(Filename: Assets/Editor/DarkFarmMvpBuilder.cs Line: 140)
+(Filename: Assets/Editor/Scene00MainSetupTool.cs Line: 152)
+
+Start importing Assets/scene_00/scene_00_main.unity using Guid(8052fe1d3fcd0c9408d3d3bd7a863fb5) (DefaultImporter) -> (artifact id: 'cae18b8f89a33409bc2c39292f3c83c7') in 0.0042078 seconds
+Refreshing native plugins compatible for Editor in 5.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=61eeb149813d5c9499346dc3939c5d40): Total: 0.150 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+[Scene00Setup] scene_00_main configured and saved (auto-create enabled).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+Scene00MainSetupTool:ApplyScene00Setup () (at Assets/Editor/Scene00MainSetupTool.cs:105)
+
+(Filename: Assets/Editor/Scene00MainSetupTool.cs Line: 105)
 
 Batchmode quit successfully invoked - shutting down!
 [Physics::Module] Cleanup current backend.

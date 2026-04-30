@@ -18,6 +18,8 @@ public sealed class CorralManager : MonoBehaviour
     [SerializeField] private string cowCorralObjectName = "Corral_Vacas";
     [SerializeField] private string chickenCorralObjectName = "Corral_Pollos";
     [SerializeField] private string pigCorralObjectName = "Corral_Cerdos";
+    [Header("Startup")]
+    [SerializeField] private bool hideAnimalsAtGameStart = true;
 
     /// <summary>Fired after an animal was spawned into a corral via shop purchase.</summary>
     public event System.Action<FarmAnimalKind, GameObject> AnimalSpawnedInCorral;
@@ -37,6 +39,12 @@ public sealed class CorralManager : MonoBehaviour
     private void OnValidate()
     {
         ResolveReferencesSilent();
+    }
+
+    private void Start()
+    {
+        if (hideAnimalsAtGameStart)
+            HideExistingAnimals();
     }
 
     private void ResolveReferences()
@@ -108,6 +116,12 @@ public sealed class CorralManager : MonoBehaviour
         if (prefab == null || inventory == null)
             return false;
 
+        if (!PrefabMatchesKind(prefab, kind))
+        {
+            Debug.LogWarning($"[CorralManager] Prefab '{prefab.name}' does not match requested kind {kind}.");
+            return false;
+        }
+
         var zone = GetZone(kind);
         if (zone == null)
         {
@@ -124,6 +138,9 @@ public sealed class CorralManager : MonoBehaviour
         var pos = zone.GetRandomSpawnPosition();
         spawned = Instantiate(prefab, pos, Quaternion.identity, zone.transform);
 
+        if (PowerUpSystem.Instance != null && spawned.TryGetComponent<AnimalBase>(out var animal))
+            animal.ApplyMaxHealthMultiplier(PowerUpSystem.Instance.AnimalHealthMultiplier);
+
         zone.RegisterOccupant(spawned);
 
         if (spawned.TryGetComponent<ResourceGenerator>(out var gen))
@@ -137,5 +154,29 @@ public sealed class CorralManager : MonoBehaviour
 
         AnimalSpawnedInCorral?.Invoke(kind, spawned);
         return true;
+    }
+
+    private static bool PrefabMatchesKind(GameObject prefab, FarmAnimalKind requestedKind)
+    {
+        if (!prefab.TryGetComponent<FarmAnimal>(out var animal))
+            return true;
+        return animal.Kind == requestedKind;
+    }
+
+    private void HideExistingAnimals()
+    {
+        HideAnimalsInZone(cowCorral);
+        HideAnimalsInZone(chickenCorral);
+        HideAnimalsInZone(pigCorral);
+    }
+
+    private static void HideAnimalsInZone(CorralZone zone)
+    {
+        if (zone == null)
+            return;
+
+        var animals = zone.GetComponentsInChildren<AnimalBase>(true);
+        foreach (var animal in animals)
+            animal.gameObject.SetActive(false);
     }
 }
