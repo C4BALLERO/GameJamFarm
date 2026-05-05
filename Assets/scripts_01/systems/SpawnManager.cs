@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 /// <summary>
 /// Manages spawning of enemies in the game world.
@@ -25,15 +26,23 @@ public sealed class SpawnManager : MonoBehaviour
     [SerializeField] private EnemyBase[] enemyPrefabs;
 
     [Header("Limits")]
-    [SerializeField] private int maxAlive = 14;
+    [SerializeField] private int maxAlive = 9;
 
     [Header("Spawn Rate")]
     [SerializeField] private float baseSpawnInterval = 5.5f;
     [SerializeField] private float minSpawnInterval = 1.35f;
     [SerializeField] private float intervalDecreasePerMinute = 0.06f;
 
+    [Header("Day Cleanup")]
+    [Tooltip("During day, surviving enemies are removed gradually.")]
+    [SerializeField] private bool despawnSurvivorsDuringDay = true;
+    [SerializeField] private float dayDespawnInterval = 4.5f;
+    [SerializeField] private int dayDespawnDamage = 999;
+
     private float _nextSpawnAt;
     private int _alive;
+    private float _nextDayCullAt;
+    private readonly List<EnemyBase> _spawned = new();
 
     /// <summary>
     /// Set the player transform for distance checks
@@ -60,7 +69,11 @@ public sealed class SpawnManager : MonoBehaviour
         if (player == null) return;
         if (dayNightManager == null)
             dayNightManager = DayNightManager.Instance ?? FindFirstObjectByType<DayNightManager>();
-        if (dayNightManager != null && dayNightManager.IsDay) return; // Day rule: no enemy spawning.
+        if (dayNightManager != null && dayNightManager.IsDay)
+        {
+            HandleDaytimeEnemyCleanup();
+            return; // Day rule: no enemy spawning.
+        }
         if (corralManager == null)
             corralManager = CorralManager.Instance;
         if (enemyPrefabs == null || enemyPrefabs.Length == 0) return;
@@ -69,6 +82,26 @@ public sealed class SpawnManager : MonoBehaviour
 
         _nextSpawnAt = Time.time + ComputeInterval();
         TrySpawn();
+    }
+
+    private void HandleDaytimeEnemyCleanup()
+    {
+        if (!despawnSurvivorsDuringDay)
+            return;
+        if (Time.time < _nextDayCullAt)
+            return;
+
+        _nextDayCullAt = Time.time + Mathf.Max(1f, dayDespawnInterval);
+        CleanupDeadRefs();
+        if (_spawned.Count == 0)
+            return;
+
+        var idx = Random.Range(0, _spawned.Count);
+        var enemy = _spawned[idx];
+        if (enemy == null || enemy.IsDead)
+            return;
+
+        enemy.TakeDamage(Mathf.Max(1, dayDespawnDamage), Vector2.zero);
     }
 
     /// <summary>
@@ -107,10 +140,26 @@ public sealed class SpawnManager : MonoBehaviour
             var enemy = Instantiate(prefab, pos, Quaternion.identity);
 
             _alive++;
-            enemy.Died += () => _alive = Mathf.Max(0, _alive - 1);
+            _spawned.Add(enemy);
+            enemy.Died += () =>
+            {
+                _alive = Mathf.Max(0, _alive - 1);
+                _spawned.Remove(enemy);
+            };
             Debug.Log($"[SpawnManager] Spawned enemy. Alive: {_alive}/{maxAlive}");
             return;
         }
+    }
+
+    private void CleanupDeadRefs()
+    {
+        for (var i = _spawned.Count - 1; i >= 0; i--)
+        {
+            var e = _spawned[i];
+            if (e == null || e.IsDead)
+                _spawned.RemoveAt(i);
+        }
+        _alive = Mathf.Clamp(_alive, 0, _spawned.Count + 2);
     }
 
     /// <summary>

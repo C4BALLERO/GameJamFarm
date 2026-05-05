@@ -110,27 +110,27 @@ public sealed class ShopUI : MonoBehaviour
         if (shopSystem == null)
             return;
 
-        FormatLine(cowCostText, shopSystem.GetPurchaseCosts(FarmAnimalKind.Cow));
-        FormatLine(chickenCostText, shopSystem.GetPurchaseCosts(FarmAnimalKind.Chicken));
-        FormatLine(pigCostText, shopSystem.GetPurchaseCosts(FarmAnimalKind.Pig));
-        FormatLine(attackCostText, shopSystem.GetAttackUpgradeCosts());
-        FormatLine(speedCostText, shopSystem.GetSpeedUpgradeCosts());
-        FormatLine(fasterGenerationCostText, shopSystem.GetFasterGenerationCosts());
-        FormatLine(animalHealthCostText, shopSystem.GetAnimalHealthCosts());
-        FormatLine(playerDamagePowerCostText, shopSystem.GetPlayerDamageBoostCosts());
-        FormatLine(playerMovePowerCostText, shopSystem.GetPlayerMoveBoostCosts());
-        FormatLine(reducedSpawnDelayCostText, shopSystem.GetReducedSpawnDelayCosts());
+        FormatLine(cowCostText, "Vaca", shopSystem.GetPurchaseCosts(FarmAnimalKind.Cow));
+        FormatLine(chickenCostText, "Gallina", shopSystem.GetPurchaseCosts(FarmAnimalKind.Chicken));
+        FormatLine(pigCostText, "Cerdo", shopSystem.GetPurchaseCosts(FarmAnimalKind.Pig));
+        FormatLine(attackCostText, "Mejora ataque", shopSystem.GetAttackUpgradeCosts());
+        FormatLine(speedCostText, "Mejora velocidad", shopSystem.GetSpeedUpgradeCosts());
+        FormatLine(fasterGenerationCostText, "PU Produccion", shopSystem.GetFasterGenerationCosts());
+        FormatLine(animalHealthCostText, "PU Vida Animal", shopSystem.GetAnimalHealthCosts());
+        FormatLine(playerDamagePowerCostText, "PU Danio", shopSystem.GetPlayerDamageBoostCosts());
+        FormatLine(playerMovePowerCostText, "PU Movimiento", shopSystem.GetPlayerMoveBoostCosts());
+        FormatLine(reducedSpawnDelayCostText, "PU Spawn", shopSystem.GetReducedSpawnDelayCosts());
         RefreshCurrentResources();
     }
 
-    private void FormatLine(Text label, ResourceCost[] costs)
+    private void FormatLine(Text label, string title, ResourceCost[] costs)
     {
         if (label == null) return;
 
         _sb.Clear();
         if (costs == null || costs.Length == 0)
         {
-            label.text = "—";
+            label.text = $"{title}: —";
             return;
         }
 
@@ -144,7 +144,8 @@ public sealed class ShopUI : MonoBehaviour
             _sb.Append(ResourceLabel(c.type));
         }
 
-        label.text = _sb.Length > 0 ? _sb.ToString() : "—";
+        var costsText = _sb.Length > 0 ? _sb.ToString() : "—";
+        label.text = $"{title}: {costsText}";
     }
 
     private void RefreshCurrentResources()

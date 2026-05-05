@@ -51,6 +51,7 @@ public static class Scene00MainSetupTool
         var uiManager = GetOrAdd<UIManager>(uiManagerGo);
         var spawnManager = GetOrAdd<SpawnManager>(spawnGo);
         var dayNightHud = EnsureDayNightHud();
+        EnsureResourceHudIcons();
         var pumpkinPrefab = EnsurePumpkinEnemyPrefab();
         EnsureRoseDamageIsBalanced();
 
@@ -69,6 +70,7 @@ public static class Scene00MainSetupTool
         SerializedSet(shopUi, "panelRoot", shopPanel);
         SerializedSet(shopUi, "shopSystem", shop);
         SerializedSet(shopUi, "inventory", inventory);
+        EnsureShopCostLabels(shopPanel, shopUi);
 
         SerializedSet(uiManager, "shopSystem", shop);
         SerializedSet(uiManager, "shopUi", shopUi);
@@ -151,6 +153,129 @@ public static class Scene00MainSetupTool
             so.ApplyModifiedPropertiesWithoutUndo();
             Debug.Log("[Scene00Setup] Added pumpkin enemy prefab to SpawnManager list.");
         }
+    }
+
+    private static void EnsureShopCostLabels(GameObject shopPanel, ShopUI shopUi)
+    {
+        if (shopPanel == null || shopUi == null)
+            return;
+
+        var titleY = 0.93f;
+        var step = 0.065f;
+        var labels = new[]
+        {
+            ("CowCostText", "Vaca", "Assets/resources/vacaIcono.png"),
+            ("ChickenCostText", "Gallina", "Assets/resources/polloIcono.png"),
+            ("PigCostText", "Cerdo", "Assets/resources/cerdoIcono.png"),
+            ("AttackCostText", "Mejora ataque", "Assets/resources/CarneGota.png"),
+            ("SpeedCostText", "Mejora velocidad", "Assets/resources/HuevoGota.png"),
+            ("FasterGenerationCostText", "PU Produccion", "Assets/resources/LecheGota.png"),
+            ("AnimalHealthCostText", "PU Vida Animal", "Assets/resources/CarneGota.png"),
+            ("PlayerDamagePowerCostText", "PU Danio", "Assets/resources/CarneGota.png"),
+            ("PlayerMovePowerCostText", "PU Movimiento", "Assets/resources/HuevoGota.png"),
+            ("ReducedSpawnDelayCostText", "PU Spawn", "Assets/resources/Luna.png"),
+            ("CurrentResourcesText", "Recursos", "Assets/resources/Sol.png")
+        };
+
+        var created = new List<Text>();
+        for (var i = 0; i < labels.Length; i++)
+        {
+            var (name, seedText, iconPath) = labels[i];
+            var txt = FindChildComponentByName<Text>(shopPanel.transform, name);
+            if (txt == null)
+            {
+                txt = CreateHudText(shopPanel.transform, name, new Vector2(0.12f, titleY - step * (i + 1)), new Vector2(0.62f, titleY - step * i), seedText);
+                txt.fontSize = 14;
+                txt.alignment = TextAnchor.MiddleLeft;
+            }
+            else if (txt.transform is RectTransform txrt)
+            {
+                txrt.anchorMin = new Vector2(0.12f, titleY - step * (i + 1));
+                txrt.anchorMax = new Vector2(0.62f, titleY - step * i);
+                txrt.offsetMin = Vector2.zero;
+                txrt.offsetMax = Vector2.zero;
+            }
+            txt.resizeTextForBestFit = true;
+            txt.resizeTextMinSize = 11;
+            txt.resizeTextMaxSize = 16;
+            txt.color = new Color(0.95f, 0.95f, 0.98f, 1f);
+
+            EnsureShopRowIcon(shopPanel.transform, $"Icon_{name}", titleY - step * (i + 1), titleY - step * i, iconPath);
+            created.Add(txt);
+        }
+
+        LayoutShopButtons(shopPanel.transform);
+
+        var so = new SerializedObject(shopUi);
+        SetTextRef(so, "cowCostText", created[0]);
+        SetTextRef(so, "chickenCostText", created[1]);
+        SetTextRef(so, "pigCostText", created[2]);
+        SetTextRef(so, "attackCostText", created[3]);
+        SetTextRef(so, "speedCostText", created[4]);
+        SetTextRef(so, "fasterGenerationCostText", created[5]);
+        SetTextRef(so, "animalHealthCostText", created[6]);
+        SetTextRef(so, "playerDamagePowerCostText", created[7]);
+        SetTextRef(so, "playerMovePowerCostText", created[8]);
+        SetTextRef(so, "reducedSpawnDelayCostText", created[9]);
+        SetTextRef(so, "currentResourcesText", created[10]);
+        so.ApplyModifiedPropertiesWithoutUndo();
+    }
+
+    private static void EnsureShopRowIcon(Transform parent, string iconName, float minY, float maxY, string spriteAssetPath)
+    {
+        var icon = FindChildComponentByName<Image>(parent, iconName);
+        if (icon == null)
+            icon = CreateIconImage(parent, iconName, new Vector2(0.04f, minY), new Vector2(0.1f, maxY), Color.white);
+        else if (icon.transform is RectTransform rt)
+        {
+            rt.anchorMin = new Vector2(0.04f, minY);
+            rt.anchorMax = new Vector2(0.1f, maxY);
+            rt.offsetMin = Vector2.zero;
+            rt.offsetMax = Vector2.zero;
+        }
+        AssignIconSprite(icon, spriteAssetPath);
+    }
+
+    private static void LayoutShopButtons(Transform panel)
+    {
+        var rows = new[]
+        {
+            ("BuyCow", 0.86f, 0.93f, "Comprar vaca"),
+            ("BuyChicken", 0.795f, 0.86f, "Comprar gallina"),
+            ("BuyPig", 0.73f, 0.795f, "Comprar cerdo"),
+            ("BuyAttackUpgrade", 0.665f, 0.73f, "Mejorar ataque"),
+            ("BuySpeedUpgrade", 0.60f, 0.665f, "Mejorar velocidad"),
+            ("CloseShop", 0.07f, 0.14f, "Cerrar granero"),
+        };
+
+        foreach (var (name, minY, maxY, label) in rows)
+        {
+            var btn = FindChildComponentByName<Button>(panel, name);
+            if (btn == null) continue;
+            if (btn.transform is RectTransform rt)
+            {
+                rt.anchorMin = new Vector2(0.66f, minY);
+                rt.anchorMax = new Vector2(0.96f, maxY);
+                rt.offsetMin = Vector2.zero;
+                rt.offsetMax = Vector2.zero;
+            }
+
+            var txt = btn.GetComponentInChildren<Text>(true);
+            if (txt != null)
+            {
+                txt.text = label;
+                txt.resizeTextForBestFit = true;
+                txt.resizeTextMinSize = 10;
+                txt.resizeTextMaxSize = 20;
+            }
+        }
+    }
+
+    private static void SetTextRef(SerializedObject so, string propName, Text text)
+    {
+        var p = so.FindProperty(propName);
+        if (p != null)
+            p.objectReferenceValue = text;
     }
 
     private static GameObject FindHostByComponent<T>() where T : Component
@@ -244,8 +369,69 @@ public static class Scene00MainSetupTool
         fill.fillAmount = 0f;
         moon.enabled = false;
         sun.enabled = true;
+        AssignIconSprite(sun, "Assets/resources/Sol.png");
+        AssignIconSprite(moon, "Assets/resources/Luna.png");
 
         return root;
+    }
+
+    private static void EnsureResourceHudIcons()
+    {
+        var milkText = FindSceneObjectByName("MilkHud");
+        var eggText = FindSceneObjectByName("EggHud");
+        var meatText = FindSceneObjectByName("MeatHud");
+
+        if (milkText != null)
+            EnsureIconNearText(milkText.transform, "MilkIcon", "Assets/resources/LecheGota.png");
+        if (eggText != null)
+            EnsureIconNearText(eggText.transform, "EggIcon", "Assets/resources/HuevoGota.png");
+        if (meatText != null)
+            EnsureIconNearText(meatText.transform, "MeatIcon", "Assets/resources/CarneGota.png");
+    }
+
+    private static void EnsureIconNearText(Transform textTransform, string iconName, string spriteAssetPath)
+    {
+        var parent = textTransform.parent;
+        if (parent == null)
+            return;
+
+        var icon = FindChildComponentByName<Image>(parent, iconName);
+        if (icon == null)
+        {
+            // Bigger HUD icon, aligned to the left of each resource line.
+            icon = CreateIconImage(parent, iconName, new Vector2(0.00f, 0.06f), new Vector2(0.22f, 0.94f), Color.white);
+        }
+        else if (icon.transform is RectTransform irt)
+        {
+            irt.anchorMin = new Vector2(0.00f, 0.06f);
+            irt.anchorMax = new Vector2(0.22f, 0.94f);
+            irt.offsetMin = Vector2.zero;
+            irt.offsetMax = Vector2.zero;
+        }
+
+        // Shift the text right to make space for icon.
+        if (textTransform is RectTransform rt)
+        {
+            var off = rt.offsetMin;
+            off.x = Mathf.Max(off.x, 54f);
+            rt.offsetMin = off;
+        }
+
+        AssignIconSprite(icon, spriteAssetPath);
+    }
+
+    private static void AssignIconSprite(Image image, string spriteAssetPath)
+    {
+        if (image == null)
+            return;
+
+        var sprite = AssetDatabase.LoadAssetAtPath<Sprite>(spriteAssetPath);
+        if (sprite == null)
+            return;
+
+        image.sprite = sprite;
+        image.preserveAspect = true;
+        image.color = Color.white;
     }
 
     private static Image CreateIconImage(Transform parent, string name, Vector2 anchorMin, Vector2 anchorMax, Color color)
