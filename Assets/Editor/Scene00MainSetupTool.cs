@@ -52,6 +52,7 @@ public static class Scene00MainSetupTool
         var spawnManager = GetOrAdd<SpawnManager>(spawnGo);
         var dayNightHud = EnsureDayNightHud();
         EnsureResourceHudIcons();
+        var waveText = EnsureWaveCounterHud();
         var pumpkinPrefab = EnsurePumpkinEnemyPrefab();
         EnsureRoseDamageIsBalanced();
 
@@ -65,6 +66,7 @@ public static class Scene00MainSetupTool
         SerializedSet(spawnManager, "timeManager", time);
         SerializedSet(spawnManager, "dayNightManager", dayNightManager);
         SerializedSet(spawnManager, "corralManager", corralManager);
+        SerializedSet(spawnManager, "waveCounterText", waveText);
         AddEnemyPrefabToSpawnList(spawnManager, pumpkinPrefab);
 
         SerializedSet(shopUi, "panelRoot", shopPanel);
@@ -377,16 +379,24 @@ public static class Scene00MainSetupTool
 
     private static void EnsureResourceHudIcons()
     {
+        var hudBar = FindSceneObjectByName("ResourceHudBar");
         var milkText = FindSceneObjectByName("MilkHud");
         var eggText = FindSceneObjectByName("EggHud");
         var meatText = FindSceneObjectByName("MeatHud");
 
+        if (hudBar != null)
+        {
+            EnsureHudIconAtBar(hudBar.transform, "MilkIcon", new Vector2(0.006f, 0.15f), new Vector2(0.05f, 0.86f), "Assets/resources/LecheGota.png");
+            EnsureHudIconAtBar(hudBar.transform, "EggIcon", new Vector2(0.336f, 0.15f), new Vector2(0.38f, 0.86f), "Assets/resources/HuevoGota.png");
+            EnsureHudIconAtBar(hudBar.transform, "MeatIcon", new Vector2(0.666f, 0.15f), new Vector2(0.71f, 0.86f), "Assets/resources/CarneGota.png");
+        }
+
         if (milkText != null)
-            EnsureIconNearText(milkText.transform, "MilkIcon", "Assets/resources/LecheGota.png");
+            EnsureIconNearText(milkText.transform, "MilkIconFallback", "Assets/resources/LecheGota.png");
         if (eggText != null)
-            EnsureIconNearText(eggText.transform, "EggIcon", "Assets/resources/HuevoGota.png");
+            EnsureIconNearText(eggText.transform, "EggIconFallback", "Assets/resources/HuevoGota.png");
         if (meatText != null)
-            EnsureIconNearText(meatText.transform, "MeatIcon", "Assets/resources/CarneGota.png");
+            EnsureIconNearText(meatText.transform, "MeatIconFallback", "Assets/resources/CarneGota.png");
     }
 
     private static void EnsureIconNearText(Transform textTransform, string iconName, string spriteAssetPath)
@@ -394,30 +404,80 @@ public static class Scene00MainSetupTool
         var parent = textTransform.parent;
         if (parent == null)
             return;
+        if (textTransform is not RectTransform textRt)
+            return;
 
         var icon = FindChildComponentByName<Image>(parent, iconName);
+        var iconMinX = Mathf.Clamp01(textRt.anchorMin.x - 0.07f);
+        var iconMaxX = Mathf.Clamp01(textRt.anchorMin.x - 0.015f);
+        var iconMinY = textRt.anchorMin.y + 0.06f;
+        var iconMaxY = textRt.anchorMax.y - 0.06f;
         if (icon == null)
         {
             // Bigger HUD icon, aligned to the left of each resource line.
-            icon = CreateIconImage(parent, iconName, new Vector2(0.00f, 0.06f), new Vector2(0.22f, 0.94f), Color.white);
+            icon = CreateIconImage(parent, iconName, new Vector2(iconMinX, iconMinY), new Vector2(iconMaxX, iconMaxY), Color.white);
         }
         else if (icon.transform is RectTransform irt)
         {
-            irt.anchorMin = new Vector2(0.00f, 0.06f);
-            irt.anchorMax = new Vector2(0.22f, 0.94f);
+            irt.anchorMin = new Vector2(iconMinX, iconMinY);
+            irt.anchorMax = new Vector2(iconMaxX, iconMaxY);
             irt.offsetMin = Vector2.zero;
             irt.offsetMax = Vector2.zero;
         }
 
         // Shift the text right to make space for icon.
-        if (textTransform is RectTransform rt)
+        var off = textRt.offsetMin;
+        off.x = Mathf.Max(off.x, 34f);
+        textRt.offsetMin = off;
+
+        AssignIconSprite(icon, spriteAssetPath);
+    }
+
+    private static void EnsureHudIconAtBar(Transform bar, string iconName, Vector2 min, Vector2 max, string spriteAssetPath)
+    {
+        var icon = FindChildComponentByName<Image>(bar, iconName);
+        if (icon == null)
+            icon = CreateIconImage(bar, iconName, min, max, Color.white);
+        else if (icon.transform is RectTransform irt)
         {
-            var off = rt.offsetMin;
-            off.x = Mathf.Max(off.x, 54f);
-            rt.offsetMin = off;
+            irt.anchorMin = min;
+            irt.anchorMax = max;
+            irt.offsetMin = Vector2.zero;
+            irt.offsetMax = Vector2.zero;
         }
 
         AssignIconSprite(icon, spriteAssetPath);
+    }
+
+    private static Text EnsureWaveCounterHud()
+    {
+        var canvas = FindSceneObjectByName("Canvas");
+        if (canvas == null)
+            return null;
+
+        var txt = FindSceneObjectByName("WaveCounterText");
+        if (txt == null)
+        {
+            var go = new GameObject("WaveCounterText", typeof(RectTransform), typeof(CanvasRenderer), typeof(Text));
+            go.transform.SetParent(canvas.transform, false);
+            txt = go;
+        }
+
+        var rt = txt.GetComponent<RectTransform>();
+        rt.anchorMin = new Vector2(0.78f, 0.82f);
+        rt.anchorMax = new Vector2(0.98f, 0.87f);
+        rt.offsetMin = Vector2.zero;
+        rt.offsetMax = Vector2.zero;
+
+        var t = txt.GetComponent<Text>();
+        t.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Resources.GetBuiltinResource<Font>("Arial.ttf");
+        t.fontSize = 20;
+        t.fontStyle = FontStyle.Bold;
+        t.alignment = TextAnchor.MiddleRight;
+        t.color = new Color(1f, 0.92f, 0.45f, 1f);
+        if (string.IsNullOrWhiteSpace(t.text))
+            t.text = "Oleada 1";
+        return t;
     }
 
     private static void AssignIconSprite(Image image, string spriteAssetPath)
