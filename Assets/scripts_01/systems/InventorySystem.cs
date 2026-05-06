@@ -56,4 +56,13 @@ public sealed class InventorySystem : MonoBehaviour
     }
 
     public bool CanAfford(ResourceType type, int amount) => Get(type) >= amount;
+
+    public void ClearAll()
+    {
+        foreach (ResourceType t in System.Enum.GetValues(typeof(ResourceType)))
+        {
+            _amounts[t] = 0;
+            ResourceChanged?.Invoke(t, 0);
+        }
+    }
 }

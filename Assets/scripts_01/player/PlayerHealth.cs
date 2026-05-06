@@ -76,6 +76,13 @@ public sealed class PlayerHealth : MonoBehaviour, IDamageable
         }
     }
 
+    public void Heal(int amount)
+    {
+        if (IsDead || amount <= 0) return;
+        CurrentHealth = Mathf.Min(CurrentHealth + amount, maxHealth);
+        HealthChanged?.Invoke(CurrentHealth, maxHealth);
+    }
+
     public void SetRespawnPoint(Vector3 worldPoint)
     {
         _spawnPoint = worldPoint;

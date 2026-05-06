@@ -24,6 +24,7 @@ public sealed class ShopUI : MonoBehaviour
     [SerializeField] private Text playerDamagePowerCostText;
     [SerializeField] private Text playerMovePowerCostText;
     [SerializeField] private Text reducedSpawnDelayCostText;
+    [SerializeField] private Text playerHealthRestoreCostText;
     [SerializeField] private Text currentResourcesText;
 
     private readonly StringBuilder _sb = new();
@@ -120,6 +121,7 @@ public sealed class ShopUI : MonoBehaviour
         FormatLine(playerDamagePowerCostText, shopSystem.GetPlayerDamageBoostCosts());
         FormatLine(playerMovePowerCostText, shopSystem.GetPlayerMoveBoostCosts());
         FormatLine(reducedSpawnDelayCostText, shopSystem.GetReducedSpawnDelayCosts());
+        FormatLine(playerHealthRestoreCostText, shopSystem.GetPlayerHealthRestoreCosts());
         RefreshCurrentResources();
     }
 
@@ -168,4 +170,17 @@ public sealed class ShopUI : MonoBehaviour
             _ => t.ToString()
         };
     }
+
+    // Wrappers públicos para onClick de botones en el editor
+    public void OnBuyCow()                      { shopSystem?.BuyCow(); }
+    public void OnBuyChicken()                  { shopSystem?.BuyChicken(); }
+    public void OnBuyPig()                      { shopSystem?.BuyPig(); }
+    public void OnBuyAttackUpgrade()            { shopSystem?.BuyAttackUpgrade(); }
+    public void OnBuySpeedUpgrade()             { shopSystem?.BuySpeedUpgrade(); }
+    public void OnBuyPlayerHealthRestore()      { shopSystem?.BuyPlayerHealthRestore(); }
+    public void OnBuyFasterGenerationPowerUp()  { shopSystem?.BuyFasterGenerationPowerUp(); }
+    public void OnBuyAnimalHealthPowerUp()      { shopSystem?.BuyAnimalHealthPowerUp(); }
+    public void OnBuyPlayerDamagePowerUp()      { shopSystem?.BuyPlayerDamagePowerUp(); }
+    public void OnBuyPlayerMovePowerUp()        { shopSystem?.BuyPlayerMovePowerUp(); }
+    public void OnBuyReducedSpawnDelayPowerUp() { shopSystem?.BuyReducedSpawnDelayPowerUp(); }
 }

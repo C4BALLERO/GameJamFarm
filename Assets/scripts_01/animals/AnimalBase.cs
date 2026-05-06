@@ -11,6 +11,7 @@ public abstract class AnimalBase : MonoBehaviour, IDamageable
     [SerializeField] private float destroyDelaySecondsAfterDeath = 1.15f;
 
     public event Action Died;
+    public event Action Damaged;
 
     public bool IsDead { get; private set; }
     public Transform Transform => transform;
@@ -63,6 +64,7 @@ public abstract class AnimalBase : MonoBehaviour, IDamageable
         if (amount <= 0) return;
 
         CurrentHealth = Mathf.Max(0, CurrentHealth - amount);
+        Damaged?.Invoke();
 
         if (rb != null && knockback != Vector2.zero)
         {
