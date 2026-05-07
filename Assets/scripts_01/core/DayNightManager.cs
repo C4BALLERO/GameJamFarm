@@ -124,14 +124,12 @@ public sealed class DayNightManager : MonoBehaviour
 
     private void RefreshText()
     {
-        if (phaseText == null)
-            return;
+        // Sun/moon swap siempre, independiente de si hay phaseText
+        if (sunIcon  != null) sunIcon.enabled  = IsDay;
+        if (moonIcon != null) moonIcon.enabled = IsNight;
 
-        phaseText.text = IsDay ? "DAY" : "NIGHT";
-        if (sunIcon != null)
-            sunIcon.enabled = IsDay;
-        if (moonIcon != null)
-            moonIcon.enabled = IsNight;
+        if (phaseText != null)
+            phaseText.text = IsDay ? "DAY" : "NIGHT";
     }
 
     private void ApplyVisualImmediate()

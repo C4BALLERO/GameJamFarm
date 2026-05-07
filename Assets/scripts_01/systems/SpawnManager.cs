@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 /// <summary>
 /// Manages spawning of enemies in the game world.
@@ -33,6 +34,12 @@ public sealed class SpawnManager : MonoBehaviour
     [SerializeField] private float minSpawnInterval = 1.35f;
     [SerializeField] private float intervalDecreasePerMinute = 0.06f;
 
+    [Header("Wave System")]
+    [SerializeField] private float waveDurationSeconds = 45f;
+    [SerializeField] private int baseWaveMaxAlive = 4;
+    [SerializeField] private int extraAlivePerWave = 1;
+    [SerializeField] private Text waveCounterText;
+
     [Header("Day Cleanup")]
     [Tooltip("During day, surviving enemies are removed gradually.")]
     [SerializeField] private bool despawnSurvivorsDuringDay = true;
@@ -43,6 +50,8 @@ public sealed class SpawnManager : MonoBehaviour
     private int _alive;
     private float _nextDayCullAt;
     private readonly List<EnemyBase> _spawned = new();
+    private float _waveStartedAt;
+    private int _waveIndex = 1;
 
     /// <summary>
     /// Set the player transform for distance checks
@@ -63,6 +72,12 @@ public sealed class SpawnManager : MonoBehaviour
         dayNightManager = FindFirstObjectByType<DayNightManager>();
     }
 
+    private void Start()
+    {
+        _waveStartedAt = Time.time;
+        RefreshWaveUi();
+    }
+
     private void Update()
     {
         if (GameManager.Instance != null && GameManager.Instance.IsGameplayFrozen) return;
@@ -77,7 +92,8 @@ public sealed class SpawnManager : MonoBehaviour
         if (corralManager == null)
             corralManager = CorralManager.Instance;
         if (enemyPrefabs == null || enemyPrefabs.Length == 0) return;
-        if (_alive >= maxAlive) return;
+        UpdateWaveState();
+        if (_alive >= GetCurrentWaveMaxAlive()) return;
         if (Time.time < _nextSpawnAt) return;
 
         _nextSpawnAt = Time.time + ComputeInterval();
@@ -111,6 +127,7 @@ public sealed class SpawnManager : MonoBehaviour
     {
         var minutes = (timeManager != null) ? timeManager.ElapsedSeconds / 60f : 0f;
         var interval = baseSpawnInterval - minutes * Mathf.Max(0f, intervalDecreasePerMinute);
+        interval *= Mathf.Max(0.55f, 1.3f - (_waveIndex - 1) * 0.09f);
         if (dayNightManager != null)
             interval /= Mathf.Max(1f, dayNightManager.GetNightDifficultyMultiplier());
         if (PowerUpSystem.Instance != null)
@@ -146,7 +163,7 @@ public sealed class SpawnManager : MonoBehaviour
                 _alive = Mathf.Max(0, _alive - 1);
                 _spawned.Remove(enemy);
             };
-            Debug.Log($"[SpawnManager] Spawned enemy. Alive: {_alive}/{maxAlive}");
+            Debug.Log($"[SpawnManager] Spawned enemy. Alive: {_alive}/{GetCurrentWaveMaxAlive()}");
             return;
         }
     }
@@ -160,6 +177,33 @@ public sealed class SpawnManager : MonoBehaviour
                 _spawned.RemoveAt(i);
         }
         _alive = Mathf.Clamp(_alive, 0, _spawned.Count + 2);
+    }
+
+    private void UpdateWaveState()
+    {
+        if (waveDurationSeconds <= 0f)
+            return;
+
+        var elapsed = Time.time - _waveStartedAt;
+        if (elapsed < waveDurationSeconds)
+            return;
+
+        _waveStartedAt = Time.time;
+        _waveIndex++;
+        RefreshWaveUi();
+    }
+
+    private int GetCurrentWaveMaxAlive()
+    {
+        var fromWaves = baseWaveMaxAlive + Mathf.Max(0, _waveIndex - 1) * Mathf.Max(0, extraAlivePerWave);
+        return Mathf.Min(maxAlive, Mathf.Max(2, fromWaves));
+    }
+
+    private void RefreshWaveUi()
+    {
+        if (waveCounterText == null)
+            return;
+        waveCounterText.text = $"Oleada {_waveIndex}";
     }
 
     /// <summary>

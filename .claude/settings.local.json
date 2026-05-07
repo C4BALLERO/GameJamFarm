@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Game\\\\My project\\\\Assets\\\\prefabs_02\\\\animals\" -Recurse -File)",
+      "Bash(Select-Object -ExpandProperty FullName)"
+    ]
+  }
+}

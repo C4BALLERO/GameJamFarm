@@ -14,17 +14,12 @@ public sealed class ShopPanelBinder : MonoBehaviour
 
         if (ui == null) return;
 
-        WireNamed("BuyCow", () => ui.BuyCow());
-        WireNamed("BuyChicken", () => ui.BuyChicken());
-        WireNamed("BuyPig", () => ui.BuyPig());
-
-        WireNamed("SellCow", () => ui.BuyAttackUpgrade());
-        WireNamed("SellChicken", () => ui.BuySpeedUpgrade());
-        WireNamed("SellPig", () => ui.CloseShop());
-
-        HideNamed("SellMilk");
-        HideNamed("SellEgg");
-        HideNamed("SellMeat");
+        WireNamed("BtnMejorarVida", () => ui.BuyAnimalHealthPowerUp());
+        WireNamed("BtnMejorarProduccion", () => ui.BuyFasterGenerationPowerUp());
+        WireNamed("BtnAtaqueAnimales", () => ui.BuyPlayerDamagePowerUp());
+        WireNamed("BtnMejorarVelocidad", () => ui.BuySpeedUpgrade());
+        WireNamed("BtnMejorarAtaque", () => ui.BuyAttackUpgrade());
+        WireNamed("BtnCerrarTienda", () => ui.CloseShop());
     }
 
     private void WireNamed(string childName, UnityEngine.Events.UnityAction action)
@@ -33,13 +28,6 @@ public sealed class ShopPanelBinder : MonoBehaviour
         if (child == null) return;
         var btn = child.GetComponent<Button>();
         Wire(btn, action);
-    }
-
-    private void HideNamed(string childName)
-    {
-        var child = transform.Find(childName);
-        if (child != null)
-            child.gameObject.SetActive(false);
     }
 
     private static void Wire(Button b, UnityEngine.Events.UnityAction action)

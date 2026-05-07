@@ -24,6 +24,7 @@ public sealed class ShopUI : MonoBehaviour
     [SerializeField] private Text playerDamagePowerCostText;
     [SerializeField] private Text playerMovePowerCostText;
     [SerializeField] private Text reducedSpawnDelayCostText;
+    [SerializeField] private Text playerHealthRestoreCostText;
     [SerializeField] private Text currentResourcesText;
 
     private readonly StringBuilder _sb = new();
@@ -110,27 +111,28 @@ public sealed class ShopUI : MonoBehaviour
         if (shopSystem == null)
             return;
 
-        FormatLine(cowCostText, "Vaca", shopSystem.GetPurchaseCosts(FarmAnimalKind.Cow));
-        FormatLine(chickenCostText, "Gallina", shopSystem.GetPurchaseCosts(FarmAnimalKind.Chicken));
-        FormatLine(pigCostText, "Cerdo", shopSystem.GetPurchaseCosts(FarmAnimalKind.Pig));
-        FormatLine(attackCostText, "Mejora ataque", shopSystem.GetAttackUpgradeCosts());
-        FormatLine(speedCostText, "Mejora velocidad", shopSystem.GetSpeedUpgradeCosts());
-        FormatLine(fasterGenerationCostText, "PU Produccion", shopSystem.GetFasterGenerationCosts());
-        FormatLine(animalHealthCostText, "PU Vida Animal", shopSystem.GetAnimalHealthCosts());
-        FormatLine(playerDamagePowerCostText, "PU Danio", shopSystem.GetPlayerDamageBoostCosts());
-        FormatLine(playerMovePowerCostText, "PU Movimiento", shopSystem.GetPlayerMoveBoostCosts());
-        FormatLine(reducedSpawnDelayCostText, "PU Spawn", shopSystem.GetReducedSpawnDelayCosts());
+        FormatLine(cowCostText, shopSystem.GetPurchaseCosts(FarmAnimalKind.Cow));
+        FormatLine(chickenCostText, shopSystem.GetPurchaseCosts(FarmAnimalKind.Chicken));
+        FormatLine(pigCostText, shopSystem.GetPurchaseCosts(FarmAnimalKind.Pig));
+        FormatLine(attackCostText, shopSystem.GetAttackUpgradeCosts());
+        FormatLine(speedCostText, shopSystem.GetSpeedUpgradeCosts());
+        FormatLine(fasterGenerationCostText, shopSystem.GetFasterGenerationCosts());
+        FormatLine(animalHealthCostText, shopSystem.GetAnimalHealthCosts());
+        FormatLine(playerDamagePowerCostText, shopSystem.GetPlayerDamageBoostCosts());
+        FormatLine(playerMovePowerCostText, shopSystem.GetPlayerMoveBoostCosts());
+        FormatLine(reducedSpawnDelayCostText, shopSystem.GetReducedSpawnDelayCosts());
+        FormatLine(playerHealthRestoreCostText, shopSystem.GetPlayerHealthRestoreCosts());
         RefreshCurrentResources();
     }
 
-    private void FormatLine(Text label, string title, ResourceCost[] costs)
+    private void FormatLine(Text label, ResourceCost[] costs)
     {
         if (label == null) return;
 
         _sb.Clear();
         if (costs == null || costs.Length == 0)
         {
-            label.text = $"{title}: —";
+            label.text = "—";
             return;
         }
 
@@ -144,8 +146,7 @@ public sealed class ShopUI : MonoBehaviour
             _sb.Append(ResourceLabel(c.type));
         }
 
-        var costsText = _sb.Length > 0 ? _sb.ToString() : "—";
-        label.text = $"{title}: {costsText}";
+        label.text = _sb.Length > 0 ? _sb.ToString() : "—";
     }
 
     private void RefreshCurrentResources()
@@ -169,4 +170,17 @@ public sealed class ShopUI : MonoBehaviour
             _ => t.ToString()
         };
     }
+
+    // Wrappers públicos para onClick de botones en el editor
+    public void OnBuyCow()                      { shopSystem?.BuyCow(); }
+    public void OnBuyChicken()                  { shopSystem?.BuyChicken(); }
+    public void OnBuyPig()                      { shopSystem?.BuyPig(); }
+    public void OnBuyAttackUpgrade()            { shopSystem?.BuyAttackUpgrade(); }
+    public void OnBuySpeedUpgrade()             { shopSystem?.BuySpeedUpgrade(); }
+    public void OnBuyPlayerHealthRestore()      { shopSystem?.BuyPlayerHealthRestore(); }
+    public void OnBuyFasterGenerationPowerUp()  { shopSystem?.BuyFasterGenerationPowerUp(); }
+    public void OnBuyAnimalHealthPowerUp()      { shopSystem?.BuyAnimalHealthPowerUp(); }
+    public void OnBuyPlayerDamagePowerUp()      { shopSystem?.BuyPlayerDamagePowerUp(); }
+    public void OnBuyPlayerMovePowerUp()        { shopSystem?.BuyPlayerMovePowerUp(); }
+    public void OnBuyReducedSpawnDelayPowerUp() { shopSystem?.BuyReducedSpawnDelayPowerUp(); }
 }

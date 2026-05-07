@@ -79,6 +79,14 @@ public sealed class ShopSystem : MonoBehaviour
         new ResourceCost { type = ResourceType.Egg, amount = 8 }
     };
 
+    [Header("Restaurar vida jugador")]
+    [SerializeField] private ResourceCost[] playerHealthRestoreCosts =
+    {
+        new ResourceCost { type = ResourceType.Meat, amount = 5 },
+        new ResourceCost { type = ResourceType.Milk, amount = 3 }
+    };
+    [SerializeField] private int healthRestoreAmount = 3;
+
     private void Awake()
     {
         if (animalSpawner == null)
@@ -110,6 +118,7 @@ public sealed class ShopSystem : MonoBehaviour
         };
     }
 
+    public ResourceCost[] GetPlayerHealthRestoreCosts() => playerHealthRestoreCosts;
     public ResourceCost[] GetAttackUpgradeCosts() => attackUpgradeCosts;
 
     public ResourceCost[] GetSpeedUpgradeCosts() => speedUpgradeCosts;
@@ -175,6 +184,16 @@ public sealed class ShopSystem : MonoBehaviour
 
     public bool BuyReducedSpawnDelayPowerUp() =>
         TryBuyPowerUp(reducedSpawnDelayCosts, "Reducir spawn enemigo", p => p.BuySpawnDelayReductionBoost());
+
+    public bool BuyPlayerHealthRestore()
+    {
+        var ph = FindFirstObjectByType<PlayerHealth>();
+        if (ph == null) { Debug.LogWarning("[Shop] No hay PlayerHealth."); return false; }
+        if (!TrySpendCosts(playerHealthRestoreCosts)) { Debug.LogWarning("[Shop] No alcanza para restaurar vida."); return false; }
+        ph.Heal(healthRestoreAmount);
+        Debug.Log($"[Shop] Vida restaurada: +{healthRestoreAmount}.");
+        return true;
+    }
 
     private bool TryBuyPowerUp(ResourceCost[] costs, string label, Action<PowerUpSystem> apply)
     {

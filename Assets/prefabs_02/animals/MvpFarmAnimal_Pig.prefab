@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2124156722797255445}
   - component: {fileID: 5743627719260127136}
   - component: {fileID: 2092721038635351857}
+  - component: {fileID: -5823841533408047605}
   m_Layer: 10
   m_Name: MvpFarmAnimal_Pig
   m_TagString: Untagged
@@ -362,3 +363,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-5823841533408047605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185626963888550624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad83fbe1cde5744793ef51867b7044b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BloodHitEffect

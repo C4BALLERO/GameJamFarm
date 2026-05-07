@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 274912991932014927}
   - component: {fileID: 8110282703582300092}
   - component: {fileID: 80216208588834109}
+  - component: {fileID: -1052273522655885439}
   m_Layer: 10
   m_Name: MvpFarmAnimal_Chicken
   m_TagString: Untagged
@@ -32,8 +33,8 @@ Transform:
   m_GameObject: {fileID: 5371511399814094531}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.2454, y: -0.3358, z: 0}
+  m_LocalScale: {x: 0.8767, y: 0.8304, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -366,3 +367,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-1052273522655885439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5371511399814094531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad83fbe1cde5744793ef51867b7044b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BloodHitEffect

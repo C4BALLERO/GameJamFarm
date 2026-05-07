@@ -100,6 +100,14 @@ public sealed class GameManager : MonoBehaviour
 
     public bool IsPaused => pausedFromEscape;
 
+    public void ResumeFromPause()
+    {
+        if (!pausedFromEscape) return;
+        pausedFromEscape = false;
+        SyncTimeScale();
+        OnGameResumed?.Invoke();
+    }
+
     public void ResetGame()
     {
         pausedFromEscape = false;
