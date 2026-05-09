@@ -34,6 +34,8 @@ public sealed class UIManager : MonoBehaviour
     {
         if (WasTabPressed())
         {
+            if (GameManager.Instance != null && GameManager.Instance.IsGameOver)
+                return;
             if (shopUi != null)
                 shopUi.Toggle();
             else if (shopPanelRoot != null)

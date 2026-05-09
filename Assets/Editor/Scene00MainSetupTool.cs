@@ -84,9 +84,12 @@ public static class Scene00MainSetupTool
         SerializedSet(uiManager, "resourceUI", resourceUi);
         EnsureResourceHud(uiManagerGo, resourceUi);
 
-        // Barra de vida en HUD
+        // Barra de vida del jugador en HUD
         var hudHealthBar = EnsureHealthBarHud();
         SerializedSet(uiManager, "healthBar", hudHealthBar);
+
+        // Barra de vida del Granero en HUD
+        EnsureBarnHealthHud();
 
         // Pausa con ESC
         EnsurePauseMenu();
@@ -101,6 +104,11 @@ public static class Scene00MainSetupTool
 
         // Eliminar nodos HUD obsoletos de la escena
         CleanupObsoleteSceneNodes();
+
+        // Vida del granero
+        var granero = FindSceneObjectByName("Granero");
+        if (granero != null)
+            GetOrAdd<BarnHealth>(granero);
 
         var phaseTextGo = FindSceneObjectByName("DayNightText");
         if (phaseTextGo != null && phaseTextGo.TryGetComponent<Text>(out var phaseText))
@@ -1137,6 +1145,133 @@ public static class Scene00MainSetupTool
 
         EditorUtility.SetDirty(container);
         return healthBar;
+    }
+
+    // ─────────────────────────────────────────────────────────────────────────
+    // BARN HEALTH HUD – barra de vida del Granero siempre visible en pantalla
+    // Posición: centro superior (entre barra jugador y reloj)
+    // ─────────────────────────────────────────────────────────────────────────
+
+    private static void EnsureBarnHealthHud()
+    {
+        var canvas = FindSceneObjectByName("Canvas");
+        if (canvas == null) return;
+
+        // Panel contenedor
+        var panel = FindSceneObjectByName("BarnHealthHud");
+        if (panel == null)
+        {
+            panel = new GameObject("BarnHealthHud", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+            panel.transform.SetParent(canvas.transform, false);
+        }
+        if (panel.transform is RectTransform pRt)
+        {
+            pRt.anchorMin = new Vector2(0.44f, 0.87f);
+            pRt.anchorMax = new Vector2(0.77f, 0.93f);
+            pRt.offsetMin = Vector2.zero;
+            pRt.offsetMax = Vector2.zero;
+        }
+        var pImg = panel.GetComponent<Image>();
+        if (pImg != null) pImg.color = new Color(0.06f, 0.05f, 0.10f, 0.82f);
+
+        // Icono / etiqueta del Granero
+        var label = FindChildComponentByName<Text>(panel.transform, "BarnLabel");
+        if (label == null)
+            label = CreateHudText(panel.transform, "BarnLabel",
+                new Vector2(0.02f, 0.10f), new Vector2(0.22f, 0.90f), "Granero");
+        if (label.transform is RectTransform lRt)
+        {
+            lRt.anchorMin = new Vector2(0.02f, 0.10f);
+            lRt.anchorMax = new Vector2(0.22f, 0.90f);
+            lRt.offsetMin = Vector2.zero; lRt.offsetMax = Vector2.zero;
+        }
+        label.fontStyle          = FontStyle.Bold;
+        label.color              = new Color(0.95f, 0.88f, 0.55f, 1f);
+        label.alignment          = TextAnchor.MiddleCenter;
+        label.resizeTextForBestFit = true;
+        label.resizeTextMinSize  = 8;
+        label.resizeTextMaxSize  = 14;
+
+        // BarnHealthBarUI
+        var barnUi = panel.GetComponent<BarnHealthBarUI>() ?? panel.AddComponent<BarnHealthBarUI>();
+
+        // Slider
+        var sliderGo = FindSceneObjectByName("BarnHealthSlider");
+        if (sliderGo == null)
+        {
+            sliderGo = new GameObject("BarnHealthSlider", typeof(RectTransform));
+            sliderGo.transform.SetParent(panel.transform, false);
+        }
+        else if (sliderGo.transform.parent != panel.transform)
+            sliderGo.transform.SetParent(panel.transform, false);
+
+        if (sliderGo.transform is RectTransform sRt)
+        {
+            sRt.anchorMin = new Vector2(0.24f, 0.15f);
+            sRt.anchorMax = new Vector2(0.97f, 0.85f);
+            sRt.offsetMin = Vector2.zero;
+            sRt.offsetMax = Vector2.zero;
+        }
+
+        var slider = sliderGo.GetComponent<Slider>() ?? sliderGo.AddComponent<Slider>();
+        slider.direction    = Slider.Direction.LeftToRight;
+        slider.minValue     = 0f;
+        slider.maxValue     = 50f;
+        slider.value        = 50f;
+        slider.interactable = false;
+        slider.wholeNumbers = true;
+
+        // Fondo verde oscuro
+        var bgImg = FindChildComponentByName<Image>(sliderGo.transform, "BarnHpBg");
+        if (bgImg == null)
+        {
+            var bg = new GameObject("BarnHpBg", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+            bg.transform.SetParent(sliderGo.transform, false);
+            bgImg = bg.GetComponent<Image>();
+        }
+        bgImg.color = new Color(0.04f, 0.20f, 0.06f, 1f);
+        if (bgImg.transform is RectTransform bgRt)
+        {
+            bgRt.anchorMin = Vector2.zero; bgRt.anchorMax = Vector2.one;
+            bgRt.offsetMin = Vector2.zero; bgRt.offsetMax = Vector2.zero;
+        }
+
+        // Fill Area
+        var fillArea = FindChildComponentByName<RectTransform>(sliderGo.transform, "BarnFillArea");
+        if (fillArea == null)
+        {
+            var fa = new GameObject("BarnFillArea", typeof(RectTransform));
+            fa.transform.SetParent(sliderGo.transform, false);
+            fillArea = fa.GetComponent<RectTransform>();
+        }
+        fillArea.anchorMin = Vector2.zero; fillArea.anchorMax = Vector2.one;
+        fillArea.offsetMin = Vector2.zero; fillArea.offsetMax = Vector2.zero;
+
+        // Fill
+        var fillImg = FindChildComponentByName<Image>(fillArea, "BarnFill");
+        if (fillImg == null)
+        {
+            var fi = new GameObject("BarnFill", typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+            fi.transform.SetParent(fillArea, false);
+            fillImg = fi.GetComponent<Image>();
+        }
+        fillImg.color = new Color(0.12f, 0.85f, 0.18f, 1f);  // verde brillante (granero)
+        if (fillImg.transform is RectTransform fiRt)
+        {
+            fiRt.anchorMin = Vector2.zero; fiRt.anchorMax = Vector2.one;
+            fiRt.offsetMin = Vector2.zero; fiRt.offsetMax = Vector2.zero;
+        }
+
+        // Cablear Slider.fillRect y BarnHealthBarUI.slider
+        var sliderSo = new SerializedObject(slider);
+        sliderSo.FindProperty("m_FillRect").objectReferenceValue = fillImg.transform as RectTransform;
+        sliderSo.ApplyModifiedPropertiesWithoutUndo();
+
+        var barnSo = new SerializedObject(barnUi);
+        barnSo.FindProperty("slider").objectReferenceValue = slider;
+        barnSo.ApplyModifiedPropertiesWithoutUndo();
+
+        EditorUtility.SetDirty(panel);
     }
 
     // Elimina Text huérfanos (MilkHud/EggHud/MeatHud) sueltos en Canvas

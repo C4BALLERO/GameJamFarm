@@ -21,7 +21,7 @@ public sealed class PlantEnemy : EnemyBase
         if (!collision.collider.TryGetComponent<IDamageable>(out var dmg)) return;
         if (dmg.IsDead) return;
         if (dmg is EnemyBase) return; // no friendly fire between enemies
-        if (dmg is not PlayerHealth && dmg is not AnimalBase) return;
+        if (dmg is not PlayerHealth && dmg is not AnimalBase && dmg is not BarnHealth) return;
         if (Time.time < _nextContactDamageAt) return;
 
         _nextContactDamageAt = Time.time + Mathf.Max(0.1f, contactDamageInterval);

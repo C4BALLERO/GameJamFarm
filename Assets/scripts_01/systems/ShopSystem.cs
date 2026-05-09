@@ -79,6 +79,10 @@ public sealed class ShopSystem : MonoBehaviour
         new ResourceCost { type = ResourceType.Egg, amount = 8 }
     };
 
+    [Header("Escalado precio Power-Ups")]
+    [SerializeField] [Range(0f, 3f)] private float powerUpCostGrowthPercent = 0.25f;
+    [SerializeField] private int powerUpCostGrowthFlat = 1;
+
     [Header("Restaurar vida jugador")]
     [SerializeField] private ResourceCost[] playerHealthRestoreCosts =
     {
@@ -127,6 +131,17 @@ public sealed class ShopSystem : MonoBehaviour
     public ResourceCost[] GetPlayerDamageBoostCosts() => playerDamageBoostCosts;
     public ResourceCost[] GetPlayerMoveBoostCosts() => playerMoveBoostCosts;
     public ResourceCost[] GetReducedSpawnDelayCosts() => reducedSpawnDelayCosts;
+
+    public GameObject GetAnimalPrefab(FarmAnimalKind kind)
+    {
+        return kind switch
+        {
+            FarmAnimalKind.Cow => cowPrefab,
+            FarmAnimalKind.Chicken => chickenPrefab,
+            FarmAnimalKind.Pig => pigPrefab,
+            _ => null
+        };
+    }
 
     #region Animals
 
@@ -209,8 +224,27 @@ public sealed class ShopSystem : MonoBehaviour
         }
 
         apply(powerUpSystem);
+        IncreasePowerUpCosts(costs);
         Debug.Log($"[Shop] Power-up comprado: {label}.");
         return true;
+    }
+
+    private void IncreasePowerUpCosts(ResourceCost[] costs)
+    {
+        if (costs == null || costs.Length == 0)
+            return;
+
+        for (var i = 0; i < costs.Length; i++)
+        {
+            var line = costs[i];
+            if (line.amount <= 0)
+                continue;
+
+            var grown = Mathf.CeilToInt(line.amount * (1f + Mathf.Max(0f, powerUpCostGrowthPercent)));
+            var next = Mathf.Max(line.amount + 1, grown + Mathf.Max(0, powerUpCostGrowthFlat));
+            line.amount = next;
+            costs[i] = line;
+        }
     }
 
     #endregion
@@ -233,6 +267,7 @@ public sealed class ShopSystem : MonoBehaviour
         }
 
         pc.IncrementAttackTier();
+        IncreasePowerUpCosts(attackUpgradeCosts);
         Debug.Log("[Shop] Ataque mejorado.");
         return true;
     }
@@ -253,6 +288,7 @@ public sealed class ShopSystem : MonoBehaviour
         }
 
         pl.IncrementSpeedTier();
+        IncreasePowerUpCosts(speedUpgradeCosts);
         Debug.Log("[Shop] Velocidad mejorada.");
         return true;
     }

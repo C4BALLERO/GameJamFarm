@@ -65,6 +65,9 @@ public sealed class BarnShopTrigger : MonoBehaviour
         if (!WasPrimaryClickDown())
             return;
 
+        if (GameManager.Instance != null && GameManager.Instance.IsGameOver)
+            return;
+
         var screen = ReadPointerScreenPosition();
         var world = PointerWorldOnColliderPlane(screen);
 

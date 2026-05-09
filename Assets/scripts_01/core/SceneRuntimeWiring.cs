@@ -62,6 +62,24 @@ public sealed class SceneRuntimeWiring : MonoBehaviour
         var ui = FindFirstObjectByType<UIManager>();
         if (ui != null && inv != null && player != null && player.TryGetComponent<PlayerHealth>(out var ph))
             ui.Bind(ph, inv);
+
+        GameplayBackgroundMusic.EnsureGlobal();
+        EnsureGameOverController();
+    }
+
+    private static void EnsureGameOverController()
+    {
+        if (Object.FindFirstObjectByType<GameOverController>() != null)
+            return;
+
+        var host = GameObject.Find("GameSystems");
+        if (host == null)
+        {
+            var canvas = GameObject.Find("Canvas");
+            host = canvas != null ? canvas : new GameObject("GameOverHost");
+        }
+
+        host.AddComponent<GameOverController>();
     }
 }
 

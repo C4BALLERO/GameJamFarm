@@ -142,6 +142,18 @@ public sealed class EnemyAI : MonoBehaviour
             }
         }
 
+        // El granero es objetivo secundario (solo si está más cerca que cualquier otro)
+        foreach (var barn in FindObjectsByType<BarnHealth>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
+        {
+            if (barn == null || barn.IsDead) continue;
+            var d = ((Vector2)barn.transform.position - origin).sqrMagnitude;
+            if (d < bestSqr)
+            {
+                best = barn.transform;
+                bestSqr = d;
+            }
+        }
+
         _cachedTarget = best;
         return best;
     }

@@ -20,6 +20,11 @@ public sealed class CorralManager : MonoBehaviour
     [SerializeField] private string pigCorralObjectName = "Corral_Cerdos";
     [Header("Startup")]
     [SerializeField] private bool hideAnimalsAtGameStart = true;
+    [SerializeField] private bool spawnStarterAnimalsAtStart = true;
+    [SerializeField] [Min(0)] private int starterAnimalsPerCorral = 2;
+
+    [Header("Visual")]
+    [SerializeField] [Range(0.1f, 1f)] private float animalVisualScale = 0.5f;
 
     /// <summary>Fired after an animal was spawned into a corral via shop purchase.</summary>
     public event System.Action<FarmAnimalKind, GameObject> AnimalSpawnedInCorral;
@@ -43,8 +48,66 @@ public sealed class CorralManager : MonoBehaviour
 
     private void Start()
     {
-        if (hideAnimalsAtGameStart)
+        if (spawnStarterAnimalsAtStart && starterAnimalsPerCorral > 0)
+            DestroyExistingAnimalsInZones();
+        else if (hideAnimalsAtGameStart)
             HideExistingAnimals();
+
+        if (spawnStarterAnimalsAtStart && starterAnimalsPerCorral > 0)
+            SpawnStarterAnimals();
+    }
+
+    private void DestroyExistingAnimalsInZones()
+    {
+        DestroyAnimalsInZone(cowCorral);
+        DestroyAnimalsInZone(chickenCorral);
+        DestroyAnimalsInZone(pigCorral);
+    }
+
+    private static void DestroyAnimalsInZone(CorralZone zone)
+    {
+        if (zone == null)
+            return;
+
+        var animals = zone.GetComponentsInChildren<AnimalBase>(true);
+        foreach (var animal in animals)
+        {
+            if (animal != null)
+                Object.Destroy(animal.gameObject);
+        }
+    }
+
+    private void SpawnStarterAnimals()
+    {
+        var shop = FindFirstObjectByType<ShopSystem>();
+        var inv = FindFirstObjectByType<InventorySystem>();
+        if (shop == null || inv == null)
+        {
+            Debug.LogWarning("[CorralManager] No ShopSystem o InventorySystem: no se pueden generar animales iniciales.");
+            return;
+        }
+
+        for (var n = 0; n < starterAnimalsPerCorral; n++)
+        {
+            SpawnOne(FarmAnimalKind.Cow, shop, inv);
+            SpawnOne(FarmAnimalKind.Chicken, shop, inv);
+            SpawnOne(FarmAnimalKind.Pig, shop, inv);
+        }
+    }
+
+    private void SpawnOne(FarmAnimalKind kind, ShopSystem shop, InventorySystem inv)
+    {
+        var prefab = shop.GetAnimalPrefab(kind);
+        if (prefab == null)
+        {
+            Debug.LogWarning($"[CorralManager] Falta prefab de {kind} en ShopSystem.");
+            return;
+        }
+
+        if (!TrySpawnAnimalInCorral(kind, prefab, inv, out var go) || go == null)
+            return;
+
+        go.SetActive(true);
     }
 
     private void ResolveReferences()
@@ -137,6 +200,7 @@ public sealed class CorralManager : MonoBehaviour
 
         var pos = zone.GetRandomSpawnPosition();
         spawned = Instantiate(prefab, pos, Quaternion.identity, zone.transform);
+        ApplyAnimalScale(spawned);
 
         if (PowerUpSystem.Instance != null && spawned.TryGetComponent<AnimalBase>(out var animal))
             animal.ApplyMaxHealthMultiplier(PowerUpSystem.Instance.AnimalHealthMultiplier);
@@ -146,6 +210,9 @@ public sealed class CorralManager : MonoBehaviour
         if (spawned.TryGetComponent<ResourceGenerator>(out var gen))
             gen.Init(inventory);
 
+        if (spawned.GetComponent<FarmAnimalAudio>() == null)
+            spawned.AddComponent<FarmAnimalAudio>();
+
         // Wander / clamp inside bounds.
         var motor = spawned.GetComponent<FarmAnimalCorralMotor>();
         if (motor == null)
@@ -154,6 +221,17 @@ public sealed class CorralManager : MonoBehaviour
 
         AnimalSpawnedInCorral?.Invoke(kind, spawned);
         return true;
+    }
+
+    private void ApplyAnimalScale(GameObject animalRoot)
+    {
+        if (animalRoot == null || animalVisualScale <= 0f)
+            return;
+        var s = animalRoot.transform.localScale;
+        animalRoot.transform.localScale = new Vector3(
+            s.x * animalVisualScale,
+            s.y * animalVisualScale,
+            s.z * animalVisualScale);
     }
 
     private static bool PrefabMatchesKind(GameObject prefab, FarmAnimalKind requestedKind)

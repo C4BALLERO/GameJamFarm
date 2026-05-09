@@ -30,6 +30,8 @@ public sealed class PauseMenuUI : MonoBehaviour
 
     private void OnGamePaused()
     {
+        if (GameManager.Instance != null && GameManager.Instance.IsGameOver)
+            return;
         // Solo mostrar si la pausa viene de ESC (no de la tienda)
         if (GameManager.Instance != null && GameManager.Instance.IsPaused)
             panelRoot?.SetActive(true);

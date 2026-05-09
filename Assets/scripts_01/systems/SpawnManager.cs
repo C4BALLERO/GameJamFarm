@@ -27,18 +27,29 @@ public sealed class SpawnManager : MonoBehaviour
     [SerializeField] private EnemyBase[] enemyPrefabs;
 
     [Header("Limits")]
-    [SerializeField] private int maxAlive = 9;
+    [SerializeField] private int maxAlive = 40;
+
+    [Header("Cap por noche (enemigos vivos a la vez)")]
+    [Tooltip("Noche 1: máximo concurrente. Cada noche siguiente suma el extra.")]
+    [SerializeField] private int firstNightMaxAlive = 8;
+    [SerializeField] private int extraMaxAlivePerNight = 5;
 
     [Header("Spawn Rate")]
-    [SerializeField] private float baseSpawnInterval = 5.5f;
-    [SerializeField] private float minSpawnInterval = 1.35f;
-    [SerializeField] private float intervalDecreasePerMinute = 0.06f;
+    [SerializeField] private float baseSpawnInterval = 12.0f;   // Noche 1: muy lento
+    [SerializeField] private float minSpawnInterval = 1.2f;
+    [SerializeField] private float intervalDecreasePerMinute = 0.04f;
 
     [Header("Wave System")]
     [SerializeField] private float waveDurationSeconds = 45f;
-    [SerializeField] private int baseWaveMaxAlive = 4;
+    [SerializeField] private int baseWaveMaxAlive = 2;           // Noche 1: solo 2 enemigos
     [SerializeField] private int extraAlivePerWave = 1;
     [SerializeField] private Text waveCounterText;
+
+    [Header("Night Enemy Scaling")]
+    [SerializeField] private float enemyHealthPerNight = 0.20f;  // +20% vida por noche
+    [SerializeField] private float enemyDamagePerNight = 0.15f;  // +15% daño por noche
+    [SerializeField] private int maxNightScalingSteps = 15;
+    [SerializeField] private float nightIntervalReduction = 1.4f; // intervalo baja 1.4s por noche
 
     [Header("Day Cleanup")]
     [Tooltip("During day, surviving enemies are removed gradually.")]
@@ -52,6 +63,8 @@ public sealed class SpawnManager : MonoBehaviour
     private readonly List<EnemyBase> _spawned = new();
     private float _waveStartedAt;
     private int _waveIndex = 1;
+    private int _nightIndex;
+    private bool _nightInitialized;
 
     /// <summary>
     /// Set the player transform for distance checks
@@ -75,6 +88,7 @@ public sealed class SpawnManager : MonoBehaviour
     private void Start()
     {
         _waveStartedAt = Time.time;
+        _waveIndex = 0;
         RefreshWaveUi();
     }
 
@@ -86,9 +100,13 @@ public sealed class SpawnManager : MonoBehaviour
             dayNightManager = DayNightManager.Instance ?? FindFirstObjectByType<DayNightManager>();
         if (dayNightManager != null && dayNightManager.IsDay)
         {
+            _nightInitialized = false;
             HandleDaytimeEnemyCleanup();
+            RefreshWaveUi();
             return; // Day rule: no enemy spawning.
         }
+        if (!_nightInitialized)
+            BeginNight();
         if (corralManager == null)
             corralManager = CorralManager.Instance;
         if (enemyPrefabs == null || enemyPrefabs.Length == 0) return;
@@ -126,7 +144,9 @@ public sealed class SpawnManager : MonoBehaviour
     private float ComputeInterval()
     {
         var minutes = (timeManager != null) ? timeManager.ElapsedSeconds / 60f : 0f;
-        var interval = baseSpawnInterval - minutes * Mathf.Max(0f, intervalDecreasePerMinute);
+        // Cada noche el intervalo baja; el primer día es muy lento
+        var nightReduction = Mathf.Max(0, _nightIndex - 1) * Mathf.Max(0f, nightIntervalReduction);
+        var interval = baseSpawnInterval - nightReduction - minutes * Mathf.Max(0f, intervalDecreasePerMinute);
         interval *= Mathf.Max(0.55f, 1.3f - (_waveIndex - 1) * 0.09f);
         if (dayNightManager != null)
             interval /= Mathf.Max(1f, dayNightManager.GetNightDifficultyMultiplier());
@@ -155,6 +175,7 @@ public sealed class SpawnManager : MonoBehaviour
 
             var prefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
             var enemy = Instantiate(prefab, pos, Quaternion.identity);
+            ApplyNightScaling(enemy);
 
             _alive++;
             _spawned.Add(enemy);
@@ -195,15 +216,45 @@ public sealed class SpawnManager : MonoBehaviour
 
     private int GetCurrentWaveMaxAlive()
     {
-        var fromWaves = baseWaveMaxAlive + Mathf.Max(0, _waveIndex - 1) * Mathf.Max(0, extraAlivePerWave);
-        return Mathf.Min(maxAlive, Mathf.Max(2, fromWaves));
+        var nightCap = firstNightMaxAlive + Mathf.Max(0, _nightIndex - 1) * Mathf.Max(0, extraMaxAlivePerNight);
+        nightCap = Mathf.Min(maxAlive, nightCap);
+        return Mathf.Max(1, nightCap);
     }
 
     private void RefreshWaveUi()
     {
         if (waveCounterText == null)
             return;
+        if (dayNightManager == null || dayNightManager.IsDay || _waveIndex <= 0)
+        {
+            waveCounterText.text = string.Empty;
+            return;
+        }
+
         waveCounterText.text = $"Oleada {_waveIndex}";
+    }
+
+    private void BeginNight()
+    {
+        _nightInitialized = true;
+        _nightIndex++;
+        _waveIndex = 1;
+        _waveStartedAt = Time.time;
+        RefreshWaveUi();
+    }
+
+    private void ApplyNightScaling(EnemyBase enemy)
+    {
+        if (enemy == null)
+            return;
+
+        var steps = Mathf.Clamp(_nightIndex - 1, 0, Mathf.Max(0, maxNightScalingSteps));
+        if (steps <= 0)
+            return;
+
+        var healthMultiplier = 1f + steps * Mathf.Max(0f, enemyHealthPerNight);
+        var damageMultiplier = 1f + steps * Mathf.Max(0f, enemyDamagePerNight);
+        enemy.ApplyDifficultyScaling(healthMultiplier, damageMultiplier);
     }
 
     /// <summary>

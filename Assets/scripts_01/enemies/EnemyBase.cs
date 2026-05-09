@@ -29,6 +29,7 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
 
     public int GetHealth() => CurrentHealth;
     public int GetMaxHealth() => maxHealth;
+    public int GetDamage() => damage;
 
     private float _stopAt;
     protected float nextAttackAt;
@@ -89,5 +90,29 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
     }
 
     public abstract void PerformAttack(Transform target);
+
+    /// <summary>
+    /// Apply a one-time difficulty scale to this enemy instance.
+    /// Used by spawn systems so each new night can produce stronger enemies.
+    /// </summary>
+    public void ApplyDifficultyScaling(float healthMultiplier, float damageMultiplier)
+    {
+        if (IsDead)
+            return;
+
+        var safeHealthMul = Mathf.Max(0.1f, healthMultiplier);
+        var safeDamageMul = Mathf.Max(0.1f, damageMultiplier);
+
+        var previousMax = Mathf.Max(1, maxHealth);
+        var scaledMax = Mathf.Max(1, Mathf.RoundToInt(previousMax * safeHealthMul));
+        if (scaledMax != previousMax)
+        {
+            var gained = Mathf.Max(0, scaledMax - previousMax);
+            maxHealth = scaledMax;
+            CurrentHealth = Mathf.Clamp(CurrentHealth + gained, 1, maxHealth);
+        }
+
+        damage = Mathf.Max(1, Mathf.RoundToInt(Mathf.Max(1, damage) * safeDamageMul));
+    }
 }
 

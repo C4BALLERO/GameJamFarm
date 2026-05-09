@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -20,14 +21,19 @@ public sealed class GameManager : MonoBehaviour
     /// <summary>Pausa por panel de tienda abierto.</summary>
     private bool _pausedFromShop;
 
+    /// <summary>Granero destruido: fin de partida.</summary>
+    private bool _gameOver;
+
     public static event Action OnGamePaused;
     public static event Action OnGameResumed;
 
     public TimeManager WorldTime => timeManager;
     public InventorySystem Inventory => inventorySystem;
 
-    /// <summary>Cuando hay pausa por Escape o tienda abierta.</summary>
-    public bool IsGameplayFrozen => pausedFromEscape || _pausedFromShop;
+    /// <summary>Cuando hay pausa por Escape, tienda abierta o game over.</summary>
+    public bool IsGameplayFrozen => _gameOver || pausedFromEscape || _pausedFromShop;
+
+    public bool IsGameOver => _gameOver;
 
     private void Awake()
     {
@@ -48,6 +54,9 @@ public sealed class GameManager : MonoBehaviour
 
     private void HandlePauseInput()
     {
+        if (_gameOver)
+            return;
+
         if (!WasEscapePressed())
             return;
 
@@ -82,6 +91,34 @@ public sealed class GameManager : MonoBehaviour
         UnityEngine.Time.timeScale = IsGameplayFrozen ? 0f : 1f;
     }
 
+    /// <summary>Llamado cuando el granero llega a 0 de vida.</summary>
+    public void EnterGameOver()
+    {
+        if (_gameOver)
+            return;
+        _gameOver = true;
+        pausedFromEscape = false;
+        _pausedFromShop = false;
+        SyncTimeScale();
+    }
+
+    /// <summary>Reinicia la escena actual tras game over.</summary>
+    public void RestartFromGameOver()
+    {
+        _gameOver = false;
+        pausedFromEscape = false;
+        _pausedFromShop = false;
+        UnityEngine.Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitToMainMenuFromGameOver()
+    {
+        _gameOver = false;
+        UnityEngine.Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+    }
+
     private static bool WasEscapePressed()
     {
 #if ENABLE_INPUT_SYSTEM
@@ -110,6 +147,7 @@ public sealed class GameManager : MonoBehaviour
 
     public void ResetGame()
     {
+        _gameOver = false;
         pausedFromEscape = false;
         _pausedFromShop = false;
         UnityEngine.Time.timeScale = 1f;
