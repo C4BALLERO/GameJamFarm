@@ -1,7 +1,8 @@
 using UnityEngine;
 
 /// <summary>
-/// Moves toward the nearest hostile target (player or farm animal). Animation mirrors RB velocity.
+/// Persigue el objetivo hostil más cercano (corral → granero → jugador → animales vulnerables).
+/// La animación refleja la velocidad del rigidbody.
 /// </summary>
 [DisallowMultipleComponent]
 public sealed class EnemyAI : MonoBehaviour
@@ -118,43 +119,8 @@ public sealed class EnemyAI : MonoBehaviour
 
         _nextRetargetAt = Time.time + Mathf.Max(0.05f, retargetInterval);
 
-        Transform best = null;
-        var bestSqr = float.MaxValue;
         var origin = rb != null ? rb.position : (Vector2)transform.position;
-
-        var player = FindFirstObjectByType<PlayerController>();
-        if (player != null && player.TryGetComponent<PlayerHealth>(out var ph) && ph != null && !ph.IsDead)
-        {
-            var d = ((Vector2)player.transform.position - origin).sqrMagnitude;
-            best = player.transform;
-            bestSqr = d;
-        }
-
-        foreach (var fa in FindObjectsByType<FarmAnimal>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
-        {
-            if (fa == null || fa.IsDead) continue;
-
-            var d = ((Vector2)fa.transform.position - origin).sqrMagnitude;
-            if (d < bestSqr)
-            {
-                best = fa.transform;
-                bestSqr = d;
-            }
-        }
-
-        // El granero es objetivo secundario (solo si está más cerca que cualquier otro)
-        foreach (var barn in FindObjectsByType<BarnHealth>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
-        {
-            if (barn == null || barn.IsDead) continue;
-            var d = ((Vector2)barn.transform.position - origin).sqrMagnitude;
-            if (d < bestSqr)
-            {
-                best = barn.transform;
-                bestSqr = d;
-            }
-        }
-
-        _cachedTarget = best;
-        return best;
+        _cachedTarget = EnemyTargeting.ResolveNearestHostile(origin);
+        return _cachedTarget;
     }
 }

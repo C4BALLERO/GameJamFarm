@@ -20,6 +20,11 @@ public sealed class PowerUpSystem : MonoBehaviour
     [SerializeField] private int playerMoveTiersPerPurchase = 1;
     [SerializeField] [Range(0.02f, 1f)] private float spawnIntervalMultiplierPerLevel = 0.9f;
 
+    [Header("Almacén en corral")]
+    [SerializeField] private int bonusCorralStorageSlotsPerLevel = 4;
+
+    private int _corralStorageLevel;
+
     public static PowerUpSystem Instance { get; private set; }
 
     public float ResourceIntervalMultiplier =>
@@ -29,6 +34,9 @@ public sealed class PowerUpSystem : MonoBehaviour
 
     public float EnemySpawnIntervalMultiplier =>
         Mathf.Pow(Mathf.Clamp(spawnIntervalMultiplierPerLevel, 0.02f, 1f), Mathf.Max(0, spawnDelayReductionLevel));
+
+    /// <summary>Capacidad extra por nivel del power-up de almacén (suma al máximo base del corral).</summary>
+    public int BonusCorralStorageCapacity => Mathf.Max(0, _corralStorageLevel) * Mathf.Max(0, bonusCorralStorageSlotsPerLevel);
 
     private void Awake()
     {
@@ -87,6 +95,13 @@ public sealed class PowerUpSystem : MonoBehaviour
     public void BuySpawnDelayReductionBoost()
     {
         spawnDelayReductionLevel++;
+    }
+
+    public void BuyCorralStorageBoost()
+    {
+        _corralStorageLevel++;
+        foreach (var s in Object.FindObjectsByType<CorralStorage>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+            s.NotifyMaxCapacityMayHaveChanged();
     }
 }
 

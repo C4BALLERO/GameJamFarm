@@ -7,9 +7,10 @@ using UnityEngine;
 public sealed class InventorySystem : MonoBehaviour
 {
     [Header("Recursos iniciales")]
-    [SerializeField] private int startingMilk = 8;
-    [SerializeField] private int startingEgg = 8;
-    [SerializeField] private int startingMeat = 6;
+    [SerializeField] private int startingMilk = 0;
+    [SerializeField] private int startingEgg = 0;
+    [SerializeField] private int startingMeat = 0;
+    [SerializeField] private int startingCoins = 40;
 
     public event Action<ResourceType, int> ResourceChanged;
 
@@ -29,6 +30,7 @@ public sealed class InventorySystem : MonoBehaviour
         _amounts[ResourceType.Milk] = Mathf.Max(0, startingMilk);
         _amounts[ResourceType.Egg] = Mathf.Max(0, startingEgg);
         _amounts[ResourceType.Meat] = Mathf.Max(0, startingMeat);
+        _amounts[ResourceType.Coin] = Mathf.Max(0, startingCoins);
 
         foreach (ResourceType t in System.Enum.GetValues(typeof(ResourceType)))
             ResourceChanged?.Invoke(t, Get(t));

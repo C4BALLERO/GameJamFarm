@@ -124,7 +124,18 @@ public static class FarmSceneGameplayBootstrap
             uiMgr.RegisterShopUi(shopUi);
 
         EnsureGraneroClickArea(shopUi);
+        EnsureBarnHealthOnGranero();
         EnsureShopLivestockSystems();
+    }
+
+    /// <summary>Garantiza vida del granero para game over y barra HUD.</summary>
+    private static void EnsureBarnHealthOnGranero()
+    {
+        var granero = FindSceneObjectByNameIncludingInactive("Granero");
+        if (granero == null)
+            return;
+        if (granero.GetComponent<BarnHealth>() == null)
+            granero.AddComponent<BarnHealth>();
     }
 
     private static GameObject FindSceneObjectByNameIncludingInactive(string objectName)
@@ -321,6 +332,18 @@ public static class FarmSceneGameplayBootstrap
 
         if (gs.GetComponent<DayNightManager>() == null)
             gs.AddComponent<DayNightManager>();
+
+        if (gs.GetComponent<EconomySystem>() == null)
+            gs.AddComponent<EconomySystem>();
+
+        if (gs.GetComponent<SellSystem>() == null)
+            gs.AddComponent<SellSystem>();
+
+        if (gs.GetComponent<CorralUpgradeSystem>() == null)
+            gs.AddComponent<CorralUpgradeSystem>();
+
+        if (gs.GetComponent<BarnUpgradeSystem>() == null)
+            gs.AddComponent<BarnUpgradeSystem>();
     }
 
     private static void HideObsoleteHudNodes()
@@ -337,20 +360,8 @@ public static class FarmSceneGameplayBootstrap
             go.SetActive(false);
     }
 
-    private static void RetitleShopButtons(Transform panel)
+    private static void RetitleShopButtons(Transform _)
     {
-        TryRetitle(panel, "SellCow", "Mejorar ataque");
-        TryRetitle(panel, "SellChicken", "Mejorar velocidad");
-        TryRetitle(panel, "SellPig", "Cerrar granero");
-    }
-
-    private static void TryRetitle(Transform panel, string childName, string label)
-    {
-        var child = panel.Find(childName);
-        if (child == null) return;
-        var tx = child.GetComponentInChildren<Text>(true);
-        if (tx != null)
-            tx.text = label;
     }
 
     private static void EnsureGraneroClickArea(ShopUI shopUi)

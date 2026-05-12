@@ -5,7 +5,8 @@ public enum ResourceType
 {
     Milk = 0,
     Egg = 1,
-    Meat = 2
+    Meat = 2,
+    Coin = 3
 }
 
 [System.Serializable]

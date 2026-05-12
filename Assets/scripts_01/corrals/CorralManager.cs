@@ -114,6 +114,35 @@ public sealed class CorralManager : MonoBehaviour
     {
         ResolveReferencesSilent();
         ValidateKinds();
+        EnsureCorralEconomyComponents();
+    }
+
+    /// <summary>Añade almacén, icono flotante y recolección por clic a cada corral referenciado.</summary>
+    private void EnsureCorralEconomyComponents()
+    {
+        var inv = FindFirstObjectByType<InventorySystem>();
+        foreach (var zone in new[] { cowCorral, chickenCorral, pigCorral })
+        {
+            if (zone == null)
+                continue;
+
+            var storage = zone.GetComponent<CorralStorage>() ?? zone.gameObject.AddComponent<CorralStorage>();
+            storage.Initialize(zone);
+
+            var health = zone.GetComponent<CorralHealth>() ?? zone.gameObject.AddComponent<CorralHealth>();
+            health.InitializeFromZone(zone);
+
+            var trigger = zone.GetComponent<CorralCollectTrigger>();
+            if (trigger == null)
+                trigger = zone.gameObject.AddComponent<CorralCollectTrigger>();
+            trigger.Initialize(zone, storage, inv);
+
+            if (zone.GetComponent<FloatingResourceIcon>() == null)
+            {
+                var flo = zone.gameObject.AddComponent<FloatingResourceIcon>();
+                flo.Initialize(storage, null);
+            }
+        }
     }
 
     private void ResolveReferencesSilent()
@@ -207,8 +236,13 @@ public sealed class CorralManager : MonoBehaviour
 
         zone.RegisterOccupant(spawned);
 
+        var storage = zone.GetComponent<CorralStorage>();
         if (spawned.TryGetComponent<ResourceGenerator>(out var gen))
+        {
             gen.Init(inventory);
+            if (storage != null)
+                gen.BindCorralStorage(storage);
+        }
 
         if (spawned.GetComponent<FarmAnimalAudio>() == null)
             spawned.AddComponent<FarmAnimalAudio>();

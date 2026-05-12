@@ -29,10 +29,11 @@ public sealed class SpawnManager : MonoBehaviour
     [Header("Limits")]
     [SerializeField] private int maxAlive = 40;
 
-    [Header("Cap por noche (enemigos vivos a la vez)")]
-    [Tooltip("Noche 1: máximo concurrente. Cada noche siguiente suma el extra.")]
-    [SerializeField] private int firstNightMaxAlive = 8;
-    [SerializeField] private int extraMaxAlivePerNight = 5;
+    [Header("Presupuesto por noche (total de spawns en esa noche)")]
+    [Tooltip("Primera noche: máximo de enemigos que aparecen en toda la noche (no solo a la vez).")]
+    [SerializeField] private int firstNightTotalEnemySpawns = 8;
+    [Tooltip("Cada noche que pasa, el presupuesto se multiplica por este valor (1.2 = +20%).")]
+    [SerializeField] private float spawnBudgetMultiplierPerNight = 1.2f;
 
     [Header("Spawn Rate")]
     [SerializeField] private float baseSpawnInterval = 12.0f;   // Noche 1: muy lento
@@ -65,6 +66,7 @@ public sealed class SpawnManager : MonoBehaviour
     private int _waveIndex = 1;
     private int _nightIndex;
     private bool _nightInitialized;
+    private int _spawnedThisNight;
 
     /// <summary>
     /// Set the player transform for distance checks
@@ -111,7 +113,10 @@ public sealed class SpawnManager : MonoBehaviour
             corralManager = CorralManager.Instance;
         if (enemyPrefabs == null || enemyPrefabs.Length == 0) return;
         UpdateWaveState();
-        if (_alive >= GetCurrentWaveMaxAlive()) return;
+        if (_spawnedThisNight >= GetTotalSpawnBudgetForNight())
+            return;
+        if (_alive >= GetMaxConcurrentEnemiesThisNight())
+            return;
         if (Time.time < _nextSpawnAt) return;
 
         _nextSpawnAt = Time.time + ComputeInterval();
@@ -178,13 +183,14 @@ public sealed class SpawnManager : MonoBehaviour
             ApplyNightScaling(enemy);
 
             _alive++;
+            _spawnedThisNight++;
             _spawned.Add(enemy);
             enemy.Died += () =>
             {
                 _alive = Mathf.Max(0, _alive - 1);
                 _spawned.Remove(enemy);
             };
-            Debug.Log($"[SpawnManager] Spawned enemy. Alive: {_alive}/{GetCurrentWaveMaxAlive()}");
+            Debug.Log($"[SpawnManager] Spawn {_spawnedThisNight}/{GetTotalSpawnBudgetForNight()} esta noche. Vivos: {_alive}/{GetMaxConcurrentEnemiesThisNight()}");
             return;
         }
     }
@@ -214,11 +220,20 @@ public sealed class SpawnManager : MonoBehaviour
         RefreshWaveUi();
     }
 
-    private int GetCurrentWaveMaxAlive()
+    /// <summary>Cuántos enemigos pueden spawnear en total durante la noche actual.</summary>
+    private int GetTotalSpawnBudgetForNight()
     {
-        var nightCap = firstNightMaxAlive + Mathf.Max(0, _nightIndex - 1) * Mathf.Max(0, extraMaxAlivePerNight);
-        nightCap = Mathf.Min(maxAlive, nightCap);
-        return Mathf.Max(1, nightCap);
+        var mul = Mathf.Max(1f, spawnBudgetMultiplierPerNight);
+        var nightsInto = Mathf.Max(1, _nightIndex);
+        var raw = firstNightTotalEnemySpawns * Mathf.Pow(mul, nightsInto - 1);
+        return Mathf.Clamp(Mathf.RoundToInt(raw), 1, 9999);
+    }
+
+    /// <summary>Tope de enemigos vivos a la vez esta noche (no más que el presupuesto total).</summary>
+    private int GetMaxConcurrentEnemiesThisNight()
+    {
+        var budget = GetTotalSpawnBudgetForNight();
+        return Mathf.Min(maxAlive, Mathf.Max(1, budget));
     }
 
     private void RefreshWaveUi()
@@ -238,6 +253,7 @@ public sealed class SpawnManager : MonoBehaviour
     {
         _nightInitialized = true;
         _nightIndex++;
+        _spawnedThisNight = 0;
         _waveIndex = 1;
         _waveStartedAt = Time.time;
         RefreshWaveUi();

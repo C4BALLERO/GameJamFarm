@@ -13,17 +13,32 @@ public sealed class GameOverController : MonoBehaviour
 
     private GameObject _panelRoot;
     private bool _shown;
+    private bool _boundToBarn;
 
     private void Start()
     {
-        if (barnHealth == null)
-            barnHealth = FindFirstObjectByType<BarnHealth>();
-
-        if (barnHealth != null)
-            barnHealth.Died += OnBarnDied;
-
+        TryBindBarnHealth();
         if (_panelRoot != null)
             _panelRoot.SetActive(false);
+    }
+
+    private void LateUpdate()
+    {
+        if (_shown || _boundToBarn)
+            return;
+        TryBindBarnHealth();
+    }
+
+    private void TryBindBarnHealth()
+    {
+        if (barnHealth == null)
+            barnHealth = FindFirstObjectByType<BarnHealth>();
+        if (barnHealth == null)
+            return;
+
+        barnHealth.Died -= OnBarnDied;
+        barnHealth.Died += OnBarnDied;
+        _boundToBarn = true;
     }
 
     private void OnDestroy()
@@ -38,7 +53,11 @@ public sealed class GameOverController : MonoBehaviour
             return;
         _shown = true;
 
-        GameManager.Instance?.EnterGameOver();
+        if (GameManager.Instance != null)
+            GameManager.Instance.EnterGameOver();
+        else
+            Time.timeScale = 0f;
+
         EnsureUiExists();
         if (_panelRoot != null)
             _panelRoot.SetActive(true);

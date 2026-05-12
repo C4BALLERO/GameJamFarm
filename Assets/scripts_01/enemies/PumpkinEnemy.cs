@@ -12,16 +12,28 @@ public sealed class PumpkinEnemy : EnemyBase
 
     public override void PerformAttack(Transform target)
     {
-        // Contact damage handled in OnCollisionStay2D.
+        // Contact damage handled in OnCollisionStay2D / OnTriggerStay2D.
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        TryApplyContactDamage(collision.collider);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        TryApplyContactDamage(other);
+    }
+
+    private void TryApplyContactDamage(Collider2D hit)
+    {
         if (IsDead) return;
-        if (!collision.collider.TryGetComponent<IDamageable>(out var dmg)) return;
+        if (!hit.TryGetComponent<IDamageable>(out var dmg)) return;
         if (dmg.IsDead) return;
         if (dmg is EnemyBase) return;
-        if (dmg is not PlayerHealth && dmg is not AnimalBase && dmg is not BarnHealth) return;
+        if (dmg is AnimalBase ab && FarmAnimalCorralProtection.IsProtected(ab)) return;
+        if (dmg is not PlayerHealth && dmg is not AnimalBase && dmg is not BarnHealth && dmg is not CorralDamageRelay)
+            return;
         if (Time.time < _nextContactDamageAt) return;
 
         _nextContactDamageAt = Time.time + Mathf.Max(0.1f, contactDamageInterval);
@@ -31,4 +43,3 @@ public sealed class PumpkinEnemy : EnemyBase
         dmg.TakeDamage(damage, dir * knockbackForce);
     }
 }
-

@@ -3616,6 +3616,20 @@ MonoBehaviour:
   panelRoot: {fileID: 318344821}
   shopSystem: {fileID: 559021602}
   inventory: {fileID: 559021604}
+  shopCatalog: {fileID: 0}
+  cowNameText: {fileID: 0}
+  cowResourceLineText: {fileID: 0}
+  chickenNameText: {fileID: 0}
+  chickenResourceLineText: {fileID: 0}
+  pigNameText: {fileID: 0}
+  pigResourceLineText: {fileID: 0}
+  powerUpDescriptionTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   cowCostText: {fileID: 1935452315}
   chickenCostText: {fileID: 2113140781}
   pigCostText: {fileID: 1508976257}
@@ -3626,8 +3640,15 @@ MonoBehaviour:
   playerDamagePowerCostText: {fileID: 948587287}
   playerMovePowerCostText: {fileID: 929003501}
   reducedSpawnDelayCostText: {fileID: 1568295595}
+  corralStoragePowerCostText: {fileID: 0}
   playerHealthRestoreCostText: {fileID: 1000095255}
   currentResourcesText: {fileID: 328083228}
+  coinsOnlyText: {fileID: 0}
+  shopCoinIcon: {fileID: 0}
+  milkSellPreviewText: {fileID: 0}
+  eggSellPreviewText: {fileID: 0}
+  meatSellPreviewText: {fileID: 0}
+  ensureRuntimeSellButtons: 1
 --- !u!1 &318913985
 GameObject:
   m_ObjectHideFlags: 0
@@ -4557,9 +4578,11 @@ MonoBehaviour:
   milkText: {fileID: 527438415}
   eggText: {fileID: 1926411075}
   meatText: {fileID: 2018940956}
+  coinText: {fileID: 0}
   milkIcon: {fileID: 28286694}
   eggIcon: {fileID: 1395316348}
   meatIcon: {fileID: 384894475}
+  coinIcon: {fileID: 0}
 --- !u!4 &384530616
 Transform:
   m_ObjectHideFlags: 0
@@ -6860,73 +6883,15 @@ MonoBehaviour:
   cowPrefab: {fileID: 2363478248200783261, guid: b6c4028ca308ca64c9a53206571f1258, type: 3}
   chickenPrefab: {fileID: 5371511399814094531, guid: 76bf7b6f63f91724d9c7935fd95444ea, type: 3}
   pigPrefab: {fileID: 1185626963888550624, guid: bdf584674b60f584880d14b45c283fbd, type: 3}
-  chickenPurchaseCosts:
-  - type: 1
-    amount: 6
-  - type: 2
-    amount: 8
-  - type: 0
-    amount: 3
-  pigPurchaseCosts:
-  - type: 2
-    amount: 10
-  - type: 0
-    amount: 8
-  - type: 1
-    amount: 5
-  cowPurchaseCosts:
-  - type: 0
-    amount: 14
-  - type: 1
-    amount: 12
-  - type: 2
-    amount: 18
-  attackUpgradeCosts:
-  - type: 0
-    amount: 10
-  - type: 1
-    amount: 10
-  - type: 2
-    amount: 8
-  speedUpgradeCosts:
-  - type: 1
-    amount: 14
-  - type: 0
-    amount: 9
-  - type: 2
-    amount: 10
-  fasterGenerationCosts:
-  - type: 1
-    amount: 10
-  - type: 0
-    amount: 7
-  animalHealthCosts:
-  - type: 2
-    amount: 10
-  - type: 0
-    amount: 6
-  playerDamageBoostCosts:
-  - type: 2
-    amount: 12
-  - type: 1
-    amount: 10
-  playerMoveBoostCosts:
-  - type: 1
-    amount: 12
-  - type: 0
-    amount: 8
-  reducedSpawnDelayCosts:
-  - type: 2
-    amount: 14
-  - type: 1
-    amount: 8
+  cowCoinPrice: 85
+  chickenCoinPrice: 28
+  pigCoinPrice: 55
+  attackUpgradeCoinBase: 42
+  speedUpgradeCoinBase: 38
+  basePowerUpCoinCosts: 240000002000000030000000280000003400000022000000
   powerUpCostGrowthPercent: 0.25
   powerUpCostGrowthFlat: 1
-  playerHealthRestoreCosts:
-  - type: 2
-    amount: 5
-  - type: 0
-    amount: 3
+  playerHealCoinBase: 18
   healthRestoreAmount: 3
 --- !u!4 &559021603
 Transform:
@@ -6959,6 +6924,7 @@ MonoBehaviour:
   startingMilk: 0
   startingEgg: 0
   startingMeat: 0
+  startingCoins: 40
 --- !u!114 &559021605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7013,6 +6979,7 @@ MonoBehaviour:
   playerDamageTiersPerPurchase: 1
   playerMoveTiersPerPurchase: 1
   spawnIntervalMultiplierPerLevel: 0.9
+  bonusCorralStorageSlotsPerLevel: 4
 --- !u!114 &559021608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125746,8 +125713,8 @@ MonoBehaviour:
   - {fileID: 4410900277082757191, guid: 3f3a3ae87ba427e46be3641c4c41eac9, type: 3}
   - {fileID: 2851167938564920631, guid: 29db3247556232a448115b531e898b71, type: 3}
   maxAlive: 25
-  firstNightMaxAlive: 8
-  extraMaxAlivePerNight: 5
+  firstNightTotalEnemySpawns: 8
+  spawnBudgetMultiplierPerNight: 1.2
   baseSpawnInterval: 2
   minSpawnInterval: 0.35
   intervalDecreasePerMinute: 0.25

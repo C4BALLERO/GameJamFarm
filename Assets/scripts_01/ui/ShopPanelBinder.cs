@@ -20,6 +20,10 @@ public sealed class ShopPanelBinder : MonoBehaviour
         WireNamed("BtnMejorarVelocidad", () => ui.BuySpeedUpgrade());
         WireNamed("BtnMejorarAtaque", () => ui.BuyAttackUpgrade());
         WireNamed("BtnCerrarTienda", () => ui.CloseShop());
+        WireNamed("BtnVenderLeche", () => ui.SellAllMilk());
+        WireNamed("BtnVenderHuevos", () => ui.SellAllEggs());
+        WireNamed("BtnVenderCarne", () => ui.SellAllMeat());
+        WireNamed("BtnAlmacenCorral", () => ui.BuyCorralStoragePowerUp());
     }
 
     private void WireNamed(string childName, UnityEngine.Events.UnityAction action)

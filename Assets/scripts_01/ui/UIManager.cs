@@ -75,7 +75,31 @@ public sealed class UIManager : MonoBehaviour
 
     public void BuyReducedSpawnDelayPowerUp() => shopSystem?.BuyReducedSpawnDelayPowerUp();
 
+    public void BuyCorralStoragePowerUp() => shopSystem?.BuyCorralStoragePowerUp();
+
+    public void SellAllMilk() => TrySell(ResourceType.Milk);
+
+    public void SellAllEggs() => TrySell(ResourceType.Egg);
+
+    public void SellAllMeat() => TrySell(ResourceType.Meat);
+
+    private static void TrySell(ResourceType type)
+    {
+        var sell = SellSystem.Instance != null
+            ? SellSystem.Instance
+            : Object.FindFirstObjectByType<SellSystem>();
+        sell?.SellAll(type);
+    }
+
     public void CloseShop() => shopUi?.Close();
+
+    public void BuyBarnTierUpgrade() => shopSystem?.BuyBarnTierUpgrade();
+
+    public void BuyCorralStorageUpgradeCow() => shopSystem?.BuyCorralStorageUpgrade(FarmAnimalKind.Cow);
+
+    public void BuyCorralStorageUpgradeChicken() => shopSystem?.BuyCorralStorageUpgrade(FarmAnimalKind.Chicken);
+
+    public void BuyCorralStorageUpgradePig() => shopSystem?.BuyCorralStorageUpgrade(FarmAnimalKind.Pig);
 
     #endregion
 }
