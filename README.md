@@ -12,8 +12,9 @@ A 2D top-down farming survival game built with Unity. Manage your farm, defend a
 ### Running the Game
 
 1. Open the project in Unity
-2. Open scene: `Assets/scene_00/scene_00_main.unity`
-3. Press Play in Editor
+2. **Build / exported game:** the first scene in **File → Build Settings** is `scene_00_splash` (splash ~4s) → `scene_01_menu` (validación) → `scene_00_main`.
+3. **Play in Editor:** open `Assets/scene_00/scene_00_splash.unity` before Play to see the full flow, or open `scene_00_main.unity` to ir directo al gameplay.
+4. Press Play in Editor
 
 ### Controls
 
@@ -70,6 +71,7 @@ Assets/
 
 ## Game Features
 
+- ✅ Splash screen then menu validation then main scene (build order)
 - ✅ Top-down movement and combat
 - ✅ Enemy AI and spawning system
 - ✅ Farm animal system
