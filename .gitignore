@@ -42,3 +42,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+# Unity Editor logs (local only; avoid accidental commits)
+Logs/
