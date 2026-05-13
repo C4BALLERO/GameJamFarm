@@ -10,6 +10,7 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
 
     [Header("Health")]
     [SerializeField] protected int maxHealth = 4;
+    [SerializeField] private bool thinWorldHealthBar = true;
     [SerializeField] protected float knockbackStopSeconds = 0.08f;
 
     [Header("Attack")]
@@ -44,6 +45,8 @@ public abstract class EnemyBase : MonoBehaviour, IDamageable
     {
         CurrentHealth = Mathf.Max(1, maxHealth);
         if (rb == null) rb = GetComponent<Rigidbody2D>();
+        if (thinWorldHealthBar && GetComponentInChildren<ThinWorldHealthBar2D>(true) == null)
+            ThinWorldHealthBar2D.Attach(transform, enemyStrip: true);
     }
 
     protected virtual void Update()

@@ -3648,6 +3648,8 @@ MonoBehaviour:
   milkSellPreviewText: {fileID: 0}
   eggSellPreviewText: {fileID: 0}
   meatSellPreviewText: {fileID: 0}
+  sellRulesSummaryText: {fileID: 0}
+  corralUpgradesSummaryText: {fileID: 0}
   ensureRuntimeSellButtons: 1
 --- !u!1 &318913985
 GameObject:
@@ -4579,10 +4581,12 @@ MonoBehaviour:
   eggText: {fileID: 1926411075}
   meatText: {fileID: 2018940956}
   coinText: {fileID: 0}
+  feedText: {fileID: 0}
   milkIcon: {fileID: 28286694}
   eggIcon: {fileID: 1395316348}
   meatIcon: {fileID: 384894475}
   coinIcon: {fileID: 0}
+  ensureCoinHudAtRuntime: 1
 --- !u!4 &384530616
 Transform:
   m_ObjectHideFlags: 0
@@ -6893,6 +6897,10 @@ MonoBehaviour:
   powerUpCostGrowthFlat: 1
   playerHealCoinBase: 18
   healthRestoreAmount: 3
+  feedBasicCoinCost: 5
+  feedBasicPerPurchase: 12
+  feedPremiumCoinCost: 14
+  feedPremiumPerPurchase: 8
 --- !u!4 &559021603
 Transform:
   m_ObjectHideFlags: 0
@@ -6925,6 +6933,11 @@ MonoBehaviour:
   startingEgg: 0
   startingMeat: 0
   startingCoins: 40
+  maxMilkStorage: 100
+  maxEggStorage: 100
+  maxMeatStorage: 100
+  maxFeedBasicStorage: 200
+  maxFeedPremiumStorage: 80
 --- !u!114 &559021605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125726,6 +125739,7 @@ MonoBehaviour:
   enemyDamagePerNight: 0.12
   maxNightScalingSteps: 12
   nightIntervalReduction: 1.4
+  spawnIntervalPressurePerCompletedNight: 0.11
   despawnSurvivorsDuringDay: 1
   dayDespawnInterval: 4.5
   dayDespawnDamage: 999

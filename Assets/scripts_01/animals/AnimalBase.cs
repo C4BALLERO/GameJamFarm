@@ -6,6 +6,7 @@ public abstract class AnimalBase : MonoBehaviour, IDamageable
 {
     [Header("Health")]
     [SerializeField] protected int maxHealth = 6;
+    [SerializeField] private bool thinWorldHealthBar = true;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float knockbackStopSeconds = 0.08f;
     [SerializeField] private float destroyDelaySecondsAfterDeath = 1.15f;
@@ -47,6 +48,8 @@ public abstract class AnimalBase : MonoBehaviour, IDamageable
     {
         CurrentHealth = Mathf.Max(1, maxHealth);
         if (rb == null) rb = GetComponent<Rigidbody2D>();
+        if (thinWorldHealthBar && GetComponentInChildren<ThinWorldHealthBar2D>(true) == null)
+            ThinWorldHealthBar2D.Attach(transform, enemyStrip: false);
     }
 
     private void Update()

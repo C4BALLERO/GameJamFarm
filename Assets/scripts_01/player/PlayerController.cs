@@ -86,6 +86,14 @@ public sealed class PlayerController : MonoBehaviour
             return;
         }
 
+        if (ShouldBlockWorldInput())
+        {
+            _input = Vector2.zero;
+            if (animator != null) animator.SetBool(isMoving, false);
+            if (spriteAnimator != null) spriteAnimator.SetMovement(_facing, false);
+            return;
+        }
+
         _input = ReadMoveInput();
         _input = Vector2.ClampMagnitude(_input, 1f);
 
@@ -148,7 +156,21 @@ public sealed class PlayerController : MonoBehaviour
             return;
         }
 
+        if (ShouldBlockWorldInput())
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         rb.linearVelocity = _input * EffectiveMoveSpeed;
+    }
+
+    /// <summary>Pausa de tienda/corral/Escape: no leer movimiento ni ataque (respaldo si timeScale falla).</summary>
+    private static bool ShouldBlockWorldInput()
+    {
+        if (CorralPanelUI.IsOpen)
+            return true;
+        return GameManager.Instance != null && GameManager.Instance.IsGameplayFrozen;
     }
 
     private void OnDamaged()

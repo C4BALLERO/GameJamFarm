@@ -6,7 +6,11 @@ public enum ResourceType
     Milk = 0,
     Egg = 1,
     Meat = 2,
-    Coin = 3
+    Coin = 3,
+    /// <summary>Pienso básico (compra en granero, se deposita en corrales).</summary>
+    FeedBasic = 4,
+    /// <summary>Pienso enriquecido: menos unidades en inventario pero rinde más al depositar.</summary>
+    FeedPremium = 5
 }
 
 [System.Serializable]

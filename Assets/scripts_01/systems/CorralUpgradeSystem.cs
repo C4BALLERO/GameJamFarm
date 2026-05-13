@@ -15,15 +15,18 @@ public sealed class CorralUpgradeSystem : MonoBehaviour
     [SerializeField] [Range(0.02f, 0.25f)] private float productionIntervalCutPerLevel = 0.07f;
 
     [Header("Costes base (monedas) por compra de nivel")]
-    [SerializeField] private int cowStorageUpgradeCost = 55;
-    [SerializeField] private int chickenStorageUpgradeCost = 48;
-    [SerializeField] private int pigStorageUpgradeCost = 52;
-    [SerializeField] private int cowHealthUpgradeCost = 40;
-    [SerializeField] private int chickenHealthUpgradeCost = 38;
-    [SerializeField] private int pigHealthUpgradeCost = 42;
-    [SerializeField] private int cowProductionUpgradeCost = 60;
-    [SerializeField] private int chickenProductionUpgradeCost = 45;
+    [SerializeField] private int cowStorageUpgradeCost = 50;
+    [SerializeField] private int chickenStorageUpgradeCost = 50;
+    [SerializeField] private int pigStorageUpgradeCost = 50;
+    [SerializeField] private int cowHealthUpgradeCost = 50;
+    [SerializeField] private int chickenHealthUpgradeCost = 50;
+    [SerializeField] private int pigHealthUpgradeCost = 50;
+    [SerializeField] private int cowProductionUpgradeCost = 50;
+    [SerializeField] private int chickenProductionUpgradeCost = 50;
     [SerializeField] private int pigProductionUpgradeCost = 50;
+
+    [Tooltip("Si está activo, cada compra duplica el coste siguiente (50→100→200). Si no, usa solo el porcentaje.")]
+    [SerializeField] private bool doubleCostAfterEachPurchase = true;
 
     [SerializeField] [Range(0f, 2f)] private float costGrowthPercent = 0.18f;
 
@@ -140,7 +143,10 @@ public sealed class CorralUpgradeSystem : MonoBehaviour
 
     private void GrowRuntimeCost(ref int cost)
     {
-        cost = Mathf.Max(cost + 1, Mathf.CeilToInt(cost * (1f + Mathf.Max(0f, costGrowthPercent))));
+        if (doubleCostAfterEachPurchase)
+            cost = Mathf.Max(cost + 1, cost * 2);
+        else
+            cost = Mathf.Max(cost + 1, Mathf.CeilToInt(cost * (1f + Mathf.Max(0f, costGrowthPercent))));
     }
 
     private void IncrementStorageLevel(FarmAnimalKind kind)
@@ -268,6 +274,15 @@ public sealed class CorralUpgradeSystem : MonoBehaviour
             var z = s.GetComponent<CorralZone>();
             if (z != null && z.AllowedKind == kind)
                 s.NotifyMaxCapacityMayHaveChanged();
+        }
+
+        foreach (var f in UnityEngine.Object.FindObjectsByType<CorralFoodStorage>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        {
+            if (f == null)
+                continue;
+            var z = f.GetComponent<CorralZone>();
+            if (z != null && z.AllowedKind == kind)
+                f.RecalculateMax();
         }
     }
 }

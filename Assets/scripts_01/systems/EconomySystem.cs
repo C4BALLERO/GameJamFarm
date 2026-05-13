@@ -1,19 +1,12 @@
 using UnityEngine;
 
 /// <summary>
-/// Precios de venta y referencia de balance (editar en Inspector en <c>GameSystems</c>).
+/// Precios de venta y balance. Huevos: 2 = 1 moneda (solo pares al vender todo). Leche: 3/u. Carne: 2/u.
 /// </summary>
 [DisallowMultipleComponent]
 public sealed class EconomySystem : MonoBehaviour
 {
     public static EconomySystem Instance { get; private set; }
-
-    [Header("Venta: monedas por unidad de recurso")]
-    [Tooltip("Leche: producción más lenta, mayor valor.")]
-    [SerializeField] private int sellCoinsPerMilk = 4;
-    [Tooltip("Huevos: producción rápida, menor valor.")]
-    [SerializeField] private int sellCoinsPerEgg = 1;
-    [SerializeField] private int sellCoinsPerMeat = 3;
 
     [Header("Icono moneda (HUD / tienda)")]
     [SerializeField] private Sprite coinSprite;
@@ -36,26 +29,42 @@ public sealed class EconomySystem : MonoBehaviour
             Instance = null;
     }
 
-    public int GetSellCoinsPerUnit(ResourceType type)
+    /// <summary>Monedas obtenidas al vender <paramref name="amount"/> unidades (reglas actuales × multiplicador granero).</summary>
+    public int ComputeSellCoins(ResourceType type, int amount, float barnSellRewardMultiplier = 1f)
     {
+        if (amount <= 0)
+            return 0;
+        var m = Mathf.Max(0f, barnSellRewardMultiplier);
         return type switch
         {
-            ResourceType.Milk => Mathf.Max(0, sellCoinsPerMilk),
-            ResourceType.Egg => Mathf.Max(0, sellCoinsPerEgg),
-            ResourceType.Meat => Mathf.Max(0, sellCoinsPerMeat),
+            ResourceType.Egg => Mathf.RoundToInt((amount / 2) * 1f * m),
+            ResourceType.Milk => Mathf.RoundToInt(amount * 3f * m),
+            ResourceType.Meat => Mathf.RoundToInt(amount * 2f * m),
             _ => 0
         };
     }
 
-    public Sprite CoinSprite => coinSprite != null ? coinSprite : Resources.Load<Sprite>("Coin");
+    /// <summary>Cuántas unidades se retiran del inventario al pulsar «vender todo» (huevos impares dejan 1).</summary>
+    public int CountResourcesConsumedOnSellAll(ResourceType type, int amount)
+    {
+        if (amount <= 0)
+            return 0;
+        if (type == ResourceType.Egg)
+            return (amount / 2) * 2;
+        return amount;
+    }
 
-    /// <summary>Intenta cargar icono desde <c>Resources</c> si no está asignado en Inspector.</summary>
+    public Sprite CoinSprite =>
+        coinSprite != null
+            ? coinSprite
+            : Resources.Load<Sprite>("MonedaIcono") ?? Resources.Load<Sprite>("Coin");
+
     private void EnsureCoinSpriteLoaded()
     {
         if (coinSprite != null)
             return;
 
-        foreach (var key in new[] { "Coin", "coin", "Moneda", "moneda" })
+        foreach (var key in new[] { "MonedaIcono", "monedaIcono", "Coin", "coin", "Moneda", "moneda" })
         {
             coinSprite = Resources.Load<Sprite>(key);
             if (coinSprite != null)

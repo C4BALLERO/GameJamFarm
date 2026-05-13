@@ -46,6 +46,8 @@ public sealed class ResourceCollector : MonoBehaviour
     /// <returns><c>true</c> si se transfirió al menos una unidad al inventario.</returns>
     public bool TryProcessInputThisFrame()
     {
+        if (GetComponent<CorralPanelOpener>() != null)
+            return false;
         if (GameManager.Instance != null && GameManager.Instance.IsGameplayFrozen)
             return false;
         if (zone == null || storage == null || inventory == null)

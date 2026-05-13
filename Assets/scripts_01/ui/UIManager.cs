@@ -36,6 +36,8 @@ public sealed class UIManager : MonoBehaviour
         {
             if (GameManager.Instance != null && GameManager.Instance.IsGameOver)
                 return;
+            if (CorralPanelUI.IsOpen)
+                return;
             if (shopUi != null)
                 shopUi.Toggle();
             else if (shopPanelRoot != null)

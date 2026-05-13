@@ -142,7 +142,20 @@ public sealed class CorralManager : MonoBehaviour
                 var flo = zone.gameObject.AddComponent<FloatingResourceIcon>();
                 flo.Initialize(storage, null);
             }
+
+            if (zone.GetComponent<CorralFenceBuilder>() == null)
+                zone.gameObject.AddComponent<CorralFenceBuilder>();
+
+            var food = zone.GetComponent<CorralFoodStorage>() ?? zone.gameObject.AddComponent<CorralFoodStorage>();
+            food.Initialize(zone);
+            food.RegisterUpgradeWatch();
+
+            if (zone.GetComponent<CorralPanelOpener>() == null)
+                zone.gameObject.AddComponent<CorralPanelOpener>();
         }
+
+        if (GetComponent<CorralFoodTicker>() == null)
+            gameObject.AddComponent<CorralFoodTicker>();
     }
 
     private void ResolveReferencesSilent()

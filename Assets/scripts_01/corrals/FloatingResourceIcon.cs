@@ -1,8 +1,8 @@
 using UnityEngine;
 
 /// <summary>
-/// Icono flotante sobre el corral cuando el almacén está lleno (listo para recoger).
-/// Animación suave de balanceo en Y. Para progreso parcial opcional, usa <see cref="CorralStorage.FillNormalized"/> en tu UI mundo.
+/// Icono flotante sobre el corral según almacén: desde 5 unidades (pequeño) hasta 20+ (brillo).
+/// Escala y alpha con transición suave; balanceo en Y.
 /// </summary>
 [DisallowMultipleComponent]
 public sealed class FloatingResourceIcon : MonoBehaviour
@@ -10,12 +10,19 @@ public sealed class FloatingResourceIcon : MonoBehaviour
     [SerializeField] private CorralStorage storage;
     [SerializeField] private SpriteRenderer iconRenderer;
     [SerializeField] private Vector3 localOffset = new Vector3(0f, 1.4f, 0f);
-    [SerializeField] private float bobAmplitude = 0.12f;
-    [SerializeField] private float bobSpeed = 2.2f;
+    [SerializeField] private float bobAmplitude = 0.14f;
+    [SerializeField] private float bobSpeed = 2.35f;
+    [SerializeField] private float bounceImpulseOnIncrease = 0.08f;
+    [SerializeField] private float scaleSmooth = 12f;
 
     private Transform _iconTransform;
     private Vector3 _baseLocalPos;
-    private bool _visible;
+    private float _displayScale = 1f;
+    private float _scaleVel;
+    private float _bounceOffset;
+    private int _lastAmount = -1;
+
+    private static readonly int[] Thresholds = { 0, 5, 10, 15, 20 };
 
     public void Initialize(CorralStorage corralStorage, Sprite fallbackSprite)
     {
@@ -25,36 +32,108 @@ public sealed class FloatingResourceIcon : MonoBehaviour
 
         if (storage != null)
         {
-            storage.BecameFull += Show;
-            storage.CollectedOrEmptied += RefreshVisibility;
+            storage.CollectedOrEmptied += RefreshFromStorage;
             storage.StorageChanged += OnStorageChanged;
         }
 
-        RefreshVisibility();
+        RefreshFromStorage();
     }
 
-    private void OnStorageChanged(int current, int max)
-    {
-        RefreshVisibility();
-    }
+    private void OnStorageChanged(int current, int max) => RefreshFromStorage();
 
     private void OnDestroy()
     {
         if (storage == null)
             return;
-        storage.BecameFull -= Show;
-        storage.CollectedOrEmptied -= RefreshVisibility;
+        storage.CollectedOrEmptied -= RefreshFromStorage;
         storage.StorageChanged -= OnStorageChanged;
     }
 
     private void LateUpdate()
     {
-        if (!_visible || _iconTransform == null)
+        if (storage == null || _iconTransform == null || iconRenderer == null)
             return;
 
-        var bob = Mathf.Sin(Time.time * bobSpeed) * bobAmplitude;
+        var amount = storage.StoredAmount;
+        var tier = GetTier(amount);
+        if (tier <= 0)
+        {
+            iconRenderer.enabled = false;
+            return;
+        }
+
+        if (!iconRenderer.enabled)
+            iconRenderer.enabled = true;
+
+        if (amount != _lastAmount && amount > _lastAmount)
+            _bounceOffset = bounceImpulseOnIncrease;
+        _lastAmount = amount;
+
+        var targetScale = TierToScale(tier);
+        var targetAlpha = TierToAlpha(tier);
+        var glowPulse = tier >= 4 ? 1f + 0.07f * Mathf.Sin(Time.time * 2.6f) : 1f;
+
+        _displayScale = Mathf.SmoothDamp(_displayScale, targetScale * glowPulse, ref _scaleVel, 1f / Mathf.Max(0.01f, scaleSmooth));
+        _bounceOffset = Mathf.MoveTowards(_bounceOffset, 0f, Time.deltaTime * 0.35f);
+
+        var bob = Mathf.Sin(Time.time * bobSpeed) * bobAmplitude + _bounceOffset;
         _iconTransform.localPosition = _baseLocalPos + new Vector3(0f, bob, 0f);
+        _iconTransform.localScale = Vector3.one * _displayScale;
+
+        var c = iconRenderer.color;
+        c.a = targetAlpha;
+        iconRenderer.color = c;
     }
+
+    private void RefreshFromStorage()
+    {
+        if (storage == null || iconRenderer == null)
+            return;
+
+        var amount = storage.StoredAmount;
+        if (GetTier(amount) <= 0)
+        {
+            iconRenderer.enabled = false;
+            _displayScale = 0.01f;
+            _scaleVel = 0f;
+            return;
+        }
+
+        iconRenderer.enabled = true;
+    }
+
+    private static int GetTier(int amount)
+    {
+        if (amount < Thresholds[1])
+            return 0;
+        if (amount < Thresholds[2])
+            return 1;
+        if (amount < Thresholds[3])
+            return 2;
+        if (amount < Thresholds[4])
+            return 3;
+        return 4;
+    }
+
+    private static float TierToScale(int tier) =>
+        tier switch
+        {
+            1 => 0.38f,
+            2 => 0.56f,
+            3 => 0.78f,
+            4 => 1f,
+            _ => 0f
+        };
+
+    private static float TierToAlpha(int tier) =>
+        tier switch
+        {
+            1 => 0.52f,
+            2 => 0.72f,
+            3 => 0.9f,
+            4 => 1f,
+            _ => 0f
+        };
 
     private void EnsureRenderer(Sprite sprite)
     {
@@ -87,22 +166,5 @@ public sealed class FloatingResourceIcon : MonoBehaviour
             _ => "LecheGota"
         };
         return Resources.Load<Sprite>(name);
-    }
-
-    private void Show()
-    {
-        SetVisible(storage != null && storage.IsFull);
-    }
-
-    private void RefreshVisibility()
-    {
-        SetVisible(storage != null && storage.IsFull);
-    }
-
-    private void SetVisible(bool on)
-    {
-        _visible = on;
-        if (iconRenderer != null)
-            iconRenderer.enabled = on;
     }
 }

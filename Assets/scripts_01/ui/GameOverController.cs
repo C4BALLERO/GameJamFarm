@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -60,7 +61,12 @@ public sealed class GameOverController : MonoBehaviour
 
         EnsureUiExists();
         if (_panelRoot != null)
+        {
             _panelRoot.SetActive(true);
+            var rt = _panelRoot.GetComponent<RectTransform>();
+            if (rt != null)
+                StartCoroutine(UIStyleSheet.AnimatePanelScale(rt, 0.25f));
+        }
     }
 
     private void EnsureUiExists()
@@ -88,7 +94,7 @@ public sealed class GameOverController : MonoBehaviour
         rt.offsetMin = Vector2.zero;
         rt.offsetMax = Vector2.zero;
         var bg = _panelRoot.GetComponent<Image>();
-        bg.color = new Color(0f, 0f, 0f, 0.72f);
+        UIStyleSheet.ApplySolidPanelTint(bg, UIStyleSheet.OverlayDim);
 
         var titleGo = new GameObject("Title", typeof(RectTransform), typeof(Text));
         titleGo.transform.SetParent(_panelRoot.transform, false);
@@ -97,12 +103,9 @@ public sealed class GameOverController : MonoBehaviour
         titleRt.anchorMax = new Vector2(0.5f, 0.58f);
         titleRt.sizeDelta = new Vector2(900f, 120f);
         var titleTxt = titleGo.GetComponent<Text>();
-        titleTxt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Resources.GetBuiltinResource<Font>("Arial.ttf");
-        titleTxt.fontSize = 56;
-        titleTxt.fontStyle = FontStyle.Bold;
         titleTxt.alignment = TextAnchor.MiddleCenter;
-        titleTxt.color = Color.white;
         titleTxt.text = "GAME OVER";
+        UIStyleSheet.ApplyDangerTitle(titleTxt, 56);
 
         var subGo = new GameObject("Subtitle", typeof(RectTransform), typeof(Text));
         subGo.transform.SetParent(_panelRoot.transform, false);
@@ -111,17 +114,15 @@ public sealed class GameOverController : MonoBehaviour
         subRt.anchorMax = new Vector2(0.5f, 0.48f);
         subRt.sizeDelta = new Vector2(900f, 60f);
         var subTxt = subGo.GetComponent<Text>();
-        subTxt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Resources.GetBuiltinResource<Font>("Arial.ttf");
-        subTxt.fontSize = 22;
         subTxt.alignment = TextAnchor.MiddleCenter;
-        subTxt.color = new Color(0.9f, 0.85f, 0.85f);
         subTxt.text = "El granero fue destruido";
+        UIStyleSheet.ApplySecondaryText(subTxt, 22);
 
-        CreateButton(_panelRoot.transform, "BtnRestart", new Vector2(0.5f, 0.36f), new Vector2(320f, 56f), "Reiniciar", Restart);
-        CreateButton(_panelRoot.transform, "BtnMenu", new Vector2(0.5f, 0.26f), new Vector2(320f, 56f), "Menu principal", Menu);
+        CreateGameOverButton(_panelRoot.transform, "BtnRestart", new Vector2(0.5f, 0.36f), new Vector2(320f, 56f), "Reiniciar", true, Restart);
+        CreateGameOverButton(_panelRoot.transform, "BtnMenu", new Vector2(0.5f, 0.26f), new Vector2(320f, 56f), "Menu principal", false, Menu);
     }
 
-    private static void CreateButton(Transform parent, string name, Vector2 anchorCenterNorm, Vector2 size, string label, UnityAction onClick)
+    private static void CreateGameOverButton(Transform parent, string name, Vector2 anchorCenterNorm, Vector2 size, string label, bool primary, UnityAction onClick)
     {
         var go = new GameObject(name, typeof(RectTransform), typeof(Image), typeof(Button));
         go.transform.SetParent(parent, false);
@@ -131,7 +132,6 @@ public sealed class GameOverController : MonoBehaviour
         rt.sizeDelta = size;
         rt.anchoredPosition = Vector2.zero;
         var img = go.GetComponent<Image>();
-        img.color = new Color(0.35f, 0.15f, 0.18f, 0.95f);
         var btn = go.GetComponent<Button>();
         btn.targetGraphic = img;
         btn.onClick.AddListener(onClick);
@@ -144,11 +144,14 @@ public sealed class GameOverController : MonoBehaviour
         trt.offsetMin = Vector2.zero;
         trt.offsetMax = Vector2.zero;
         var txt = txtGo.GetComponent<Text>();
-        txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf") ?? Resources.GetBuiltinResource<Font>("Arial.ttf");
         txt.text = label;
         txt.alignment = TextAnchor.MiddleCenter;
-        txt.color = Color.white;
-        txt.fontSize = 22;
+        if (primary)
+            UIStyleSheet.ApplyGameOverPrimaryButton(img, txt);
+        else
+            UIStyleSheet.ApplyGameOverSecondaryButton(img, txt);
+
+        UIStyleSheet.ApplyButtonStates(btn);
     }
 
     public void Restart()

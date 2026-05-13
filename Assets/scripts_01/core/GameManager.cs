@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 #endif
 
-/// <summary>Gestiona pausa global (Escape) y pausa por tienda (Granero).</summary>
+/// <summary>Gestiona pausa global (Escape), tienda (Granero) y panel de corral.</summary>
 [DisallowMultipleComponent]
 public sealed class GameManager : MonoBehaviour
 {
@@ -21,6 +21,9 @@ public sealed class GameManager : MonoBehaviour
     /// <summary>Pausa por panel de tienda abierto.</summary>
     private bool _pausedFromShop;
 
+    /// <summary>Pausa por panel de gestión de corral abierto.</summary>
+    private bool _pausedFromCorralPanel;
+
     /// <summary>Granero destruido: fin de partida.</summary>
     private bool _gameOver;
 
@@ -30,8 +33,8 @@ public sealed class GameManager : MonoBehaviour
     public TimeManager WorldTime => timeManager;
     public InventorySystem Inventory => inventorySystem;
 
-    /// <summary>Cuando hay pausa por Escape, tienda abierta o game over.</summary>
-    public bool IsGameplayFrozen => _gameOver || pausedFromEscape || _pausedFromShop;
+    /// <summary>Cuando hay pausa por Escape, tienda abierta, panel de corral o game over.</summary>
+    public bool IsGameplayFrozen => _gameOver || pausedFromEscape || _pausedFromShop || _pausedFromCorralPanel;
 
     public bool IsGameOver => _gameOver;
 
@@ -60,6 +63,12 @@ public sealed class GameManager : MonoBehaviour
         if (!WasEscapePressed())
             return;
 
+        if (CorralPanelUI.IsOpen)
+        {
+            CorralPanelUI.Instance?.Close();
+            return;
+        }
+
         if (_pausedFromShop)
         {
             var shop = FindFirstObjectByType<ShopUI>();
@@ -86,6 +95,19 @@ public sealed class GameManager : MonoBehaviour
             OnGameResumed?.Invoke();
     }
 
+    /// <summary>Llamado desde <see cref="CorralPanelUI"/> al abrir/cerrar el panel de corral.</summary>
+    public void SetCorralPanelPaused(bool paused)
+    {
+        if (_pausedFromCorralPanel == paused)
+            return;
+        _pausedFromCorralPanel = paused;
+        SyncTimeScale();
+        if (paused)
+            OnGamePaused?.Invoke();
+        else
+            OnGameResumed?.Invoke();
+    }
+
     private void SyncTimeScale()
     {
         UnityEngine.Time.timeScale = IsGameplayFrozen ? 0f : 1f;
@@ -99,6 +121,7 @@ public sealed class GameManager : MonoBehaviour
         _gameOver = true;
         pausedFromEscape = false;
         _pausedFromShop = false;
+        _pausedFromCorralPanel = false;
         SyncTimeScale();
     }
 
@@ -108,6 +131,7 @@ public sealed class GameManager : MonoBehaviour
         _gameOver = false;
         pausedFromEscape = false;
         _pausedFromShop = false;
+        _pausedFromCorralPanel = false;
         UnityEngine.Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -115,6 +139,9 @@ public sealed class GameManager : MonoBehaviour
     public void QuitToMainMenuFromGameOver()
     {
         _gameOver = false;
+        pausedFromEscape = false;
+        _pausedFromShop = false;
+        _pausedFromCorralPanel = false;
         UnityEngine.Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
@@ -150,6 +177,7 @@ public sealed class GameManager : MonoBehaviour
         _gameOver = false;
         pausedFromEscape = false;
         _pausedFromShop = false;
+        _pausedFromCorralPanel = false;
         UnityEngine.Time.timeScale = 1f;
     }
 }

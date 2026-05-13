@@ -89,7 +89,7 @@ public sealed class CorralStorage : MonoBehaviour
         return add;
     }
 
-    /// <summary>Transfiere todo el almacén al inventario del jugador y vacía el corral.</summary>
+    /// <summary>Transfiere desde el corral al inventario hasta llenar el tope del jugador.</summary>
     public int CollectAllTo(InventorySystem inventory)
     {
         if (inventory == null || _current <= 0)
@@ -97,12 +97,16 @@ public sealed class CorralStorage : MonoBehaviour
         if (!IsCorralOperational())
             return 0;
 
-        var t = _current;
-        _current = 0;
-        inventory.Add(_storedType, t);
+        var free = inventory.GetFreeSpace(_storedType);
+        var take = Mathf.Min(_current, free);
+        if (take <= 0)
+            return 0;
+
+        _current -= take;
+        inventory.Add(_storedType, take);
         StorageChanged?.Invoke(_current, MaxCapacity);
         CollectedOrEmptied?.Invoke();
-        return t;
+        return take;
     }
 
     public void NotifyMaxCapacityMayHaveChanged()

@@ -32,11 +32,11 @@ public sealed class EnemyResourceDrop : MonoBehaviour
         var inventory = FindFirstObjectByType<InventorySystem>();
         if (inventory == null) return;
 
-        // Caen 1..dropTypeCount tipos de recurso aleatorios
+        var types = new[] { ResourceType.Milk, ResourceType.Egg, ResourceType.Meat };
         var drops = Random.Range(1, dropTypeCount + 1);
         for (var i = 0; i < drops; i++)
         {
-            var type = (ResourceType)Random.Range(0, System.Enum.GetValues(typeof(ResourceType)).Length);
+            var type = types[Random.Range(0, types.Length)];
             var amount = Random.Range(minAmount, maxAmount + 1);
             inventory.Add(type, amount);
         }

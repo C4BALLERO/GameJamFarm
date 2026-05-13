@@ -59,6 +59,9 @@ public sealed class SceneRuntimeWiring : MonoBehaviour
         if (spawner != null && dayNight != null)
             spawner.SetDayNightManager(dayNight);
 
+        if (dayNight != null && dayNight.GetComponent<NightLightingController>() == null)
+            dayNight.gameObject.AddComponent<NightLightingController>();
+
         var ui = FindFirstObjectByType<UIManager>();
         if (ui != null && inv != null && player != null && player.TryGetComponent<PlayerHealth>(out var ph))
             ui.Bind(ph, inv);

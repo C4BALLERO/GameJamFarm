@@ -99,6 +99,13 @@ public sealed class ResourceGenerator : MonoBehaviour
                 continue;
             }
 
+            var foodSt = corralStorage.GetComponent<CorralFoodStorage>();
+            if (foodSt != null && foodSt.CurrentFood <= 0)
+            {
+                yield return null;
+                continue;
+            }
+
             var mult = PowerUpSystem.Instance != null
                 ? PowerUpSystem.Instance.ResourceIntervalMultiplier
                 : 1f;

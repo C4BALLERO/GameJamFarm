@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Mientras el corral tenga <see cref="CorralHealth"/> intacto, los <see cref="AnimalBase"/>
+/// Mientras el corral tenga valla viva o <see cref="CorralHealth"/> intacto, los <see cref="AnimalBase"/>
 /// bajo ese <see cref="CorralZone"/> no reciben daño de contacto enemigo.
 /// </summary>
 public static class FarmAnimalCorralProtection
@@ -15,10 +15,26 @@ public static class FarmAnimalCorralProtection
         if (zone == null)
             return false;
 
-        var health = zone.GetComponent<CorralHealth>();
-        if (health == null)
-            return false;
+        if (HasLivingFence(zone))
+            return true;
 
-        return !health.IsDestroyed;
+        var health = zone.GetComponent<CorralHealth>();
+        return health != null && !health.IsDestroyed;
+    }
+
+    private static bool HasLivingFence(CorralZone zone)
+    {
+        if (zone == null)
+            return false;
+        var fenceRoot = zone.transform.Find("CorralFenceRoot");
+        if (fenceRoot == null)
+            return false;
+        foreach (var seg in fenceRoot.GetComponentsInChildren<CorralFenceSegment>(true))
+        {
+            if (seg != null && !seg.IsDead)
+                return true;
+        }
+
+        return false;
     }
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Prioridad: corrales vivos → granero → jugador → animales (solo si su corral está destruido).
+/// Prioridad: vallas vivas del corral → granero → vida del corral → jugador → animales (solo si no están protegidos).
 /// </summary>
 public static class EnemyTargeting
 {
@@ -11,14 +11,14 @@ public static class EnemyTargeting
         Transform best = null;
         var bestSqr = float.MaxValue;
 
-        foreach (var ch in Object.FindObjectsByType<CorralHealth>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
+        foreach (var seg in Object.FindObjectsByType<CorralFenceSegment>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
         {
-            if (ch == null || ch.IsDestroyed)
+            if (seg == null || seg.IsDead)
                 continue;
-            var d = ((Vector2)ch.transform.position - origin).sqrMagnitude;
+            var d = ((Vector2)seg.transform.position - origin).sqrMagnitude;
             if (d < bestSqr)
             {
-                best = ch.transform;
+                best = seg.transform;
                 bestSqr = d;
             }
         }
@@ -28,11 +28,24 @@ public static class EnemyTargeting
 
         foreach (var barn in Object.FindObjectsByType<BarnHealth>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
         {
-            if (barn == null || barn.IsDead) continue;
+            if (barn == null || barn.IsDead)
+                continue;
             var d = ((Vector2)barn.transform.position - origin).sqrMagnitude;
             if (d < bestSqr)
             {
                 best = barn.transform;
+                bestSqr = d;
+            }
+        }
+
+        foreach (var ch in Object.FindObjectsByType<CorralHealth>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
+        {
+            if (ch == null || ch.IsDestroyed)
+                continue;
+            var d = ((Vector2)ch.transform.position - origin).sqrMagnitude;
+            if (d < bestSqr)
+            {
+                best = ch.transform;
                 bestSqr = d;
             }
         }
@@ -50,7 +63,8 @@ public static class EnemyTargeting
 
         foreach (var fa in Object.FindObjectsByType<FarmAnimal>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
         {
-            if (fa == null || fa.IsDead) continue;
+            if (fa == null || fa.IsDead)
+                continue;
             if (FarmAnimalCorralProtection.IsProtected(fa))
                 continue;
 

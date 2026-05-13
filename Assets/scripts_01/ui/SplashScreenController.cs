@@ -83,7 +83,7 @@ public sealed class SplashScreenController : MonoBehaviour
         barRootRect.sizeDelta = new Vector2(280f, 14f);
         barRootRect.anchoredPosition = new Vector2(0f, 48f);
         var barRoot = barRootGo.GetComponent<Image>();
-        barRoot.color = new Color(0.12f, 0.1f, 0.1f, 0.92f);
+        UIStyleSheet.StyleSplashBarBackground(barRoot);
 
         var barFillGo = new GameObject("LoadingBarFill", typeof(RectTransform), typeof(Image));
         barFillGo.transform.SetParent(barRootGo.transform, false);
@@ -98,7 +98,7 @@ public sealed class SplashScreenController : MonoBehaviour
         _barFill.fillMethod = Image.FillMethod.Horizontal;
         _barFill.fillOrigin = (int)Image.OriginHorizontal.Left;
         _barFill.fillAmount = 0f;
-        _barFill.color = new Color(0.55f, 0.42f, 0.22f, 1f);
+        UIStyleSheet.StyleSplashBarFill(_barFill);
     }
 
     private Sprite LoadSplashSprite()

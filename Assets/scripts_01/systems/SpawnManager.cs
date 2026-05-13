@@ -47,10 +47,14 @@ public sealed class SpawnManager : MonoBehaviour
     [SerializeField] private Text waveCounterText;
 
     [Header("Night Enemy Scaling")]
-    [SerializeField] private float enemyHealthPerNight = 0.20f;  // +20% vida por noche
-    [SerializeField] private float enemyDamagePerNight = 0.15f;  // +15% daño por noche
+    [SerializeField] private float enemyHealthPerNight = 0.26f;
+    [SerializeField] private float enemyDamagePerNight = 0.18f;
     [SerializeField] private int maxNightScalingSteps = 15;
-    [SerializeField] private float nightIntervalReduction = 1.4f; // intervalo baja 1.4s por noche
+    [SerializeField] private float nightIntervalReduction = 1.4f;
+
+    [Header("Presión de spawn por noches completadas")]
+    [Tooltip("Divide el intervalo por (1 + CompletedNights × este valor). Requiere DayNightManager.")]
+    [SerializeField] private float spawnIntervalPressurePerCompletedNight = 0.11f;
 
     [Header("Day Cleanup")]
     [Tooltip("During day, surviving enemies are removed gradually.")]
@@ -155,9 +159,17 @@ public sealed class SpawnManager : MonoBehaviour
         interval *= Mathf.Max(0.55f, 1.3f - (_waveIndex - 1) * 0.09f);
         if (dayNightManager != null)
             interval /= Mathf.Max(1f, dayNightManager.GetNightDifficultyMultiplier());
+        interval /= Mathf.Max(0.85f, GetCompletedNightsSpawnPressure());
         if (PowerUpSystem.Instance != null)
             interval *= Mathf.Max(0.02f, PowerUpSystem.Instance.EnemySpawnIntervalMultiplier);
         return Mathf.Clamp(interval, minSpawnInterval, 999f);
+    }
+
+    private float GetCompletedNightsSpawnPressure()
+    {
+        if (dayNightManager != null)
+            return 1f + Mathf.Max(0, dayNightManager.CompletedNights) * Mathf.Max(0f, spawnIntervalPressurePerCompletedNight);
+        return 1f + Mathf.Max(0, _nightIndex - 1) * Mathf.Max(0f, spawnIntervalPressurePerCompletedNight);
     }
 
     /// <summary>

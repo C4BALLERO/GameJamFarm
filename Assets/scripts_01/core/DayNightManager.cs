@@ -33,13 +33,13 @@ public sealed class DayNightManager : MonoBehaviour
     [SerializeField] private SpriteRenderer darknessOverlay;
     [SerializeField] private Light2D globalLight2D;
     [SerializeField] [Range(0f, 1f)] private float dayOverlayAlpha = 0f;
-    [SerializeField] [Range(0f, 1f)] private float nightOverlayAlpha = 0.52f;
-    [SerializeField] private float transitionSpeed = 1.9f;
-    [SerializeField] private Color overlayColor = Color.black;
+    [SerializeField] [Range(0f, 1f)] private float nightOverlayAlpha = 0.32f;
+    [SerializeField] private float transitionSpeed = 1.45f;
+    [SerializeField] private Color overlayColor = new(0.06f, 0.07f, 0.12f, 1f);
     [SerializeField] private Color dayLightColor = new(1f, 0.98f, 0.9f, 1f);
-    [SerializeField] private Color nightLightColor = new(0.35f, 0.42f, 0.62f, 1f);
-    [SerializeField] private float dayLightIntensity = 0.95f;
-    [SerializeField] private float nightLightIntensity = 0.35f;
+    [SerializeField] private Color nightLightColor = new(0.32f, 0.36f, 0.55f, 1f);
+    [SerializeField] private float dayLightIntensity = 1f;
+    [SerializeField] private float nightLightIntensity = 0.3f;
 
     [Header("Night Difficulty")]
     [SerializeField] private float baseNightDifficulty = 1f;
@@ -56,6 +56,9 @@ public sealed class DayNightManager : MonoBehaviour
     public float PhaseElapsedSeconds { get; private set; }
     public bool IsDay => CurrentState == CycleState.Day;
     public bool IsNight => CurrentState == CycleState.Night;
+
+    /// <summary>0..1 progreso dentro de la fase actual (día o noche).</summary>
+    public float CurrentPhaseNormalized => PhaseNormalized;
 
     private float CurrentPhaseDuration => IsDay
         ? Mathf.Max(1f, dayDurationSeconds)

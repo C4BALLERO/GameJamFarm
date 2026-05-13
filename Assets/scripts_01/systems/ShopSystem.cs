@@ -18,24 +18,30 @@ public sealed class ShopSystem : MonoBehaviour
     [SerializeField] private GameObject pigPrefab;
 
     [Header("Precios animales (monedas)")]
-    [SerializeField] private int cowCoinPrice = 85;
-    [SerializeField] private int chickenCoinPrice = 28;
-    [SerializeField] private int pigCoinPrice = 55;
+    [SerializeField] private int cowCoinPrice = 120;
+    [SerializeField] private int chickenCoinPrice = 48;
+    [SerializeField] private int pigCoinPrice = 95;
 
     [Header("Mejoras jugador (monedas)")]
-    [SerializeField] private int attackUpgradeCoinBase = 42;
-    [SerializeField] private int speedUpgradeCoinBase = 38;
+    [SerializeField] private int attackUpgradeCoinBase = 58;
+    [SerializeField] private int speedUpgradeCoinBase = 52;
 
     [Header("Power-Ups (monedas base por índice: prod, vida animal, daño jug, mov jug, spawn, almacén)")]
-    [SerializeField] private int[] basePowerUpCoinCosts = { 36, 32, 48, 40, 52, 34 };
+    [SerializeField] private int[] basePowerUpCoinCosts = { 48, 44, 62, 54, 68, 46 };
 
     [Header("Escalado precio Power-Ups (y mejoras de moneda)")]
-    [SerializeField] [Range(0f, 3f)] private float powerUpCostGrowthPercent = 0.22f;
-    [SerializeField] private int powerUpCostGrowthFlat = 1;
+    [SerializeField] [Range(0f, 3f)] private float powerUpCostGrowthPercent = 0.28f;
+    [SerializeField] private int powerUpCostGrowthFlat = 2;
 
     [Header("Restaurar vida jugador (monedas)")]
-    [SerializeField] private int playerHealCoinBase = 18;
+    [SerializeField] private int playerHealCoinBase = 26;
     [SerializeField] private int healthRestoreAmount = 3;
+
+    [Header("Comida granero (inventario jugador)")]
+    [SerializeField] private int feedBasicCoinCost = 5;
+    [SerializeField] private int feedBasicPerPurchase = 12;
+    [SerializeField] private int feedPremiumCoinCost = 14;
+    [SerializeField] private int feedPremiumPerPurchase = 8;
 
     private int[] _runtimePowerUpCoins;
     private int _runtimeAttackCoin;
@@ -343,6 +349,46 @@ public sealed class ShopSystem : MonoBehaviour
         CorralUpgradeSystem.Instance != null
             ? DiscountedShopCoins(CorralUpgradeSystem.Instance.GetProductionUpgradeCoinCost(kind))
             : 0;
+
+    public int GetFeedBasicCoinCost() => DiscountedShopCoins(Mathf.Max(0, feedBasicCoinCost));
+
+    public int GetFeedPremiumCoinCost() => DiscountedShopCoins(Mathf.Max(0, feedPremiumCoinCost));
+
+    public bool BuyFeedBasic()
+    {
+        if (inventory == null)
+            return false;
+        var c = GetFeedBasicCoinCost();
+        if (!TrySpendCoins(c))
+            return false;
+        var add = Mathf.Max(1, feedBasicPerPurchase);
+        var moved = inventory.Add(ResourceType.FeedBasic, add);
+        if (moved <= 0)
+        {
+            RefundCoins(c);
+            return false;
+        }
+
+        return true;
+    }
+
+    public bool BuyFeedPremium()
+    {
+        if (inventory == null)
+            return false;
+        var c = GetFeedPremiumCoinCost();
+        if (!TrySpendCoins(c))
+            return false;
+        var add = Mathf.Max(1, feedPremiumPerPurchase);
+        var moved = inventory.Add(ResourceType.FeedPremium, add);
+        if (moved <= 0)
+        {
+            RefundCoins(c);
+            return false;
+        }
+
+        return true;
+    }
 
     #endregion
 

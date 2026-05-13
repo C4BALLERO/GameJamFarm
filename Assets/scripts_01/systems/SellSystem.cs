@@ -36,7 +36,7 @@ public sealed class SellSystem : MonoBehaviour
             economy = EconomySystem.Instance ?? FindFirstObjectByType<EconomySystem>();
     }
 
-    /// <summary>Vende todo el stock de un recurso (no monedas).</summary>
+    /// <summary>Vende el máximo posible según reglas (huevos en pares).</summary>
     public bool SellAll(ResourceType type)
     {
         if (type == ResourceType.Coin)
@@ -52,12 +52,16 @@ public sealed class SellSystem : MonoBehaviour
         if (amount <= 0)
             return false;
 
-        var per = economy.GetSellCoinsPerUnit(type);
-        if (per <= 0)
+        var mult = BarnUpgradeSystem.Instance != null ? BarnUpgradeSystem.Instance.SellRewardMultiplier : 1f;
+        var remove = economy.CountResourcesConsumedOnSellAll(type, amount);
+        if (remove <= 0)
             return false;
 
-        var coins = Mathf.RoundToInt(amount * per * (BarnUpgradeSystem.Instance != null ? BarnUpgradeSystem.Instance.SellRewardMultiplier : 1f));
-        if (!inventory.Remove(type, amount))
+        var coins = economy.ComputeSellCoins(type, remove, mult);
+        if (coins <= 0)
+            return false;
+
+        if (!inventory.Remove(type, remove))
             return false;
 
         inventory.Add(ResourceType.Coin, coins);
