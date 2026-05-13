@@ -432,6 +432,7 @@ public static class DarkFarmMvpBuilder
         root.AddComponent<PlayerHealth>();
         root.AddComponent<PlayerCombat>();
         root.AddComponent<PlayerController>();
+        root.AddComponent<PlayerWalkAudio>();
         var visualAnimator = root.AddComponent<PlayerSpriteAnimator>();
 
         var hitGo = new GameObject("AttackHitbox");
@@ -550,6 +551,25 @@ public static class DarkFarmMvpBuilder
 
         root.AddComponent<Animator>();
         AssignAnimatorController(root, AnimCtrlFarmAnimal);
+
+        if (kind == FarmAnimalKind.Cow)
+        {
+            if (root.GetComponent<AudioSource>() == null)
+                root.AddComponent<AudioSource>();
+            var farmAudio = root.GetComponent<FarmAnimalAudio>();
+            if (farmAudio == null)
+                farmAudio = root.AddComponent<FarmAnimalAudio>();
+            var vacaClip = AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/resources/AnimalSounds/vaca.mp3");
+            var caminando = AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/resources_08/Caminando.mp3");
+            var ambient = vacaClip != null ? vacaClip : caminando;
+            if (ambient != null)
+            {
+                var audioSo = new SerializedObject(farmAudio);
+                audioSo.FindProperty("ambientClips").arraySize = 0;
+                audioSo.FindProperty("ambientLoopClip").objectReferenceValue = ambient;
+                audioSo.ApplyModifiedPropertiesWithoutUndo();
+            }
+        }
 
         PrefabUtility.SaveAsPrefabAsset(root, path);
         Object.DestroyImmediate(root);
@@ -1000,6 +1020,7 @@ public static class DarkFarmMvpBuilder
     {
         EditorBuildSettings.scenes = new[]
         {
+            new EditorBuildSettingsScene($"{SceneDir}/scene_00_splash.unity", true),
             new EditorBuildSettingsScene($"{SceneDir}/scene_01_menu.unity", true),
             new EditorBuildSettingsScene($"{SceneDir}/scene_00_main.unity", true),
             new EditorBuildSettingsScene($"{SceneDir}/scene_02_test.unity", true)
