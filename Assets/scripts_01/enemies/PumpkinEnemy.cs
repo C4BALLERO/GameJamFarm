@@ -28,12 +28,13 @@ public sealed class PumpkinEnemy : EnemyBase
     private void TryApplyContactDamage(Collider2D hit)
     {
         if (IsDead) return;
-        if (!hit.TryGetComponent<IDamageable>(out var dmg)) return;
+        if (!DamageableResolver.TryResolve(hit, out var dmg))
+            return;
         if (dmg.IsDead) return;
         if (dmg is EnemyBase) return;
         if (dmg is AnimalBase ab && FarmAnimalCorralProtection.IsProtected(ab)) return;
-        if (dmg is not PlayerHealth && dmg is not AnimalBase && dmg is not BarnHealth && dmg is not CorralDamageRelay &&
-            dmg is not CorralFenceSegment)
+        if (dmg is not PlayerHealth && dmg is not AnimalBase && dmg is not BarnHealth && dmg is not CorralHealth &&
+            dmg is not CorralDamageRelay && dmg is not CorralFenceSegment)
             return;
         if (Time.time < _nextContactDamageAt) return;
 

@@ -49,6 +49,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.8f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts_01\systems\DamageableResolver.cs" />
     <Compile Include="Assets\scripts_01\animals\FarmAnimalAmbientGate.cs" />
     <Compile Include="Assets\scripts_01\systems\ResourceCost.cs" />
     <Compile Include="Assets\scripts_01\core\TimeManager.cs" />

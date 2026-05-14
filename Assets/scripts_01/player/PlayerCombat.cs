@@ -74,7 +74,7 @@ public sealed class PlayerCombat : MonoBehaviour
     {
         if (hitboxCollider == null || !hitboxCollider.enabled) return;
         if (((1 << other.gameObject.layer) & enemyLayers.value) == 0) return;
-        if (!other.TryGetComponent<IDamageable>(out var dmg)) return;
+        if (!DamageableResolver.TryResolve(other, out var dmg)) return;
         if (dmg.IsDead) return;
 
         var dir = ((Vector2)dmg.Transform.position - (Vector2)transform.position);

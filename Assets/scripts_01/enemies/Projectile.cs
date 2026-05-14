@@ -40,7 +40,7 @@ public sealed class Projectile : MonoBehaviour
     {
         if (((1 << other.gameObject.layer) & _hitLayers.value) == 0) return;
 
-        if (other.TryGetComponent<IDamageable>(out var dmg) && !dmg.IsDead)
+        if (DamageableResolver.TryResolve(other, out var dmg) && !dmg.IsDead && dmg is not EnemyBase)
         {
             var dir = ((Vector2)dmg.Transform.position - (Vector2)transform.position);
             if (dir.sqrMagnitude < 0.0001f) dir = Vector2.up;
