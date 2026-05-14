@@ -72,7 +72,7 @@ public sealed class SceneRuntimeWiring : MonoBehaviour
 
     private static void EnsureGameOverController()
     {
-        if (Object.FindFirstObjectByType<GameOverController>() != null)
+        if (UnityEngine.Object.FindFirstObjectByType<GameOverController>() != null)
             return;
 
         var host = GameObject.Find("GameSystems");
@@ -103,9 +103,10 @@ public static class FarmSceneGameplayBootstrap
     {
         HideObsoleteHudNodes();
         EnsureNamedCorralsHaveZones();
+        ApplyCorralVallaCercaSprites();
 
-        var shop = Object.FindFirstObjectByType<ShopSystem>();
-        var inv = Object.FindFirstObjectByType<InventorySystem>();
+        var shop = UnityEngine.Object.FindFirstObjectByType<ShopSystem>();
+        var inv = UnityEngine.Object.FindFirstObjectByType<InventorySystem>();
 
         // GameObject.Find no ve objetos desactivados; ShopPanel suele empezar oculto → había que buscar incluyendo inactivos.
         var panelGo = FindSceneObjectByNameIncludingInactive("ShopPanel");
@@ -122,7 +123,7 @@ public static class FarmSceneGameplayBootstrap
             shopUi = FindFirstShopUiIncludingInactive();
         }
 
-        var uiMgr = Object.FindFirstObjectByType<UIManager>();
+        var uiMgr = UnityEngine.Object.FindFirstObjectByType<UIManager>();
         if (uiMgr != null && shopUi != null)
             uiMgr.RegisterShopUi(shopUi);
 
@@ -147,7 +148,7 @@ public static class FarmSceneGameplayBootstrap
         if (direct != null)
             return direct;
 
-        foreach (var t in Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+        foreach (var t in UnityEngine.Object.FindObjectsByType<Transform>(FindObjectsInactive.Include, FindObjectsSortMode.None))
         {
             if (!t.gameObject.scene.IsValid() || t.name != objectName)
                 continue;
@@ -159,8 +160,78 @@ public static class FarmSceneGameplayBootstrap
 
     private static ShopUI FindFirstShopUiIncludingInactive()
     {
-        var list = Object.FindObjectsByType<ShopUI>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        var list = UnityEngine.Object.FindObjectsByType<ShopUI>(FindObjectsInactive.Include, FindObjectsSortMode.None);
         return list.Length > 0 ? list[0] : null;
+    }
+
+    /// <summary>
+    /// Asigna el sprite <c>cerca</c> (Resources) a cada objeto decorativo cuyo nombre empieza por <c>Valla</c>
+    /// bajo <c>Corral_Vacas</c>, <c>Corral_Pollos</c> y <c>Corral_Cerdos</c>. Solo modifica <see cref="SpriteRenderer"/>; no altera colliders ni scripts.
+    /// </summary>
+    private static void ApplyCorralVallaCercaSprites()
+    {
+        var sprite = ResolveCercaSprite();
+        if (sprite == null)
+            return;
+
+        foreach (var entry in NamedCorrals)
+        {
+            var go = FindSceneObjectByNameIncludingInactive(entry.ObjectName);
+            if (go == null)
+                continue;
+
+            foreach (var tr in go.GetComponentsInChildren<Transform>(true))
+            {
+                if (!IsDecorVallaName(tr.name))
+                    continue;
+                var sr = tr.GetComponent<SpriteRenderer>();
+                if (sr == null)
+                    continue;
+
+                var prev = sr.sprite;
+                var prevSize = prev != null ? (Vector2)prev.bounds.size : Vector2.one;
+                prevSize.x = Mathf.Max(1e-4f, Mathf.Abs(prevSize.x));
+                prevSize.y = Mathf.Max(1e-4f, Mathf.Abs(prevSize.y));
+
+                sr.sprite = sprite;
+
+                var nb = sprite.bounds.size;
+                nb.x = Mathf.Max(1e-4f, Mathf.Abs(nb.x));
+                nb.y = Mathf.Max(1e-4f, Mathf.Abs(nb.y));
+
+                var ls = tr.localScale;
+                var sx = Mathf.Approximately(ls.x, 0f) ? 1f : ls.x;
+                var sy = Mathf.Approximately(ls.y, 0f) ? 1f : ls.y;
+                var worldW = Mathf.Abs(sx) * prevSize.x;
+                var worldH = Mathf.Abs(sy) * prevSize.y;
+                tr.localScale = new Vector3(
+                    Mathf.Sign(sx) * worldW / nb.x,
+                    Mathf.Sign(sy) * worldH / nb.y,
+                    ls.z);
+            }
+        }
+    }
+
+    private static bool IsDecorVallaName(string objectName)
+    {
+        if (string.IsNullOrEmpty(objectName))
+            return false;
+        return objectName.TrimStart().StartsWith("Valla", System.StringComparison.OrdinalIgnoreCase);
+    }
+
+    private static Sprite ResolveCercaSprite()
+    {
+        var s = Resources.Load<Sprite>("cerca_0") ?? Resources.Load<Sprite>("cerca");
+        if (s != null)
+            return s;
+
+        foreach (var x in Resources.LoadAll<Sprite>("cerca"))
+        {
+            if (x != null)
+                return x;
+        }
+
+        return null;
     }
 
     private static void EnsureNamedCorralsHaveZones()

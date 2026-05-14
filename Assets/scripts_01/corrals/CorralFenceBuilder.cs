@@ -3,6 +3,7 @@ using UnityEngine;
 /// <summary>
 /// Genera una valla de “cubos” (cuadrados sólidos 2D) alrededor del área del corral.
 /// Bloquea físicamente a los enemigos hasta que destruyen cada segmento.
+/// Opcionalmente puede ocultar solo el dibujo de cada cubo para dejar ver cercas colocadas en la escena.
 /// </summary>
 [DisallowMultipleComponent]
 public sealed class CorralFenceBuilder : MonoBehaviour
@@ -17,6 +18,9 @@ public sealed class CorralFenceBuilder : MonoBehaviour
     [SerializeField] private int hitPointsPerSegment = 5;
     [SerializeField] private Color fenceColor = new Color(0.42f, 0.3f, 0.2f, 1f);
     [SerializeField] private int sortingOrder = 4;
+    [Header("Visual")]
+    [Tooltip("Si está activo, desactiva solo el SpriteRenderer de cada FenceCube. Collider, CorralFenceSegment y daño siguen igual.")]
+    [SerializeField] private bool hideProceduralFenceVisual = true;
     [Tooltip("Mínimo de cubos por lado (rectángulo pequeño).")]
     [SerializeField] [Min(2)] private int minSegmentsPerEdge = 2;
 
@@ -140,9 +144,11 @@ public sealed class CorralFenceBuilder : MonoBehaviour
 
         go.AddComponent<BoxCollider2D>();
 
-        go.AddComponent<SpriteRenderer>();
+        var sr = go.AddComponent<SpriteRenderer>();
         var seg = go.AddComponent<CorralFenceSegment>();
         seg.Configure(hitPointsPerSegment, fenceColor, sortingOrder);
+        if (hideProceduralFenceVisual)
+            sr.enabled = false;
         go.AddComponent<FenceDamageVisual>();
     }
 }
