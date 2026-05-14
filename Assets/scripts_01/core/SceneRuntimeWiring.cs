@@ -477,6 +477,9 @@ public static class FarmSceneGameplayBootstrap
 
         var trig = barn.GetComponent<BarnShopTrigger>() ?? barn.AddComponent<BarnShopTrigger>();
         trig.BindShopUiIfProvided(shopUi);
+
+        var interact = barn.GetComponent<BarnInteraction>() ?? barn.AddComponent<BarnInteraction>();
+        interact.ApplyLargerClickArea();
     }
 
     private static void TryFitGraneroBoxToChildRenderers(GameObject barn, BoxCollider2D box)

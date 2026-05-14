@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 /// <summary>
 /// Granero: compras con monedas, venta de recursos vía <see cref="SellSystem"/>, power-ups con precio progresivo.
@@ -33,8 +34,9 @@ public sealed class ShopSystem : MonoBehaviour
     [SerializeField] [Range(0f, 3f)] private float powerUpCostGrowthPercent = 0.28f;
     [SerializeField] private int powerUpCostGrowthFlat = 2;
 
-    [Header("Restaurar vida jugador (monedas)")]
-    [SerializeField] private int playerHealCoinBase = 26;
+    [Header("Restaurar vida jugador (monedas, precio FIJO por compra)")]
+    [FormerlySerializedAs("playerHealCoinBase")]
+    [SerializeField] private int playerHealCoinFixed = 50;
     [SerializeField] private int healthRestoreAmount = 3;
 
     [Header("Comida granero (inventario jugador)")]
@@ -46,7 +48,6 @@ public sealed class ShopSystem : MonoBehaviour
     private int[] _runtimePowerUpCoins;
     private int _runtimeAttackCoin;
     private int _runtimeSpeedCoin;
-    private int _runtimeHealCoin;
 
     private void Awake()
     {
@@ -68,13 +69,14 @@ public sealed class ShopSystem : MonoBehaviour
 
         _runtimeAttackCoin = attackUpgradeCoinBase;
         _runtimeSpeedCoin = speedUpgradeCoinBase;
-        _runtimeHealCoin = playerHealCoinBase;
     }
 
     private void OnValidate()
     {
         if (inventory == null)
             inventory = GetComponent<InventorySystem>();
+        if (playerHealCoinFixed < 1)
+            playerHealCoinFixed = HealingUpgradeSystem.DefaultFixedHealCoinCost;
     }
 
     public void Bind(InventorySystem inv) => inventory = inv;
@@ -113,7 +115,8 @@ public sealed class ShopSystem : MonoBehaviour
         return DiscountedShopCoins(Mathf.Max(0, _runtimePowerUpCoins[index]));
     }
 
-    public int GetPlayerHealCoinCost() => DiscountedShopCoins(Mathf.Max(0, _runtimeHealCoin));
+    public int GetPlayerHealCoinCost() =>
+        DiscountedShopCoins(Mathf.Max(1, playerHealCoinFixed));
 
     /// <summary>Compatibilidad antigua: ya no se usan recursos para comprar animales.</summary>
     public ResourceCost[] GetPurchaseCosts(FarmAnimalKind kind) => Array.Empty<ResourceCost>();
@@ -223,7 +226,7 @@ public sealed class ShopSystem : MonoBehaviour
             return false;
         }
 
-        var cost = DiscountedShopCoins(_runtimeHealCoin);
+        var cost = DiscountedShopCoins(Mathf.Max(1, playerHealCoinFixed));
         if (!TrySpendCoins(cost))
         {
             Debug.LogWarning("[Shop] No alcanzan monedas para restaurar vida.");
@@ -231,7 +234,6 @@ public sealed class ShopSystem : MonoBehaviour
         }
 
         ph.Heal(healthRestoreAmount);
-        GrowCoinPriceInstance(ref _runtimeHealCoin);
         Debug.Log($"[Shop] Vida restaurada: +{healthRestoreAmount}.");
         return true;
     }

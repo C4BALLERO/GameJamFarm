@@ -72,17 +72,22 @@ public sealed class CorralFoodStorage : MonoBehaviour
         FoodChanged?.Invoke(CurrentFood, MaxFood);
     }
 
-    public bool TryAddFood(int amount)
+    /// <summary>
+    /// Añade comida sin superar nunca <see cref="MaxFood"/>. Devuelve cuántas unidades se añadieron realmente (0 si lleno).
+    /// </summary>
+    public int TryAddFood(int amount)
     {
-        if (amount <= 0)
-            return false;
-        var space = MaxFood - CurrentFood;
+        if (amount <= 0 || MaxFood <= 0)
+            return 0;
+        CurrentFood = Mathf.Clamp(CurrentFood, 0, MaxFood);
+        var space = Mathf.Max(0, MaxFood - CurrentFood);
         var add = Mathf.Min(space, amount);
         if (add <= 0)
-            return false;
+            return 0;
         CurrentFood += add;
+        CurrentFood = Mathf.Clamp(CurrentFood, 0, MaxFood);
         FoodChanged?.Invoke(CurrentFood, MaxFood);
-        return true;
+        return add;
     }
 
     /// <summary>Retira hasta <paramref name="amount"/> unidades; devuelve cuánto se retiró.</summary>

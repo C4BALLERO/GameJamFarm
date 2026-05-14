@@ -13,15 +13,15 @@ public sealed class NightLightingController : MonoBehaviour
     [SerializeField] private Light2D[] flickerLanterns;
 
     [Header("Luna (Light2D tipo Point / Free)")]
-    [SerializeField] private float moonNightIntensity = 0.78f;
+    [SerializeField] private float moonNightIntensity = 1.12f;
     [SerializeField] private float moonDayIntensity = 0f;
-    [SerializeField] private Color moonNightColor = new(0.72f, 0.78f, 1f, 1f);
-    [SerializeField] private float moonSmooth = 1.35f;
-    [SerializeField] private float nightPulseAmplitude = 0.045f;
-    [SerializeField] private float nightPulseHz = 0.22f;
+    [SerializeField] private Color moonNightColor = new(0.78f, 0.82f, 1f, 1f);
+    [SerializeField] private float moonSmooth = 1.55f;
+    [SerializeField] private float nightPulseAmplitude = 0.028f;
+    [SerializeField] private float nightPulseHz = 0.18f;
 
     [Header("Faroles")]
-    [SerializeField] private float flickerStrength = 0.12f;
+    [SerializeField] private float flickerStrength = 0.08f;
     [SerializeField] private float flickerSpeed = 7.5f;
 
     private float _lanternBaseIntensity = 1f;

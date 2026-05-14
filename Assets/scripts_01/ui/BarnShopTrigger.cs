@@ -79,6 +79,7 @@ public sealed class BarnShopTrigger : MonoBehaviour
 
         shopUi.Open();
         _openedShopFrame = Time.frameCount;
+        InteractionFeedbackUI.Show("Granero — Tienda abierta", new Color(0.92f, 0.86f, 0.62f, 1f), 1.1f);
     }
 
     /// <summary>

@@ -24,6 +24,10 @@ public sealed class MenuSceneBootstrap : MonoBehaviour
 
     [SerializeField] private string mainSceneName = "scene_00_main";
 
+    [SerializeField] private string storySceneName = "scene_02_story";
+
+    [SerializeField] private bool loadStoryBeforeMainGameplay = true;
+
     [SerializeField] private Button startButton;
 
     [Header("Form fields (optional, auto-created if empty)")]
@@ -81,6 +85,10 @@ public sealed class MenuSceneBootstrap : MonoBehaviour
         StyleStartButton();
 
         RefreshStartButtonState();
+
+        if (GetComponent<MainMenuManager>() == null)
+
+            gameObject.AddComponent<MainMenuManager>();
 
     }
 
@@ -381,6 +389,16 @@ public sealed class MenuSceneBootstrap : MonoBehaviour
 
         }
 
+        if (loadStoryBeforeMainGameplay && string.IsNullOrWhiteSpace(storySceneName))
+
+        {
+
+            Debug.LogError("[MenuSceneBootstrap] Story scene name is empty while loadStoryBeforeMainGameplay is enabled.");
+
+            return;
+
+        }
+
 
 
         StartCoroutine(LoadMainAsync());
@@ -409,7 +427,15 @@ public sealed class MenuSceneBootstrap : MonoBehaviour
 
 
 
-        var operation = SceneManager.LoadSceneAsync(mainSceneName);
+        var targetScene = loadStoryBeforeMainGameplay && !string.IsNullOrWhiteSpace(storySceneName)
+
+            ? storySceneName
+
+            : mainSceneName;
+
+
+
+        var operation = SceneManager.LoadSceneAsync(targetScene);
 
         if (operation == null)
 

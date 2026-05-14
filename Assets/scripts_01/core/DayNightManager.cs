@@ -33,13 +33,13 @@ public sealed class DayNightManager : MonoBehaviour
     [SerializeField] private SpriteRenderer darknessOverlay;
     [SerializeField] private Light2D globalLight2D;
     [SerializeField] [Range(0f, 1f)] private float dayOverlayAlpha = 0f;
-    [SerializeField] [Range(0f, 1f)] private float nightOverlayAlpha = 0.32f;
+    [SerializeField] [Range(0f, 1f)] private float nightOverlayAlpha = 0.14f;
     [SerializeField] private float transitionSpeed = 1.45f;
-    [SerializeField] private Color overlayColor = new(0.06f, 0.07f, 0.12f, 1f);
+    [SerializeField] private Color overlayColor = new(0.08f, 0.09f, 0.16f, 1f);
     [SerializeField] private Color dayLightColor = new(1f, 0.98f, 0.9f, 1f);
-    [SerializeField] private Color nightLightColor = new(0.32f, 0.36f, 0.55f, 1f);
+    [SerializeField] private Color nightLightColor = new(0.42f, 0.48f, 0.72f, 1f);
     [SerializeField] private float dayLightIntensity = 1f;
-    [SerializeField] private float nightLightIntensity = 0.3f;
+    [SerializeField] private float nightLightIntensity = 0.48f;
 
     [Header("Night Difficulty")]
     [SerializeField] private float baseNightDifficulty = 1f;

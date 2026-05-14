@@ -29,6 +29,7 @@ public sealed class CorralPanelUI : MonoBehaviour
     private Button _btnUpgHealth;
     private Button _btnUpgProd;
     private Text _feedbackText;
+    private Coroutine _feedbackCo;
 
     private CorralZone _zone;
     private CorralStorage _storage;
@@ -107,7 +108,9 @@ public sealed class CorralPanelUI : MonoBehaviour
         var dimImg = _dim.GetComponent<Image>();
         UIStyleSheet.ApplySolidPanelTint(dimImg, new Color(0.04f, 0.03f, 0.08f, 0.55f));
         var dimBtn = _dim.GetComponent<Button>();
+        dimBtn.targetGraphic = dimImg;
         dimBtn.navigation = new Navigation { mode = Navigation.Mode.None };
+        dimBtn.onClick.AddListener(Close);
 
         _panelRt = new GameObject("CorralPanel", typeof(RectTransform), typeof(Image)).GetComponent<RectTransform>();
         _panelRt.SetParent(parent, false);
@@ -441,7 +444,8 @@ public sealed class CorralPanelUI : MonoBehaviour
         if (_btnFeed != null)
         {
             var hasFeed = _inv != null && (_inv.Get(ResourceType.FeedBasic) > 0 || _inv.Get(ResourceType.FeedPremium) > 0);
-            _btnFeed.interactable = hasFeed;
+            var hasRoom = _food != null && CorralCapacityValidator.HasRoomForFood(_food, 1);
+            _btnFeed.interactable = hasFeed && hasRoom;
         }
     }
 
@@ -485,8 +489,13 @@ public sealed class CorralPanelUI : MonoBehaviour
             return;
         _feedbackText.text = msg;
         _feedbackText.color = color;
-        StopCoroutine(nameof(ClearFeedbackAfterDelay));
-        StartCoroutine(ClearFeedbackAfterDelay());
+        if (_feedbackCo != null)
+        {
+            StopCoroutine(_feedbackCo);
+            _feedbackCo = null;
+        }
+
+        _feedbackCo = StartCoroutine(ClearFeedbackAfterDelay());
     }
 
     private IEnumerator ClearFeedbackAfterDelay()
@@ -494,6 +503,7 @@ public sealed class CorralPanelUI : MonoBehaviour
         yield return new WaitForSecondsRealtime(1.8f);
         if (_feedbackText != null)
             _feedbackText.text = string.Empty;
+        _feedbackCo = null;
     }
 
     private void OnCollect()
@@ -533,22 +543,34 @@ public sealed class CorralPanelUI : MonoBehaviour
     {
         if (_food == null || _inv == null)
             return;
-        const int want = 10;
-        var b = Mathf.Min(want, _inv.Get(ResourceType.FeedBasic));
-        if (b > 0 && _inv.Remove(ResourceType.FeedBasic, b))
+
+        if (!CorralCapacityValidator.HasRoomForFood(_food, 1))
         {
-            _food.TryAddFood(b);
-            ShowFeedback($"\u2705 +{b} comida depositada", UIStyleSheet.AccentGreen);
+            ShowFeedback(CorralCapacityValidator.CorralFoodFullMessage, UIStyleSheet.AccentRed);
             RefreshBody();
             return;
         }
 
-        var p = Mathf.Min(want, _inv.Get(ResourceType.FeedPremium));
-        if (p > 0 && _inv.Remove(ResourceType.FeedPremium, p))
+        const int want = 10;
+        const int premiumFoodPerUnit = 2;
+
+        if (CorralFoodSystem.TryDepositBasic(_food, _inv, want, out _, out var toCorralB) && toCorralB > 0)
         {
-            _food.TryAddFood(p * 2);
-            ShowFeedback($"\u2705 +{p * 2} comida premium depositada", UIStyleSheet.AccentGold);
+            ShowFeedback($"\u2705 +{toCorralB} comida depositada", UIStyleSheet.AccentGreen);
+            RefreshBody();
+            return;
         }
+
+        if (CorralFoodSystem.TryDepositPremium(_food, _inv, want, premiumFoodPerUnit, out _, out var toCorralP) && toCorralP > 0)
+        {
+            ShowFeedback($"\u2705 +{toCorralP} comida (premium)", UIStyleSheet.AccentGold);
+            RefreshBody();
+            return;
+        }
+
+        if ((_inv.Get(ResourceType.FeedBasic) > 0 || _inv.Get(ResourceType.FeedPremium) > 0) &&
+            !CorralCapacityValidator.HasRoomForFood(_food, 1))
+            ShowFeedback(CorralCapacityValidator.CorralFoodFullMessage, UIStyleSheet.AccentRed);
         else
             ShowFeedback("\u26A0 Sin comida en inventario", UIStyleSheet.TextSecondary);
 

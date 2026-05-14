@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/scene_00/scene_01_menu.unity
     guid: b55798cc12df634439470d8abf458483
   - enabled: 1
+    path: Assets/scene_00/scene_02_story.unity
+    guid: fe11aa22bb33cc44dd55ee66ff77aa99
+  - enabled: 1
     path: Assets/scene_00/scene_00_main.unity
     guid: 8052fe1d3fcd0c9408d3d3bd7a863fb5
   - enabled: 1

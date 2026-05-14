@@ -568,6 +568,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MenuSceneBootstrap
   mainSceneName: scene_00_main
+  storySceneName: scene_02_story
+  loadStoryBeforeMainGameplay: 1
   startButton: {fileID: 509184235}
 --- !u!114 &1285865906
 MonoBehaviour:
